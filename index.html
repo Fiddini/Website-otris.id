@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>OTRIS - Real-Time Multi-Specialist Tele-Operative System</title>
+<style>
+  /* Reset */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body, html {
+    width: 100%; height: 100%;
+    background: #0a1f3d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #a6c8ff;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  /* Hero Section */
+  #hero {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    overflow: hidden;
+    background: url('https://i.ibb.co/4d3L2Fw/abstract-network.png') center center / cover no-repeat;
+  }
+  #hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(0,115,230,0.5), transparent 70%);
+    filter: blur(15px);
+    z-index: 0;
+  }
+  #hero-content {
+    position: relative;
+    max-width: 600px;
+    z-index: 1;
+    color: #8abaff;
+  }
+  #hero-content h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    color: #5db1ff;
+    text-shadow: 0 0 15px rgba(93, 177, 255, 0.8);
+  }
+  #hero-content p.subtitle {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #9ecafdcc;
+    text-shadow: 0 0 10px rgba(158, 202, 253, 0.6);
+  }
+  #hero-content p.description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #a9ccffcc;
+    text-shadow: 0 0 8px rgba(169, 204, 255, 0.6);
+  }
+  #hero-content button {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1rem 3.5rem;
+    background: #2b70f3;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 35px 3px rgba(43, 112, 243, 0.7);
+    transition: background-color 0.3s ease;
+  }
+  #hero-content button:hover {
+    background: #1943a1;
+    box-shadow: 0 0 45px 6px rgba(25, 67, 161, 0.9);
+  }
+  /* Demo Request Form */
+  #request-demo {
+    background: #112d59;
+    padding: 3rem 1rem;
+    color: #a6c8ff;
+  }
+  #request-demo .form-container {
+    max-width: 600px;
+    margin: auto;
+    background: #173a7d;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #244a8acc;
+  }
+  #request-demo h2 {
+    text-align: center;
+    color: #77aaff;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  #request-demo form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  #request-demo label {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  #request-demo input {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+  }
+  #request-demo input[type="email"] {
+    font-family: inherit;
+  }
+  #request-demo input[type="tel"] {
+    font-family: inherit;
+  }
+  #request-demo button {
+    margin-top: 1rem;
+    padding: 1rem 0;
+    border-radius: 40px;
+    background: #2b70f3;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 15px #2b70f3bb;
+    transition: background-color 0.3s ease;
+  }
+  #request-demo button:hover {
+    background: #1943a1;
+    box-shadow: 0 0 30px #1943a1ee;
+  }
+  /* Footer */
+  footer {
+    background: #03162c;
+    color: #5e82b0;
+    text-align: center;
+    padding: 0.8rem 1rem;
+    font-size: 0.95rem;
+    user-select: none;
+    border-top: 1px solid #163160;
+  }
+  footer a {
+    color: #77aaff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  /* Responsive */
+  @media(max-width: 600px) {
+    #hero-content h1 {
+      font-size: 2.7rem;
+    }
+    #hero-content p.subtitle {
+      font-size: 1rem;
+    }
+    #hero-content p.description {
+      font-size: 0.95rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section id="hero" role="banner" aria-label="Hero section OTRIS">
+    <div id="hero-content">
+      <h1>OTRIS</h1>
+      <p class="subtitle">Bukan alat. Bukan telemedisin. Ini sistem.</p>
+      <p class="description">Menghubungkan dokter spesialis secara real-time tanpa rujukan pasien</p>
+      <button onclick="window.location.href='https://wa.me/6282120000266?text=Minta%20Demo%20OTRIS'">Minta Demo Sekarang</button>
+    </div>
+  </section>
+
+  <!-- Request Demo Form -->
+  <section id="request-demo">
+    <div class="form-container">
+      <h2>Minta Demo OTRIS</h2>
+      <form action="mailto:info@otris.id" method="POST" enctype="text/plain">
+        <label for="name">Nama Lengkap</label>
+        <input id="name" name="Nama Lengkap" type="text" required />
+        
+        <label for="institution">Nama Instansi</label>
+        <input id="institution" name="Nama Instansi" type="text" required />
+        
+        <label for="position">Jabatan</label>
+        <input id="position" name="Jabatan" type="text" required />
+        
+        <label for="email">Alamat Email</label>
+        <input id="email" name="Alamat Email" type="email" required />
+        
+        <label for="mobile">No Mobile Phone</label>
+        <input id="mobile" name="No Mobile Phone" type="tel" placeholder="+62 8xxx xxxx xxxx" pattern="[0-9+\-\s]+" required />
+        
+        <button type="submit">Kirim Permintaan Demo</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    PT. ANNORA MULTI INTECH | Email: 
+    <a href="mailto:info@otris.id">info@otris.id</a> | WhatsApp:
+    <a href="https://wa.me/6282120000266" target="_blank" rel="noopener">+62 82120000266</a>
+  </footer>
+
+</body>
+</html>
