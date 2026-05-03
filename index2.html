@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>OTRIS - Real-Time Multi-Specialist Tele-Operative System</title>
+<style>
+  /* Reset & base */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f5ff;
+    color: #003366;
+    line-height: 1.6;
+  }
+  a {
+    color: #004aad;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+  h1,h2,h3 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  p, ul {
+    margin-bottom: 1.5rem;
+  }
+  ul {
+    list-style-position: inside;
+    list-style-type: disc;
+  }
+  section {
+    padding: 4rem 0;
+    border-bottom: 1px solid #d7e1ff;
+  }
+  /* Hero */
+  #hero {
+    background: linear-gradient(135deg, #003366 0%, #0055cc 100%);
+    color: white;
+    text-align: center;
+    padding: 6rem 1rem;
+  }
+  #hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+  }
+  #hero h2 {
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+  #hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 1rem auto 3rem;
+    font-weight: 500;
+  }
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .btn-primary, .btn-secondary {
+    padding: 0.85rem 2.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn-primary {
+    background-color: #0073e6;
+    color: white;
+  }
+  .btn-primary:hover {
+    background-color: #004080;
+  }
+  .btn-secondary {
+    background-color: white;
+    color: #003366;
+    border: 2px solid #003366;
+  }
+  .btn-secondary:hover {
+    background-color: #003366;
+    color: white;
+  }
+  /* Section Titles */
+  .section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #003366;
+  }
+  .highlight-square {
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 0.7rem;
+    vertical-align: middle;
+    border-radius: 3px;
+  }
+  .red { background: #bf3f3f; }
+  .blue { background: #3f66bf; }
+  .green { background: #3fbf66; }
+  .yellow { background: #bfbf3f; }
+  .orange { background: #bf7a3f; }
+  .purple { background: #7a3fbf; }
+  /* Content styling */
+  section p, section ul {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  ul li {
+    margin: 0.6rem 0;
+  }
+  section ul {
+    padding-left: 1.5rem;
+  }
+  /* Centered for closing CTA */
+  #closing-cta {
+    text-align: center;
+    padding-bottom: 6rem;
+  }
+  #closing-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+  }
+  @media(max-width: 600px){
+    #hero h1 { font-size: 2rem;}
+    #hero h2 { font-size: 1.5rem;}
+    .buttons {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- 1. HERO -->
+<section id="hero">
+  <h1>OTRIS</h1>
+  <h2>MENGHUBUNGKAN DOKTER SPESIALIS <br> SECARA REAL-TIME <br> TANPA HARUS MERUJUK PASIEN</h2>
+  <p>Mengubah cara rumah sakit menangani kasus kritis.<br>Yang berpindah bukan pasien, tapi keahlian.</p>
+  <div class="buttons">
+    <button class="btn-primary" onclick="window.location.href='https://wa.me/6282120000266?text=Saya%20tertarik%20dengan%20produk%20OTRIS'">Minta Demo</button>
+    <button class="btn-secondary" onclick="window.location.href='#cara-kerja'">Lihat Simulasi Sistem</button>
+  </div>
+</section>
+
+<div class="container">
+  <!-- 2. MASALAH -->
+  <section id="masalah">
+    <h2 class="section-title"><span class="highlight-square red"></span>REALITA DI LAPANGAN</h2>
+    <p>Banyak rumah sakit memiliki fasilitas,<br>namun tidak memiliki akses ke dokter subspesialis.</p>
+    <ul>
+      <li>Pasien harus dirujuk ke rumah sakit lain</li>
+      <li>Terjadi keterlambatan penanganan</li>
+      <li>Risiko pasien meningkat</li>
+      <li>Biaya operasional membengkak</li>
+    </ul>
+    <p><strong>Masalah utama bukan alat.<br>Masalah utama adalah akses ke keahlian.</strong></p>
+  </section>
+
+  <!-- 3. SOLUSI -->
+  <section id="solusi">
+    <h2 class="section-title"><span class="highlight-square green"></span>SOLUSI: OTRIS</h2>
+    <p>OTRIS adalah sistem orkestrasi ruang operasi<br>yang menghubungkan dokter, data pasien,<br>dan perangkat medis dalam satu sistem real-time.</p>
+    <p>Dengan OTRIS:<br>Dokter spesialis dapat melihat, menganalisis,<br>dan memberikan arahan secara langsung<br>tanpa harus berada di lokasi.</p>
+    <p><strong>Yang berpindah bukan pasien,<br>melainkan data dan keahlian.</strong></p>
+  </section>
+
+  <!-- 4. POSITIONING -->
+  <section id="positioning">
+    <h2 class="section-title"><span class="highlight-square yellow"></span>BUKAN SEBUAH PERANGKAT</h2>
+    <p>BUKAN TELEMEDICINE<br>BUKAN VIDEO CALL<br><br>INI ADALAH SISTEM</p>
+    <p>OTRIS adalah:<br>
+      &bull; Sistem integrasi perangkat medis<br>
+      &bull; Platform kontrol dan monitoring<br>
+      &bull; Infrastruktur kolaborasi dokter real-time</p>
+    <p><strong>OTRIS bukan produk.<br>OTRIS adalah infrastruktur layanan medis modern.</strong></p>
+  </section>
+
+  <!-- 5. CARA KERJA -->
+  <section id="cara-kerja">
+    <h2 class="section-title"><span class="highlight-square orange"></span>CARA KERJA OTRIS</h2>
+    <ol style="max-width: 600px; margin: auto; font-weight: 500; font-size:1.1rem; margin-bottom: 0;">
+      <li>Data pasien ditangkap dari perangkat medis</li>
+      <li>Data dikirim ke sistem OTRIS secara real-time</li>
+      <li>Dokter spesialis mengakses dari lokasi berbeda</li>
+      <li>Analisis dilakukan langsung</li>
+      <li>Instruksi diberikan ke tim medis</li>
+      <li>Tindakan dilakukan tanpa rujukan</li>
+    </ol>
+    <p style="text-align:center; margin-top:1rem; font-weight:600;">Semua proses terjadi dalam satu sistem terintegrasi.</p>
+  </section>
+
+  <!-- 6. SISTEM -->
+  <section id="sistem">
+    <h2 class="section-title"><span class="highlight-square purple"></span>SISTEM OTRIS</h2>
+    <p>OTRIS mengintegrasikan:</p>
+    <ul>
+      <li>Visual tindakan (multi-camera)</li>
+      <li>Data medis pasien</li>
+      <li>Komunikasi dokter</li>
+      <li>Dashboard monitoring</li>
+      <li>Sistem kontrol perangkat (tablet)</li>
+      <li>Integrasi SATUSEHAT (FHIR / HL7)</li>
+    </ul>
+    <p><strong>Arsitektur:</strong><br>Device → Gateway → Core System → Cloud</p>
+    <p><strong>Dirancang untuk:</strong><br>Real-time, Low latency, Multi-device, Multi-hospital</p>
+  </section>
+
+  <!-- 7. IMPLEMENTASI -->
+  <section id="implementasi">
+    <h2 class="section-title"><span class="highlight-square red"></span>IMPLEMENTASI SISTEM</h2>
+    <p>OTRIS bukan pengadaan alat.<br>Melainkan proses:</p>
+    <p><strong>Pengadaan → Instalasi → Integrasi → Testing → Operasional</strong></p>
+    <ul>
+      <li>Pekerjaan sipil ruang operasi</li>
+      <li>Instalasi & wiring</li>
+      <li>Integrasi sistem</li>
+      <li>Penyesuaian teknis</li>
+      <li>Commissioning & testing</li>
+    </ul>
+    <p>Sistem baru berjalan setelah semua terintegrasi.</p>
+  </section>
+
+  <!-- 8. DAMPAK -->
+  <section id="dampak">
+    <h2 class="section-title"><span class="highlight-square blue"></span>DAMPAK IMPLEMENTASI</h2>
+    <p><strong>Bagi Rumah Sakit:</strong></p>
+    <ul>
+      <li>Mengurangi rujukan pasien</li>
+      <li>Meningkatkan kapasitas layanan</li>
+      <li>Efisiensi operasional</li>
+      <li>Meningkatkan pendapatan layanan</li>
+    </ul>
+    <p><strong>Bagi Pasien:</strong></p>
+    <ul>
+      <li>Penanganan lebih cepat</li>
+      <li>Tidak perlu pindah rumah sakit</li>
+      <li>Biaya lebih efisien</li>
+    </ul>
+    <p><strong>Bagi Sistem:</strong></p>
+    <ul>
+      <li>Pemerataan layanan medis</li>
+      <li>Penguatan sistem rujukan nasional</li>
+    </ul>
+  </section>
+
+  <!-- 9. MODEL KERJASAMA -->
+  <section id="model-kerjasama">
+    <h2 class="section-title"><span class="highlight-square green"></span>MODEL KERJASAMA (KSO)</h2>
+    <p>OTRIS menyediakan:</p>
+    <ul>
+      <li>Sistem & teknologi</li>
+      <li>Instalasi & integrasi</li>
+      <li>Maintenance & support</li>
+    </ul>
+    <p>Rumah Sakit menyediakan:</p>
+    <ul>
+      <li>Fasilitas & ruang</li>
+      <li>Operasional layanan</li>
+      <li>Tenaga medis</li>
+    </ul>
+    <p>Skema:</p>
+    <ul>
+      <li>Sewa sistem</li>
+      <li>Revenue sharing</li>
+      <li>Hybrid model</li>
+    </ul>
+    <p>Fleksibel sesuai kebutuhan RS.</p>
+  </section>
+
+  <!-- 10. Closing CTA -->
+  <section id="closing-cta">
+    <h2>PENUTUP</h2>
+    <p>OTRIS bukan sekadar teknologi.<br>
+    OTRIS adalah perubahan cara rumah sakit<br>
+    menangani pasien.<br><br>
+    Dari sistem rujukan,<br>
+    menjadi sistem kolaborasi real-time.<br><br>
+    OTRIS tidak memindahkan pasien.<br>
+    OTRIS memindahkan keahlian.</p>
+    <button class="btn-primary" onclick="window.location.href='https://wa.me/6282120000266?text=Saya%20tertarik%20dengan%20produk%20OTRIS'">Minta Demo Sekarang</button>
+  </section>
+</div>
+
+</body>
+</html>
