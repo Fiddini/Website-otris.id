@@ -1695,4 +1695,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OTRIS - Solusi Telemedicine Rumah Sakit Daerah</title>
-    <meta property="og:title"
+    <meta property="og:title"<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OTRIS - Solusi Telemedicine Rumah Sakit Daerah</title>
+  <meta name="description" content="OTRIS: Sistem telemedicine terintegrasi untuk rumah sakit daerah. Akses dokter spesialis real-time, kurangi rujukan pasien." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0a0f1a;
+      color: #fff;
+      margin: 0;
+    }
+    nav {
+      position: fixed;
+      top: 0; left: 0; right:0;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      padding-left: 24px;
+      background-color: rgba(10, 15, 26, 0.95);
+      box-shadow: 0 1px 6px rgba(0,0,0,0.5);
+      z-index: 1000;
+    }
+    nav svg {
+      height: 70px; /* Sesuaikan tinggi logo */
+      width: auto;
+      cursor: pointer;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation dengan logo SVG di kiri atas -->
+  <nav>
+    <!-- Letakkan kode SVG logo di sini -->
+    <svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg" >
+      <defs>
+        <radialGradient id="glowGrad" cx="50%" cy="40%" r="60%">
+          <stop offset="0%" stop-color="#00c8ff" stop-opacity="1"/>
+          <stop offset="70%" stop-color="#003673" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="iconGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#4ef2ff"/>
+          <stop offset="100%" stop-color="#0067af"/>
+        </linearGradient>
+        <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#66d6ff"/>
+          <stop offset="100%" stop-color="#0075d9"/>
+        </linearGradient>
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%" >
+          <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#00c8ff" flood-opacity="0.7"/>
+        </filter>
+      </defs>
+      <circle cx="70" cy="70" r="50" fill="url(#glowGrad)" />
+      <g filter="url(#glow)">
+        <path fill="url(#iconGrad)" stroke="#00bfff" stroke-width="1" d="
+          M70 20
+          Q95 20 105 45
+          Q115 70 105 95
+          Q95 120 70 120
+          Q45 120 35 95
+          Q25 70 35 45
+          Q45 20 70 20
+          Z
+        " />
+        <circle cx="70" cy="60" r="12" fill="#b4eaff" />
+        <path fill="#003f7d" d="
+          M45 115
+          L50 105
+          L65 90
+          L70 100
+          L85 105
+          L90 115
+          L75 110
+          L70 120
+          L65 110
+          L45 115
+          Z
+        " />
+      </g>
+      <text x="140" y="70" font-family="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" font-weight="700" font-size="54" fill="url(#textGrad)" filter="url(#glow)" style="letter-spacing:2px" dominant-baseline="middle">
+        OTRIS
+      </text>
+      <text x="140" y="105" font-family="Arial, sans-serif" font-size="14" fill="#66c9ff" opacity="0.8" dominant-baseline="middle" letter-spacing="0.6">
+        Real-Time Surgical Collaboration System
+      </text>
+    </svg>
+  </nav>
+
+  <!-- Konten halaman mulai di bawah navbar -->
+  <main style="padding-top: 80px;">
+    <!-- Konten utama Anda -->
+    <h1 class="text-xl">Selamat datang di OTRIS</h1>
+  </main>
+</body>
+</html>
