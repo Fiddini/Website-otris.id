@@ -1020,4 +1020,637 @@
     </footer>
 
 </body>
+</html><!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTRIS - Solusi Telemedicine Rumah Sakit Daerah</title>
+    <meta property="og:title" content="OTRIS - Solusi Telemedicine Rumah Sakit Daerah">
+    <meta property="og:description" content="Hubungkan dokter spesialis dengan RS daerah secara real-time. Kurangi rujukan, percepat tindakan medis.">
+    <meta property="og:image" content="https://www.otris.id/assets/og-image.jpg">
+    <meta property="og:url" content="https://www.otris.id">
+    <meta name="description" content="OTRIS: Sistem telemedicine terintegrasi untuk rumah sakit daerah. Akses dokter spesialis real-time, kurangi rujukan pasien.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-primary { background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #06b6d4 100%); }
+        .gradient-success { background: linear-gradient(135deg, #059669 0%, #10b981 100%); }
+        .glass-effect { 
+            background: rgba(255, 255, 255, 0.1); 
+            backdrop-filter: blur(20px); 
+            border: 1px solid rgba(255, 255, 255, 0.2); 
+        }
+        .pulse-slow { animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+        .flow-step { position: relative; }
+        .flow-step:not(:last-child)::after {
+            content: ''; 
+            position: absolute; 
+            right: -24px; 
+            top: 50%; 
+            transform: translateY(-50%); 
+            width: 48px; 
+            height: 2px; 
+            background: linear-gradient(90deg, #3b82f6, transparent);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 glass-effect">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-lg">
+                        <i class="fas fa-hospital text-blue-600 text-2xl"></i>
+                    </div>
+                    <span class="text-white font-bold text-2xl">OTRIS</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#masalah" class="text-white/80 hover:text-white font-medium">Masalah</a>
+                    <a href="#solusi" class="text-white/80 hover:text-white font-medium">Solusi</a>
+                    <a href="#cara-kerja" class="text-white/80 hover:text-white font-medium">Cara Kerja</a>
+                    <a href="#kerjasama" class="text-white/80 hover:text-white font-medium">Kerjasama</a>
+                </div>
+                <a href="#kontak" class="bg-white text-blue-600 px-8 py-3 rounded-xl font-bold hover:bg-blue-50 transition-all md:block hidden">
+                    <i class="fas fa-calendar-plus mr-2"></i>
+                    Jadwalkan Demo
+                </a>
+                <button class="md:hidden p-2 text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. HERO SECTION -->
+    <section class="gradient-primary min-h-screen pt-24 flex items-center relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute top-32 left-20 w-72 h-72 bg-white/10 rounded-full blur-3xl pulse-slow"></div>
+            <div class="absolute bottom-32 right-20 w-96 h-96 bg-white/5 rounded-full blur-3xl" style="animation-delay: 1.5s;"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Hero Content -->
+                <div>
+                    <div class="inline-block bg-white/20 backdrop-blur-sm px-6 py-3 rounded-2xl mb-8">
+                        <span class="text-white font-semibold flex items-center space-x-2">
+                            <i class="fas fa-stethoscope"></i>
+                            <span>Telemedicine RS Daerah</span>
+                        </span>
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-black text-white mb-8 leading-tight">
+                        RS Daerah <span class="text-yellow-300 block">Akses Dokter<br>Spesialis</span>
+                        <span class="text-3xl block text-white/80 font-normal mt-4">Real-time • Tanpa Rujukan</span>
+                    </h1>
+                    <p class="text-xl text-white/90 mb-12 leading-relaxed max-w-lg">
+                        OTRIS hubungkan dokter spesialis dengan RS daerah. Pasien ditangani cepat, rujukan berkurang 70%.
+                    </p>
+                    
+                    <!-- Hero CTAs -->
+                    <div class="grid md:grid-cols-2 gap-4 mb-12">
+                        <a href="#kontak" class="group bg-white shadow-2xl text-blue-600 px-8 py-6 rounded-2xl font-bold text-xl hover:shadow-3xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center">
+                            <i class="fas fa-calendar-plus text-2xl mr-3 group-hover:rotate-12 transition-transform"></i>
+                            <span><strong>Jadwalkan Demo Gratis</strong></span>
+                        </a>
+                        <a href="#cara-kerja" class="group border-2 border-white/50 glass-effect text-white px-8 py-6 rounded-2xl font-bold text-xl hover:bg-white/20 backdrop-blur-sm transition-all duration-300 flex items-center justify-center">
+                            <i class="fas fa-play-circle text-2xl mr-3"></i>
+                            <span>Lihat Simulasi Sistem</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Trust Indicators -->
+                    <div class="flex items-center space-x-12 text-white/80">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 bg-green-400 rounded-full animate-ping"></div>
+                            <span>Live Demo Available</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-lock text-green-400"></i>
+                            <span>HIPAA Compliant</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Visual -->
+                <div class="relative">
+                    <div class="glass-effect rounded-3xl p-12 shadow-2xl">
+                        <div class="bg-gradient-to-br from-white/20 to-blue-500/10 rounded-2xl p-8">
+                            <div class="grid grid-cols-2 gap-6 mb-8">
+                                <div class="bg-white/30 rounded-xl p-6 text-center">
+                                    <i class="fas fa-user-md text-3xl text-blue-600 mb-3"></i>
+                                    <div class="text-2xl font-bold text-white">Dokter</div>
+                                    <div class="text-blue-400 font-bold">Spesialis</div>
+                                </div>
+                                <div class="bg-white/30 rounded-xl p-6 text-center">
+                                    <i class="fas fa-hospital text-3xl text-green-600 mb-3"></i>
+                                    <div class="text-2xl font-bold text-white">RS</div>
+                                    <div class="text-green-400 font-bold">Daerah</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-center space-x-4 p-6 bg-white/20 rounded-2xl">
+                                <div class="w-20 h-2 bg-gradient-to-r from-red-400 to-green-500 rounded-full"></div>
+                                <i class="fas fa-bolt text-3xl text-yellow-400 animate-pulse"></i>
+                                <div class="w-20 h-2 bg-gradient-to-r from-green-500 to-red-400 rounded-full"></div>
+                            </div>
+                            <div class="text-center mt-6">
+                                <div class="text-3xl font-black text-white mb-1">70%↓</div>
+                                <div class="text-white/80">Rujukan Berkurang</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. MASALAH SECTION -->
+    <section id="masalah" class="py-32 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-24">
+                <h2 class="text-5xl lg:text-6xl font-black bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-6">
+                    Masalah RS Daerah
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Setiap hari ribuan pasien mengalami penundaan pengobatan karena keterbatasan dokter spesialis.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Problems -->
+                <div class="space-y-12">
+                    <div class="flex items-start space-x-6 p-8 bg-red-50/50 rounded-3xl border border-red-100">
+                        <div class="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center flex-shrink-0 mt-1">
+                            <i class="fas fa-exclamation-triangle text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-gray-800 mb-4">Tidak Ada Dokter Spesialis</h3>
+                            <p class="text-xl text-gray-600 leading-relaxed">
+                                RS daerah kekurangan dokter spesialis. Pasien stroke, jantung, trauma harus dirujuk ke RS besar.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-6 p-8 bg-yellow-50/50 rounded-3xl border border-yellow-100">
+                        <div class="w-16 h-16 bg-yellow-500 rounded-2xl flex items-center justify-center flex-shrink-0 mt-1">
+                            <i class="fas fa-clock text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-gray-800 mb-4">Rujukan Lambat & Mahal</h3>
+                            <p class="text-xl text-gray-600 leading-relaxed">
+                                Proses rujukan memakan waktu 3-7 hari. Biaya transportasi Rp 5-15 juta per pasien.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Problem Impact -->
+                <div>
+                    <div class="bg-gradient-to-br from-red-500/5 to-yellow-500/5 rounded-3xl p-12 border border-red-100/50">
+                        <div class="text-center mb-12">
+                            <div class="text-6xl font-black text-red-600 mb-4">3-7</div>
+                            <div class="text-2xl font-bold text-gray-800 mb-2">Hari Penundaan</div>
+                            <div class="text-4xl font-black text-yellow-600">15 Juta</div>
+                            <div class="text-xl text-gray-600">Biaya Rujukan/Pasien</div>
+                        </div>
+                        
+                        <div class="grid grid-cols-3 gap-6 text-center">
+                            <div>
+                                <div class="text-3xl font-bold text-gray-800 mb-2">60%</div>
+                                <div class="text-gray-600">Pasien Terlambat</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold text-gray-800 mb-2">30%</div>
+                                <div class="text-gray-600">Mortalitas Naik</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold text-gray-800 mb-2">Rp 50M</div>
+                                <div class="text-gray-600">/Bulan Kerugian</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-12">
+                        <a href="#solusi" class="inline-flex items-center space-x-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-12 py-6 rounded-2xl font-bold text-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                            <i class="fas fa-lightbulb text-2xl"></i>
+                            <span>Lihat Solusi OTRIS</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SOLUSI SECTION -->
+    <section id="solusi" class="py-32 gradient-success">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-24">
+                <div class="inline-block bg-white/30 backdrop-blur-sm px-8 py-4 rounded-2xl mb-8">
+                    <span class="text-white font-bold text-2xl flex items-center justify-center space-x-3">
+                        <i class="fas fa-magic"></i>
+                        <span>Revolusi Telemedicine</span>
+                    </span>
+                </div>
+                <h2 class="text-5xl lg:text-6xl font-black text-white mb-6">
+                    OTRIS Hubungkan <span class="text-yellow-300 block">Dokter • Data •<br>RS Secara Real-time</span>
+                </h2>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Solution Features -->
+                <div class="space-y-8">
+                    <div class="glass-effect p-8 rounded-3xl">
+                        <div class="flex items-start space-x-4 mb-4">
+                            <div class="w-12 h-12 bg-white/30 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-video text-2xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Video Konsul Instan</h3>
+                                <p class="text-white/90">Dokter spesialis konsultasi video dalam 15 menit, tanpa perlu rujukan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-effect p-8 rounded-3xl">
+                        <div class="flex items-start space-x-4 mb-4">
+                            <div class="w-12 h-12 bg-white/30 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-file-medical-alt text-2xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Data Pasien Lengkap</h3>
+                                <p class="text-white/90">Hasil lab, foto rontgen, rekam medis terintegrasi real-time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-effect p-8 rounded-3xl">
+                        <div class="flex items-start space-x-4 mb-4">
+                            <div class="w-12 h-12 bg-white/30 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-stethoscope text-2xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Instruksi Tindakan</h3>
+                                <p class="text-white/90">Dokter spesialis berikan instruksi operasi/jadwal langsung ke RS.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Solution Visual -->
+                <div class="relative">
+                    <div class="glass-effect rounded-3xl p-12 shadow-2xl">
+                        <div class="bg-white/40 rounded-2xl p-10">
+                            <div class="grid grid-cols-3 gap-8 text-center mb-12">
+                                <div>
+                                    <div class="w-20 h-20 bg-gradient-to-r from-red-400 to-pink-500 rounded-2xl mx-auto mb-4 flex items-center justify-center">
+                                        <i class="fas fa-user-md text-white text-xl"></i>
+                                    </div>
+                                    <div class="font-bold text-xl text-gray-800">Dokter</div>
+                                </div>
+                                <div>
+                                    <div class="w-20 h-20 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-2xl transform rotate-12">
+                                        <i class="fas fa-cloud text-white text-xl"></i>
+                                    </div>
+                                    <div class="font-bold text-xl text-gray-800">OTRIS</div>
+                                </div>
+                                <div>
+                                    <div class="w-20 h-20 bg-gradient-to-r from-green-400 to-emerald-500 rounded-2xl mx-auto mb-4 flex items-center justify-center">
+                                        <i class="fas fa-hospital text-white text-xl"></i>
+                                    </div>
+                                    <div class="font-bold text-xl text-gray-800">RS Daerah</div>
+                                </div>
+                            </div>
+                            <div class="space-y-4 text-center">
+                                <div class="text-4xl font-black text-gray-800 mb-2">15 Menit</div>
+                                <div class="text-2xl font-bold text-green-600">Konsultasi Selesai</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-24">
+                <a href="#kontak" class="inline-flex items-center space-x-3 bg-white shadow-2xl text-green-700 px-12 py-6 rounded-2xl font-black text-2xl hover:shadow-3xl transform hover:-translate-y-2 transition-all duration-300">
+                    <i class="fas fa-calendar-check text-3xl"></i>
+                    <span><strong>Jadwalkan Demo OTRIS<br>untuk Rumah Sakit Anda</strong></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CARA KERJA SECTION -->
+    <section id="cara-kerja" class="py-32 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-24">
+                <h2 class="text-5xl lg:text-6xl font-black bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-6">
+                    Cara Kerja OTRIS
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Sistem terintegrasi yang bekerja mulus dari perangkat hingga dashboard dokter spesialis.
+                </p>
+            </div>
+            
+            <div class="max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-0 items-center text-center lg:text-left">
+                    <!-- Step 1 -->
+                    <div class="flow-step lg:col-span-1">
+                        <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-8 rounded-3xl shadow-2xl mx-auto w-full max-w-sm transform hover:scale-105 transition-all duration-300">
+                            <div class="w-16 h-16 bg-white/20 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                                <i class="fas fa-mobile-alt text-2xl"></i>
+                            </div>
+                            <div class="font-bold text-xl mb-3">1. Perangkat RS</div>
+                            <p class="text-white/90 text-sm">Scan QR pasien, ambil foto rontgen, hasil lab</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="flow-step lg:col-span-1">
+                        <div class="bg-gradient-to-r from-green-500 to-emerald-600 text-white p-8 rounded-3xl shadow-2xl mx-auto w-full max-w-sm transform hover:scale-105 transition-all duration-300">
+                            <div class="w-16 h-16 bg-white/20 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                                <i class="fas fa-wifi text-2xl"></i>
+                            </div>
+                            <div class="font-bold text-xl mb-3">2. Gateway</div>
+                            <p class="text-white/90 text-sm">Data terkirim otomatis via internet 4G/5G</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="flow-step lg:col-span-1">
+                        <div class="bg-gradient-to-r from-purple-500 to-violet-600 text-white p-8 rounded-3xl shadow-2xl mx-auto w-full max-w-sm transform hover:scale-105 transition-all duration-300">
+                            <div class="w-16 h-16 bg-white/20 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                                <i class="fas fa-server text-2xl"></i>
+                            </div>
+                            <div class="font-bold text-xl mb-3">3. Core System</div>
+                            <p class="text-white/90 text-sm">AI triage + notifikasi dokter spesialis terdekat</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="flow-step lg:col-span-1">
+                        <div class="bg-gradient-to-r from-orange-500 to-amber-600 text-white p-8 rounded-3xl shadow-2xl mx-auto w-full max-w-sm transform hover:scale-105 transition-all duration-300">
+                            <div class="w-16 h-16 bg-white/20 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                                <i class="fas fa-desktop text-2xl"></i>
+                            </div>
+                            <div class="font-bold text-xl mb-3">4. Dashboard</div>
+                            <p class="text-white/90 text-sm">Dokter review kasus dalam 15 menit</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 5 -->
+                    <div class="lg:col-span-1">
+                        <div class="bg-gradient-to-r from-emerald-500 to-teal-600 text-white p-8 rounded-3xl shadow-2xl mx-auto w-full max-w-sm transform hover:scale-105 transition-all duration-300">
+                            <div class="w-16 h-16 bg-white/20 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                                <i class="fas fa-video text-2xl"></i>
+                            </div>
+                            <div class="font-bold text-xl mb-3">5. Konsul Live</div>
+                            <p class="text-white/90 text-sm">Video call + instruksi tindakan langsung</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-24">
+                <a href="#kontak" class="inline-flex items-center space-x-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-12 py-6 rounded-2xl font-black text-2xl hover:shadow-3xl transform hover:-translate-y-2 transition-all duration-300">
+                    <i class="fas fa-play-circle text-3xl"></i>
+                    <span><strong>Lihat Demo Sistem Lengkap</strong></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. DAMPAK SECTION -->
+    <section class="py-32 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-24">
+                <h2 class="text-5xl lg:text-6xl font-black bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-6">
+                    Dampak Nyata OTRIS
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Impact 1 -->
+                <div class="group">
+                    <div class="bg-gradient-to-br from-green-500 to-emerald-600 text-white p-12 rounded-3xl shadow-2xl hover:shadow-3xl transform group-hover:-translate-y-4 transition-all duration-500">
+                        <div class="w-24 h-24 bg-white/20 rounded-3xl mx-auto mb-8 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i class="fas fa-arrow-down text-3xl"></i>
+                        </div>
+                        <div class="text-5xl font-black mb-4">70%</div>
+                        <div class="text-2xl font-bold mb-4">↓ Rujukan</div>
+                        <p class="text-white/90 text-lg">Pasien ditangani lokal, hemat biaya transportasi</p>
+                    </div>
+                </div>
+                
+                <!-- Impact 2 -->
+                <div class="group">
+                    <div class="bg-gradient-to-br from-blue-500 to-cyan-600 text-white p-12 rounded-3xl shadow-2xl hover:shadow-3xl transform group-hover:-translate-y-4 transition-all duration-500">
+                        <div class="w-24 h-24 bg-white/20 rounded-3xl mx-auto mb-8 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i class="fas fa-bolt text-3xl"></i>
+                        </div>
+                        <div class="text-5xl font-black mb-4">15 Min</div>
+                        <div class="text-2xl font-bold mb-4">Konsultasi</div>
+                        <p class="text-white/90 text-lg">Dari kasus masuk ke tindakan medis</p>
+                    </div>
+                </div>
+                
+                <!-- Impact 3 -->
+                <div class="group">
+                    <div class="bg-gradient-to-br from-purple-500 to-violet-600 text-white p-12 rounded-3xl shadow-2xl hover:shadow-3xl transform group-hover:-translate-y-4 transition-all duration-500">
+                        <div class="w-24 h-24 bg-white/20 rounded-3xl mx-auto mb-8 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i class="fas fa-heart text-3xl"></i>
+                        </div>
+                        <div class="text-5xl font-black mb-4">30%</div>
+                        <div class="text-2xl font-bold mb-4">↓ Mortalitas</div>
+                        <p class="text-white/90 text-lg">Golden hour terjaga, outcome pasien membaik</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-24">
+                <a href="#kontak" class="inline-flex items-center space-x-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-12 py-6 rounded-2xl font-black text-2xl hover:shadow-3xl transform hover:-translate-y-2 transition-all duration-300">
+                    <i class="fas fa-handshake text-3xl"></i>
+                    <span><strong>Konsultasi Implementasi</strong></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. KERJASAMA SECTION -->
+    <section id="kerjasama" class="py-32 gradient-primary">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-24">
+                <h2 class="text-5xl lg:text-6xl font-black text-white mb-6">
+                    Kerjasama Fleksibel <span class="text-yellow-300 block">Tanpa Beban Capex</span>
+                </h2>
+                <p class="text-xl text-white/90 max-w-2xl mx-auto mb-12">
+                    Pilih skema yang sesuai budget RS Anda. Mulai dari Rp 15 juta/bulan.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- KSO -->
+                <div class="glass-effect p-8 rounded-3xl text-center">
+                    <div class="w-20 h-20 bg-white/30 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                        <i class="fas fa-handshake text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">KSO</h3>
+                    <div class="space-y-3 mb-8">
+                        <div class="text-lg text-white/90">• Revenue sharing 70:30</div>
+                        <div class="text-lg text-white/90">• Tanpa biaya awal</div>
+                        <div class="text-lg text-white/90">• OTRIS urus dokter</div>
+                    </div>
+                    <div class="text-3xl font-black text-yellow-300 mb-2">Rp 0</div>
+                    <div class="text-white/80">Upfront Cost</div>
+                </div>
+                
+                <!-- Sewa -->
+                <div class="glass-effect p-8 rounded-3xl text-center border-2 border-white/30">
+                    <div class="w-20 h-20 bg-white/30 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                        <i class="fas fa-coins text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Sewa Sistem</h3>
+                    <div class="space-y-3 mb-8">
+                        <div class="text-lg text-white/90">• Rp 15 juta/bulan</div>
+                        <div class="text-lg text-white/90">• Hardware lengkap</div>
+                        <div class="text-lg text-white/90">• Training dokter RS</div>
+                    </div>
+                    <div class="text-3xl font-black text-yellow-300 mb-2">Rp 15M</div>
+                    <div class="text-white/80">/Bulan</div>
+                </div>
+                
+                <!-- Revenue Share -->
+                <div class="glass-effect p-8 rounded-3xl text-center">
+                    <div class="w-20 h-20 bg-white/30 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                        <i class="fas fa-chart-line text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Revenue Share</h3>
+                    <div class="space-y-3 mb-8">
+                        <div class="text-lg text-white/90">• 20% dari konsultasi</div>
+                        <div class="text-lg text-white/90">• Minimum Rp 10 juta</div>
+                        <div class="text-lg text-white/90">• Skala sesuai volume</div>
+                    </div>
+                    <div class="text-3xl font-black text-yellow-300 mb-2">20%</div>
+                    <div class="text-white/80">Revenue Share</div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-20">
+                <a href="#kontak" class="inline-flex items-center space-x-3 bg-white shadow-3xl text-blue-700 px-16 py-8 rounded-3xl font-black text-2xl hover:shadow-4xl transform hover:-translate-y-3 transition-all duration-500 mx-auto">
+                    <i class="fas fa-file-contract text-3xl"></i>
+                    <span><strong>Minta Proposal Kerjasama</strong></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. KONTAK / FORM SECTION -->
+    <section id="kontak" class="py-32 bg-gradient-to-b from-gray-900 to-gray-800">
+        <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-effect rounded-3xl p-12 lg:p-16 shadow-2xl">
+                <div class="text-center mb-12">
+                    <i class="fas fa-calendar-plus text-6xl text-white/80 mb-8"></i>
+                    <h2 class="text-4xl lg:text-5xl font-black text-white mb-4">
+                        Jadwalkan Demo <span class="text-blue-400">OTRIS</span>
+                    </h2>
+                    <p class="text-xl text-white/90 mb-8">
+                        Tim kami akan demo sistem lengkap dalam 24 jam. Gratis & tanpa komitmen.
+                    </p>
+                </div>
+                
+                <form class="space-y-6" action="https://formsubmit.co/hello@otris.id" method="POST">
+                    <!-- Hidden fields for formsubmit -->
+                    <input type="hidden" name="_subject" value="Permintaan Demo OTRIS - RS Daerah">
+                    <input type="hidden" name="_next" value="https://www.otris.id/thank-you.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-white font-semibold mb-3">Nama Lengkap *</label>
+                            <input type="text" name="nama" required 
+                                   class="w-full px-6 py-4 bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-lg" 
+                                   placeholder="Dr. Budi Santoso">
+                        </div>
+                        <div>
+                            <label class="block text-white font-semibold mb-3">Nama Instansi / RS *</label>
+                            <input type="text" name="instansi" required 
+                                   class="w-full px-6 py-4 bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-lg" 
+                                   placeholder="RSUD Dr. Soedono">
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-white font-semibold mb-3">Email *</label>
+                            <input type="email" name="email" required 
+                                   class="w-full px-6 py-4 bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-lg" 
+                                   placeholder="budi@rsudsoedono.co.id">
+                        </div>
+                        <div>
+                            <label class="block text-white font-semibold mb-3">WhatsApp *</label>
+                            <input type="tel" name="whatsapp" required 
+                                   class="w-full px-6 py-4 bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-lg" 
+                                   placeholder="0812-3456-7890">
+                        </div>
+                    </div>
+                    
+                    <div class="pt-4">
+                        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-black text-2xl px-12 py-8 rounded-3xl shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center space-x-4">
+                            <i class="fas fa-paper-plane text-3xl"></i>
+                            <span><strong>Kirim Permintaan Demo</strong></span>
+                        </button>
+                    </div>
+                    
+                    <div class="text-center pt-8 border-t border-white/20">
+                        <p class="text-white/70 text-lg">Atau langsung chat WhatsApp:</p>
+                        <a href="https://wa.me/6281234567890?text=Saya%20mau%20demo%20OTRIS%20untuk%20RS%20kami" 
+                           class="inline-flex items-center space-x-3 bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-4 rounded-2xl mt-4 transition-all duration-300">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                            <span>Chat WhatsApp</span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="text-center mt-16 text-white/70">
+                <p>✅ Demo dalam 24 jam • Gratis • Tanpa komitmen • Data aman HIPAA compliant</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/50 backdrop-blur-sm text-white border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 py-12 text-center">
+            <div class="flex items-center justify-center space-x-3 mb-6">
+                <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                    <i class="fas fa-hospital text-white"></i>
+                </div>
+                <span class="text-xl font-bold">OTRIS</span>
+            </div>
+            <p class="text-gray-400 mb-8 max-w-md mx-auto">
+                Solusi telemedicine terintegrasi untuk rumah sakit daerah Indonesia. 
+                Mengurangi rujukan, mempercepat tindakan medis.
+            </p>
+            <div class="flex flex-wrap justify-center items-center space-x-6 text-gray-400 text-sm">
+                <a href="#" class="hover:text-white transition-colors">Kebijakan Privasi</a>
+                <a href="#" class="hover:text-white transition-colors">Syarat Layanan</a>
+                <span>© 2024 OTRIS. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>
