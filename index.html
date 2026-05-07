@@ -1795,3 +1795,160 @@
   </main>
 </body>
 </html>
+# **🚀 UPLOAD METODE #1: FILEZILLA - STEP BY STEP DETAIL**
+
+## **STEP 1: DOWNLOAD FILEZILLA (30 detik)**
+
+```
+1. Buka: https://filezilla-project.org/
+2. Klik "Download FileZilla Client"
+3. Pilih Windows/Mac/Linux → Download
+4. Install → Next → Next → Finish
+5. Buka FileZilla
+```
+
+**Screenshot guide:**
+```
+[FileZilla terbuka kosong]
+```
+
+## **STEP 2: KONEKSI SERVER (1 menit)**
+
+**Cari data login hosting Anda:**
+
+```
+Hosting Indonesia (Niagahoster, Rumahweb, IDCloudhost):
+domain.com/cpanel → "Account Information" → FTP Accounts
+
+Data yang dicari:
+✅ Host: ftp.domain.com atau IP server
+✅ Username: cpanelusername_ftp  
+✅ Password: cpanel password
+✅ Port: 21
+```
+
+**Input di FileZilla:**
+```
+Host: ftp.domain.com
+Username: cpanelusername_ftp
+Password: **********
+Port: 21
+Klik: [Quickconnect]
+```
+
+**Status sukses:**
+```
+Status: Directory listing of "/public_html"
+```
+
+## **STEP 3: SIAPKAN FILES (30 detik)**
+
+**Pastikan 2 file ini ada di Desktop/folder Anda:**
+```
+✅ fitur.html  (ukuran ~25KB)
+✅ fitur.js    (ukuran ~10KB)
+```
+
+## **STEP 4: UPLOAD (1 menit)**
+
+```
+KIRI (Local Site): 
+→ Desktop → fitur.html + fitur.js
+
+KANAN (Remote Site):
+→ public_html/ → Double click masuk folder
+
+DRAG & DROP:
+fitur.html  →  tarik ke public_html/
+fitur.js    →  tarik ke public_html/
+
+✅ Transfer: 100% Complete
+```
+
+## **STEP 5: TEST LIVE (30 detik)**
+
+```
+1. Buka Chrome
+2. Ketik: https://domain.com/fitur.html
+3. Halaman OTRIS muncul → ✅ SUKSES!
+
+4. TEST FITUR:
+   [Klik "Minta Demo Gratis"] → Modal muncul
+   [Klik WhatsApp] → Buka WA Web
+   [F12 Console] → No errors merah
+```
+
+---
+
+## **📸 VISUAL GUIDE (Copy-paste ini ke notes):**
+
+```
+FILEZILLA LAYOUT:
+
+[ KIRI LOCAL ]        [ KANAN REMOTE ]
+Desktop/              /public_html/
+├── fitur.html  ←DRAG→  fitur.html  ✅
+└── fitur.js    ←DRAG→  fitur.js    ✅
+
+Quickconnect: ftp.domain.com
+Username: cpaneluser_ftp
+Password: **********
+Port: 21
+```
+
+---
+
+## **❓ MASALH? SOLUSI CEPAT:**
+
+| ERROR | SOLUSI |
+|-------|--------|
+| **"Connection timed out"** | Cek Host/IP server di cPanel |
+| **"Permission denied"** | Upload ke `public_html/` bukan root |
+| **"File not found"** | Pastikan `fitur.html` di `public_html/` |
+| **"Modal tidak muncul"** | Upload `fitur.js` juga |
+| **"Icon hilang"** | Refresh 2x (CDN loading) |
+
+---
+
+## **✅ SUKSES CHECKLIST:**
+
+```
+[ ] FileZilla terinstall
+[ ] Koneksi Quickconnect → "Directory listing successful"
+[ ] 2 files di Desktop: fitur.html + fitur.js
+[ ] Drag-drop ke public_html/
+[ ] https://domain.com/fitur.html → Buka
+[ ] Test 3 tombol CTA → Berfungsi
+[ ] WA link → Klik OK
+```
+
+---
+
+## **🎁 BONUS: AUTO-REDIRECT HOME PAGE**
+
+**Jika ingin `domain.com` → otomatis ke `fitur.html`:**
+
+**Edit `index.html` atau `home.html`:**
+```html
+<script>
+setTimeout(() => {
+  window.location.href = '/fitur.html';
+}, 1000);
+</script>
+```
+
+---
+
+## **🔥 MULAI SEKARANG:**
+
+```
+1. Download FileZilla → Buka
+2. Input: Host/Username/Password → Quickconnect
+3. Drag fitur.html + fitur.js → public_html/
+4. Buka domain.com/fitur.html
+5. REPLY: "LIVE: https://domain.com/fitur.html"
+```
+
+**STUCK DI STEP MANA? Foto screenshot kirim ke chat ini!** 📸
+
+**Anda 4 menit lagi dari website LIVE!** ⏳🚀
