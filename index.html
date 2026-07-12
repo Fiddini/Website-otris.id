@@ -1,13 +1,54 @@
 <!doctype html>
 <html lang="id" class="h-full">
- <head>
+  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OTRIS</title>
+  
+  <!-- Basic SEO -->
+  <title>OTRIS | Penggagas Kedaulatan Medis</title>
+  <meta name="description" content="OTRIS membangun ekosistem teknologi kesehatan terintegrasi untuk menghubungkan keahlian medis, data klinis, perangkat medis, dan ruang operasi secara real-time.">
+  
+  <!-- Open Graph & Twitter Cards -->
+  <meta property="og:title" content="OTRIS | Penggagas Kedaulatan Medis">
+  <meta property="og:description" content="OTRIS membangun ekosistem teknologi kesehatan terintegrasi untuk menghubungkan keahlian medis, data klinis, perangkat medis, dan ruang operasi secara real-time.">
+  <meta property="og:image" content="https://otris.id/public/assets/otris-social-preview.jpg">
+  <meta property="og:url" content="https://otris.id/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OTRIS | Penggagas Kedaulatan Medis">
+  <meta name="twitter:description" content="OTRIS membangun ekosistem teknologi kesehatan terintegrasi untuk menghubungkan keahlian medis, data klinis, perangkat medis, dan ruang operasi secara real-time.">
+  <meta name="twitter:image" content="https://otris.id/public/assets/otris-social-preview.jpg">
+  
+  <!-- Favicon & Webmanifest -->
+  <link rel="icon" href="/public/favicon.ico" sizes="any">
+  <link rel="icon" href="/public/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/public/apple-touch-icon.png">
+  <link rel="manifest" href="/public/site.webmanifest">
+  
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "OTRIS / PT Annora Multi Intech",
+    "url": "https://otris.id",
+    "logo": "https://otris.id/public/assets/otris-logo.png",
+    "slogan": "Teknologi Ada untuk Memanusiakan Manusia",
+    "founder": {
+      "@type": "Person",
+      "name": "Hanif Ahdi Fiddini",
+      "jobTitle": "Founder & Chief System Architect"
+    },
+    "areaServed": "Indonesia dan Southeast Asia"
+  }
+  </script>
+
+  <!-- Core Scripts & Styles -->
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
   <script src="/_sdk/element_sdk.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=DM+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/public/css/style.css">
   <script>
     tailwind.config = {
       theme: {
@@ -20,30 +61,12 @@
       }
     }
   </script>
-  <style>
-    html, body { height: 100%; margin: 0; }
-    .otris-wrapper { height: 100%; overflow-y: auto; overflow-x: hidden; }
-    @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-    @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 20px rgba(0, 200, 150, 0.3); } 50% { box-shadow: 0 0 40px rgba(0, 200, 150, 0.6); } }
-    .fade-up { animation: fadeUp 0.8s ease forwards; opacity: 0; }
-    .fade-up-d1 { animation-delay: 0.1s; }
-    .fade-up-d2 { animation-delay: 0.2s; }
-    .fade-up-d3 { animation-delay: 0.3s; }
-    .fade-up-d4 { animation-delay: 0.4s; }
-    .glow-btn { animation: pulse-glow 2s infinite; }
-    .grid-bg { background-image: radial-gradient(circle at 1px 1px, rgba(0,200,150,0.08) 1px, transparent 0); background-size: 40px 40px; }
-    .section-reveal { opacity: 0; transform: translateY(40px); transition: all 0.7s ease; }
-    .section-reveal.visible { opacity: 1; transform: translateY(0); }
-    .step-line { position: relative; }
-    .step-line::before { content: ''; position: absolute; left: 20px; top: 44px; bottom: -20px; width: 2px; background: linear-gradient(to bottom, #00c896, transparent); }
-    .step-line:last-child::before { display: none; }
-  </style>
-  <style>body { box-sizing: border-box; }</style>
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
  </head>
  <body class="h-full bg-[#0a0f1a] text-white font-body">
   <div class="otris-wrapper w-full">
-   <!-- NAV -->
+   <!-- NAVBAR -->
+
    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0a0f1a]/90 backdrop-blur-md border-b border-white/5">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
      <div class="font-heading font-bold text-2xl tracking-tight text-[#00c896]">
@@ -51,9 +74,12 @@
      </div>
      <div class="hidden md:flex items-center gap-8 text-sm text-gray-400">
       <a href="#masalah" class="hover:text-white transition">Masalah</a> <a href="#solusi" class="hover:text-white transition">Solusi</a> <a href="#cara-kerja" class="hover:text-white transition">Cara Kerja</a> <a href="#dampak" class="hover:text-white transition">Dampak</a> <a href="#kerjasama" class="hover:text-white transition">Kerjasama</a>
-     </div><a id="nav-cta" href="#" target="_blank" rel="noopener noreferrer" class="bg-[#00c896] text-[#0a0f1a] font-semibold px-5 py-2 rounded-lg text-sm hover:bg-[#00e6a8] transition inline-block">Minta Demo</a>
+     </div><a id="nav-cta" href="https://wa.me/6282185559557?text=Halo%20saya%20tertarik%20dengan%20demo%20OTRIS" target="_blank" rel="noopener noreferrer" class="bg-[#00c896] text-[#0a0f1a] font-semibold px-5 py-2 rounded-lg text-sm hover:bg-[#00e6a8] transition inline-block">Minta Demo</a>
     </div>
-   </nav><!-- HERO -->
+   </nav>
+
+   <!-- HERO SECTION -->
+
    <section class="relative min-h-[90%] flex items-center justify-center grid-bg pt-24 pb-16 px-6">
     <div class="absolute inset-0 bg-gradient-to-b from-[#0a0f1a] via-transparent to-[#0a0f1a] pointer-events-none"></div>
     <div class="relative max-w-4xl mx-auto text-center">
@@ -67,7 +93,7 @@
      <div class="fade-up fade-up-d3 flex flex-col items-center gap-6">
       <p class="text-sm text-[#00c896] font-medium">✓ Demo akan dijadwalkan oleh tim kami (respons dalam 1x24 jam)</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-       <a id="cta-primary-btn" href="#" target="_blank" rel="noopener noreferrer" class="glow-btn bg-[#00c896] text-[#0a0f1a] font-bold px-8 py-4 rounded-xl text-lg hover:bg-[#00e6a8] transition inline-block text-center">Minta Demo Gratis</a> <button id="cta-secondary-btn" class="border border-white/20 text-white font-medium px-8 py-4 rounded-xl text-lg hover:bg-white/5 transition">Lihat Simulasi Sistem</button>
+       <a id="cta-primary-btn" href="https://wa.me/6282185559557?text=Halo%20saya%20tertarik%20dengan%20demo%20OTRIS" target="_blank" rel="noopener noreferrer" class="glow-btn bg-[#00c896] text-[#0a0f1a] font-bold px-8 py-4 rounded-xl text-lg hover:bg-[#00e6a8] transition inline-block text-center">Minta Demo Gratis</a> <button id="cta-secondary-btn" class="border border-white/20 text-white font-medium px-8 py-4 rounded-xl text-lg hover:bg-white/5 transition">Lihat Simulasi Sistem</button>
       </div>
      </div>
     </div>
@@ -92,7 +118,10 @@
       <div id="form-status" class="hidden p-4 rounded-lg text-sm text-center"></div><button type="submit" id="submit-btn" class="w-full bg-[#00c896] text-[#0a0f1a] font-bold py-3 rounded-lg hover:bg-[#00e6a8] transition">Kirim Permintaan</button>
      </form>
     </div>
-   </div><!-- MASALAH -->
+   </div>
+
+   <!-- PROBLEM SECTION -->
+
    <section id="masalah" class="section-reveal py-24 px-6">
     <div class="max-w-5xl mx-auto">
      <div class="text-[#00c896] text-sm font-medium tracking-widest uppercase mb-4">
@@ -115,7 +144,10 @@
       </div>
      </div>
     </div>
-   </section><!-- SOLUSI -->
+   </section>
+
+   <!-- SOLUTION SECTION -->
+
    <section id="solusi" class="section-reveal py-24 px-6 bg-[#0d1320]">
     <div class="max-w-5xl mx-auto">
      <div class="text-[#00c896] text-sm font-medium tracking-widest uppercase mb-4">
@@ -130,7 +162,10 @@
       </div>
      </div>
     </div>
-   </section><!-- POSITIONING -->
+   </section>
+
+   <!-- POSITIONING SECTION -->
+
    <section class="section-reveal py-24 px-6">
     <div class="max-w-5xl mx-auto text-center">
      <div class="flex flex-wrap justify-center gap-4 mb-12">
@@ -156,7 +191,10 @@
      </div>
      <p class="mt-10 text-gray-500 text-lg">OTRIS bukan produk. <span class="text-white font-medium">OTRIS adalah infrastruktur layanan medis modern.</span></p>
     </div>
-   </section><!-- CARA KERJA -->
+   </section>
+
+   <!-- HOW IT WORKS SECTION -->
+
    <section id="cara-kerja" class="section-reveal py-24 px-6 bg-[#0d1320]">
     <div class="max-w-4xl mx-auto">
      <div class="text-[#00c896] text-sm font-medium tracking-widest uppercase mb-4">
@@ -220,7 +258,10 @@
       </div>
      </div>
     </div>
-   </section><!-- SISTEM -->
+   </section>
+
+   <!-- SYSTEM SECTION -->
+
    <section class="section-reveal py-24 px-6">
     <div class="max-w-5xl mx-auto">
      <div class="text-[#00c896] text-sm font-medium tracking-widest uppercase mb-4">
@@ -257,7 +298,10 @@
       </div>
      </div>
     </div>
-   </section><!-- IMPLEMENTASI -->
+   </section>
+
+   <!-- IMPLEMENTATION SECTION -->
+
    <section class="section-reveal py-24 px-6 bg-[#0d1320]">
     <div class="max-w-5xl mx-auto">
      <div class="text-[#00c896] text-sm font-medium tracking-widest uppercase mb-4">
@@ -281,7 +325,10 @@
       </div>
      </div>
     </div>
-   </section><!-- DAMPAK -->
+   </section>
+
+   <!-- IMPACT SECTION -->
+
    <section id="dampak" class="section-reveal py-24 px-6">
     <div class="max-w-5xl mx-auto">
      <div class="text-[#00c896] text-sm font-medium tracking-widest uppercase mb-4">
@@ -290,7 +337,7 @@
      <h2 class="font-heading text-3xl md:text-5xl font-bold mb-12">Dampak Implementasi</h2>
      <div class="grid md:grid-cols-3 gap-6">
       <div class="bg-[#111827] rounded-2xl p-6 border border-white/5">
-       <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center mb-4"><i data-lucide="building-2" class="w-5 h-5 text-blue-400"></i>
+       <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center mb-4"><i data-lucide="building" class="w-5 h-5 text-blue-400"></i>
        </div>
        <h3 class="font-heading font-semibold mb-4">Bagi Rumah Sakit</h3>
        <ul class="space-y-2 text-gray-400 text-sm">
@@ -301,7 +348,7 @@
        </ul>
       </div>
       <div class="bg-[#111827] rounded-2xl p-6 border border-white/5">
-       <div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center mb-4"><i data-lucide="heart-pulse" class="w-5 h-5 text-green-400"></i>
+       <div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center mb-4"><i data-lucide="heart" class="w-5 h-5 text-green-400"></i>
        </div>
        <h3 class="font-heading font-semibold mb-4">Bagi Pasien</h3>
        <ul class="space-y-2 text-gray-400 text-sm">
@@ -311,7 +358,7 @@
        </ul>
       </div>
       <div class="bg-[#111827] rounded-2xl p-6 border border-white/5">
-       <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center mb-4"><i data-lucide="network" class="w-5 h-5 text-purple-400"></i>
+       <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center mb-4"><i data-lucide="share-2" class="w-5 h-5 text-purple-400"></i>
        </div>
        <h3 class="font-heading font-semibold mb-4">Bagi Sistem</h3>
        <ul class="space-y-2 text-gray-400 text-sm">
@@ -321,7 +368,10 @@
       </div>
      </div>
     </div>
-   </section><!-- KERJASAMA -->
+   </section>
+
+   <!-- PARTNERSHIP SECTION -->
+
    <section id="kerjasama" class="section-reveal py-24 px-6 bg-[#0d1320]">
     <div class="max-w-5xl mx-auto">
      <div class="text-[#00c896] text-sm font-medium tracking-widest uppercase mb-4">
@@ -351,7 +401,10 @@
      </div>
      <p class="text-gray-500 mt-6">Fleksibel sesuai kebutuhan rumah sakit.</p>
     </div>
-   </section><!-- CLOSING -->
+   </section>
+
+   <!-- CLOSING SECTION -->
+
    <section class="section-reveal py-32 px-6 text-center relative">
     <div class="absolute inset-0 bg-gradient-to-t from-[#00c896]/5 to-transparent pointer-events-none"></div>
     <div class="relative max-w-3xl mx-auto">
@@ -359,1753 +412,17 @@
      <p class="text-xl text-gray-300 mb-4">OTRIS adalah perubahan cara rumah sakit menangani pasien.</p>
      <p class="text-lg text-gray-500 mb-4">Dari sistem rujukan, menjadi sistem kolaborasi real-time.</p>
      <p class="text-2xl font-heading font-bold text-[#00c896] mb-12">OTRIS tidak memindahkan pasien.<br>
-       OTRIS memindahkan keahlian.</p><button class="glow-btn bg-[#00c896] text-[#0a0f1a] font-bold px-10 py-5 rounded-xl text-xl hover:bg-[#00e6a8] transition">Minta Demo Sekarang</button>
+       OTRIS memindahkan keahlian.</p><a href="https://wa.me/6282185559557?text=Halo%20saya%20tertarik%20dengan%20demo%20OTRIS" target="_blank" rel="noopener noreferrer" class="glow-btn bg-[#00c896] text-[#0a0f1a] font-bold px-10 py-5 rounded-xl text-xl hover:bg-[#00e6a8] transition">Minta Demo Sekarang</a>
     </div>
-   </section><!-- FOOTER -->
+   </section>
+
+   <!-- FOOTER -->
+
    <footer class="py-8 px-6 border-t border-white/5 text-center">
     <p class="text-gray-600 text-sm">© 2024 OTRIS. Operating Room Integration System.</p>
    </footer>
   </div>
-  <script>
-    // Modal functionality
-    const demoModal = document.getElementById('demo-modal');
-    const closeModalBtn = document.getElementById('close-modal');
-    const demoForm = document.getElementById('demo-form');
-    const submitBtn = document.getElementById('submit-btn');
-    const formStatus = document.getElementById('form-status');
-
-    // Open modal on CTA button clicks
-    document.getElementById('cta-primary-btn').addEventListener('click', () => {
-      demoModal.classList.remove('hidden');
-    });
-    document.getElementById('nav-cta').addEventListener('click', () => {
-      demoModal.classList.remove('hidden');
-    });
-
-    // Close modal
-    closeModalBtn.addEventListener('click', () => {
-      demoModal.classList.add('hidden');
-    });
-
-    demoModal.addEventListener('click', (e) => {
-      if (e.target === demoModal) demoModal.classList.add('hidden');
-    });
-
-    // Handle form submission
-    demoForm.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Mengirim...';
-      formStatus.classList.remove('hidden');
-      formStatus.className = 'p-4 rounded-lg text-sm text-center bg-blue-500/10 text-blue-300';
-      formStatus.textContent = 'Mengirim data...';
-
-      const formData = {
-        hospital_name: document.getElementById('hospital_name').value,
-        contact_name: document.getElementById('contact_name').value,
-        contact_email: document.getElementById('contact_email').value,
-        contact_phone: document.getElementById('contact_phone').value,
-        department: document.getElementById('department').value,
-        submitted_at: new Date().toISOString()
-      };
-
-      const result = await window.dataSdk.create(formData);
-
-      if (result.isOk) {
-        formStatus.className = 'p-4 rounded-lg text-sm text-center bg-green-500/10 text-green-300';
-        formStatus.textContent = '✓ Permintaan berhasil dikirim! Tim kami akan segera menghubungi Anda.';
-        demoForm.reset();
-        submitBtn.textContent = 'Minta Demo';
-        setTimeout(() => {
-          demoModal.classList.add('hidden');
-          formStatus.classList.add('hidden');
-        }, 3000);
-      } else {
-        formStatus.className = 'p-4 rounded-lg text-sm text-center bg-red-500/10 text-red-300';
-        formStatus.textContent = 'Terjadi kesalahan. Silakan coba lagi.';
-        submitBtn.textContent = 'Kirim Permintaan';
-      }
-
-      submitBtn.disabled = false;
-    });
-
-    // Scroll reveal
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.section-reveal').forEach(el => observer.observe(el));
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        e.preventDefault();
-        document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-
-    lucide.createIcons();
-
-    // Element SDK
-    const defaultConfig = {
-      hero_title: 'Menghubungkan Dokter Spesialis Secara Real-Time Tanpa Harus Merujuk Pasien',
-      hero_subtitle: 'Mengubah cara rumah sakit menangani kasus kritis. Yang berpindah bukan pasien, tapi keahlian.',
-      cta_primary: 'Minta Demo',
-      cta_secondary: 'Lihat Simulasi Sistem',
-      background_color: '#0a0f1a',
-      accent_color: '#00c896',
-      text_color: '#ffffff',
-      surface_color: '#111827',
-      font_family: 'Space Grotesk',
-      font_size: 16
-    };
-
-    window.elementSdk.init({
-      defaultConfig,
-      onConfigChange: async (config) => {
-        const c = { ...defaultConfig, ...config };
-        document.getElementById('hero-title').innerHTML = c.hero_title.replace('Secara Real-Time', '<span class="text-[#00c896]">Secara Real-Time</span>');
-        document.getElementById('hero-subtitle').textContent = c.hero_subtitle;
-        document.getElementById('cta-primary-btn').textContent = c.cta_primary;
-        document.getElementById('cta-secondary-btn').textContent = c.cta_secondary;
-        document.getElementById('nav-cta').textContent = c.cta_primary;
-
-        document.body.style.backgroundColor = c.background_color;
-        document.querySelectorAll('.font-heading').forEach(el => { el.style.fontFamily = `${c.font_family}, sans-serif`; });
-
-        const baseSize = c.font_size;
-        document.body.style.fontSize = `${baseSize}px`;
-      },
-      mapToCapabilities: (config) => {
-        const c = { ...defaultConfig, ...config };
-        return {
-          recolorables: [
-            { get: () => c.background_color, set: (v) => { config.background_color = v; window.elementSdk.setConfig({ background_color: v }); } },
-            { get: () => c.surface_color, set: (v) => { config.surface_color = v; window.elementSdk.setConfig({ surface_color: v }); } },
-            { get: () => c.text_color, set: (v) => { config.text_color = v; window.elementSdk.setConfig({ text_color: v }); } },
-            { get: () => c.accent_color, set: (v) => { config.accent_color = v; window.elementSdk.setConfig({ accent_color: v }); } }
-          ],
-          borderables: [],
-          fontEditable: { get: () => c.font_family, set: (v) => { config.font_family = v; window.elementSdk.setConfig({ font_family: v }); } },
-          fontSizeable: { get: () => c.font_size, set: (v) => { config.font_size = v; window.elementSdk.setConfig({ font_size: v }); } }
-        };
-      },
-      mapToEditPanelValues: (config) => {
-        const c = { ...defaultConfig, ...config };
-        return new Map([
-          ['hero_title', c.hero_title],
-          ['hero_subtitle', c.hero_subtitle],
-          ['cta_primary', c.cta_primary],
-          ['cta_secondary', c.cta_secondary]
-        ]);
-      }
-    });
-  </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f6f80299357fd0a',t:'MTc3Nzk4MTU0NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
-</html><!doctype html>
-<html lang="id" class="h-full">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>OTRIS - Operating Room Integration System</title>
- 
- <!-- SEO Meta -->
- <meta name="description" content="OTRIS - Operating Room Integration System. Hubungkan dokter spesialis secara real-time tanpa rujuk pasien. Tingkatkan efisiensi rumah sakit Anda.">
- <meta name="keywords" content="OTRIS, ruang operasi, dokter spesialis, telemedicine, rumah sakit, SATUSEHAT">
- <meta name="author" content="OTRIS">
- <meta name="theme-color" content="#0a0f1a">
- 
- <!-- Open Graph -->
- <meta property="og:title" content="OTRIS - Menghubungkan Dokter Spesialis Secara Real-Time">
- <meta property="og:description" content="Mengubah cara rumah sakit menangani kasus kritis. Yang berpindah bukan pasien, tapi keahlian.">
- <meta property="og:type" content="website">
- <meta property="og:url" content="https://otris.id">
- <meta property="og:image" content="https://otris.id/og-image.jpg">
- 
- <script src="https://cdn.tailwindcss.com/3.4.17"></script>
- <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
- <script src="/_sdk/element_sdk.js"></script>
- <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
- 
- <script>
-  tailwind.config = {
-   theme: {
-    extend: {
-     fontFamily: {
-      heading: ['Space Grotesk', 'sans-serif'],
-      body: ['DM Sans', 'sans-serif']
-     },
-     colors: {
-      surface: '#111827',
-      'surface-alt': '#0d1320',
-      'bg-primary': '#0a0f1a',
-      primary: '#00c896',
-      'primary-hover': '#00e6a8'
-     }
-    }
-   }
-  }
- </script>
- 
- <style>
-  :root {
-   --primary: #00c896;
-   --primary-hover: #00e6a8<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Otris - Solusi Digital Terdepan</title>
-    <meta property="og:title" content="Otris - Solusi Digital Terdepan">
-    <meta property="og:description" content="Transformasi digital untuk bisnis Anda dengan solusi terintegrasi dan inovatif.">
-    <meta property="og:image" content="https://www.otris.id/assets/og-image.jpg">
-    <meta property="og:url" content="https://www.otris.id">
-    <meta name="description" content="Otris menyediakan solusi digital terlengkap untuk transformasi bisnis Anda.">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        .hero-gradient {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
-        }
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        .animate-float {
-            animation: float 6s ease-in-out infinite;
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-        .service-card {
-            transition: all 0.3s ease;
-        }
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-        }
-    </style>
-</head>
-<body class="bg-gray-50 overflow-x-hidden">
-    
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 top-0 glass-effect">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-                <!-- Logo -->
-                <div class="flex items-center space-x-2">
-                    <div class="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-lg">
-                        <i class="fas fa-rocket text-blue-600 text-xl"></i>
-                    </div>
-                    <span class="text-white font-bold text-xl hidden sm:block">Otris</span>
-                </div>
-                
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="text-white/80 hover:text-white transition-colors font-medium">Home</a>
-                    <a href="#services" class="text-white/80 hover:text-white transition-colors font-medium">Layanan</a>
-                    <a href="#about" class="text-white/80 hover:text-white transition-colors font-medium">Tentang</a>
-                    <a href="#contact" class="text-white/80 hover:text-white transition-colors font-medium">Kontak</a>
-                </div>
-                
-                <!-- CTA Button -->
-                <div class="hidden md:block">
-                    <button class="bg-white text-blue-600 px-6 py-2 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300 shadow-lg">
-                        Konsultasi Gratis
-                    </button>
-                </div>
-                
-                <!-- Mobile menu button -->
-                <div class="md:hidden">
-                    <button class="text-white p-2">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-gradient min-h-screen pt-20 flex items-center relative overflow-hidden">
-        <!-- Background Elements -->
-        <div class="absolute inset-0">
-            <div class="absolute top-20 left-20 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-float"></div>
-            <div class="absolute bottom-20 right-20 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl animate-float" style="animation-delay: -2s;"></div>
-        </div>
-        
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 z-10 relative">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <!-- Hero Content -->
-                <div class="lg:pr-12">
-                    <div class="inline-block bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full mb-8">
-                        <span class="text-white font-semibold flex items-center space-x-2">
-                            <i class="fas fa-star"></i>
-                            <span>Digital Transformation Partner</span>
-                        </span>
-                    </div>
-                    <h1 class="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-                        Transformasi <span class="text-yellow-300">Digital</span><br>
-                        Bisnis Anda
-                    </h1>
-                    <p class="text-xl text-white/90 mb-8 leading-relaxed max-w-lg">
-                        Solusi terintegrasi untuk mempercepat pertumbuhan bisnis Anda dengan teknologi terkini dan strategi yang tepat.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <button class="bg-white text-blue-600 px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-blue-50 transition-all duration-300 shadow-2xl flex items-center space-x-3">
-                            <i class="fas fa-play"></i>
-                            <span>Mulai Sekarang</span>
-                        </button>
-                        <button class="border-2 border-white/50 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-white/10 backdrop-blur-sm transition-all duration-300 flex items-center space-x-3">
-                            <i class="fas fa-phone"></i>
-                            <span>Konsultasi Gratis</span>
-                        </button>
-                    </div>
-                    
-                    <!-- Stats -->
-                    <div class="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-white/20">
-                        <div>
-                            <div class="text-3xl font-bold text-yellow-300">500+</div>
-                            <div class="text-white/80 text-sm">Klien Puas</div>
-                        </div>
-                        <div>
-                            <div class="text-3xl font-bold text-yellow-300">98%</div>
-                            <div class="text-white/80 text-sm">Tingkat Keberhasilan</div>
-                        </div>
-                        <div>
-                            <div class="text-3xl font-bold text-yellow-300">3x</div>
-                            <div class="text-white/80 text-sm">Lebih Cepat ROI</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Hero Image -->
-                <div class="relative">
-                    <div class="glass-effect rounded-3xl p-8 lg:p-12 shadow-2xl">
-                        <div class="bg-gradient-to-br from-blue-400/20 to-purple-500/20 rounded-2xl p-8">
-                            <div class="grid grid-cols-2 gap-6 mb-8">
-                                <div class="bg-white/20 rounded-xl p-4 text-center">
-                                    <i class="fas fa-chart-line text-2xl text-blue-400 mb-2"></i>
-                                    <div class="text-white font-semibold">Growth</div>
-                                </div>
-                                <div class="bg-white/20 rounded-xl p-4 text-center">
-                                    <i class="fas fa-shield-alt text-2xl text-green-400 mb-2"></i>
-                                    <div class="text-white font-semibold">Secure</div>
-                                </div>
-                                <div class="bg-white/20 rounded-xl p-4 text-center">
-                                    <i class="fas fa-bolt text-2xl text-yellow-400 mb-2"></i>
-                                    <div class="text-white font-semibold">Fast</div>
-                                </div>
-                                <div class="bg-white/20 rounded-xl p-4 text-center">
-                                    <i class="fas fa-users text-2xl text-pink-400 mb-2"></i>
-                                    <div class="text-white font-semibold">Support</div>
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <div class="w-24 h-24 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center shadow-2xl">
-                                    <i class="fas fa-rocket text-3xl text-white"></i>
-                                </div>
-                                <div class="text-2xl font-bold text-white mb-2">Digital Success</div>
-                                <div class="w-full bg-white/30 rounded-full h-3">
-                                    <div class="bg-gradient-to-r from-yellow-400 to-green-500 h-3 rounded-full" style="width: 85%"></div>
-                                </div>
-                                <div class="text-white/80 text-sm mt-2">85% Complete</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-32 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-24">
-                <div class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-full mb-8">
-                    <span class="font-semibold flex items-center space-x-2">
-                        <i class="fas fa-cogs"></i>
-                        <span>Layanan Kami</span>
-                    </span>
-                </div>
-                <h2 class="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-6">
-                    Solusi Lengkap Digital
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                    Dari pengembangan aplikasi hingga strategi digital marketing, kami menyediakan semua yang Anda butuhkan untuk sukses di era digital.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="service-card group bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl border border-gray-100">
-                    <div class="w-20 h-20 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                        <i class="fas fa-laptop-code text-2xl text-white"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Web & Mobile App</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Pengembangan aplikasi web dan mobile native yang responsif, cepat, dan user-friendly untuk semua platform.
-                    </p>
-                    <div class="flex items-center space-x-2 text-blue-600 font-semibold">
-                        <span>Lihat Detail</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-                </div>
-                
-                <!-- Service 2 -->
-                <div class="service-card group bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl border border-gray-100">
-                    <div class="w-20 h-20 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                        <i class="fas fa-cloud text-2xl text-white"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Cloud Solution</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Implementasi cloud computing dengan arsitektur scalable, aman, dan hemat biaya untuk bisnis modern.
-                    </p>
-                    <div class="flex items-center space-x-2 text-blue-600 font-semibold">
-                        <span>Lihat Detail</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-                </div>
-                
-                <!-- Service 3 -->
-                <div class="service-card group bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl border border-gray-100">
-                    <div class="w-20 h-20 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                        <i class="fas fa-chart-line text-2xl text-white"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Data Analytics</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Transformasi data menjadi insight berharga dengan AI, machine learning, dan visualisasi data canggih.
-                    </p>
-                    <div class="flex items-center space-x-2 text-blue-600 font-semibold">
-                        <span>Lihat Detail</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-                </div>
-                
-                <!-- Service 4 -->
-                <div class="service-card group bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl border border-gray-100 md:col-span-2 lg:col-span-1">
-                    <div class="w-20 h-20 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                        <i class="fas fa-bullhorn text-2xl text-white"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Digital Marketing</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Strategi marketing digital komprehensif yang meningkatkan brand awareness dan konversi penjualan.
-                    </p>
-                    <div class="flex items-center space-x-2 text-blue-600 font-semibold">
-                        <span>Lihat Detail</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-32 bg-gradient-to-b from-gray-50 to-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <!-- About Content -->
-                <div class="lg:order-2">
-                    <div class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-full mb-8">
-                        <span class="font-semibold flex items-center space-x-2">
-                            <i class="fas fa-heart"></i>
-                            <span>Tentang Otris</span>
-                        </span>
-                    </div>
-                    <h2 class="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-gray-800 via-gray-700 to-black bg-clip-text text-transparent mb-6 leading-tight">
-                        Mitra Digital Anda<br>
-                        <span class="text-blue-600">Terpercaya</span>
-                    </h2>
-                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-                        Dengan pengalaman lebih dari 5 tahun di industri digital, Otris telah membantu ratusan bisnis mencapai potensi maksimal mereka melalui solusi teknologi inovatif dan strategi bisnis yang terbukti.
-                    </p>
-                    <div class="grid md:grid-cols-2 gap-8 mb-12">
-                        <div class="space-y-4">
-                            <div class="flex items-start space-x-4">
-                                <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-check text-blue-600 text-lg"></i>
-                                </div>
-                                <div>
-                                    <div class="font-semibold text-gray-800">Tim Expert</div>
-                                    <div class="text-gray-600 text-sm">50+ profesional bersertifikat</div>
-                                </div>
-                            </div>
-                            <div class="flex items-start space-x-4">
-                                <div class="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-check text-green-600 text-lg"></i>
-                                </div>
-                                <div>
-                                    <div class="font-semibold text-gray-800">Support 24/7</div>
-                                    <div class="text-gray-600 text-sm">Layanan tanpa henti</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="space-y-4">
-                            <div class="flex items-start space-x-4">
-                                <div class="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-check text-purple-600 text-lg"></i>
-                                </div>
-                                <div>
-                                    <div class="font-semibold text-gray-800">Teknologi Terkini</div>
-                                    <div class="text-gray-600 text-sm">AI, Cloud, Blockchain</div>
-                                </div>
-                            </div>
-                            <div class="flex items-start space-x-4">
-                                <div class="w-10 h-10 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-check text-orange-600 text-lg"></i>
-                                </div>
-                                <div>
-                                    <div class="font-semibold text-gray-800">Hasil Terukur</div>
-                                    <div class="text-gray-600 text-sm">ROI yang jelas & terukur</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-5 rounded-2xl font-semibold text-lg hover:shadow-2xl transition-all duration-300 shadow-xl">
-                        Pelajari Lebih Lanjut
-                    </button>
-                </div>
-                
-                <!-- About Image -->
-                <div class="lg:order-1 relative">
-                    <div class="glass-effect rounded-3xl p-12 shadow-2xl backdrop-blur-sm bg-white/60">
-                        <div class="grid grid-cols-2 gap-6">
-                            <div class="bg-gradient-to-br from-blue-500/20 to-blue-600/20 rounded-2xl p-6 text-center">
-                                <div class="text-3xl font-bold text-blue-600 mb-2">500+</div>
-                                <div class="text-gray-800 font-semibold">Projects</div>
-                            </div>
-                            <div class="bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-2xl p-6 text-center">
-                                <div class="text-3xl font-bold text-green-600 mb-2">98%</div>
-                                <div class="text-gray-800 font-semibold">Satisfaction</div>
-                            </div>
-                            <div class="bg-gradient-to-br from-purple-500/20 to-purple-600/20 rounded-2xl p-6 text-center">
-                                <div class="text-3xl font-bold text-purple-600 mb-2">5+</div>
-                                <div class="text-gray-800 font-semibold">Years</div>
-                            </div>
-                            <div class="bg-gradient-to-br from-orange-500/20 to-orange-600/20 rounded-2xl p-6 text-center">
-                                <div class="text-3xl font-bold text-orange-600 mb-2">24/7</div>
-                                <div class="text-gray-800 font-semibold">Support</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-32 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="glass-effect rounded-3xl p-12 lg:p-20 shadow-2xl">
-                <i class="fas fa-rocket text-6xl text-white/80 mb-8 animate-bounce"></i>
-                <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
-                    Siap Transformasi<br>
-                    <span class="text-yellow-300">Digital Anda?</span>
-                </h2>
-                <p class="text-xl text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed">
-                    Dapatkan konsultasi gratis dan temukan solusi terbaik untuk bisnis Anda. Mulai perjalanan digital transformation hari ini!
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <button class="bg-white text-blue-600 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-blue-50 transition-all duration-300 shadow-2xl flex items-center space-x-3">
-                        <i class="fas fa-phone"></i>
-                        <span>+62 812-3456-7890</span>
-                    </button>
-                    <button class="border-2 border-white text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-white/20 backdrop-blur-sm transition-all duration-300 flex items-center space-x-3">
-                        <i class="fab fa-whatsapp"></i>
-                        <span>WhatsApp</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <div class="grid md:grid-cols-4 gap-8">
-                <!-- Logo & Description -->
-                <div>
-                    <div class="flex items-center space-x-3 mb-6">
-                        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
-                            <i class="fas fa-rocket text-white text-xl"></i>
-                        </div>
-                        <span class="text-2xl font-bold">Otris</span>
-                    </div>
-                    <p class="text-gray-400 mb-6 leading-relaxed">
-                        Mitra digital transformation terpercaya yang membantu bisnis mencapai kesuksesan di era digital.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-blue-500 rounded-xl flex items-center justify-center transition-colors">
-                            <i class="fab fa-facebook-f text-white"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-blue-400 rounded-xl flex items-center justify-center transition-colors">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-green-500 rounded-xl flex items-center justify-center transition-colors">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-pink-500 rounded-xl flex items-center justify-center transition-colors">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Quick Links -->
-                <div>
-                    <h4 class="text-xl font-bold mb-6">Layanan</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Web Development</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Mobile App</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Cloud Solution</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Digital Marketing</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Company -->
-                <div>
-                    <h4 class="text-xl font-bold mb-6">Perusahaan</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Tentang Kami</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Karir</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Kebijakan Privasi</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Contact -->
-                <div>
-                    <h4 class="text-xl font-bold mb-6">Kontak</h4>
-                    <div class="space-y-4">
-                        <div class="flex items-start space-x-3">
-                            <i class="fas fa-map-marker-alt text-blue-400 mt-1"></i>
-                            <div>
-                                <div class="font-semibold">Jakarta, Indonesia</div>
-                                <div class="text-gray-400 text-sm">Jl. Sudirman No. 123</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <i class="fas fa-phone text-blue-400"></i>
-                            <span class="text-gray-400">+62 812-3456-7890</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <i class="fas fa-envelope text-blue-400"></i>
-                            <span class="text-gray-400">hello@otris.id</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 Otris. All rights reserved. Made with ❤️ for digital transformation.</p>
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OTRIS - Solusi Telemedicine Rumah Sakit Daerah</title>
-    <meta property="og:title" content="OTRIS - Solusi Telemedicine Rumah Sakit Daerah">
-    <meta property="og:description" content="Hubungkan dokter spesialis dengan RS daerah secara real-time. Kurangi rujukan, percepat tindakan medis.">
-    <meta property="og:image" content="https://www.otris.id/assets/og-image.jpg">
-    <meta property="og:url" content="https://www.otris.id">
-    <meta name="description" content="OTRIS: Sistem telemedicine terintegrasi untuk rumah sakit daerah. Akses dokter spesialis real-time, kurangi rujukan pasien.">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .gradient-primary { background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #06b6d4 100%); }
-        .gradient-success { background: linear-gradient(135deg, #059669 0%, #10b981 100%); }
-        .glass-effect { 
-            background: rgba(255, 255, 255, 0.1); 
-            backdrop-filter: blur(20px); 
-            border: 1px solid rgba(255, 255, 255, 0.2); 
-        }
-        .pulse-slow { animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
-        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
-        .flow-step { position: relative; }
-        .flow-step:not(:last-child)::after {
-            content: ''; 
-            position: absolute; 
-            right: -24px; 
-            top: 50%; 
-            transform: translateY(-50%); 
-            width: 48px; 
-            height: 2px; 
-            background: linear-gradient(90deg, #3b82f6, transparent);
-        }
-    </style>
-</head>
-<body class="bg-gray-50 overflow-x-hidden">
-
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 top-0 glass-effect">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-lg">
-                        <i class="fas fa-hospital text-blue-600 text-2xl"></i>
-                    </div>
-                    <span class="text-white font-bold text-2xl">OTRIS</span>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#masalah" class="text-white/80 hover:text-white font-medium">Masalah</a>
-                    <a href="#solusi" class="text-white/80 hover:text-white font-medium">Solusi</a>
-                    <a href="#cara-kerja" class="text-white/80 hover:text-white font-medium">Cara Kerja</a>
-                    <a href="#kerjasama" class="text-white/80 hover:text-white font-medium">Kerjasama</a>
-                </div>
-                <a href="#kontak" class="bg-white text-blue-600 px-8 py-3 rounded-xl font-bold hover:bg-blue-50 transition-all md:block hidden">
-                    <i class="fas fa-calendar-plus mr-2"></i>
-                    Jadwalkan Demo
-                </a>
-                <button class="md:hidden p-2 text-white">
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- 1. HERO SECTION -->
-    <section class="gradient-primary min-h-screen pt-24 flex items-center relative overflow-hidden">
-        <div class="absolute inset-0">
-            <div class="absolute top-32 left-20 w-72 h-72 bg-white/10 rounded-full blur-3xl pulse-slow"></div>
-            <div class="absolute bottom-32 right-20 w-96 h-96 bg-white/5 rounded-full blur-3xl" style="animation-delay: 1.5s;"></div>
-        </div>
-        
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <!-- Hero Content -->
-                <div>
-                    <div class="inline-block bg-white/20 backdrop-blur-sm px-6 py-3 rounded-2xl mb-8">
-                        <span class="text-white font-semibold flex items-center space-x-2">
-                            <i class="fas fa-stethoscope"></i>
-                            <span>Telemedicine RS Daerah</span>
-                        </span>
-                    </div>
-                    <h1 class="text-5xl lg:text-7xl font-black text-white mb-8 leading-tight">
-                        RS Daerah <span class="text-yellow-300 block">Akses Dokter<br>Spesialis</span>
-                        <span class="text-3xl block text-white/80 font-normal mt-4">Real-time • Tanpa Rujukan</span>
-                    </h1>
-                    <p class="text-xl text-white/90 mb-12 leading-relaxed max-w-lg">
-                        OTRIS hubungkan dokter spesialis dengan RS daerah. Pasien ditangani cepat, rujukan berkurang 70%.
-                    </p>
-                    
-                    <!-- Hero CTAs -->
-                    <div class="grid md:grid-cols-2 gap-4 mb-12">
-                        <a href="#kontak" class="group bg-white shadow-2xl text-blue-600 px-8 py-6 rounded-2xl font-bold text-xl hover:shadow-3xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center">
-                            <i class="fas fa-calendar-plus text-2xl mr-3 group-hover:rotate-12 transition-transform"></i>
-                            <span><strong>Jadwalkan Demo Gratis</strong></span>
-                        </a>
-                        <a href="#cara-kerja" class="group border-2 border-white/50 glass-effect text-white px-8 py-6 rounded-2xl font-bold text-xl hover:bg-white/20 backdrop-blur-sm transition-all duration-300 flex items-center justify-center">
-                            <i class="fas fa-play-circle text-2xl mr-3"></i>
-                            <span>Lihat Simulasi Sistem</span>
-                        </a>
-                    </div>
-                    
-                    <!-- Trust Indicators -->
-                    <div class="flex items-center space-x-12 text-white/80">
-                        <div class="flex items-center space-x-2">
-                            <div class="w-2 h-2 bg-green-400 rounded-full animate-ping"></div>
-                            <span>Live Demo Available</span>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <i class="fas fa-lock text-green-400"></i>
-                            <span>HIPAA Compliant</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Hero Visual -->
-                <div class="relative">
-                    <div class="glass-effect rounded-3xl p-12 shadow-2xl">
-                        <div class="bg-gradient-to-br from-white/20 to-blue-500/10 rounded-2xl p-8">
-                            <div class="grid grid-cols-2 gap-6 mb-8">
-                                <div class="bg-white/30 rounded-xl p-6 text-center">
-                                    <i class="fas fa-user-md text-3xl text-blue-600 mb-3"></i>
-                                    <div class="text-2xl font-bold text-white">Dokter</div>
-                                    <div class="text-blue-400 font-bold">Spesialis</div>
-                                </div>
-                                <div class="bg-white/30 rounded-xl p-6 text-center">
-                                    <i class="fas fa-hospital text-3xl text-green-600 mb-3"></i>
-                                    <div class="text-2xl font-bold text-white">RS</div>
-                                    <div class="text-green-400 font-bold">Daerah</div>
-                                </div>
-                            </div>
-                            <div class="flex items-center justify-center space-x-4 p-6 bg-white/20 rounded-2xl">
-                                <div class="w-20 h-2 bg-gradient-to-r from-red-400 to-green-500 rounded-full"></div>
-                                <i class="fas fa-bolt text-3xl text-yellow-400 animate-pulse"></i>
-                                <div class="w-20 h-2 bg-gradient-to-r from-green-500 to-red-400 rounded-full"></div>
-                            </div>
-                            <div class="text-center mt-6">
-                                <div class="text-3xl font-black text-white mb-1">70%↓</div>
-                                <div class="text-white/80">Rujukan Berkurang</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 2. MASALAH SECTION -->
-    <section id="masalah" class="py-32 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-24">
-                <h2 class="text-5xl lg:text-6xl font-black bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-6">
-                    Masalah RS Daerah
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Setiap hari ribuan pasien mengalami penundaan pengobatan karena keterbatasan dokter spesialis.
-                </p>
-            </div>
-            
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <!-- Problems -->
-                <div class="space-y-12">
-                    <div class="flex items-start space-x-6 p-8 bg-red-50/50 rounded-3xl border border-red-100">
-                        <div class="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center flex-shrink-0 mt-1">
-                            <i class="fas fa-exclamation-triangle text-white text-2xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-3xl font-bold text-gray-800 mb-4">Tidak Ada Dokter Spesialis</h3>
-                            <p class="text-xl text-gray-600 leading-relaxed">
-                                RS daerah kekurangan dokter spesialis. Pasien stroke, jantung, trauma harus dirujuk ke RS besar.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex items-start space-x-6 p-8 bg-yellow-50/50 rounded-3xl border border-yellow-100">
-                        <div class="w-16 h-16 bg-yellow-500 rounded-2xl flex items-center justify-center flex-shrink-0 mt-1">
-                            <i class="fas fa-clock text-white text-2xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-3xl font-bold text-gray-800 mb-4">Rujukan Lambat & Mahal</h3>
-                            <p class="text-xl text-gray-600 leading-relaxed">
-                                Proses rujukan memakan waktu 3-7 hari. Biaya transportasi Rp 5-15 juta per pasien.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Problem Impact -->
-                <div>
-                    <div class="bg-gradient-to-br from-red-500/5 to-yellow-500/5 rounded-3xl p-12 border border-red-100/50">
-                        <div class="text-center mb-12">
-                            <div class="text-6xl font-black text-red-600 mb-4">3-7</div>
-                            <div class="text-2xl font-bold text-gray-800 mb-2">Hari Penundaan</div>
-                            <div class="text-4xl font-black text-yellow-600">15 Juta</div>
-                            <div class="text-xl text-gray-600">Biaya Rujukan/Pasien</div>
-                        </div>
-                        
-                        <div class="grid grid-cols-3 gap-6 text-center">
-                            <div>
-                                <div class="text-3xl font-bold text-gray-800 mb-2">60%</div>
-                                <div class="text-gray-600">Pasien Terlambat</div>
-                            </div>
-                            <div>
-                                <div class="text-3xl font-bold text-gray-800 mb-2">30%</div>
-                                <div class="text-gray-600">Mortalitas Naik</div>
-                            </div>
-                            <div>
-                                <div class="text-3xl font-bold text-gray-800 mb-2">Rp 50M</div>
-                                <div class="text-gray-600">/Bulan Kerugian</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="text-center mt-12">
-                        <a href="#solusi" class="inline-flex items-center space-x-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-12 py-6 rounded-2xl font-bold text-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
-                            <i class="fas fa-lightbulb text-2xl"></i>
-                            <span>Lihat Solusi OTRIS</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. SOLUSI SECTION -->
-    <section id="solusi" class="py-32 gradient-success">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-24">
-                <div class="inline-block bg-white/30 backdrop-blur-sm px-8 py-4 rounded-2xl mb-8">
-                    <span class="text-white font-bold text-2xl flex items-center justify-center space-x-3">
-                        <i class="fas fa-magic"></i>
-                        <span>Revolusi Telemedicine</span>
-                    </span>
-                </div>
-                <h2 class="text-5xl lg:text-6xl font-black text-white mb-6">
-                    OTRIS Hubungkan <span class="text-yellow-300 block">Dokter • Data •<br>RS Secara Real-time</span>
-                </h2>
-            </div>
-            
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <!-- Solution Features -->
-                <div class="space-y-8">
-                    <div class="glass-effect p-8 rounded-3xl">
-                        <div class="flex items-start space-x-4 mb-4">
-                            <div class="w-12 h-12 bg-white/30 rounded-2xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-video text-2xl text-white"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl font-bold text-white mb-2">Video Konsul Instan</h3>
-                                <p class="text-white/90">Dokter spesialis konsultasi video dalam 15 menit, tanpa perlu rujukan.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="glass-effect p-8 rounded-3xl">
-                        <div class="flex items-start space-x-4 mb-4">
-                            <div class="w-12 h-12 bg-white/30 rounded-2xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-file-medical-alt text-2xl text-white"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl font-bold text-white mb-2">Data Pasien Lengkap</h3>
-                                <p class="text-white/90">Hasil lab, foto rontgen, rekam medis terintegrasi real-time.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="glass-effect p-8 rounded-3xl">
-                        <div class="flex items-start space-x-4 mb-4">
-                            <div class="w-12 h-12 bg-white/30 rounded-2xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-stethoscope text-2xl text-white"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl font-bold text-white mb-2">Instruksi Tindakan</h3>
-                                <p class="text-white/90">Dokter spesialis berikan instruksi operasi/jadwal langsung ke RS.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Solution Visual -->
-                <div class="relative">
-                    <div class="glass-effect rounded-3xl p-12 shadow-2xl">
-                        <div class="bg-white/40 rounded-2xl p-10">
-                            <div class="grid grid-cols-3 gap-8 text-center mb-12">
-                                <div>
-                                    <div class="w-20 h-20 bg-gradient-to-r from-red-400 to-pink-500 rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                                        <i class="fas fa-user-md text-white text-xl"></i>
-                                    </div>
-                                    <div class="font-bold text-xl text-gray-800">Dokter</div>
-                                </div>
-                                <div>
-                                    <div class="w-20 h-20 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-2xl transform rotate-12">
-                                        <i class="fas fa-cloud text-white text-xl"></i>
-                                    </div>
-                                    <div class="font-bold text-xl text-gray-800">OTRIS</div>
-                                </div>
-                                <div>
-                                    <div class="w-20 h-20 bg-gradient-to-r from-green-400 to-emerald-500 rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                                        <i class="fas fa-hospital text-white text-xl"></i>
-                                    </div>
-                                    <div class="font-bold text-xl text-gray-800">RS Daerah</div>
-                                </div>
-                            </div>
-                            <div class="space-y-4 text-center">
-                                <div class="text-4xl font-black text-gray-800 mb-2">15 Menit</div>
-                                <div class="text-2xl font-bold text-green-600">Konsultasi Selesai</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-24">
-                <a href="#kontak" class="inline-flex items-center space-x-3 bg-white shadow-2xl text-green-700 px-12 py-6 rounded-2xl font-black text-2xl hover:shadow-3xl transform hover:-translate-y-2 transition-all duration-300">
-                    <i class="fas fa-calendar-check text-3xl"></i>
-                    <span><strong>Jadwalkan Demo OTRIS<br>untuk Rumah Sakit Anda</strong></span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. CARA KERJA SECTION -->
-    <section id="cara-kerja" class="py-32 bg-gradient-to-b from-gray-50 to-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-24">
-                <h2 class="text-5xl lg:text-6xl font-black bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-6">
-                    Cara Kerja OTRIS
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Sistem terintegrasi yang bekerja mulus dari perangkat hingga dashboard dokter spesialis.
-                </p>
-            </div>
-            
-            <div class="max-w-5xl mx-auto">
-                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-0 items-center text-center lg:text-left">
-                    <!-- Step 1 -->
-                    <div class="flow-step lg:col-span-1">
-                        <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-8 rounded-3xl shadow-2xl mx-auto w-full max-w-sm transform hover:scale-105 transition-all duration-300">
-                            <div class="w-16 h-16 bg-white/20 rounded-2xl mx-auto mb-6 flex items-center justify-center">
-                                <i class="fas fa-mobile-alt text-2xl"></i>
-                            </div>
-                            <div class="font-bold text-xl mb-3">1. Perangkat RS</div>
-                            <p class="text-white/90 text-sm">Scan QR pasien, ambil foto rontgen, hasil lab</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Step 2 -->
-                    <div class="flow-step lg:col-span-1">
-                        <div class="bg-gradient-to-r from-green-500 to-emerald-600 text-white p-8 rounded-3xl shadow-2xl mx-auto w-full max-w-sm transform hover:scale-105 transition-all duration-300">
-                            <div class="w-16 h-16 bg-white/20 rounded-2xl mx-auto mb-6 flex items-center justify-center">
-                                <i class="fas fa-wifi text-2xl"></i>
-                            </div>
-                            <div class="font-bold text-xl mb-3">2. Gateway</div>
-                            <p class="text-white/90 text-sm">Data terkirim otomatis via internet 4G/5G</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Step 3 -->
-                    <div class="flow-step lg:col-span-1">
-                        <div class="bg-gradient-to-r from-purple-500 to-violet-600 text-white p-8 rounded-3xl shadow-2xl mx-auto w-full max-w-sm transform hover:scale-105 transition-all duration-300">
-                            <div class="w-16 h-16 bg-white/20 rounded-2xl mx-auto mb-6 flex items-center justify-center">
-                                <i class="fas fa-server text-2xl"></i>
-                            </div>
-                            <div class="font-bold text-xl mb-3">3. Core System</div>
-                            <p class="text-white/90 text-sm">AI triage + notifikasi dokter spesialis terdekat</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Step 4 -->
-                    <div class="flow-step lg:col-span-1">
-                        <div class="bg-gradient-to-r from-orange-500 to-amber-600 text-white p-8 rounded-3xl shadow-2xl mx-auto w-full max-w-sm transform hover:scale-105 transition-all duration-300">
-                            <div class="w-16 h-16 bg-white/20 rounded-2xl mx-auto mb-6 flex items-center justify-center">
-                                <i class="fas fa-desktop text-2xl"></i>
-                            </div>
-                            <div class="font-bold text-xl mb-3">4. Dashboard</div>
-                            <p class="text-white/90 text-sm">Dokter review kasus dalam 15 menit</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Step 5 -->
-                    <div class="lg:col-span-1">
-                        <div class="bg-gradient-to-r from-emerald-500 to-teal-600 text-white p-8 rounded-3xl shadow-2xl mx-auto w-full max-w-sm transform hover:scale-105 transition-all duration-300">
-                            <div class="w-16 h-16 bg-white/20 rounded-2xl mx-auto mb-6 flex items-center justify-center">
-                                <i class="fas fa-video text-2xl"></i>
-                            </div>
-                            <div class="font-bold text-xl mb-3">5. Konsul Live</div>
-                            <p class="text-white/90 text-sm">Video call + instruksi tindakan langsung</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-24">
-                <a href="#kontak" class="inline-flex items-center space-x-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-12 py-6 rounded-2xl font-black text-2xl hover:shadow-3xl transform hover:-translate-y-2 transition-all duration-300">
-                    <i class="fas fa-play-circle text-3xl"></i>
-                    <span><strong>Lihat Demo Sistem Lengkap</strong></span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. DAMPAK SECTION -->
-    <section class="py-32 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-24">
-                <h2 class="text-5xl lg:text-6xl font-black bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-6">
-                    Dampak Nyata OTRIS
-                </h2>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-12">
-                <!-- Impact 1 -->
-                <div class="group">
-                    <div class="bg-gradient-to-br from-green-500 to-emerald-600 text-white p-12 rounded-3xl shadow-2xl hover:shadow-3xl transform group-hover:-translate-y-4 transition-all duration-500">
-                        <div class="w-24 h-24 bg-white/20 rounded-3xl mx-auto mb-8 flex items-center justify-center group-hover:scale-110 transition-transform">
-                            <i class="fas fa-arrow-down text-3xl"></i>
-                        </div>
-                        <div class="text-5xl font-black mb-4">70%</div>
-                        <div class="text-2xl font-bold mb-4">↓ Rujukan</div>
-                        <p class="text-white/90 text-lg">Pasien ditangani lokal, hemat biaya transportasi</p>
-                    </div>
-                </div>
-                
-                <!-- Impact 2 -->
-                <div class="group">
-                    <div class="bg-gradient-to-br from-blue-500 to-cyan-600 text-white p-12 rounded-3xl shadow-2xl hover:shadow-3xl transform group-hover:-translate-y-4 transition-all duration-500">
-                        <div class="w-24 h-24 bg-white/20 rounded-3xl mx-auto mb-8 flex items-center justify-center group-hover:scale-110 transition-transform">
-                            <i class="fas fa-bolt text-3xl"></i>
-                        </div>
-                        <div class="text-5xl font-black mb-4">15 Min</div>
-                        <div class="text-2xl font-bold mb-4">Konsultasi</div>
-                        <p class="text-white/90 text-lg">Dari kasus masuk ke tindakan medis</p>
-                    </div>
-                </div>
-                
-                <!-- Impact 3 -->
-                <div class="group">
-                    <div class="bg-gradient-to-br from-purple-500 to-violet-600 text-white p-12 rounded-3xl shadow-2xl hover:shadow-3xl transform group-hover:-translate-y-4 transition-all duration-500">
-                        <div class="w-24 h-24 bg-white/20 rounded-3xl mx-auto mb-8 flex items-center justify-center group-hover:scale-110 transition-transform">
-                            <i class="fas fa-heart text-3xl"></i>
-                        </div>
-                        <div class="text-5xl font-black mb-4">30%</div>
-                        <div class="text-2xl font-bold mb-4">↓ Mortalitas</div>
-                        <p class="text-white/90 text-lg">Golden hour terjaga, outcome pasien membaik</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-24">
-                <a href="#kontak" class="inline-flex items-center space-x-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-12 py-6 rounded-2xl font-black text-2xl hover:shadow-3xl transform hover:-translate-y-2 transition-all duration-300">
-                    <i class="fas fa-handshake text-3xl"></i>
-                    <span><strong>Konsultasi Implementasi</strong></span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6. KERJASAMA SECTION -->
-    <section id="kerjasama" class="py-32 gradient-primary">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-24">
-                <h2 class="text-5xl lg:text-6xl font-black text-white mb-6">
-                    Kerjasama Fleksibel <span class="text-yellow-300 block">Tanpa Beban Capex</span>
-                </h2>
-                <p class="text-xl text-white/90 max-w-2xl mx-auto mb-12">
-                    Pilih skema yang sesuai budget RS Anda. Mulai dari Rp 15 juta/bulan.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- KSO -->
-                <div class="glass-effect p-8 rounded-3xl text-center">
-                    <div class="w-20 h-20 bg-white/30 rounded-2xl mx-auto mb-6 flex items-center justify-center">
-                        <i class="fas fa-handshake text-2xl text-white"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">KSO</h3>
-                    <div class="space-y-3 mb-8">
-                        <div class="text-lg text-white/90">• Revenue sharing 70:30</div>
-                        <div class="text-lg text-white/90">• Tanpa biaya awal</div>
-                        <div class="text-lg text-white/90">• OTRIS urus dokter</div>
-                    </div>
-                    <div class="text-3xl font-black text-yellow-300 mb-2">Rp 0</div>
-                    <div class="text-white/80">Upfront Cost</div>
-                </div>
-                
-                <!-- Sewa -->
-                <div class="glass-effect p-8 rounded-3xl text-center border-2 border-white/30">
-                    <div class="w-20 h-20 bg-white/30 rounded-2xl mx-auto mb-6 flex items-center justify-center">
-                        <i class="fas fa-coins text-2xl text-white"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Sewa Sistem</h3>
-                    <div class="space-y-3 mb-8">
-                        <div class="text-lg text-white/90">• Rp 15 juta/bulan</div>
-                        <div class="text-lg text-white/90">• Hardware lengkap</div>
-                        <div class="text-lg text-white/90">• Training dokter RS</div>
-                    </div>
-                    <div class="text-3xl font-black text-yellow-300 mb-2">Rp 15M</div>
-                    <div class="text-white/80">/Bulan</div>
-                </div>
-                
-                <!-- Revenue Share -->
-                <div class="glass-effect p-8 rounded-3xl text-center">
-                    <div class="w-20 h-20 bg-white/30 rounded-2xl mx-auto mb-6 flex items-center justify-center">
-                        <i class="fas fa-chart-line text-2xl text-white"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Revenue Share</h3>
-                    <div class="space-y-3 mb-8">
-                        <div class="text-lg text-white/90">• 20% dari konsultasi</div>
-                        <div class="text-lg text-white/90">• Minimum Rp 10 juta</div>
-                        <div class="text-lg text-white/90">• Skala sesuai volume</div>
-                    </div>
-                    <div class="text-3xl font-black text-yellow-300 mb-2">20%</div>
-                    <div class="text-white/80">Revenue Share</div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-20">
-                <a href="#kontak" class="inline-flex items-center space-x-3 bg-white shadow-3xl text-blue-700 px-16 py-8 rounded-3xl font-black text-2xl hover:shadow-4xl transform hover:-translate-y-3 transition-all duration-500 mx-auto">
-                    <i class="fas fa-file-contract text-3xl"></i>
-                    <span><strong>Minta Proposal Kerjasama</strong></span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 7. KONTAK / FORM SECTION -->
-    <section id="kontak" class="py-32 bg-gradient-to-b from-gray-900 to-gray-800">
-        <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="glass-effect rounded-3xl p-12 lg:p-16 shadow-2xl">
-                <div class="text-center mb-12">
-                    <i class="fas fa-calendar-plus text-6xl text-white/80 mb-8"></i>
-                    <h2 class="text-4xl lg:text-5xl font-black text-white mb-4">
-                        Jadwalkan Demo <span class="text-blue-400">OTRIS</span>
-                    </h2>
-                    <p class="text-xl text-white/90 mb-8">
-                        Tim kami akan demo sistem lengkap dalam 24 jam. Gratis & tanpa komitmen.
-                    </p>
-                </div>
-                
-                <form class="space-y-6" action="https://formsubmit.co/hello@otris.id" method="POST">
-                    <!-- Hidden fields for formsubmit -->
-                    <input type="hidden" name="_subject" value="Permintaan Demo OTRIS - RS Daerah">
-                    <input type="hidden" name="_next" value="https://www.otris.id/thank-you.html">
-                    <input type="hidden" name="_captcha" value="false">
-                    
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-white font-semibold mb-3">Nama Lengkap *</label>
-                            <input type="text" name="nama" required 
-                                   class="w-full px-6 py-4 bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-lg" 
-                                   placeholder="Dr. Budi Santoso">
-                        </div>
-                        <div>
-                            <label class="block text-white font-semibold mb-3">Nama Instansi / RS *</label>
-                            <input type="text" name="instansi" required 
-                                   class="w-full px-6 py-4 bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-lg" 
-                                   placeholder="RSUD Dr. Soedono">
-                        </div>
-                    </div>
-                    
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-white font-semibold mb-3">Email *</label>
-                            <input type="email" name="email" required 
-                                   class="w-full px-6 py-4 bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-lg" 
-                                   placeholder="budi@rsudsoedono.co.id">
-                        </div>
-                        <div>
-                            <label class="block text-white font-semibold mb-3">WhatsApp *</label>
-                            <input type="tel" name="whatsapp" required 
-                                   class="w-full px-6 py-4 bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-lg" 
-                                   placeholder="0812-3456-7890">
-                        </div>
-                    </div>
-                    
-                    <div class="pt-4">
-                        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-black text-2xl px-12 py-8 rounded-3xl shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center space-x-4">
-                            <i class="fas fa-paper-plane text-3xl"></i>
-                            <span><strong>Kirim Permintaan Demo</strong></span>
-                        </button>
-                    </div>
-                    
-                    <div class="text-center pt-8 border-t border-white/20">
-                        <p class="text-white/70 text-lg">Atau langsung chat WhatsApp:</p>
-                        <a href="https://wa.me/6281234567890?text=Saya%20mau%20demo%20OTRIS%20untuk%20RS%20kami" 
-                           class="inline-flex items-center space-x-3 bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-4 rounded-2xl mt-4 transition-all duration-300">
-                            <i class="fab fa-whatsapp text-2xl"></i>
-                            <span>Chat WhatsApp</span>
-                        </a>
-                    </div>
-                </form>
-            </div>
-            
-            <div class="text-center mt-16 text-white/70">
-                <p>✅ Demo dalam 24 jam • Gratis • Tanpa komitmen • Data aman HIPAA compliant</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900/50 backdrop-blur-sm text-white border-t border-white/10">
-        <div class="max-w-7xl mx-auto px-4 py-12 text-center">
-            <div class="flex items-center justify-center space-x-3 mb-6">
-                <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
-                    <i class="fas fa-hospital text-white"></i>
-                </div>
-                <span class="text-xl font-bold">OTRIS</span>
-            </div>
-            <p class="text-gray-400 mb-8 max-w-md mx-auto">
-                Solusi telemedicine terintegrasi untuk rumah sakit daerah Indonesia. 
-                Mengurangi rujukan, mempercepat tindakan medis.
-            </p>
-            <div class="flex flex-wrap justify-center items-center space-x-6 text-gray-400 text-sm">
-                <a href="#" class="hover:text-white transition-colors">Kebijakan Privasi</a>
-                <a href="#" class="hover:text-white transition-colors">Syarat Layanan</a>
-                <span>© 2024 OTRIS. All rights reserved.</span>
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OTRIS - Solusi Telemedicine Rumah Sakit Daerah</title>
-    <meta property="og:title" content="OTRIS - Solusi Telemedicine Rumah Sakit Daerah">
-    <meta property="og:description" content="Hubungkan dokter spesialis dengan RS daerah secara real-time. Kurangi rujukan, percepat tindakan medis.">
-    <meta property="og:image" content="https://www.otris.id/assets/og-image.jpg">
-    <meta property="og:url" content="https://www.otris.id">
-    <meta name="description" content="OTRIS: Sistem telemedicine terintegrasi untuk rumah sakit daerah. Akses dokter spesialis real-time, kurangi rujukan pasien.">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .gradient-primary { background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #06b6d4 100%); }
-        .gradient-success { background: linear-gradient(135deg, #059669 0%, #10b981 100%); }
-        .glass-effect { 
-            background:<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OTRIS - Solusi Telemedicine Rumah Sakit Daerah</title>
-    <meta property="og:title" content="OTRIS - Solusi Telemedicine Rumah Sakit Daerah">
-    <meta property="og:description" content="Hubungkan dokter spesialis dengan <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OTRIS - Solusi Telemedicine Rumah Sakit Daerah</title>
-    <meta property="og:title"<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>OTRIS - Solusi Telemedicine Rumah Sakit Daerah</title>
-  <meta name="description" content="OTRIS: Sistem telemedicine terintegrasi untuk rumah sakit daerah. Akses dokter spesialis real-time, kurangi rujukan pasien." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #0a0f1a;
-      color: #fff;
-      margin: 0;
-    }
-    nav {
-      position: fixed;
-      top: 0; left: 0; right:0;
-      height: 80px;
-      display: flex;
-      align-items: center;
-      padding-left: 24px;
-      background-color: rgba(10, 15, 26, 0.95);
-      box-shadow: 0 1px 6px rgba(0,0,0,0.5);
-      z-index: 1000;
-    }
-    nav svg {
-      height: 70px; /* Sesuaikan tinggi logo */
-      width: auto;
-      cursor: pointer;
-      user-select: none;
-    }
-  </style>
-</head>
-<body>
-  <!-- Navigation dengan logo SVG di kiri atas -->
-  <nav>
-    <!-- Letakkan kode SVG logo di sini -->
-    <svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg" >
-      <defs>
-        <radialGradient id="glowGrad" cx="50%" cy="40%" r="60%">
-          <stop offset="0%" stop-color="#00c8ff" stop-opacity="1"/>
-          <stop offset="70%" stop-color="#003673" stop-opacity="0"/>
-        </radialGradient>
-        <linearGradient id="iconGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stop-color="#4ef2ff"/>
-          <stop offset="100%" stop-color="#0067af"/>
-        </linearGradient>
-        <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#66d6ff"/>
-          <stop offset="100%" stop-color="#0075d9"/>
-        </linearGradient>
-        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%" >
-          <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#00c8ff" flood-opacity="0.7"/>
-        </filter>
-      </defs>
-      <circle cx="70" cy="70" r="50" fill="url(#glowGrad)" />
-      <g filter="url(#glow)">
-        <path fill="url(#iconGrad)" stroke="#00bfff" stroke-width="1" d="
-          M70 20
-          Q95 20 105 45
-          Q115 70 105 95
-          Q95 120 70 120
-          Q45 120 35 95
-          Q25 70 35 45
-          Q45 20 70 20
-          Z
-        " />
-        <circle cx="70" cy="60" r="12" fill="#b4eaff" />
-        <path fill="#003f7d" d="
-          M45 115
-          L50 105
-          L65 90
-          L70 100
-          L85 105
-          L90 115
-          L75 110
-          L70 120
-          L65 110
-          L45 115
-          Z
-        " />
-      </g>
-      <text x="140" y="70" font-family="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" font-weight="700" font-size="54" fill="url(#textGrad)" filter="url(#glow)" style="letter-spacing:2px" dominant-baseline="middle">
-        OTRIS
-      </text>
-      <text x="140" y="105" font-family="Arial, sans-serif" font-size="14" fill="#66c9ff" opacity="0.8" dominant-baseline="middle" letter-spacing="0.6">
-        Real-Time Surgical Collaboration System
-      </text>
-    </svg>
-  </nav>
-
-  <!-- Konten halaman mulai di bawah navbar -->
-  <main style="padding-top: 80px;">
-    <!-- Konten utama Anda -->
-    <h1 class="text-xl">Selamat datang di OTRIS</h1>
-  </main>
+  
+  <script src="/public/js/main.js"></script>
 </body>
 </html>
-# **🚀 UPLOAD METODE #1: FILEZILLA - STEP BY STEP DETAIL**
-
-## **STEP 1: DOWNLOAD FILEZILLA (30 detik)**
-
-```
-1. Buka: https://filezilla-project.org/
-2. Klik "Download FileZilla Client"
-3. Pilih Windows/Mac/Linux → Download
-4. Install → Next → Next → Finish
-5. Buka FileZilla
-```
-
-**Screenshot guide:**
-```
-[FileZilla terbuka kosong]
-```
-
-## **STEP 2: KONEKSI SERVER (1 menit)**
-
-**Cari data login hosting Anda:**
-
-```
-Hosting Indonesia (Niagahoster, Rumahweb, IDCloudhost):
-domain.com/cpanel → "Account Information" → FTP Accounts
-
-Data yang dicari:
-✅ Host: ftp.domain.com atau IP server
-✅ Username: cpanelusername_ftp  
-✅ Password: cpanel password
-✅ Port: 21
-```
-
-**Input di FileZilla:**
-```
-Host: ftp.domain.com
-Username: cpanelusername_ftp
-Password: **********
-Port: 21
-Klik: [Quickconnect]
-```
-
-**Status sukses:**
-```
-Status: Directory listing of "/public_html"
-```
-
-## **STEP 3: SIAPKAN FILES (30 detik)**
-
-**Pastikan 2 file ini ada di Desktop/folder Anda:**
-```
-✅ fitur.html  (ukuran ~25KB)
-✅ fitur.js    (ukuran ~10KB)
-```
-
-## **STEP 4: UPLOAD (1 menit)**
-
-```
-KIRI (Local Site): 
-→ Desktop → fitur.html + fitur.js
-
-KANAN (Remote Site):
-→ public_html/ → Double click masuk folder
-
-DRAG & DROP:
-fitur.html  →  tarik ke public_html/
-fitur.js    →  tarik ke public_html/
-
-✅ Transfer: 100% Complete
-```
-
-## **STEP 5: TEST LIVE (30 detik)**
-
-```
-1. Buka Chrome
-2. Ketik: https://domain.com/fitur.html
-3. Halaman OTRIS muncul → ✅ SUKSES!
-
-4. TEST FITUR:
-   [Klik "Minta Demo Gratis"] → Modal muncul
-   [Klik WhatsApp] → Buka WA Web
-   [F12 Console] → No errors merah
-```
-
----
-
-## **📸 VISUAL GUIDE (Copy-paste ini ke notes):**
-
-```
-FILEZILLA LAYOUT:
-
-[ KIRI LOCAL ]        [ KANAN REMOTE ]
-Desktop/              /public_html/
-├── fitur.html  ←DRAG→  fitur.html  ✅
-└── fitur.js    ←DRAG→  fitur.js    ✅
-
-Quickconnect: ftp.domain.com
-Username: cpaneluser_ftp
-Password: **********
-Port: 21
-```
-
----
-
-## **❓ MASALH? SOLUSI CEPAT:**
-
-| ERROR | SOLUSI |
-|-------|--------|
-| **"Connection timed out"** | Cek Host/IP server di cPanel |
-| **"Permission denied"** | Upload ke `public_html/` bukan root |
-| **"File not found"** | Pastikan `fitur.html` di `public_html/` |
-| **"Modal tidak muncul"** | Upload `fitur.js` juga |
-| **"Icon hilang"** | Refresh 2x (CDN loading) |
-
----
-
-## **✅ SUKSES CHECKLIST:**
-
-```
-[ ] FileZilla terinstall
-[ ] Koneksi Quickconnect → "Directory listing successful"
-[ ] 2 files di Desktop: fitur.html + fitur.js
-[ ] Drag-drop ke public_html/
-[ ] https://domain.com/fitur.html → Buka
-[ ] Test 3 tombol CTA → Berfungsi
-[ ] WA link → Klik OK
-```
-
----
-
-## **🎁 BONUS: AUTO-REDIRECT HOME PAGE**
-
-**Jika ingin `domain.com` → otomatis ke `fitur.html`:**
-
-**Edit `index.html` atau `home.html`:**
-```html
-<script>
-setTimeout(() => {
-  window.location.href = '/fitur.html';
-}, 1000);
-</script>
-```
-
----
-
-## **🔥 MULAI SEKARANG:**
-
-```
-1. Download FileZilla → Buka
-2. Input: Host/Username/Password → Quickconnect
-3. Drag fitur.html + fitur.js → public_html/
-4. Buka domain.com/fitur.html
-5. REPLY: "LIVE: https://domain.com/fitur.html"
-```
-
-**STUCK DI STEP MANA? Foto screenshot kirim ke chat ini!** 📸
-
-**Anda 4 menit lagi dari website LIVE!** ⏳🚀
-# **🚀 UPLOAD METODE #1: FILEZILLA - STEP BY STEP DETAIL**
-
-## **STEP 1: DOWNLOAD FILEZILLA (30 detik)**
-
-```
-1. Buka: https://filezilla-project.org/
-2. Klik "Download FileZilla Client"
-3. Pilih Windows/Mac/Linux → Download
-4. Install → Next → Next → Finish
-5. Buka FileZilla
-```
-
-**Screenshot guide:**
-```
-[FileZilla terbuka kosong]
-```
-
-## **STEP 2: KONEKSI SERVER (1 menit)**
-
-**Cari data login hosting Anda:**
-
-```
-Hosting Indonesia (Niagahoster, Rumahweb, IDCloudhost):
-domain.com/cpanel → "Account Information" → FTP Accounts
-
-Data yang dicari:
-✅ Host: ftp.domain.com atau IP server
-✅ Username: cpanelusername_ftp  
-✅ Password: cpanel password
-✅ Port: 21
-```
-
-**Input di FileZilla:**
-```
-Host: ftp.domain.com
-Username: cpanelusername_ftp
-Password: **********
-Port: 21
-Klik: [Quickconnect]
-```
-
-**Status sukses:**
-```
-Status: Directory listing of "/public_html"
-```
-
-## **STEP 3: SIAPKAN FILES (30 detik)**
-
-**Pastikan 2 file ini ada di Desktop/folder Anda:**
-```
-✅ fitur.html  (ukuran ~25KB)
-✅ fitur.js    (ukuran ~10KB)
-```
-
-## **STEP 4: UPLOAD (1 menit)**
-
-```
-KIRI (Local Site): 
-→ Desktop → fitur.html + fitur.js
-
-KANAN (Remote Site):
-→ public_html/ → Double click masuk folder
-
-DRAG & DROP:
-fitur.html  →  tarik ke public_html/
-fitur.js    →  tarik ke public_html/
-
-✅ Transfer: 100% Complete
-```
-
-## **STEP 5: TEST LIVE (30 detik)**
-
-```
-1. Buka Chrome
-2. Ketik: https://domain.com/fitur.html
-3. Halaman OTRIS muncul → ✅ SUKSES!
-
-4. TEST FITUR:
-   [Klik "Minta Demo Gratis"] → Modal muncul
-   [Klik WhatsApp] → Buka WA Web
-   [F12 Console] → No errors merah
-```
-
----
-
-## **📸 VISUAL GUIDE (Copy-paste ini ke notes):**
-
-```
-FILEZILLA LAYOUT:
-
-[ KIRI LOCAL ]        [ KANAN REMOTE ]
-Desktop/              /public_html/
-├── fitur.html  ←DRAG→  fitur.html  ✅
-└── fitur.js    ←DRAG→  fitur.js    ✅
-
-Quickconnect: ftp.domain.com
-Username: cpaneluser_ftp
-Password: **********
-Port: 21
-```
-
----
-
-## **❓ MASALH? SOLUSI CEPAT:**
-
-| ERROR | SOLUSI |
-|-------|--------|
-| **"Connection timed out"** | Cek Host/IP server di cPanel |
-| **"Permission denied"** | Upload ke `public_html/` bukan root |
-| **"File not found"** | Pastikan `fitur.html` di `public_html/` |
-| **"Modal tidak muncul"** | Upload `fitur.js` juga |
-| **"Icon hilang"** | Refresh 2x (CDN loading) |
-
----
-
-## **✅ SUKSES CHECKLIST:**
-
-```
-[ ] FileZilla terinstall
-[ ] Koneksi Quickconnect → "Directory listing successful"
-[ ] 2 files di Desktop: fitur.html + fitur.js
-[ ] Drag-drop ke public_html/
-[ ] https://domain.com/fitur.html → Buka
-[ ] Test 3 tombol CTA → Berfungsi
-[ ] WA link → Klik OK
-```
-
----
-
-## **🎁 BONUS: AUTO-REDIRECT HOME PAGE**
-
-**Jika ingin `domain.com` → otomatis ke `fitur.html`:**
-
-**Edit `index.html` atau `home.html`:**
-```html
-<script>
-setTimeout(() => {
-  window.location.href = '/fitur.html';
-}, 1000);
-</script>
-```
-
----
-
-## **🔥 MULAI SEKARANG:**
-
-```
-1. Download FileZilla → Buka
-2. Input: Host/Username/Password → Quickconnect
-3. Drag fitur.html + fitur.js → public_html/
-4. Buka domain.com/fitur.html
-5. REPLY: "LIVE: https://domain.com/fitur.html"
-```
-
-**STUCK DI STEP MANA? Foto screenshot kirim ke chat ini!** 📸
-
-**Anda 4 menit lagi dari website LIVE!** ⏳🚀

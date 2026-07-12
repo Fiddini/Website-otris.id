@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://otris.id/public/sitemap.xml

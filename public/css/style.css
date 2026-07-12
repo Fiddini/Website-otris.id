@@ -1,0 +1,17 @@
+html, body { height: 100%; margin: 0; }
+    .otris-wrapper { height: 100%; overflow-y: auto; overflow-x: hidden; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 20px rgba(0, 200, 150, 0.3); } 50% { box-shadow: 0 0 40px rgba(0, 200, 150, 0.6); } }
+    .fade-up { animation: fadeUp 0.8s ease forwards; opacity: 0; }
+    .fade-up-d1 { animation-delay: 0.1s; }
+    .fade-up-d2 { animation-delay: 0.2s; }
+    .fade-up-d3 { animation-delay: 0.3s; }
+    .fade-up-d4 { animation-delay: 0.4s; }
+    .glow-btn { animation: pulse-glow 2s infinite; }
+    .grid-bg { background-image: radial-gradient(circle at 1px 1px, rgba(0,200,150,0.08) 1px, transparent 0); background-size: 40px 40px; }
+    .section-reveal { opacity: 0; transform: translateY(40px); transition: all 0.7s ease; }
+    .section-reveal.visible { opacity: 1; transform: translateY(0); }
+    .step-line { position: relative; }
+    .step-line::before { content: ''; position: absolute; left: 20px; top: 44px; bottom: -20px; width: 2px; background: linear-gradient(to bottom, #00c896, transparent); }
+    .step-line:last-child::before { display: none; }
+body { box-sizing: border-box; }
