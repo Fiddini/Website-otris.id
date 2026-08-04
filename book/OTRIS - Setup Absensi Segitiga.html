@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OTRIS - Setup Absensi Segitiga</title>
+<style>
+  body{font-family:monospace;background:#0f172a;color:#e2e8f0;padding:24px;line-height:1.7}
+  .card{background:#1e293b;padding:20px;border-radius:12px;margin:16px 0;border:1px solid #334155}
+  code{background:#0f172a;padding:2px 6px;border-radius:4px;color:#22c55e}
+  h2{color:#22c55e}
+  .step{border-left:3px solid #22c55e;padding-left:16px;margin:20px 0}
+</style>
+</head>
+<body>
+<h1>OTRIS - ABSENSI SEGITIGA (KUNCI MATI EDITION)</h1>
+<p>Flow: IFP/QR Scan -> Open Source Absensi -> Directus 06 Media -> WA Ortu</p>
+
+<div class="card">
+<h2>STEP 1: Install Open Source Base</h2>
+<pre>
+# di server OTRIS.ID
+git clone https://github.com/ikhsan3adi/absensi-sekolah-qr-code.git otris-absensi
+cd otris-absensi
+composer install
+cp env .env
+# setting database di .env -> DB baru: otris_absensi
+php spark migrate
+php spark db:seed
+</pre>
+<p>Sumber open source ini sudah ada fitur QR + RFID + Notifikasi WA【8928648835574207360†L10-L13】</p>
+</div>
+
+<div class="card">
+<h2>STEP 2: Kunci Mati - Ganti Jadi API Key Baru</h2>
+<p>Di file <code>app/Config/Wablas.php</code> atau env, ganti jadi:</p>
+<pre>
+WA_GATEWAY_URL = https://api.fonnte.com/send
+WA_TOKEN = TOKEN_BARU_YANG_CUMA_AMBO_TAU
+# JANGAN pakai token lama yang dipegang mantan programmer
+</pre>
+</div>
+
+<div class="card">
+<h2>STEP 3: Sambung ke Directus 06 Media (PENTING)</h2>
+<p>Tambah file ini: <code>app/Libraries/OtrisBridge.php</code></p>
+<pre>
+&lt;?php
+// Kirim setiap absen ke Directus yang sudah READY
+function kirimKeOtris($data) {
+  $directus_url = "https://otris.id/items/06_media";
+  $token = "TOKEN_DIRECTUS_KUNCI_MATI";
+  
+  $payload = [
+    "identitas" => $data['nis'],
+    "sekolah" => $data['sekolah'],
+    "jam_hadir" => date('Y-m-d H:i:s'),
+    "foto_doc_cam" => $data['foto'],
+    "status" => "hadir",
+    "kode_dokumen" => "ABSEN-SEGITIGA-".time()
+  ];
+  
+  // cURL ke Directus
+  $ch = curl_init($directus_url);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($payload));
+  curl_setopt($ch, CURLOPT_HTTPHEADER, [
+    'Content-Type: application/json',
+    'Authorization: Bearer '.$token
+  ]);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  return curl_exec($ch);
+}
+</pre>
+<p>Dengan ini, SEMUA absen masuk ke 06 Media yang kuncinya cuma ang pegang.</p>
+</div>
+
+<div class="card">
+<h2>STEP 4: Flow Directus -> WA Ortu (Segitiga)</h2>
+<p>Di Directus > Flows > Buat Flow Baru:</p>
+<ul>
+<li>Trigger: Item Created di 06_media</li>
+<li>Action 1: Read Item -> ambil no HP ortu dari tabel siswa</li>
+<li>Action 2: Send Webhook -> ke WA Gateway baru</li>
+</ul>
+<pre>
+Pesan WA:
+"Assalamualaikum Ayah/Bunda {{nama_ortu}},
+Ananda {{nama_siswa}} hadir jam {{jam_hadir}} di {{sekolah}}.
+Foto terlampir dari Doc Cam IFP.
+
+- OTRIS HUMANIS - Guru Tidak Perlu Rekap Lagi -"
+</pre>
+</div>
+
+<div class="card">
+<h2>STEP 5: Amankan</h2>
+<pre>
+- ganti password hosting
+- aktifkan 2FA Directus
+- matikan akses user mantan programmer di Directus > Users
+- git push ke repo pribadi (private) - bukan public
+</pre>
+</div>
+
+<p style="color:#22c55e">SELESAI - Segitiga Guru-Murid-Ortu hidup lagi, tapi kunci mati.</p>
+</body>
+</html>

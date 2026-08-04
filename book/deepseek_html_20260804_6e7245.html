@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THE JEMBATAN - OTRIS Vol.2</title>
+
+    <!-- ============================================ -->
+    <!-- 🔥 OPEN GRAPH (WAJIB UNTUK PREVIEW MEDSOS)    -->
+    <!-- ============================================ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="THE JEMBATAN - OTRIS Vol.2" />
+    <meta property="og:description" content="Bukan pasien yang dipindahkan, tetapi keahlian yang dijembatankan. Buku tentang arsitektur OTRIS, integrasi perangkat medis, dan interoperabilitas SATUSEHAT." />
+    <meta property="og:url" content="https://pindahkan-keahlian-tidak-boleh-pasien.netlify.app/" />
+    <meta property="og:site_name" content="OTRIS - Jembatan Teknologi Kesehatan" />
+    
+    <!-- ⚠️ GANTI LINK GAMBAR DI BAWAH INI dengan gambar cover bukumu (ukuran 1200x630px) -->
+    <meta property="og:image" content="https://otris.id/images/cover-jembatan.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Cover Buku THE JEMBATAN - OTRIS" />
+
+    <!-- Twitter Card untuk X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="THE JEMBATAN - OTRIS Vol.2" />
+    <meta name="twitter:description" content="Bukan pasien yang dipindahkan, tetapi keahlian yang dijembatankan." />
+    <meta name="twitter:image" content="https://otris.id/images/cover-jembatan.jpg" />
+
+    <style>
+        /* ========================================= */
+        /* GAYA VISUAL - TEMA EMAS & BIRU TUA        */
+        /* ========================================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #0a1628;
+            color: #e0e0e0;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: linear-gradient(145deg, #0f1f35, #0a1628);
+            border: 1px solid #c9a84c33;
+            border-radius: 24px;
+            padding: 40px 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+            margin-top: 20px;
+        }
+
+        /* Header / Logo */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #c9a84c44;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #c9a84c;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #ffffff;
+            font-weight: 300;
+        }
+
+        .badge {
+            background: #c9a84c;
+            color: #0a1628;
+            padding: 6px 18px;
+            border-radius: 40px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Hero / Judul Utama */
+        .hero {
+            text-align: center;
+            margin: 20px 0 30px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 6vw, 3.8rem);
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.1;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 .gold {
+            color: #c9a84c;
+            display: inline-block;
+        }
+
+        .hero .tagline {
+            font-size: clamp(1rem, 2vw, 1.4rem);
+            font-style: italic;
+            color: #c9a84c;
+            background: rgba(201, 168, 76, 0.1);
+            padding: 12px 20px;
+            border-radius: 12px;
+            display: inline-block;
+            border-left: 4px solid #c9a84c;
+            margin-top: 10px;
+        }
+
+        .hero .sub {
+            margin-top: 15px;
+            font-size: 1.05rem;
+            color: #aab;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Grid Fitur Teknis */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin: 40px 0;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 25px 20px;
+            border-radius: 16px;
+            border: 1px solid #c9a84c22;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 10px 5px;
+        }
+
+        .feature-item .icon {
+            font-size: 28px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .feature-item .label {
+            font-weight: 600;
+            color: #c9a84c;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        .feature-item .desc {
+            font-size: 0.8rem;
+            color: #99aabb;
+            margin-top: 4px;
+        }
+
+        .arrow-flow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            font-size: 0.85rem;
+            color: #c9a84c;
+            margin: 25px 0;
+            font-weight: 600;
+            background: #0a1628;
+            padding: 12px 15px;
+            border-radius: 40px;
+            border: 1px dashed #c9a84c55;
+        }
+
+        .arrow-flow span {
+            color: #fff;
+        }
+
+        /* Author & CTA */
+        .author-box {
+            background: #0f1f35;
+            border-radius: 16px;
+            padding: 25px;
+            margin: 30px 0;
+            border-left: 6px solid #c9a84c;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .author-box .name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .author-box .title {
+            color: #c9a84c;
+            font-size: 0.9rem;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 40px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+
+        .btn-primary {
+            background: #c9a84c;
+            color: #0a1628;
+        }
+
+        .btn-primary:hover {
+            background: #b8952e;
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px #c9a84c44;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #c9a84c;
+            border: 2px solid #c9a84c;
+        }
+
+        .btn-secondary:hover {
+            background: #c9a84c22;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 1px solid #c9a84c33;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #778;
+        }
+
+        .footer a {
+            color: #c9a84c;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Countdown (Opsional) */
+        .countdown-box {
+            text-align: center;
+            background: #0a1628;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid #c9a84c44;
+            margin: 20px 0;
+        }
+        .countdown-box #countdown {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #c9a84c;
+            letter-spacing: 2px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+            .author-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .btn-group {
+                width: 100%;
+            }
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+            .header {
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+            <div class="logo">OTRIS <span>| Jembatan</span></div>
+            <div class="badge">Vol. 2</div>
+        </div>
+
+        <!-- HERO -->
+        <div class="hero">
+            <h1>
+                <span class="gold">THE</span> JEMBATAN
+            </h1>
+            <div class="tagline">
+                “Bukan pasien yang dipindahkan,<br> tetapi keahlian yang dijembatankan.”
+            </div>
+            <p class="sub">
+                Manifesto sekaligus blueprint teknis bagaimana Indonesia membangun infrastruktur kesehatan digital yang adil melalui integrasi perangkat medis, gateway HL7, dan konektor SATUSEHAT.
+            </p>
+        </div>
+
+        <!-- ALUR TEKNIS -->
+        <div class="arrow-flow">
+            🏥 Perangkat Medis ➡️ <span>Gateway</span> ➡️ <span>Core</span> ➡️ <span>Dashboard</span> ➡️ 🇮🇩 SATUSEHAT
+        </div>
+
+        <!-- FITUR TEKNIS -->
+        <div class="features">
+            <div class="feature-item">
+                <span class="icon">🛡️</span>
+                <div class="label">Integration Over Replacement</div>
+                <div class="desc">Manfaatkan alat medis legacy tanpa ganti</div>
+            </div>
+            <div class="feature-item">
+                <span class="icon">📡</span>
+                <div class="label">Real-Time Collaboration</div>
+                <div class="desc">Subspesialis dampingi dokter daerah</div>
+            </div>
+            <div class="feature-item">
+                <span class="icon">📊</span>
+                <div class="label">SATUSEHAT Interoperabilitas</div>
+                <div class="desc">Standar FHIR untuk data nasional</div>
+            </div>
+            <div class="feature-item">
+                <span class="icon">⚖️</span>
+                <div class="label">KSO Tanpa CAPEX</div>
+                <div class="desc">Revenue share 20-25%, zero di muka</div>
+            </div>
+        </div>
+
+        <!-- COUNTDOWN (RILIS 1 DES 2026) -->
+        <div class="countdown-box">
+            <div style="font-size:0.8rem; color:#889; margin-bottom:5px;">📖 Rencana Rilis</div>
+            <div id="countdown">Loading...</div>
+        </div>
+
+        <!-- AUTHOR & CTA -->
+        <div class="author-box">
+            <div>
+                <div class="name">Hanif Ahdi Fiddini</div>
+                <div class="title">Founder & Chief System Architect — OTRIS</div>
+                <div style="font-size:0.85rem; color:#99aabb; margin-top:6px;">
+                    “Teknologi membantu membangun dokumen ini. Tapi teknologi tidak menciptakan tujuan di baliknya.”
+                </div>
+            </div>
+            <div class="btn-group">
+                <a href="https://otris.id" class="btn btn-primary" target="_blank">🌐 Kunjungi OTRIS</a>
+                <a href="#" class="btn btn-secondary" onclick="alert('Segera Hadir!')">📩 Dapatkan Info</a>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            &copy; 2026 <a href="https://otris.id">OTRIS</a> — Membangun Jembatan Keahlian Kesehatan Indonesia.<br>
+            <span style="font-size:0.75rem;">Didukung oleh <a href="https://netlify.com" target="_blank">Netlify</a> &amp; semangat kepulauan.</span>
+        </div>
+
+    </div>
+
+    <!-- SCRIPT COUNTDOWN -->
+    <script>
+        // Set target rilis (1 Desember 2026)
+        const targetDate = new Date('December 1, 2026 00:00:00 GMT+0700').getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const diff = targetDate - now;
+
+            if (diff <= 0) {
+                document.getElementById('countdown').innerHTML = '🚀 TELAH RILIS!';
+                return;
+            }
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown').innerHTML =
+                `${days} Hari ${hours} Jam ${minutes} Menit ${seconds} Detik`;
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    </script>
+
+</body>
+</html>
