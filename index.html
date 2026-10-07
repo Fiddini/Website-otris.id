@@ -39,7 +39,6 @@
     .logo-frame{display:flex;align-items:center;justify-content:center}
     .logo-frame img{object-fit:contain;display:block}
     .nav-btn.active{background:#071426;color:#fff;border-color:#071426;box-shadow:0 8px 18px rgba(7,20,38,.18)}
-    #site-header [data-view="pemecah"].active{background:#02090e;color:#48e0cf;border-color:#48e0cf;box-shadow:0 0 0 1px rgba(72,224,207,.18)}
     .nav-btn:focus-visible,.action-btn:focus-visible,.route-card:focus-visible,.filter-btn:focus-visible{outline:3px solid #cba760;outline-offset:3px}
     .route-card:hover{transform:translateY(-3px);border-color:#cba760}
     .route-card{transition:.2s ease}
@@ -112,33 +111,12 @@
     @keyframes hw-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
     @media(max-width:700px){.hw-boundary{grid-template-columns:1fr;gap:.25rem}.hw-boundary>.hw-arrow{transform:rotate(90deg);text-align:center}.hw-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.hw-devices,.hw-destinations{grid-template-columns:1fr 1fr}}
     @media(prefers-reduced-motion:reduce){.hw-reveal{animation:none}.hw-path:after{animation:none}}
-    /* Pemecah Batu architecture redesign */
-    #pemecah{--arch-bg:#02090e;--arch-cyan:#48e0cf;--arch-gold:#e6a92d;--arch-text:#e8f2f1;--arch-muted:#98a9ad;background:var(--arch-bg);color:var(--arch-text);padding:clamp(1rem,4vw,3rem);border-radius:28px}
-    #pemecah .arch-shell{max-width:1120px;margin:0 auto}
-    #pemecah .arch-hero{text-align:center;padding:clamp(2rem,7vw,5rem) 1rem 2.5rem}
-    #pemecah .arch-eyebrow{font:10px 'Space Mono',monospace;letter-spacing:.18em;color:var(--arch-cyan)}
-    #pemecah .arch-title{margin:1rem 0 .75rem;color:var(--arch-gold);font:600 clamp(2.5rem,7vw,5rem)/1.02 'Libre Franklin',sans-serif;letter-spacing:-.045em}
-    #pemecah .arch-subtitle{color:var(--arch-text);font:500 clamp(1.1rem,2.5vw,1.5rem)/1.4 'Libre Franklin',sans-serif}
-    #pemecah .arch-description{max-width:66ch;margin:1rem auto 0;color:var(--arch-muted);line-height:1.75}
-    #pemecah .arch-visual{max-width:900px;margin:0 auto;padding:clamp(1rem,3vw,2rem);border:1px solid var(--arch-gold);border-radius:18px;background:#071219;box-shadow:inset 0 0 0 1px rgba(72,224,207,.28)}
-    #pemecah .arch-visual img{display:block;width:100%;height:auto;object-fit:contain;cursor:zoom-in;transition:transform .25s ease}
-    #pemecah .arch-visual img:focus-visible{outline:3px solid var(--arch-cyan);outline-offset:4px}
-    #pemecah .arch-visual.is-enlarged{position:relative;z-index:2}
-    #pemecah .arch-visual.is-enlarged img{transform:scale(1.04);cursor:zoom-out}
-    #pemecah .arch-caption{margin:.9rem 0 0;text-align:center;color:var(--arch-cyan);font:10px 'Space Mono',monospace;letter-spacing:.08em}
-    #pemecah .arch-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:2rem auto;max-width:1000px}
-    #pemecah .arch-card{padding:1.35rem;border:1px solid rgba(72,224,207,.55);border-radius:14px;background:rgba(11,27,33,.78)}
-    #pemecah .arch-card h3{margin:0 0 .65rem;color:var(--arch-cyan);font:11px 'Space Mono',monospace;letter-spacing:.1em}
-    #pemecah .arch-card p{margin:0;color:var(--arch-text);font-size:.9rem;line-height:1.7}
-    #pemecah .arch-footer{padding:1.5rem;text-align:center;border-top:1px solid rgba(72,224,207,.22);color:var(--arch-muted);font:10px 'Space Mono',monospace}
     #about article{background:#02090e;color:#e8f2f1;border-color:rgba(72,224,207,.35)}
     #about article h2{color:#e6a92d}
     #about article p{color:#e8f2f1}
     #about .max-w-5xl section{border-color:rgba(72,224,207,.28)}
     #about .max-w-5xl h3,#about .max-w-5xl h4{color:#e8f2f1}
     #about .max-w-5xl p,#about .max-w-5xl li{color:#98a9ad}
-    @media(max-width:700px){#pemecah .arch-cards{grid-template-columns:1fr}#pemecah{padding:1rem;border-radius:18px}}
-    @media(prefers-reduced-motion:reduce){#pemecah .arch-visual img{transition:none}}
     /* Productive medical waqf page */
     #wakaf{--waqf-bg:#080B14;--waqf-cyan:#00AEEF;--waqf-green:#10B981;--waqf-gold:#D9B45B;background:var(--waqf-bg);color:#f4f7fb;padding:clamp(1rem,4vw,3rem);border-radius:28px}
     .waqf-shell{max-width:1120px;margin:auto}
@@ -285,16 +263,20 @@
 @media(max-width:900px){.qc-grid,.qc-home-grid{grid-template-columns:1fr}.qc-chain{grid-template-columns:1fr 1fr}.qc-boundary{grid-template-columns:1fr}}
 @media(max-width:560px){.qc-chain{grid-template-columns:1fr}.qc-shell{border-radius:20px}}
 </style>
+
+<style>
+.otris-requested-visual{max-width:1500px;margin:24px auto 34px;padding:0 18px}.otris-requested-visual img{display:block;width:100%;height:auto;border-radius:22px;box-shadow:0 22px 60px rgba(4,18,38,.18)}
+</style>
 </head>
 <body __processed_c24c7f41-529a-4f08-b587-2856e37ec4c5__="true" bis_frame_id="669" bis_status="ok" data-template-id="__page-root" style='background-image: url("https://astskelasviimatganjil.my.canva.site/_framed/eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwia2lkIjoia2lkLTE3Nzg0NzAzNjEzOTQifQ..IonVJFY4JtEhSRI6.LzKIeZ4vphvRbc01vzSfdlEA34P-NDYMBNOQdHtCdEoKoMLt0Xeq7p2kgWfs0eDyjqbWQF4O1w.qSIq3kkJpQQu3SiOTS1qeg/dahxfqehil8/_assets/media/f718db4639d154646b6a6e59fdefa8fd.jpg") !important; background-clip: border-box !important; background-position-x: calc(-88.8889vh + 50vw) !important; min-height: 768px; display: flow-root; background-size: 177.778vh 100vh !important;'>
 <div class="app-shell" data-template-id="app-shell" style="background-image: linear-gradient(rgb(247, 247, 244), rgb(247, 247, 244)) !important; background-clip: border-box !important;">
 <header class="canva-header sticky top-0 z-50 border-b border-slate-200/70 bg-white/90 backdrop-blur-xl" data-template-id="site-header" style="background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)) !important; background-clip: border-box !important;">
 <div class="w-full max-w-[1480px] mx-auto px-5 md:px-8 h-[118px] flex items-center justify-between gap-6">
 <div class="logo-frame shrink-0">
-<img alt="Logo resmi OTRIS dengan mercusuar dan aksen emas" class="canva-image w-[130px] h-[130px] md:w-[150px] md:h-[150px]" data-template-id="header-logo" loading="eager" src="./059b3b575f914a331fac72eb45268810.jpg" style="object-fit:contain;"/>
+<img alt="Logo resmi OTRIS dengan mercusuar dan aksen emas" class="canva-image w-[130px] h-[130px] md:w-[150px] md:h-[150px]" data-template-id="header-logo" loading="eager" src="./logo.png" style="object-fit:contain;"/>
 </div>
 <nav aria-label="Navigasi utama" class="hidden xl:flex items-center justify-center gap-1.5 overflow-x-auto min-w-0">
-<button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="nav-home" data-view="home" style="background-image: linear-gradient(rgb(7, 20, 38), rgb(7, 20, 38)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(255, 255, 255) !important; --canva-color: #ffffffff; caret-color: rgb(255, 255, 255) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">HOME</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="nav-about" data-view="about" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">ABOUT</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="nav-hardware" data-view="hardware" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">HARDWARE</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="nav-healthcare" data-view="healthcare" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">HEALTHCARE</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="nav-ai" data-view="ai" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">AI GATEWAY</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="nav-pemecah" data-view="pemecah" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">PEMECAH BATU</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-view="wijoyo" type="button">WIJOYO KUSUMO</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="nav-plug" data-view="plug" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">PLUG&amp;PLAY</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="nav-wakaf" data-view="wakaf" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">WAKAF</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="nav-software" data-view="software" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">SOFTWARE 20</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-view="qc-record" type="button">QC RECORD</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="nav-pubs" data-view="pubs" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">PUBS</button>
+<button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="nav-home" data-view="home" style="background-image: linear-gradient(rgb(7, 20, 38), rgb(7, 20, 38)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(255, 255, 255) !important; --canva-color: #ffffffff; caret-color: rgb(255, 255, 255) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">HOME</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="nav-about" data-view="about" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">ABOUT</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="nav-hardware" data-view="hardware" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">HARDWARE</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="nav-healthcare" data-view="healthcare" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">HEALTHCARE</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="nav-ai" data-view="ai" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">AI GATEWAY</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-view="wijoyo" type="button">WIJOYO KUSUMO</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="nav-plug" data-view="plug" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">PLUG&amp;PLAY</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="nav-wakaf" data-view="wakaf" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">WAKAF</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="nav-software" data-view="software" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">SOFTWARE 20</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-view="qc-record" type="button">QC RECORD</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="nav-pubs" data-view="pubs" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">PUBS</button>
 <div aria-label="Language" class="otris-lang-switch ml-2 inline-flex items-center rounded-full border border-slate-200 bg-white p-1" role="group">
 <button class="otris-lang-btn rounded-full px-2 py-1 mono text-[9px] active" data-lang="id" type="button">ID</button>
 <button class="otris-lang-btn rounded-full px-2 py-1 mono text-[9px]" data-lang="en" type="button">EN</button>
@@ -310,7 +292,7 @@
 <div class="xl:hidden w-full overflow-x-auto border-t border-slate-100 bg-white">
 <nav aria-label="Navigasi seluler" class="flex gap-2 px-5 py-2.5 min-w-max">
 <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="mobile-home" data-view="home" style="background-image: linear-gradient(rgb(7, 20, 38), rgb(7, 20, 38)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(255, 255, 255) !important; --canva-color: #ffffffff; caret-color: rgb(255, 255, 255) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">HOME</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="mobile-about" data-view="about" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">ABOUT</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="mobile-hardware" data-view="hardware" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">HARDWARE</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="mobile-healthcare" data-view="healthcare" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">HEALTHCARE</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="mobile-ai" data-view="ai" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">AI GATEWAY</button> <button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-canva-font-size="0.625rem" data-template-id="mobile-software" data-view="software" style="background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(51, 65, 85) !important; --canva-color: #334155ff; caret-color: rgb(51, 65, 85) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;" type="button">SOFTWARE 20</button>
-<button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-view="pemecah" type="button">PEMECAH BATU</button><button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-view="wijoyo" type="button">WIJOYO</button><button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-view="plug" type="button">P&amp;P</button><button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-view="wakaf" type="button">WAKAF</button><button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-view="qc-record" type="button">QC RECORD</button><button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-view="pubs" type="button">PUBS</button><div aria-label="Language" class="otris-lang-switch ml-2 inline-flex items-center rounded-full border border-slate-200 bg-white p-1" role="group">
+<button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-view="wijoyo" type="button">WIJOYO</button><button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-view="plug" type="button">P&amp;P</button><button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-view="wakaf" type="button">WAKAF</button><button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-view="qc-record" type="button">QC RECORD</button><button class="nav-btn mono text-[10px] px-3 py-2 rounded-full border border-slate-200" data-view="pubs" type="button">PUBS</button><div aria-label="Language" class="otris-lang-switch ml-2 inline-flex items-center rounded-full border border-slate-200 bg-white p-1" role="group">
 <button class="otris-lang-btn rounded-full px-2 py-1 mono text-[9px] active" data-lang="id" type="button">ID</button>
 <button class="otris-lang-btn rounded-full px-2 py-1 mono text-[9px]" data-lang="en" type="button">EN</button>
 <button class="otris-lang-btn rounded-full px-2 py-1 mono text-[9px]" data-lang="fr" type="button">FR</button>
@@ -326,9 +308,9 @@
 <p class="hm-lead" data-i18n="hm_lead">Kami membangun jembatan teknologi kesehatan agar perangkat yang sudah ada, data, dan tenaga ahli dapat terhubung lebih dekat kepada pasien — tanpa menunggu semuanya diganti atau sempurna terlebih dahulu.</p>
 <div class="hm-actions"><button class="hm-btn hm-btn-primary" data-i18n="hm_solution" data-view="healthcare">LIHAT JEMBATANNYA →</button><button class="hm-btn hm-btn-secondary" data-i18n="hm_why" data-view="about">MENGAPA OTRIS</button></div>
 <p class="hm-motto" data-i18n="hm_motto">MURAH, BUKAN MURAHAN. • KAMI SEDANG MEMBANGUN JEMBATAN UNTUK NYAWA.</p>
-</div><div class="hm-brand-stage"><span class="hm-ring r1"></span><span class="hm-ring r2"></span><img alt="Logo resmi OTRIS" class="hm-lighthouse" src="./059b3b575f914a331fac72eb45268810.jpg"/><div class="hm-pnp-float"><img alt="Logo resmi P&amp;P 15 Menit" src="./P&amp;P-15-MENIT.png"/></div></div></div></section>
+</div><div class="hm-brand-stage"><span class="hm-ring r1"></span><span class="hm-ring r2"></span><img alt="Logo resmi OTRIS" class="hm-lighthouse" src="./logo.png"/><div class="hm-pnp-float"><img alt="Logo resmi P&amp;P 15 Menit" src="./P&amp;P-15-MENIT.png"/></div></div></div></section>
 <section class="hm-section hm-price"><p class="hm-kicker" data-i18n="hm_price_kicker">FILOSOFI NILAI</p><h2 data-i18n="hm_price_title">MURAH, BUKAN MURAHAN.</h2><p data-i18n="hm_price_copy">OTRIS menekan biaya dengan mengintegrasikan teknologi yang sudah dimiliki fasilitas kesehatan. Nilai tidak dikurangi; pemborosan yang dikurangi. Integration Over Replacement adalah cara kami menjaga investasi rumah sakit tetap berguna.</p>
-<div class="hm-two-brands"><article class="hm-brand-card master"><div class="hm-brand-head"><img alt="OTRIS" src="./059b3b575f914a331fac72eb45268810.jpg"/><div><p class="hm-kicker">MASTER BRAND</p><h3>OTRIS</h3></div></div><p data-i18n="hm_otris_brand">Platform integrasi yang menyatukan perangkat medis, data, antarmuka klinis, dan konektivitas jarak jauh dalam arsitektur yang terkelola.</p></article><article class="hm-brand-card"><div class="hm-brand-head"><img alt="P&amp;P 15 Menit" src="./P&amp;P-15-MENIT.png"/><div><p class="hm-kicker">DEPLOYMENT IDENTITY</p><h3>P&amp;P 15 MENIT</h3></div></div><p data-i18n="hm_pnp_brand">Identitas Plug &amp; Play OTRIS: instalasi dibuat sesederhana mungkin bagi pengguna lapangan. Prinsip 15 menit adalah target UX pada kondisi dan perangkat yang telah memenuhi prasyarat dan tervalidasi.</p></article></div></section>
+<div class="hm-two-brands"><article class="hm-brand-card master"><div class="hm-brand-head"><img alt="OTRIS" src="./logo.png"/><div><p class="hm-kicker">MASTER BRAND</p><h3>OTRIS</h3></div></div><p data-i18n="hm_otris_brand">Platform integrasi yang menyatukan perangkat medis, data, antarmuka klinis, dan konektivitas jarak jauh dalam arsitektur yang terkelola.</p></article><article class="hm-brand-card"><div class="hm-brand-head"><img alt="P&amp;P 15 Menit" src="./P&amp;P-15-MENIT.png"/><div><p class="hm-kicker">DEPLOYMENT IDENTITY</p><h3>P&amp;P 15 MENIT</h3></div></div><p data-i18n="hm_pnp_brand">Identitas Plug &amp; Play OTRIS: instalasi dibuat sesederhana mungkin bagi pengguna lapangan. Prinsip 15 menit adalah target UX pada kondisi dan perangkat yang telah memenuhi prasyarat dan tervalidasi.</p></article></div></section>
 <section class="hm-section hm-bridge"><p class="hm-kicker" data-i18n="hm_arch_kicker">ARSITEKTUR YANG MENJAGA JEMBATAN</p><h2 class="hm-section-title" data-i18n="hm_arch_title">Yang beragam di luar. Satu bahasa di dalam OTRIS.</h2><p class="hm-bridge-copy" data-i18n="hm_arch_copy">Perangkat medis tetap melakukan tugasnya. Gateway mengenali dunia vendor, menormalkan data ke Canonical OTRIS, lalu Core dan Clinical Wall bekerja dengan bahasa yang konsisten. Local berdiri sendiri; cloud memperluas, bukan menggantikan.</p><div class="hm-flow"><div class="hm-node"><strong data-i18n="hm_n1">PERANGKAT MEDIS</strong><small data-i18n="hm_n1s">Yang sudah ada</small></div><div class="hm-arrow">→</div><div class="hm-node bridge-node"><strong>P&amp;P 15 MENIT</strong><small data-i18n="hm_n2s">Deploy &amp; connect</small></div><div class="hm-arrow">→</div><div class="hm-node"><strong>EDGE / GATEWAY</strong><small data-i18n="hm_n3s">Translate &amp; normalize</small></div><div class="hm-arrow">→</div><div class="hm-node"><strong>OTRIS CORE</strong><small>Canonical data</small></div><div class="hm-arrow">→</div><div class="hm-node"><strong>CLINICAL WALL</strong><small data-i18n="hm_n5s">Manusia melihat &amp; bertindak</small></div></div></section>
 <section class="hm-section hm-law"><div class="hm-law-grid"><div><p class="hm-kicker">THE OTRIS CONSTITUTION</p><div class="hm-law-quote" data-i18n-html="hm_const_quote">TEKNOLOGI BOLEH BERUBAH.<br/>ARAHNYA TIDAK BOLEH HILANG.</div><div class="hm-principles"><span>INTEGRATION OVER REPLACEMENT</span><span>VENDOR AGNOSTIC</span><span>CANONICAL FIRST</span><span>GATEWAY FIRST</span><span>EVENT DRIVEN</span><span>LOCAL FIRST</span><span>AUDIT FIRST</span></div></div><div class="hm-law-copy"><p data-i18n="hm_const_copy"><strong>Constitution menjaga identitas OTRIS ketika teknologi berubah.</strong> Arsitektur tidak boleh menjadi tawanan satu vendor. Gateway menerjemahkan, Core memproses. Data Path dan Execution Path dipisahkan. Fungsi lokal tidak boleh mati hanya karena cloud tidak tersedia.</p><p data-i18n="hm_guard" style="margin-top:1rem">Di atas semua itu ada satu kewajiban: teknologi harus tetap melayani manusia, keselamatan, continuity, dan traceability.</p><a class="hm-constitution-btn" data-i18n="hm_read_const" href="./book/">BACA THE OTRIS CONSTITUTION →</a><p style="margin-top:1.4rem;font:700 12px 'Space Mono',monospace;color:#0b4fa7">“Jagalah jembatan ini.”</p></div></div></section>
 <section class="hm-section hm-ecosystem"><p class="hm-kicker" data-i18n="hm_eco_kicker">SATU EKOSISTEM • BATAS YANG JELAS</p><h2 class="hm-section-title" data-i18n="hm_eco_title" style="color:#0b1728">Dari perangkat yang belum dikenal sampai integrasi yang dapat digunakan.</h2><div class="hm-eco-grid"><button class="hm-eco" data-view="wijoyo"><b>01 • WIJOYO KUSUMO</b><p data-i18n="hm_e1">Workbench menemukan dan mengumpulkan evidence. UNKNOWN tidak ditebak.</p></button><button class="hm-eco" data-view="plug"><b>02 • P&amp;P 15 MENIT</b><p data-i18n="hm_e2">Deployment disederhanakan setelah perangkat dan prasyarat tervalidasi.</p></button><button class="hm-eco" data-view="hardware"><b>03 • EDGE / GATEWAY</b><p data-i18n="hm_e3">Gateway mengenali vendor dan menerjemahkan ke bahasa Canonical OTRIS.</p></button><button class="hm-eco" data-view="healthcare"><b>04 • OTRIS</b><p data-i18n="hm_e4">Core, Clinical Wall, audit, dan konektivitas membawa informasi lebih dekat kepada manusia.</p></button></div></section>
@@ -348,98 +330,129 @@
 </section>
 <section class="hm-section hm-final"><p class="hm-kicker" data-i18n="hm_final_kicker">THE BRIDGE</p><h2 data-i18n="hm_final_title">JARAK TIDAK BOLEH MENENTUKAN SIAPA YANG MENDAPATKAN KEAHLIAN.</h2><p data-i18n="hm_final_copy">OTRIS dibangun agar teknologi yang sudah dimiliki fasilitas kesehatan dapat bekerja bersama, data memiliki jejak yang jelas, dan keahlian dapat bergerak menuju tempat pasien berada.</p><strong data-i18n="hm_final_line">JANGAN PINDAHKAN PASIENNYA. DATANGKAN KEAHLIANNYA.</strong></section>
 </div></section>
+
 <section class="view" id="about">
-<article class="overflow-hidden rounded-[30px] border border-[#cba760]/30 bg-[#071426] text-white soft-card">
-<div class="grid lg:grid-cols-[1.05fr_.95fr]">
-<div class="relative min-h-[420px] md:min-h-[620px]"><img alt="OTRIS Humanis: tenaga kesehatan berbincang hangat dengan keluarga pasien di ruang perawatan" class="canva-image absolute inset-0 h-full w-full object-cover object-center" data-template-id="about-humanis-photo" loading="eager" src="./0dbb42540dfe91f489d8580c219a81f9.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-[#071426]/85 via-transparent to-[#071426]/15"></div>
-<p class="absolute bottom-6 left-6 right-6 mono text-[10px] tracking-[.18em] text-[#efd697]">OTRIS HUMANIS · KEAHLIAN YANG MENDEKAT</p>
+<style>
+#about .about-v2{max-width:1180px;margin:0 auto;color:#071426}
+#about .about-v2-hero{overflow:hidden;border-radius:30px;background:#071426;border:1px solid rgba(203,167,96,.34);box-shadow:0 28px 80px rgba(7,20,38,.14)}
+#about .about-v2-hero img{display:block;width:100%;height:auto;max-height:880px;object-fit:cover;object-position:center}
+#about .about-v2-intro{padding:clamp(28px,6vw,72px);background:linear-gradient(180deg,#071426,#0b1d34);color:white}
+#about .about-v2-kicker{font:700 10px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.22em;color:#efd697}
+#about .about-v2-intro h2{margin:14px 0 0;font-size:clamp(2.2rem,5vw,4.5rem);line-height:.98;letter-spacing:-.045em;color:#efd697}
+#about .about-v2-intro p{max-width:880px;margin:26px 0 0;font-size:clamp(1rem,1.6vw,1.16rem);line-height:1.85;color:#dbe7f2}
+#about .about-v2-body{max-width:900px;margin:auto;padding:clamp(42px,7vw,92px) 22px}
+#about .about-v2-body section{padding:0 0 54px;margin:0 0 54px;border-bottom:1px solid rgba(154,120,57,.28)}
+#about .about-v2-body section:last-child{border-bottom:0}
+#about .about-v2-body h3{margin:0 0 22px;font-size:clamp(1.7rem,3vw,2.65rem);line-height:1.12;letter-spacing:-.035em}
+#about .about-v2-body p{margin:0 0 19px;font-size:1.02rem;line-height:1.9;color:#46576a}
+#about .about-v2-body strong{color:#071426}
+#about .about-v2-quote{margin:28px 0;padding:24px 26px;border-left:3px solid #cba760;background:#f8f3e9;font-size:clamp(1.15rem,2.2vw,1.55rem);line-height:1.6;color:#071426}
+#about .about-v2-flow{display:grid;gap:10px;margin:26px 0}
+#about .about-v2-flow div{padding:14px 17px;border:1px solid #d9e2ea;border-radius:14px;background:#f8fbfd;line-height:1.65;color:#46576a}
+#about .about-v2-flow b{color:#071426}
+#about .about-v2-sign{margin-top:36px;color:#9a7839!important;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.05em}
+</style>
+<div class="about-v2">
+  <article class="about-v2-hero">
+    <img src="./otris-humanis.jpg" alt="OTRIS Humanis — teknologi untuk memperpanjang jangkauan manusia">
+    <div class="about-v2-intro">
+      <p class="about-v2-kicker">ABOUT OTRIS • OTRIS HUMANIS</p>
+      <h2>ABOUT OTRIS</h2>
+      <p><strong>Kami tidak memulai dari keinginan membuat perangkat baru. Kami memulai dari sebuah pertanyaan: mengapa jarak, keterbatasan infrastruktur, dan perbedaan teknologi harus menentukan siapa yang dapat memperoleh akses terhadap keahlian medis?</strong></p>
+      <p>OTRIS — Operating Theatre Real-Time Integration Systems — dibangun sebagai jembatan.</p>
+      <p>Jembatan antara perangkat yang sudah dimiliki rumah sakit dengan sistem digital. Antara data dengan manusia yang membutuhkannya. Antara rumah sakit dengan tenaga ahli. Antara teknologi yang berbeda generasi. Dan pada akhirnya, antara keterbatasan sebuah tempat dengan pengetahuan yang mungkin berada jauh darinya.</p>
+      <p>Karena itu kami memilih <strong>Integration Over Replacement</strong>.</p>
+      <p>Kami tidak percaya transformasi kesehatan harus selalu dimulai dengan membuang apa yang sudah ada dan membeli semuanya kembali. Bila perangkat yang masih layak dapat diintegrasikan dengan aman dan dapat dibuktikan, tugas teknologi adalah membangun jembatan menuju perangkat tersebut.</p>
+      <div class="about-v2-quote"><strong>Murah, bukan murahan.</strong></div>
+      <p>Bagi kami, keterjangkauan tidak boleh diperoleh dengan mengurangi prinsip, menghilangkan pembuktian, atau menurunkan tanggung jawab. Penghematan harus datang dari arsitektur yang lebih cerdas: menggunakan kembali infrastruktur yang masih bernilai, bekerja secara lokal ketika internet tidak tersedia, dan menghindari ketergantungan yang tidak diperlukan.</p>
+    </div>
+  </article>
+
+  <div class="about-v2-body">
+    <section>
+      <h3>Teknologi yang dimulai dari manusia</h3>
+      <p>OTRIS tidak dibangun agar teknologi menjadi pusat perhatian.</p>
+      <p>ICU, operating theatre, patient monitor, Edge Agent, protokol, data, dashboard, dan seluruh engineering hanyalah alat.</p>
+      <p><strong>Manusia adalah tujuannya.</strong></p>
+      <p>Itulah sebabnya kami menyebut pendekatan ini <strong>OTRIS Humanis</strong>.</p>
+      <p>Teknologi yang baik tidak bertanya siapa dirinya, tetapi untuk apa ia ada.</p>
+      <p>Di balik setiap data terdapat pasien. Di balik setiap dashboard terdapat tenaga kesehatan yang harus mengambil keputusan. Di balik setiap integrasi terdapat rumah sakit dengan kondisi nyata—perangkat lama dan baru, jaringan yang mungkin tidak sempurna, listrik yang dapat berubah, keterbatasan anggaran, dan manusia yang tidak seharusnya dipaksa menjadi engineer hanya untuk menggunakan sebuah sistem.</p>
+      <p>Karena itulah kesederhanaan bagi kami bukan kosmetik.</p>
+      <p><strong>Ia adalah bagian dari engineering.</strong></p>
+    </section>
+
+    <section>
+      <h3>Kami membangun dengan dedikasi, bukan sekadar fitur</h3>
+      <p>OTRIS berkembang melalui buku, Constitution, blueprint, engineering, pengujian, kegagalan, koreksi, dan pembuktian.</p>
+      <p>Kami mencatat bukan hanya apa yang berhasil, tetapi juga apa yang belum diketahui.</p>
+      <p>Kami mempertahankan <strong>UNKNOWN</strong> ketika evidence belum cukup.</p>
+      <p>Kami tidak ingin sistem mengatakan sesuatu hanya karena sebuah kode memungkinkan sistem mengatakannya.</p>
+      <p>Pertanyaan kami lebih sederhana:</p>
+      <div class="about-v2-quote"><strong>“Tunjukkan kepada saya mengapa sistem berhak mengatakan itu.”</strong></div>
+      <p>Dari prinsip itulah lahir pemisahan yang kami jaga:</p>
+      <div class="about-v2-flow">
+        <div><b>Constitution</b> menentukan prinsip dan batas yang tidak boleh dikorbankan.</div>
+        <div><b>Engineering</b> mencari cara untuk mewujudkannya.</div>
+        <div><b>QC / Verification</b> meminta bukti.</div>
+        <div><b>Governance</b> menentukan kapan pengetahuan yang telah dibuktikan boleh memperoleh authority.</div>
+        <div><b>Edge Runtime</b> menjalankan authority tersebut di dunia nyata.</div>
+        <div><b>Continuous Integrity</b> memeriksa apakah alasan untuk mempercayainya masih tetap berlaku.</div>
+      </div>
+      <p>Ketiganya tidak kami campurkan.</p>
+      <p>Prinsip bukan bukti. Engineering bukan authority. Dan keberhasilan sekali bukan jaminan bahwa sesuatu akan benar selamanya.</p>
+    </section>
+
+    <section>
+      <h3>Kami tidak membangun untuk kondisi yang sempurna</h3>
+      <p>OTRIS lahir dengan kesadaran bahwa pelayanan kesehatan tidak selalu berlangsung dalam kondisi ideal.</p>
+      <p>Internet dapat terputus. Jaringan dapat berubah. Perangkat berasal dari vendor dan generasi berbeda. Rumah sakit memiliki kemampuan investasi yang berbeda. Lokasi geografis menciptakan tantangan yang berbeda.</p>
+      <p>Karena itu <strong>Local First</strong> dan <strong>Offline Capable</strong> bukan sekadar istilah teknis bagi kami.</p>
+      <p>Keduanya merupakan bagian dari gagasan yang lebih besar: <strong>kedaulatan operasional</strong>.</p>
+      <p>Sistem lokal tidak seharusnya kehilangan fungsi dasarnya hanya karena koneksi menuju cloud terputus.</p>
+      <p>Dan rumah sakit tidak seharusnya kehilangan kendali atas operasionalnya hanya karena sebuah teknologi berasal dari pihak lain.</p>
+    </section>
+
+    <section>
+      <h3>Plug &amp; Play bukan berarti menyederhanakan tanggung jawab</h3>
+      <p>Kami ingin teknologi kompleks terasa sederhana bagi penggunanya.</p>
+      <p>Dari situlah lahir semangat <strong>P&amp;P — Plug &amp; Play 15 Menit</strong>.</p>
+      <p>Lima belas menit bukan alasan untuk menghilangkan engineering di belakang layar. Justru sebaliknya: semakin sederhana pengalaman pengguna, semakin besar pekerjaan yang harus diselesaikan oleh sistem.</p>
+      <p>Seorang tenaga kesehatan tidak seharusnya dipaksa memahami kompleksitas jaringan, protokol, atau konfigurasi hanya untuk menghubungkan perangkat yang dibutuhkan.</p>
+      <p>Bila proses pemasangan masih terlalu rumit, kami tidak ingin menyalahkan pengguna.</p>
+      <p><strong>Kami kembali kepada desain.</strong></p>
+    </section>
+
+    <section>
+      <h3>Kami tidak meminta dunia mempercayai kami begitu saja</h3>
+      <p>OTRIS dibangun dengan prinsip bahwa kepercayaan harus mempunyai alasan.</p>
+      <p>Karena itu kami membangun reference, evidence, verification, QC record, governance, audit, dan continuous integrity.</p>
+      <p>Bukan untuk menciptakan kesan bahwa kami tidak pernah salah.</p>
+      <p>Justru agar kesalahan dapat ditemukan, dicatat, diperbaiki, dan tidak disembunyikan.</p>
+      <div class="about-v2-quote"><strong>Do not ask the world to trust what you build.<br>Build it so that trust can be earned, examined, challenged, corrected, and earned again.</strong></div>
+      <p>Kami ingin prinsip tersebut berlaku bukan hanya terhadap software OTRIS, tetapi terhadap perusahaan yang membangunnya.</p>
+    </section>
+
+    <section>
+      <h3>Kami sedang membangun jembatan</h3>
+      <p>Perjalanan OTRIS belum selesai.</p>
+      <p>Dan kami tidak ingin berpura-pura bahwa semuanya telah selesai.</p>
+      <p>Ada bagian yang sudah dibangun. Ada yang sedang diuji. Ada yang masih harus dibuktikan. Dan ada hal-hal yang dengan sengaja tetap kami beri status <strong>UNKNOWN</strong> sampai evidence tersedia.</p>
+      <p>Tetapi arah kami tidak berubah.</p>
+      <p>Kami ingin membangun teknologi kesehatan yang dapat bekerja bersama infrastruktur yang sudah ada, menjaga kemampuan lokal, membuka jalan menuju interoperabilitas, dan membantu pengetahuan medis melintasi batas perangkat, vendor, institusi, dan jarak.</p>
+      <p>Bukan teknologi untuk menggantikan manusia.</p>
+      <p><strong>Teknologi untuk memperpanjang jangkauan manusia.</strong></p>
+      <p>Karena bagi kami:</p>
+      <div class="about-v2-quote"><strong>ICU adalah pintu masuk.<br>Manusia adalah tujuannya.</strong></div>
+      <p>Dan kepada siapa pun yang suatu hari ikut membangun, menggunakan, menguji, mengkritik, atau meneruskan OTRIS, kami meninggalkan satu pesan:</p>
+      <div class="about-v2-quote"><strong>“Jagalah jembatan ini.”</strong></div>
+      <p class="about-v2-sign"><strong>Hanif Ahdi Fiddini</strong><br>Founder — OTRIS &amp; P&amp;P</p>
+    </section>
+  </div>
 </div>
-<div class="flex flex-col justify-center p-7 md:p-12 lg:p-14">
-<p class="mono text-[10px] tracking-[.22em] text-[#efd697]">SEBUAH PERTANYAAN YANG MELAHIRKAN OTRIS</p>
-<h2 class="canva-text mt-6 text-4xl md:text-5xl font-semibold tracking-[-.045em] leading-tight" data-canva-font-size="2.125rem" data-template-id="about-title" style="white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(239, 214, 151) !important; --canva-color: #efd697ff; caret-color: rgb(239, 214, 151) !important; font-family: YAFdJr3SNlU_1, auto !important; font-weight: 700 !important; font-style: normal !important; font-size: 2.125rem !important;">KISAH &amp; TUJUAN OTRIS: JEMBATAN KEMANUSIAAN</h2>
-<p class="canva-text mt-6 max-w-[52ch] text-base leading-relaxed text-slate-200" data-canva-font-size="1rem" data-template-id="about-copy" style="color: rgb(226, 232, 240) !important; --canva-color: #e2e8f0ff; caret-color: rgb(226, 232, 240) !important; font-family: YAFdJr3SNlU_1, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 1rem !important;">Semuanya bermula dari sebuah kenyataan pahit di lapangan. Kami melihat pasien dan keluarganya harus menempuh perjalanan yang sangat jauh—mengorbankan waktu, biaya, dan risiko keselamatan—hanya demi mendapatkan layanan medis yang memadai. Di sisi lain, teknologi yang seharusnya menyatukan justru sering kali terisolasi dan tidak bisa saling terhubung. Dari pengalaman itulah, lahir sebuah pertanyaan sederhana yang mengubah segalanya:<br/><br/>
-         ‘Apakah yang harus dipindahkan selalu pasiennya?’</p>
-<p class="canva-text mt-9 border-l-2 border-[#cba760] pl-5 mono text-sm md:text-base leading-relaxed text-[#efd697]" data-canva-font-size="0.9375rem" data-template-id="about-motto" style="white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(239, 214, 151) !important; --canva-color: #efd697ff; caret-color: rgb(239, 214, 151) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.9375rem !important;">DO NOT MOVE THE PATIENT. MOVE THE EXPERTISE.</p>
-</div>
-</div>
-</article>
-<div class="mx-auto max-w-5xl px-1 md:px-8">
-<section class="py-16 md:py-24 border-b border-[#cba760]/30">
-<p class="mono text-[10px] tracking-[.2em] text-[#9a7839]">02 / HUMANITY FIRST</p>
-<h3 class="mt-5 max-w-3xl text-3xl md:text-4xl font-medium leading-tight text-[#071426]">Teknologi yang baik tidak bertanya siapa dirinya, tetapi untuk apa ia ada.</h3>
-<p class="mt-6 max-w-3xl text-base leading-relaxed text-slate-600">Teknologi hanyalah alat. Manusia tetap pusat dari setiap rancangan, dan setiap keputusan OTRIS harus berpihak kepada martabat manusia.</p>
 </section>
-<section class="py-16 md:py-24 border-b border-[#cba760]/30">
-<p class="mono text-[10px] tracking-[.2em] text-[#9a7839]">03 / THE 10 CONSTITUTIONAL VALUES</p>
-<ol class="mt-8 grid md:grid-cols-2 gap-x-12">
-<li class="border-t border-slate-300 py-5"><h4 class="mono text-sm text-[#071426]">01 · Humanity First</h4><p class="mt-2 text-sm leading-relaxed text-slate-600">Martabat dan kesejahteraan manusia mendahului setiap pertimbangan.</p></li>
-<li class="border-t border-slate-300 py-5"><h4 class="mono text-sm text-[#071426]">02 · Patient Safety</h4><p class="mt-2 text-sm leading-relaxed text-slate-600">Keselamatan pasien menjadi batas dan tanggung jawab utama.</p></li>
-<li class="border-t border-slate-300 py-5"><h4 class="mono text-sm text-[#071426]">03 · Medical Sovereignty</h4><p class="mt-2 text-sm leading-relaxed text-slate-600">Keahlian medis tumbuh dan hadir dekat dengan masyarakat.</p></li>
-<li class="border-t border-slate-300 py-5"><h4 class="mono text-sm text-[#071426]">04 · Clinical Integrity</h4><p class="mt-2 text-sm leading-relaxed text-slate-600">Praktik klinis dijaga dengan jujur, utuh, dan bertanggung jawab.</p></li>
-<li class="border-t border-slate-300 py-5"><h4 class="mono text-sm text-[#071426]">05 · Trust Before Technology</h4><p class="mt-2 text-sm leading-relaxed text-slate-600">Kepercayaan manusia harus mendahului kecanggihan alat.</p></li>
-<li class="border-t border-slate-300 py-5"><h4 class="mono text-sm text-[#071426]">06 · Local Resilience</h4><p class="mt-2 text-sm leading-relaxed text-slate-600">Kemampuan lokal diperkuat agar layanan tetap tangguh.</p></li>
-<li class="border-t border-slate-300 py-5"><h4 class="mono text-sm text-[#071426]">07 · Knowledge Preservation</h4><p class="mt-2 text-sm leading-relaxed text-slate-600">Pengetahuan dirawat, dibagikan, dan diteruskan lintas generasi.</p></li>
-<li class="border-t border-slate-300 py-5"><h4 class="mono text-sm text-[#071426]">08 · Interoperability</h4><p class="mt-2 text-sm leading-relaxed text-slate-600">Perbedaan sistem dijembatani demi kesinambungan pelayanan.</p></li>
-<li class="border-t border-slate-300 py-5"><h4 class="mono text-sm text-[#071426]">09 · Stewardship</h4><p class="mt-2 text-sm leading-relaxed text-slate-600">Sumber daya dan kepercayaan dijaga dengan penuh amanah.</p></li>
-<li class="border-t border-slate-300 py-5"><h4 class="mono text-sm text-[#071426]">10 · Long-Term Thinking</h4><p class="mt-2 text-sm leading-relaxed text-slate-600">Keputusan hari ini mempertimbangkan generasi mendatang.</p></li>
-</ol>
-</section>
-<section class="py-16 md:py-24 border-b border-[#cba760]/30">
-<p class="mono text-[10px] tracking-[.2em] text-[#9a7839]">04 / MEDICAL SOVEREIGNTY</p>
-<h3 class="mt-5 text-3xl font-medium text-[#071426]">Kedaulatan medis, tujuh pilar</h3>
-<ul class="mt-7 grid sm:grid-cols-2 gap-x-10 text-sm text-slate-700">
-<li class="border-b border-slate-200 py-4">Sovereignty of Expertise</li>
-<li class="border-b border-slate-200 py-4">Sovereignty of Technology</li>
-<li class="border-b border-slate-200 py-4">Sovereignty of Data</li>
-<li class="border-b border-slate-200 py-4">Sovereignty of Clinical Decision</li>
-<li class="border-b border-slate-200 py-4">Sovereignty of Infrastructure</li>
-<li class="border-b border-slate-200 py-4">Sovereignty of Knowledge</li>
-<li class="border-b border-slate-200 py-4">Sovereignty of Purpose</li>
-</ul>
-<p class="mt-7 max-w-3xl text-base leading-relaxed text-slate-600">Teknologi membantu, tetapi keputusan klinis tetap berada pada tenaga kesehatan.</p>
-</section>
-<section class="py-16 md:py-24 border-b border-[#cba760]/30">
-<p class="mono text-[10px] tracking-[.2em] text-[#9a7839]">05 / INTEGRATION OVER REPLACEMENT</p>
-<h3 class="mt-5 text-3xl font-medium text-[#071426]">Menghubungkan, bukan menggantikan.</h3>
-<p class="mt-5 max-w-3xl text-base leading-relaxed text-slate-600">OTRIS tidak memaksa rumah sakit mengganti teknologi yang masih berfungsi. Kami membangun jembatan agar teknologi yang berbeda dapat bekerja bersama.</p>
-<p class="mt-8 mono text-lg text-[#9a7839]">We do not build tools. We build bridges.</p>
-</section>
-<section class="py-16 md:py-24 border-b border-[#cba760]/30">
-<p class="mono text-[10px] tracking-[.2em] text-[#9a7839]">06 / AI NEVER REPLACES HUMAN</p>
-<h3 class="mt-5 text-3xl md:text-4xl font-medium text-[#071426]">AI membantu. Dokter memutuskan.</h3>
-<p class="mt-5 max-w-3xl text-base leading-relaxed text-slate-600">AI dapat membantu menghadirkan informasi dan dukungan. AI bukan dokter, bukan pengganti dokter, dan bukan pemegang keputusan klinis.</p>
-</section>
-<section class="py-16 md:py-24 border-b border-[#cba760]/30">
-<p class="mono text-[10px] tracking-[.2em] text-[#9a7839]">07 / DATA IS EVIDENCE, NOT OPINION</p>
-<h3 class="mt-5 text-3xl font-medium text-[#071426]">Data adalah bukti, bukan opini.</h3>
-<p class="mt-5 max-w-3xl text-base leading-relaxed text-slate-600">Pencatatan, audit trail, dan data menjaga akuntabilitas serta melindungi pasien, tenaga kesehatan, dan kebenaran. Data bukan alat surveillance; ia adalah dasar pertanggungjawaban yang dapat ditelusuri.</p>
-</section>
-<section class="py-16 md:py-24 border-b border-[#cba760]/30">
-<p class="mono text-[10px] tracking-[.2em] text-[#9a7839]">08 / CONSTITUTIONAL ENGINEERING</p>
-<h3 class="mt-5 text-3xl font-medium text-[#071426]">Tujuan membentuk setiap lapisan.</h3>
-<ol class="mt-8 border-l border-[#cba760] pl-6 space-y-5 mono text-xs md:text-sm text-[#071426]">
-<li>PURPOSE</li>
-<li>↓   CONSTITUTIONAL VALUES</li>
-<li>↓   PRINCIPLES</li>
-<li>↓   ARCHITECTURE DECISIONS</li>
-<li>↓   HARDWARE / SOFTWARE / UI / AI</li>
-<li>↓   CLINICAL BENEFITS</li>
-<li>↓   PATIENT OUTCOMES</li>
-</ol>
-<p class="mt-7 max-w-3xl text-base leading-relaxed text-slate-600">Hardware, software, UI, dan AI hanyalah implementasi. Tujuan akhirnya adalah manfaat klinis dan keselamatan pasien.</p>
-</section>
-<section class="py-16 md:py-24">
-<p class="mono text-[10px] tracking-[.2em] text-[#9a7839]">09 / CLOSING</p>
-<blockquote class="mt-6 max-w-4xl text-2xl md:text-3xl leading-relaxed text-[#071426]">
-        Teknologi akan berubah. Hardware akan berubah. AI akan berubah. Tetapi alasan mengapa OTRIS ada tidak boleh berubah.
-       </blockquote>
-<p class="mt-9 mono text-sm leading-relaxed text-[#9a7839]">DO NOT MOVE THE PATIENT. MOVE THE EXPERTISE.</p>
-<p class="mt-4 mono text-xs tracking-[.12em] text-[#071426]">OTRIS IS A CONSTITUTION TRANSLATED INTO CODE.</p>
-</section>
-</div>
-</section>
+
 <section class="view" id="hardware">
+<figure class="otris-requested-visual"><img src="./hardware-topology.png" alt="3D Topologi Ruangan OTRIS — Integrated Operating Room"></figure>
 <div class="hw-page hw-grid">
 <section aria-labelledby="hw-hero-title" class="hw-section hw-reveal">
 <div class="hw-hero-visual">
@@ -449,7 +462,7 @@
 <h3 class="mt-4 text-lg md:text-2xl text-white">OTRIS CONNECTS THE TECHNOLOGY INSIDE IT.</h3>
 <p class="hw-copy mt-6">OTRIS is a medical technology integration platform designed to connect existing medical devices, clinical data, and hospital systems through a governed integration architecture. Hospitals do not need to replace technology simply because systems cannot communicate with each other.</p>
 <p class="hw-mono mt-7 text-sm text-[#cba760]">Keep what already works. Connect what already exists.</p>
-</div><img alt="Approved OTRIS Gateway hardware image" class="canva-image hw-approved-device" data-template-id="hardware-gateway-image" loading="eager" src="./2b1411c5fe375e9dd8539cdff9cc6f7d.png"/>
+</div><img alt="Approved OTRIS Gateway hardware image" class="canva-image hw-approved-device" data-template-id="hardware-gateway-image" loading="eager" src="./hardware-topology.png"/>
 </div>
 <div class="hw-diagram mt-10">
 <div class="grid lg:grid-cols-[1fr_1.2fr_1fr] gap-6 items-center">
@@ -722,6 +735,7 @@
 </div>
 </section>
 <section class="view" id="healthcare">
+<figure class="otris-requested-visual"><img src="./healthcare-otris.png" alt="OTRIS for Healthcare — real-time integration from operating room to the nation"></figure>
 <div class="hc-shell">
 <header class="hc-section">
 <p class="hc-kicker">HEALTHCARE • MEDICAL PLANE</p>
@@ -774,6 +788,7 @@
 </div>
 </section>
 <section class="view" id="ai">
+<figure class="otris-requested-visual"><img src="./ai-gateway.png" alt="OTRIS Gateway — gerbang integrasi data medis real-time"></figure>
 <div class="edge-page">
 <header class="edge-section text-center">
 <p class="edge-label">OTRIS EDGE AI</p>
@@ -847,38 +862,6 @@
 </div>
 <p class="edge-closing">Status UNKNOWN bukan kegagalan.<strong>UNKNOWN ADALAH TEMPAT PENEMUAN DIMULAI.</strong></p>
 </section>
-</div>
-</section>
-<section class="view" id="pemecah">
-<div class="arch-shell">
-<header class="arch-hero">
-<p class="arch-eyebrow">OTRIS / SYSTEM ARCHITECTURE</p>
-<h2 class="arch-title">PEMECAH BATU</h2>
-<p class="arch-subtitle">Unknown device. Known process.</p>
-<p class="arch-description">OTRIS connects clinical devices, local systems, and remote expertise through a controlled, auditable process.</p>
-</header>
-<figure class="arch-visual" id="architecture-frame"><img alt="Approved OTRIS Gateway hardware image" aria-label="Toggle enlarged Gateway image" class="canva-image hw-approved-device" data-template-id="hardware-gateway-image" loading="eager" role="button" src="./b3ef4bbb0ef4c9c092be27daf9f39185.png" tabindex="0"/>
-<figcaption class="arch-caption">
-        OTRIS GATEWAY / CONTROLLED INTEGRATION BOUNDARY
-       </figcaption>
-</figure>
-<div class="arch-cards">
-<article class="arch-card">
-<h3>DISCOVERY</h3>
-<p>Unknown device, known process: observe first and keep unverified meaning unknown.</p>
-</article>
-<article class="arch-card">
-<h3>EVIDENCE</h3>
-<p>Evidence supports a verified, auditable flow with human oversight.</p>
-</article>
-<article class="arch-card">
-<h3>INTEGRATION</h3>
-<p>Connect existing clinical devices and systems without replacing what already works.</p>
-</article>
-</div>
-<footer class="arch-footer">
-       OTRIS — Pemecah Batu Architecture
-      </footer>
 </div>
 </section>
 <section class="view" id="wijoyo">
@@ -1290,13 +1273,13 @@
 <div class="w-full max-w-[1480px] mx-auto px-5 md:px-8 py-8 flex flex-wrap items-center justify-between gap-6">
 <div class="flex items-center gap-4">
 <div class="logo-frame">
-<img alt="Logo resmi OTRIS dengan mercusuar dan aksen emas" class="canva-image h-[54px] w-[54px]" data-template-id="footer-logo" loading="eager" src="./059b3b575f914a331fac72eb45268810.jpg"/>
+<img alt="Logo resmi OTRIS dengan mercusuar dan aksen emas" class="canva-image h-[54px] w-[54px]" data-template-id="footer-logo" loading="eager" src="./logo.png"/>
 </div>
 <div>
 <div class="flex flex-wrap gap-2">
-<span class="canva-tag mono rounded-full px-2.5 py-1 text-[9px] bg-[#cba760] text-[#071426]" data-canva-font-size="0.5625rem" data-template-id="footer-badge1" style="background-image: linear-gradient(rgb(203, 167, 96), rgb(203, 167, 96)) !important; background-clip: border-box !important; white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(7, 20, 38) !important; --canva-color: #071426ff; caret-color: rgb(7, 20, 38) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.5625rem !important;">2026</span> <span class="canva-tag mono rounded-full px-2.5 py-1 text-[9px] border border-white/20 text-white" data-canva-font-size="0.5625rem" data-template-id="footer-badge2" style="white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(255, 255, 255) !important; --canva-color: #ffffffff; caret-color: rgb(255, 255, 255) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.5625rem !important;">20/20 MODULES</span> <span class="canva-tag mono rounded-full px-2.5 py-1 text-[9px] border border-white/20 text-white" data-canva-font-size="0.5625rem" data-template-id="footer-badge3" style="white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(255, 255, 255) !important; --canva-color: #ffffffff; caret-color: rgb(255, 255, 255) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.5625rem !important;">152 FILES MERGED</span>
+<span class="canva-tag mono rounded-full px-2.5 py-1 text-[9px] bg-[#cba760] text-[#071426]">PT. HEMATECH NUSANTARA</span>
 </div>
-<p class="canva-text mt-3 mono text-[9px] leading-relaxed text-slate-400" data-canva-font-size="0.5625rem" data-template-id="footer-copy" style="white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(148, 163, 184) !important; --canva-color: #94a3b8ff; caret-color: rgb(148, 163, 184) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.5625rem !important;">FINAL BEST DESIGN • Single HTML self-contained • Permission granted to write</p>
+<p class="canva-text mt-3 mono text-[9px] leading-relaxed text-slate-400">Email: <a href="mailto:info@otris.id" class="hover:text-white">info@otris.id</a> &nbsp;•&nbsp; Phone / WA: <a href="https://wa.me/6282125559557" target="_blank" rel="noopener" class="hover:text-white">+62 82125559557</a></p>
 </div>
 </div><span class="canva-text mono text-[9px] tracking-widest text-[#efd697]" data-canva-font-size="0.5625rem" data-template-id="footer-status" style="white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(239, 214, 151) !important; --canva-color: #efd697ff; caret-color: rgb(239, 214, 151) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.5625rem !important;">TRUSTED CLINICAL TECHNOLOGY</span>
 </div>
@@ -1336,10 +1319,6 @@
     }
     document.querySelectorAll("[data-view]").forEach(button => button.addEventListener("click", () => showView(button.dataset.view)));
     // Plug & Play page is informational; legacy demo controls removed.
-    const architectureImage = document.querySelector("#architecture-frame img");
-    function toggleArchitectureImage(){document.getElementById("architecture-frame").classList.toggle("is-enlarged");}
-    if(architectureImage) architectureImage.addEventListener("click", toggleArchitectureImage);
-    architectureImage.addEventListener("keydown", event => {if(event.key === "Enter" || event.key === " "){event.preventDefault();toggleArchitectureImage();}});
 
     const moduleList = document.getElementById("module-list");
     function renderModules(){
