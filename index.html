@@ -396,6 +396,9 @@
   margin:0 auto 30px !important;
   padding:10px !important;
   border-radius:22px !important;
+  background:transparent !important;
+  border-color:transparent !important;
+  box-shadow:none !important;
 }
 #ai .otris-requested-visual > img{
   width:100% !important;
@@ -524,6 +527,23 @@ img, video, svg, canvas { max-width: 100%; }
 .view button:focus-visible { outline: 2px solid #c9a24a; outline-offset: 2px; }
 </style>
 
+
+<style id="otris-home-header-final-fix">
+/* FINAL MICRO FIX — HOME + HEADER ONLY */
+/* Keep HOME visible at the beginning of the desktop navigation. */
+@media (min-width:1440px){
+  .canva-header nav.hidden.xl\:flex{justify-content:flex-start !important;gap:4px !important;}
+  .canva-header nav.hidden.xl\:flex .nav-btn{padding-left:9px !important;padding-right:9px !important;}
+  .canva-header .otris-lang-switch{margin-left:2px !important;}
+}
+/* Raise only the two brand marks in the HOME hero slightly. */
+#home .hm-lighthouse{transform:translateY(-14px);}
+#home .hm-pnp-float{bottom:32px;}
+@media (max-width:767px){
+  #home .hm-lighthouse{transform:translateY(-8px);}
+  #home .hm-pnp-float{bottom:24px;}
+}
+</style>
 </head>
 <body __processed_c24c7f41-529a-4f08-b587-2856e37ec4c5__="true" bis_frame_id="669" bis_status="ok" data-template-id="__page-root" style='background-image: url("https://astskelasviimatganjil.my.canva.site/_framed/eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwia2lkIjoia2lkLTE3Nzg0NzAzNjEzOTQifQ..IonVJFY4JtEhSRI6.LzKIeZ4vphvRbc01vzSfdlEA34P-NDYMBNOQdHtCdEoKoMLt0Xeq7p2kgWfs0eDyjqbWQF4O1w.qSIq3kkJpQQu3SiOTS1qeg/dahxfqehil8/_assets/media/f718db4639d154646b6a6e59fdefa8fd.jpg") !important; background-clip: border-box !important; background-position-x: calc(-88.8889vh + 50vw) !important; min-height: 768px; display: flow-root; background-size: 177.778vh 100vh !important;'>
 <div class="app-shell" data-template-id="app-shell" style="background-image: linear-gradient(rgb(247, 247, 244), rgb(247, 247, 244)) !important; background-clip: border-box !important;">
@@ -541,9 +561,7 @@ img, video, svg, canvas { max-width: 100%; }
 </div>
 </nav>
 <div class="flex items-center gap-3">
-<div class="desktop-status mono text-[10px] text-slate-500 items-center gap-2">
-<span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> <span class="canva-text" data-canva-font-size="0.625rem" data-template-id="header-status" style="white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(100, 116, 139) !important; --canva-color: #64748bff; caret-color: rgb(100, 116, 139) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.625rem !important;">BUILD OK • Sab 3 Okt 2026</span>
-</div><button class="action-btn mono text-[10px] md:text-[11px] px-4 py-2.5 rounded-full text-white active" data-canva-font-size="0.6875rem" data-template-id="header-action" data-view="software" style="background-image: linear-gradient(rgb(7, 20, 38), rgb(7, 20, 38)) !important; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: border-box !important; background-color: rgb(7, 20, 38); white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(255, 255, 255) !important; --canva-color: #ffffffff; caret-color: rgb(255, 255, 255) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.6875rem !important;" type="button">EXPLORE 20 →</button>
+<button class="action-btn mono text-[10px] md:text-[11px] px-4 py-2.5 rounded-full text-white active" data-canva-font-size="0.6875rem" data-template-id="header-action" data-view="software" style="background-image: linear-gradient(rgb(7, 20, 38), rgb(7, 20, 38)) !important; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: border-box !important; background-color: rgb(7, 20, 38); white-space: pre-wrap !important; overflow-wrap: normal !important; line-height: normal !important; color: rgb(255, 255, 255) !important; --canva-color: #ffffffff; caret-color: rgb(255, 255, 255) !important; font-family: YADW1-vpsoc_0, auto !important; font-weight: 400 !important; font-style: normal !important; font-size: 0.6875rem !important;" type="button">EXPLORE 20 →</button>
 </div>
 </div>
 <div class="xl:hidden w-full overflow-x-auto border-t border-slate-100 bg-white">
