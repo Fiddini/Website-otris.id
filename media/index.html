@@ -44,6 +44,18 @@ footer a{color:#fff}
 @media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:800px){.hero{padding:36px 6% 40px}.section-head{align-items:start;flex-direction:column}.about{padding:25px}}
 @media(max-width:600px){header{padding:12px 5%}nav{gap:12px}nav .links{gap:12px;font-size:12px}.hero{padding:30px 5% 34px}h1{font-size:clamp(30px,8vw,40px)}.eyebrow{font-size:10px;letter-spacing:2px}.hero p{font-size:15px}main{padding:32px 5% 48px}.grid{grid-template-columns:1fr;gap:16px}.section-head{margin-bottom:20px}.section-head h2{font-size:24px}.card-art{height:120px}.card-body{padding:18px}.about{margin-top:42px}}
+.editorial-heading{font-size:19px;margin:38px 0 18px;color:#354b5d}
+.pagination{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:center;margin:25px 0 0}
+.pagination button{background:white;border:1px solid #cbd5e1;border-radius:5px;padding:8px 13px;color:#142d44;cursor:pointer;font:inherit}
+.pagination button[aria-current="page"]{background:var(--navy2);color:white;border-color:var(--navy2)}
+.pagination button:disabled{opacity:.4;cursor:not-allowed}
+.catalog-message{font-size:14px;color:#617487}
+.published-card .card-art{font-size:32px;letter-spacing:0;overflow:hidden}
+.published-card .card-art img{display:block;width:100%;height:100%;object-fit:contain}
+.published-card .card-art.no-image{font-size:15px;letter-spacing:1px}
+.published-card .card-body a{color:#14547c;text-decoration:underline;text-underline-offset:3px;font-weight:700}
+.published-card .card-body time{font-size:12px;color:#617487}
+@media(max-width:600px){.pagination button{padding:8px 10px}}
 </style>
 </head>
 <body>
@@ -72,6 +84,10 @@ footer a{color:#fff}
 <h2>Publikasi &amp; Wawasan</h2>
 <span>OTRIS MEDIA / EDITORIAL</span>
 </div>
+<div id="published-grid" class="grid" aria-live="polite"></div>
+<nav id="publication-pagination" class="pagination" aria-label="Halaman publikasi"></nav>
+<p id="published-message" class="catalog-message" role="status"></p>
+<h3 class="editorial-heading">Topik Editorial dalam Persiapan</h3>
 <div class="grid">
 <article class="card">
 <div class="card-art">01</div>
@@ -116,4 +132,14 @@ footer a{color:#fff}
 <div><a href="https://www.otris.id/">www.otris.id</a><p>© 2026 OTRIS Media. All rights reserved.</p></div>
 </div>
 </footer>
-</body></html>
+<script>
+/* OTRIS Media v1.2 — static published-only catalog; 5 per page */
+(()=>{'use strict';const perPage=5,grid=document.getElementById('published-grid'),pager=document.getElementById('publication-pagination'),message=document.getElementById('published-message');let items=[],page=1;
+const cleanPath=p=>{if(typeof p!=='string'||!p||p.startsWith('/')||p.includes('\\')||p.split('/').some(x=>x==='..')||/^[a-z]+:/i.test(p)||p.startsWith('//'))return null;return p};
+function linkText(el,text){el.textContent=text;return el}
+function render(){grid.replaceChildren();pager.replaceChildren();const pages=Math.max(1,Math.ceil(items.length/perPage));page=Math.min(Math.max(1,page),pages);const slice=items.slice((page-1)*perPage,page*perPage);for(const a of slice){const card=document.createElement('article');card.className='card published-card';const visual=document.createElement('div');visual.className='card-art';if(a.cover){const img=document.createElement('img');img.src=a.cover;img.alt=a.coverAlt||('Sampul '+a.title);img.loading='lazy';visual.append(img)}else{visual.classList.add('no-image');visual.textContent='OTRIS MEDIA'}card.append(visual);const body=document.createElement('div');body.className='card-body';const tag=document.createElement('div');tag.className='tag';tag.textContent=a.category||'Editorial';body.append(tag);const heading=document.createElement('h3');const anchor=document.createElement('a');anchor.href=a.url;anchor.textContent=a.title;heading.append(anchor);body.append(heading);if(a.subtitle){const p=document.createElement('p');p.textContent=a.subtitle;body.append(p)}const time=document.createElement('time');time.dateTime=a.publishedAt;time.textContent=a.publishedAt;body.append(time);const more=document.createElement('p');const read=document.createElement('a');read.href=a.url;read.textContent='Baca Artikel →';more.append(read);body.append(more);card.append(body);grid.append(card)}
+message.textContent=items.length?'Menampilkan '+((page-1)*perPage+1)+'–'+Math.min(page*perPage,items.length)+' dari '+items.length+' artikel terbit.':'Belum ada artikel berstatus terbit di katalog.';
+if(pages>1){function btn(label,n,disabled,current){const b=document.createElement('button');b.type='button';b.textContent=label;b.disabled=disabled;if(current)b.setAttribute('aria-current','page');b.addEventListener('click',()=>{page=n;render();document.getElementById('publikasi').scrollIntoView({behavior:'auto',block:'start'});history.replaceState(null,'',location.pathname+location.search+'#publikasi')});pager.append(b)}btn('Sebelumnya',page-1,page===1,false);for(let i=1;i<=pages;i++)btn(String(i),i,false,i===page);btn('Berikutnya',page+1,page===pages,false)}}
+fetch('./articles.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(data=>{if(!Array.isArray(data))throw Error('Format katalog bukan array');const ids=new Set();items=data.filter(a=>{if(!a||a.status!=='published'||!a.id||ids.has(a.id)||!/^\d{4}-\d{2}-\d{2}$/.test(a.publishedAt||''))return false;const url=cleanPath(a.url),cover=a.cover?cleanPath(a.cover):'';if(!url||!url.endsWith('.html')||(a.cover&&!cover))return false;ids.add(a.id);a.url=url;a.cover=cover;return true}).sort((a,b)=>b.publishedAt.localeCompare(a.publishedAt)||String(a.id).localeCompare(String(b.id)));render()}).catch(e=>{render();message.textContent='Katalog publikasi belum dapat dimuat ('+e.message+'). Silakan periksa articles.json.'});
+})();
+</script></body></html>
