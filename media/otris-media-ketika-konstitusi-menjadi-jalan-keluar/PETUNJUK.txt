@@ -1,0 +1,10 @@
+OTRIS MEDIA STUDIO — EKSPOR MANUAL
+
+1. Buka ketika-konstitusi-menjadi-jalan-keluar.html di browser untuk memeriksa tampilannya.
+2. Upload ketika-konstitusi-menjadi-jalan-keluar.html ke repository Fiddini/Website-otris.id, folder media/.
+3. Upload seluruh isi folder assets/ ke media/assets/ (jaga nama dan struktur).
+4. Commit perubahan dan tunggu GitHub Pages selesai deploy.
+5. Alamat artikel: https://www.otris.id/media/ketika-konstitusi-menjadi-jalan-keluar.html
+6. Tambahkan link artikel secara manual ke media/index.html jika ingin tampil di daftar publikasi.
+
+PENTING: Studio tidak mempublikasikan otomatis. Periksa canonical dan metadata sebelum upload.
