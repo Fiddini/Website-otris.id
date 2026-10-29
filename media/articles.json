@@ -1,3 +1,4 @@
+
 [
   {
     "id": "ketika-konstitusi-menjadi-jalan-keluar",
@@ -9,5 +10,16 @@
     "url": "otris-media-ketika-konstitusi-menjadi-jalan-keluar/ketika-konstitusi-menjadi-jalan-keluar.html",
     "cover": "otris-media-ketika-konstitusi-menjadi-jalan-keluar/assets/ketika-konstitusi-menjadi-jalan-keluar-1.png",
     "coverAlt": "Sampul buku OTRIS"
+  },
+  {
+    "id": "otris-kacamata-meta",
+    "title": "OTRIS dan Kacamata Meta: Dari Tujuh Ruangan Berbasis Android Menuju Kolaborasi Medis Tanpa Batas",
+    "subtitle": "Evolusi OTRIS dari integrasi Android di tujuh ruangan menuju eksplorasi kacamata pintar untuk kolaborasi medis jarak jauh.",
+    "category": "Health Technology",
+    "publishedAt": "2026-10-29",
+    "status": "published",
+    "url": "otris-media-ketika-konstitusi-menjadi-jalan-keluar/otris-dan-kacamata-meta-dari-tujuh-ruangan-berbasis-android-menuju-kolaborasi-medis-tanpa-batas.html",
+    "cover": "otris-media-ketika-konstitusi-menjadi-jalan-keluar/assets/otris-dan-kacamata-meta-dari-tujuh-ruangan-berbasis-android-menuju-kolaborasi-medis-tanpa-batas-1.png",
+    "coverAlt": "Ilustrasi evolusi OTRIS dari sistem Android di tujuh ruangan menuju konsep kacamata pintar Meta"
   }
 ]
