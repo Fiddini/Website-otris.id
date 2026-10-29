@@ -1,6 +1,22 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.otris.id/</loc>
+  </url>
+  <url>
+    <loc>https://www.otris.id/media/</loc>
+  </url>
+  <url>
+    <loc>https://www.otris.id/media/otris-media-ketika-konstitusi-menjadi-jalan-keluar/ketika-konstitusi-menjadi-jalan-keluar.html</loc>
+  </url>
+  <url>
+    <loc>https://www.otris.id/media/otris-media-ketika-konstitusi-menjadi-jalan-keluar/interoperabilitas-menghubungkan-perangkat-medis-tanpa-mengganti-semuanya.html</loc>
+  </url>
+  <url>
+    <loc>https://www.otris.id/media/otris-media-ketika-konstitusi-menjadi-jalan-keluar/plug-play-dalam-lingkungan-teknologi-medis.html</loc>
+  </url>
+  <url>
+    <loc>https://www.otris.id/media/otris-media-ketika-konstitusi-menjadi-jalan-keluar/otris-dan-kacamata-meta-dari-tujuh-ruangan-berbasis-android-menuju-kolaborasi-medis-tanpa-batas.html</loc>
   </url>
 </urlset>
