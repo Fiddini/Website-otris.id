@@ -12,6 +12,13 @@
   header { position: sticky; top: 0; z-index: 999; }
   a { pointer-events: auto !important; }
 </style>
+<style>/* fix-final2-otris */
+[class*="trust-white"], [class*="trust-white"] * { color:#0f172a !important; background:transparent !important; }
+[class*="trust-white"] { background:#ffffff !important; }
+[class*="trust-white"] a { color:#0b4fa7 !important; }
+section:has([class*="trust-white"]) > div { display:grid !important; grid-template-columns:1fr 1fr !important; gap:24px !important; align-items:stretch !important; }
+@media (max-width:768px){ section:has([class*="trust-white"]) > div { grid-template-columns:1fr !important; } }
+</style>
 </head>
 <body>
 <header>
@@ -42,187 +49,7 @@
   <section id="home" class="hero">
     <div class="hero-inner">
       <div>
-        <p class="kicker">OTRIS • MEDICAL SOVEREIGNTY • 2026</p>
-        <h1>ICU ADALAH PINTU MASUK.<span>MANUSIA ADALAH TUJUANNYA.</span></h1>
-        <p class="lead">Kami membangun jembatan teknologi kesehatan agar perangkat yang sudah ada, data, dan tenaga ahli dapat terhubung lebih dekat kepada pasien — tanpa menunggu semuanya diganti atau sempurna terlebih dahulu.</p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:20px">
-          <a class="btn btn-white" href="#healthcare">LIHAT JEMBATANNYA →</a>
-          <a class="btn btn-outline" href="#about">MENGAPA OTRIS</a>
-        </div>
-        <p style="margin-top:20px;font-family:ui-monospace,monospace;font-size:11px;letter-spacing:.08em;color:#e6c98a">MURAH, BUKAN MURAHAN. • KAMI SEDANG MEMBANGUN JEMBATAN UNTUK NYAWA.</p>
-      </div>
-      <div class="hero-img">
-        <img src="assets/logo.png" alt="Logo resmi OTRIS dengan mercusuar"/>
-        <div class="badge-pnp"><img src="assets/P&P-15-MENIT.png" alt="Logo P&P 15 Menit"/></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PINTU DARI WEBSITE INTI KE TRUST HOUSE & PEMECAH BATU -->
-  <section class="pintu" id="pintu">
-    <p class="kicker">PINTU DARI OTRIS.ID →</p>
-    <h2>WIJOYO TRUST HOUSE</h2>
-    <p>Satu pintu. Di dalamnya ada dua: Wakaf Rumah + Pemecah Batu. Pemecah Batu ada di dalam RUMAH-INSTALL.</p>
-    <p style="color:#e6c98a">“Rumah ini diwakafkan. Ilmu tidak dijual, yang dijual tenaga dan jasa. Penghasilan dari jasa untuk anak-anak.”</p>
-    <div style="display:flex;gap:12px;flex-wrap:wrap">
-    <a class="btn btn-gold" href="#pemecah-batu">MASUK KE PEMECAH BATU →</a>
-    <a class="btn btn-outline" href="#home">← KEMBALI KE HOME</a>
-  </div>
-  </section>
-
-  <!-- FILOSOFI -->
-  <section class="section">
-    <p class="kicker" style="color:#0b4fa7">FILOSOFI NILAI</p>
-    <h2 style="font-size:clamp(2rem,5vw,3.5rem);line-height:1.05;margin:8px 0">MURAH, BUKAN MURAHAN.</h2>
-    <p style="max-width:75ch;color:#475569">OTRIS menekan biaya dengan mengintegrasikan teknologi yang sudah dimiliki fasilitas kesehatan. Nilai tidak dikurangi; pemborosan yang dikurangi. Integration Over Replacement adalah cara kami menjaga investasi rumah sakit tetap berguna.</p>
-    <div class="grid2" style="margin-top:20px">
-      <article class="card" style="background:#071b36;color:#fff"><h3>MASTER BRAND — OTRIS</h3><p>Platform integrasi yang menyatukan perangkat medis, data, antarmuka klinis, dan konektivitas jarak jauh dalam arsitektur yang terkelola.</p><a href="#about">Pelajari OTRIS →</a></article>
-      <article class="card"><h3>DEPLOYMENT IDENTITY — P&amp;P 15 MENIT</h3><p>Identitas Plug &amp; Play OTRIS: instalasi dibuat sesederhana mungkin bagi pengguna lapangan. Prinsip 15 menit adalah target UX pada kondisi dan perangkat yang telah memenuhi prasyarat dan tervalidasi.</p><a href="#plug">Lihat Plug &amp; Play →</a></article>
-    </div>
-  </section>
-
-  <!-- ARSITEKTUR -->
-  <section class="section dark" id="hardware">
-    <p class="kicker">ARSITEKTUR YANG MENJAGA JEMBATAN</p>
-    <h2 style="font-size:clamp(2rem,5vw,3.5rem);line-height:1.05">Yang beragam di luar. Satu bahasa di dalam OTRIS.</h2>
-    <p>Perangkat medis tetap melakukan tugasnya. Gateway mengenali dunia vendor, menormalkan data ke Canonical OTRIS, lalu Core dan Clinical Wall bekerja dengan bahasa yang konsisten. Local berdiri sendiri; cloud memperluas, bukan menggantikan.</p>
-    <div class="flow" style="margin-top:20px">
-      <span><b>PERANGKAT MEDIS</b><br/>Yang sudah ada</span> → <span><b>P&amp;P 15 MENIT</b><br/>Deploy &amp; connect</span> → <span><b>EDGE / GATEWAY</b><br/>Translate &amp; normalize</span> → <span><b>OTRIS CORE</b><br/>Canonical data</span> → <span><b>CLINICAL WALL</b><br/>Manusia melihat &amp; bertindak</span>
-    </div>
-    <p style="font-size:13px;margin-top:16px">Gambar: <a href="#hardware">Lihat diagram hardware →</a> • File gambar ada di folder <code>assets/</code>, bukan background, jadi bisa diklik dan dibuka.</p>
-  </section>
-
-  <!-- CONSTITUTION -->
-  <section class="section">
-    <p class="kicker" style="color:#0b4fa7">THE OTRIS CONSTITUTION</p>
-    <h2>TEKNOLOGI BOLEH BERUBAH.<br/>ARAHNYA TIDAK BOLEH HILANG.</h2>
-    <p style="font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.08em">INTEGRATION OVER REPLACEMENT • VENDOR AGNOSTIC • CANONICAL FIRST • GATEWAY FIRST • EVENT DRIVEN • LOCAL FIRST • AUDIT FIRST</p>
-    <p style="max-width:75ch;color:#475569"><b>Constitution menjaga identitas OTRIS ketika teknologi berubah.</b> Arsitektur tidak boleh menjadi tawanan satu vendor. Gateway menerjemahkan, Core memproses. Data Path dan Execution Path dipisahkan. Fungsi lokal tidak boleh mati hanya karena cloud tidak tersedia.</p>
-    <a class="btn btn-dark" href="#about">BACA THE OTRIS CONSTITUTION →</a>
-    <p style="margin-top:12px">“Jagalah jembatan ini.”</p>
-  </section>
-
-  <!-- QC -->
-  <section class="section dark">
-    <p class="kicker">QC RECORD • REFERENCE • VERIFICATION</p>
-    <h2>WE DON'T ASK FOR TRUST. WE SHOW THE RECORD.</h2>
-    <p>Constitution menetapkan prinsip. Engineering membangun mekanisme. QC meminta pembuktian. Governance menentukan authority. Edge menjalankannya. Continuous Integrity memeriksa apakah alasan untuk mempercayainya masih berlaku.</p>
-    <p><b>Reference, Verification &amp; Continuous Integrity.</b> Kepercayaan adalah sesuatu yang harus dapat diperiksa, diuji, dikoreksi, dan diperoleh kembali — bukan sekadar dinyatakan.</p>
-    <a class="btn btn-gold" href="#about">BUKA QC RECORD →</a>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <p class="kicker" style="color:#0b4fa7">ABOUT OTRIS • OTRIS HUMANIS</p>
-    <h2>ABOUT OTRIS</h2>
-    <p style="max-width:75ch"><b>Kami tidak memulai dari keinginan membuat perangkat baru. Kami memulai dari sebuah pertanyaan: mengapa jarak, keterbatasan infrastruktur, dan perbedaan teknologi harus menentukan siapa yang dapat memperoleh akses terhadap keahlian medis?</b></p>
-    <p style="max-width:75ch;color:#475569">OTRIS — Operating Theatre Real-Time Integration Systems — dibangun sebagai jembatan. Antara perangkat yang sudah dimiliki rumah sakit dengan sistem digital. Antara data dengan manusia yang membutuhkannya. Antara rumah sakit dengan tenaga ahli.</p>
-    <p><b>Murah, bukan murahan.</b> Keterjangkauan tidak boleh diperoleh dengan mengurangi prinsip, menghilangkan pembuktian, atau menurunkan tanggung jawab.</p>
-    <p><b>Teknologi yang dimulai dari manusia.</b> ICU, operating theatre, patient monitor, Edge Agent, protokol, data, dashboard — semuanya alat. <b>Manusia adalah tujuannya.</b></p>
-    <p style="max-width:75ch;color:#475569">Kami mempertahankan <b>UNKNOWN</b> ketika evidence belum cukup. Kami tidak ingin sistem mengatakan sesuatu hanya karena sebuah kode memungkinkan sistem mengatakannya. Pertanyaan kami: <b>“Tunjukkan kepada saya mengapa sistem berhak mengatakan itu.”</b></p>
-    <p><b>Hanif Ahdi Fiddini</b><br/>Founder — OTRIS &amp; P&amp;P</p>
-  </section>
-
-  <!-- HEALTHCARE -->
-  <section class="section dark" id="healthcare">
-    <p class="kicker">HEALTHCARE • MEDICAL PLANE</p>
-    <h2>INTEROPERABILITAS DATA KESEHATAN</h2>
-    <h3>Dari Pulau Terpencil ke Rekam Medis Nasional</h3>
-    <p>OTRIS bertindak sebagai penerjemah dari format data kanonikal ke FHIR, sehingga data ruang operasi real-time dapat menjadi bagian dari rekam medis elektronik nasional.</p>
-    <h3>THE DIGITAL BRIDGE TO SATUSEHAT</h3>
-    <div class="flow"><span>SUMBER DATA / RUANG OPERASI<br/>HR, BP, MV, PEEP</span> → <span>OTRIS GATEWAY<br/>Canonical Data Format</span> → <span>SATUSEHAT<br/>Kemenkes RI / JSON FHIR v4</span></div>
-    <p style="margin-top:16px"><b>KEPATUHAN:</b> Wajib PMK 24/2022. OTRIS mengirim data vital, gambar kamera, laporan tindakan, dan jejak audit langsung ke SATUSEHAT.</p>
-    <p><b>KECEPATAN &amp; KEAMANAN:</b> MQTT untuk real-time dan HTTPS untuk SATUSEHAT API. Latency Device → Bus &lt; 12ms p95</p>
-    <p>OTRIS menerjemahkan dan menstandarkan data, sementara makna klinis dan keputusan tetap berada dalam tata kelola klinis yang berwenang.</p>
-  </section>
-
-  <!-- AI GATEWAY -->
-  <section class="section" id="ai">
-    <p class="kicker" style="color:#0b4fa7">OTRIS EDGE AI</p>
-    <h2>OTRIS EDGE AI</h2>
-    <p><b>Kecerdasan di Edge. Bukti Sebelum Asumsi.</b></p>
-    <p style="max-width:75ch;color:#475569">OTRIS Edge AI membawa kecerdasan integrasi lebih dekat ke perangkat medis — ke tempat data berasal, diamati, divalidasi, dan diterjemahkan menjadi informasi klinis yang dapat digunakan oleh ekosistem OTRIS.</p>
-    <p><b>PERANGKAT ADALAH SUMBER. GATEWAY ADALAH JEMBATAN. BUKTI MENENTUKAN APA YANG DAPAT DIPERCAYA OTRIS.</b></p>
-    <p>Ketika OTRIS bertemu perangkat yang belum dikenal, sistem tidak langsung memberikan arti klinis. Statusnya: <b>UNKNOWN — BELUM DIKETAHUI</b></p>
-    <p style="font-family:ui-monospace,monospace;font-size:12px">PERANGKAT BARU → TEMUKAN → AMATI → REKAM → IDENTIFIKASI KANDIDAT → KUMPULKAN BUKTI → VALIDASI → INTEGRASIKAN</p>
-  </section>
-
-  <!-- WIJOYO -->
-  <section class="section dark" id="wijoyo">
-    <p class="kicker">WIJOYO KUSUMO — AMANAH</p>
-    <h2>WIJOYO KUSUMO</h2>
-    <p><b>WIJOYO KUSUMO adalah nama dan amanah di balik Pemecah Batu. Nama ini tidak boleh dihapus, tidak boleh diganti.</b></p>
-    <div class="grid3" style="margin-top:16px">
-      <div style="border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:16px"><b>01 — PEMECAH BATU</b><p>Dari RAW BYTES jadi profile.yaml yang bisa di-share. Pekerjaan besar dipecah sampai bisa diperiksa.</p><a href="#trust-house">Lihat Pemecah Batu →</a></div>
-      <div style="border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:16px"><b>02 — WAKAF WIJOYO KUSUMO</b><p>Untuk TK Cia &amp; kuliah Lacita. Ilmu tidak dijual, yang dijual tenaga dan jasa.</p><a href="#wakaf">Lihat Wakaf →</a></div>
-      <div style="border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:16px"><b>03 — NANO PIPELINE</b><p>NANO INGRESS → CAPTURE → CLASSIFICATION → FINGERPRINT → EVIDENCE → REPLAY → CANDIDATE → GOVERNANCE</p></div>
-    </div>
-    <p style="margin-top:16px;color:#e6c98a">Prinsip: STOP — REPORT — DO NOT AUTO-REPAIR — DO NOT FABRICATE.</p>
-  </section>
-
-  <!-- PLUG & PLAY + HL7 - DIBANGUN ULANG JADI HTML BENERAN, BUKAN GAMBAR -->
-  <!-- SEBELUMNYA: Section ini adalah 1 gambar PNG besar, makanya tombol di dalamnya tidak bisa dipencet -->
-  <!-- SEKARANG: Semua judul, tombol, ikon adalah HTML <a> / <button> beneran -->
-  <section class="section" id="plug" style="background:#06172d; color:#fff; border-radius:28px; padding:36px; overflow:hidden;">
-    <p class="kicker">OTRIS PLUG &amp; PLAY</p>
-    <h2 style="font-size:clamp(2.2rem,5vw,3.8rem); line-height:1.05; margin:10px 0;">Integrasi Perangkat OR<br/><span style="color:#e6c98a">dalam 15 Menit</span></h2>
-    <p style="color:#dbeafe; max-width:60ch;">Manfaatkan perangkat medis yang sudah ada. Tanpa perlu mengganti sistem, tanpa vendor lock-in. Colok, konfigurasi, dan mulai terintegrasi.</p>
-    <div style="display:grid; grid-template-columns:1.2fr .8fr; gap:24px; margin-top:22px;">
-      <div>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
-          <div style="border:1px solid rgba(255,255,255,.2); border-radius:14px; padding:14px;"><b>🕐 15 Menit</b><br/><span style="color:#cbd5e1; font-size:13px;">Target deployment (kondisi sesuai)</span></div>
-          <div style="border:1px solid rgba(255,255,255,.2); border-radius:14px; padding:14px;"><b>⚙️ Perangkat Lama</b><br/><span style="color:#cbd5e1; font-size:13px;">Tetap dapat digunakan</span></div>
-          <div style="border:1px solid rgba(255,255,255,.2); border-radius:14px; padding:14px;"><b>🛡️ Vendor Agnostic</b><br/><span style="color:#cbd5e1; font-size:13px;">Multi-merek, multi-protokol</span></div>
-          <div style="border:1px solid rgba(255,255,255,.2); border-radius:14px; padding:14px;"><b>📊 Siap untuk OTRIS</b><br/><span style="color:#cbd5e1; font-size:13px;">Dashboard, AI, dokumentasi</span></div>
-        </div>
-        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:18px;">
-          <a class="btn btn-gold" href="#contact">Minta Demo / Pilot →</a>
-          <a class="btn btn-outline" href="#hardware">▶ Lihat Cara Kerja</a>
-        </div>
-        <p style="font-size:12px; color:#94a3b8; margin-top:12px;">Tombol di atas ini adalah &lt;a&gt; beneran, bukan gambar. Bisa dipencet, bisa di-klik kanan, bisa dibuka di tab baru.</p>
-      </div>
-      <div style="background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.2); border-radius:18px; padding:18px;">
-        <p style="margin:0; font-weight:700; letter-spacing:.08em;">SATU GATEWAY<br/>UNTUK SEMUA PERANGKAT OR</p>
-        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:14px; text-align:center; font-size:12px;">
-          <a href="#hardware" style="background:#0b2445; border:1px solid rgba(255,255,255,.2); border-radius:12px; padding:12px 6px; text-decoration:none;">🖥️<br/>Patient Monitor</a>
-          <a href="#hardware" style="background:#0b2445; border:1px solid rgba(255,255,255,.2); border-radius:12px; padding:12px 6px; text-decoration:none;">💉<br/>Anesthesia</a>
-          <a href="#hardware" style="background:#0b2445; border:1px solid rgba(255,255,255,.2); border-radius:12px; padding:12px 6px; text-decoration:none;">🌬️<br/>Ventilator</a>
-          <a href="#hardware" style="background:#0b2445; border:1px solid rgba(255,255,255,.2); border-radius:12px; padding:12px 6px; text-decoration:none;">💧<br/>Infusion Pump</a>
-          <a href="#hardware" style="background:#0b2445; border:1px solid rgba(255,255,255,.2); border-radius:12px; padding:12px 6px; text-decoration:none;">📷<br/>Surgical Camera</a>
-          <a href="#hardware" style="background:#0b2445; border:1px solid rgba(255,255,255,.2); border-radius:12px; padding:12px 6px; text-decoration:none;">➕<br/>Dan lainnya</a>
-        </div>
-        <p style="font-size:12px; color:#cbd5e1; margin-top:12px;">Gambar Edge Agent di versi lama sekarang jadi: <img src="assets/hardware-topology.png" alt="OTRIS Edge Agent" style="width:100%; border-radius:12px; margin-top:6px;"/></p>
-      </div>
-    </div>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:20px;">
-      <article class="card" style="background:#fff; color:#071426;"><p class="kicker" style="color:#0b4fa7">PLUG &amp; PLAY</p><h3>P&amp;P 15 MENIT</h3><p>Plug &amp; Play bukan berarti menyederhanakan tanggung jawab. Semakin sederhana pengalaman pengguna, semakin besar pekerjaan yang harus diselesaikan oleh sistem.</p><p><b>Bila proses pemasangan masih terlalu rumit, kami kembali kepada desain.</b></p></article>
-      <article class="card" style="background:#fff; color:#071426;" id="hl7"><p class="kicker" style="color:#0b4fa7">HL7 • FHIR</p><h3>HL7 / FHIR</h3><p>OTRIS mengumpulkan data, membersihkan, menstandarkan, dan mengantarkannya dalam bentuk FHIR ke SATUSEHAT. Data Path dan Execution Path dipisahkan.</p><a href="#healthcare">Lihat integrasi SATUSEHAT →</a></article>
-    </div>
-  </section>
-
-  <!-- WAKAF -->
-  <section class="section dark" id="wakaf">
-    <p class="kicker">WAKAF PRODUKTIF • ISLAMIC COMPLIANCE</p>
-    <h2>Program Wakaf Alat Kesehatan &amp; Integrasi Plug &amp; Play</h2>
-    <p>Sistem dan perangkat GRATIS (Semua Fitur Full Access) — Cukup Biaya Pemeliharaan &amp; Transparansi Jaringan Rp 300.000 / Tahun.</p>
-    <p style="color:#e6c98a">Sistem Terbatas • Berbasis Pengajuan &amp; Seleksi Kelayakan</p>
-    <p>Form pengajuan di versi ini hanya contoh UI. Data tidak dikirim atau disimpan dan tidak menjamin persetujuan.</p>
-    <a class="btn btn-gold" href="#trust-house">LIHAT WAKAF RUMAH + TRUST HOUSE →</a>
-  </section>
-
-  <!-- TRUST HOUSE + PEMECAH BATU - TUJUAN PINTU -->
-  <section class="section" id="trust-house">
-    <div class="dark" style="padding:32px">
-      <p class="kicker">WIJOYO TRUST HOUSE — DARI OTRIS • TUJUAN PINTU</p>
-      <h2 style="font-size:clamp(2rem,5vw,3.5rem);line-height:1.05">WIJOYO TRUST HOUSE</h2>
-      <p style="color:#e6c98a;font-size:18px">The Home of Ideas. The Power of AI. The Freedom to Create.</p>
-      <p>Ini dari OTRIS. Website wakaf ini — orang bisa langsung download dan pakai. Pemecah Batu dan Wakaf Rumah sekarang jadi satu di rumah ini.</p>
-      <div class="trust-grid">
-        <div class="trust-white">
-          <p style="font-family:ui-monospace,monospace;font-size:11px;letter-spacing:.14em;color:#0b4fa7">WAKAF RUMAH — DARI OTRIS</p>
-          <p style="font-size:18px;line-height:1.6;font-weight:700">“Rumah ini diwakafkan. Ilmu tidak dijual, yang dijual tenaga dan jasa. Penghasilan dari jasa untuk anak-anak.”</p>
-          <p style="color:#475569">Siapapun boleh terima dan pakai wakaf ini.</p>
-          <p style="font-size:13px"><b>Atas Nama:</b> Hadi Wijoyo Kusumo<br/><b>Pengelola:</b> Hanif Ahdi Fiddini</p>
+        <p style="color:#0f172a !important;font-size:13px"><b>Atas Nama:</b> Hadi Wijoyo Kusumo<br/><b>Pengelola:</b> Hanif Ahdi Fiddini</p>
           <a href="#wakaf">Kembali ke Wakaf →</a>
         </div>
         <div class="trust-navy" id="pemecah-batu">
