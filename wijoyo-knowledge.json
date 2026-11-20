@@ -1,0 +1,110 @@
+{
+  "entries": [
+    {
+      "topic": "OTRIS",
+      "aliases": ["otris", "operating theatre real time integration systems", "jembatan teknologi untuk nyawa"],
+      "answer": "OTRIS (Operating Theatre Real-Time Integration Systems) adalah arsitektur integrasi yang menghubungkan perangkat medis yang sudah tersedia, data, dan tenaga ahli. Gateway menerjemahkan data, OTRIS Core memprosesnya dalam format kanonik, dan Clinical Wall menyajikannya agar tim klinis bisa melihat dan bertindak. ICU adalah pintu masuk. Manusia adalah tujuannya."
+    },
+    {
+      "topic": "OTRIS Core",
+      "aliases": ["otris core", "core otris", "inti otris", "fungsi core", "core"],
+      "answer": "OTRIS Core adalah inti pemrosesan OTRIS. Core menerima data dalam format kanonik yang dihasilkan Gateway dan memprosesnya dengan bahasa data yang konsisten untuk komponen seperti Clinical Wall. Pemisahan ini membuat Core independen dari format masing-masing vendor."
+    },
+    {
+      "topic": "OTRIS Edge",
+      "aliases": ["otris edge", "edge otris", "edge ai", "edge agent", "edge"],
+      "answer": "OTRIS Edge bekerja dekat sumber data pada lingkungan lokal. Edge menangkap dan mengamati data dari perangkat. Data yang belum punya bukti cukup untuk ditafsirkan berstatus UNKNOWN sampai bisa divalidasi."
+    },
+    {
+      "topic": "OTRIS Gateway",
+      "aliases": ["ai gateway", "otris gateway", "gateway otris", "medical device gateway", "gateway"],
+      "answer": "OTRIS Gateway adalah lapisan penerjemah antara perangkat medis dan Core. Adapter di sisi Gateway menangani protokol atau format vendor, lalu data yang sudah dipahami diterjemahkan ke format kanonik OTRIS sebelum diteruskan."
+    },
+    {
+      "topic": "Edge dan Gateway",
+      "aliases": ["edge dan gateway", "gateway dan edge", "edge gateway", "gateway edge", "edge vs gateway", "gateway vs edge"],
+      "answer": "Edge menjelaskan tempat pengolahan berlangsung, yaitu dekat perangkat di lingkungan lokal. Gateway menjelaskan tugas integrasinya, yaitu menerjemahkan dan menormalkan data perangkat ke format OTRIS. Gateway bisa berjalan di Edge."
+    },
+    {
+      "topic": "Clinical Wall",
+      "aliases": ["clinical wall", "clinical dashboard", "dashboard klinis", "tampilan klinis"],
+      "answer": "Clinical Wall adalah tampilan klinis OTRIS yang menyajikan data terintegrasi agar tim klinis dapat melihat informasi, memahami situasi, dan bertindak sesuai kewenangannya. Keputusan klinis tetap berada pada tenaga yang berwenang."
+    },
+    {
+      "topic": "Prinsip arsitektur OTRIS",
+      "aliases": ["prinsip otris", "prinsip arsitektur", "prinsip arsitektur otris", "tujuh prinsip", "7 prinsip", "konstitusi otris", "otris constitution", "prinsip"],
+      "answer": "Tujuh prinsip arsitektur OTRIS. Integration Over Replacement: integrasikan perangkat yang ada. Local First: fungsi lokal tetap bekerja tanpa cloud. Vendor Agnostic: gunakan adapter untuk beragam vendor. Canonical First: gunakan format data internal yang seragam. Gateway First: terjemahkan format perangkat di Gateway. Event Driven: gunakan peristiwa untuk mengalirkan perubahan. Audit First: siapkan jejak yang dapat diperiksa sejak awal."
+    },
+    {
+      "topic": "Integration Over Replacement",
+      "aliases": ["integration over replacement", "integrasikan perangkat yang ada", "tanpa ganti alat", "tanpa mengganti perangkat"],
+      "answer": "Integration Over Replacement berarti mengutamakan integrasi perangkat yang masih bisa digunakan, sehingga investasi yang ada tetap bermanfaat. Gateway menghubungkan perangkat setelah cara membaca datanya dipahami dan divalidasi."
+    },
+    {
+      "topic": "Local First",
+      "aliases": ["local first", "lokal dulu", "tanpa cloud", "offline"],
+      "answer": "Local First berarti fungsi inti yang berjalan lokal tetap dapat bekerja saat cloud tidak tersedia. Cloud memperluas jangkauan layanan yang memerlukannya."
+    },
+    {
+      "topic": "Vendor Agnostic",
+      "aliases": ["vendor agnostic", "lintas vendor", "multi vendor", "vendor lock in"],
+      "answer": "Vendor Agnostic berarti desain integrasi tidak bergantung pada satu merek. Adapter menangani format dan protokol vendor, sementara Core menerima format data OTRIS yang sama. Dukungan perangkat bergantung pada validasi."
+    },
+    {
+      "topic": "Canonical First",
+      "aliases": ["canonical first", "canonical data", "format kanonik", "data kanonik", "canonical"],
+      "answer": "Canonical First berarti memakai model data internal OTRIS yang konsisten. Gateway menerjemahkan masukan dari perangkat ke format kanonik sehingga Core dan konsumen data tidak perlu memahami format asli setiap vendor."
+    },
+    {
+      "topic": "Gateway First",
+      "aliases": ["gateway first", "gateway dulu"],
+      "answer": "Gateway First berarti Gateway menangani penerjemahan protokol dan normalisasi data perangkat sebelum data masuk ke Core."
+    },
+    {
+      "topic": "Event Driven",
+      "aliases": ["event driven", "berbasis peristiwa", "event bus"],
+      "answer": "Event Driven berarti perubahan data atau status direpresentasikan sebagai peristiwa. Komponen yang berkepentingan menerima peristiwa tersebut dan memprosesnya sesuai tugas masing-masing."
+    },
+    {
+      "topic": "Audit First",
+      "aliases": ["audit first", "jejak audit", "auditable"],
+      "answer": "Audit First berarti jejak asal data, validasi, dan tindakan disiapkan sejak awal agar proses dan klaim bisa diperiksa kembali berdasarkan bukti."
+    },
+    {
+      "topic": "Pemecah Batu",
+      "aliases": ["pemecah batu", "stone breaker", "raw bytes", "profile.yaml", "evidence gate", "stop report", "do not auto repair", "do not fabricate", "l0", "l1", "l2", "l3", "l4"],
+      "answer": "Pemecah Batu membagi pekerjaan integrasi menjadi langkah yang bisa diperiksa, dari RAW BYTES sampai profile.yaml yang bisa dibagikan. Tingkat bukti: L0 NOT VERIFIED (belum diverifikasi), L1 CANDIDATE (kandidat), L2 VERIFIED / REVIEWED (lolos Evidence Gate), L3 REAL DEVICE VALIDATED (tervalidasi pada perangkat nyata), L4 PRODUCTION VALIDATED (tervalidasi di produksi). Prinsipnya STOP - REPORT - DO NOT AUTO-REPAIR - DO NOT FABRICATE. Tanpa bukti yang cukup, statusnya UNKNOWN."
+    },
+    {
+      "topic": "Wakaf Wijoyo",
+      "aliases": ["wakaf", "wakaf wijoyo", "wakaf rumah", "ilmu tidak dijual", "system tidak dijual", "sistem tidak dijual", "ilmu dijual", "system dijual", "sistem dijual", "system tidak boleh dijual", "sistem tidak boleh dijual", "jual system", "jual sistem", "ilmu boleh dijual", "system boleh dijual", "sistem boleh dijual", "jual ilmu", "jual hardware", "hardware boleh dijual", "hardware projek", "hardware proyek"],
+      "answer": "Ilmu tidak dijual. System tidak dijual. Keduanya diwakafkan. Hardware projek boleh dijual jika ada, sebagai hasil tenaga dan pekerjaan. Tenaga dan jasa juga boleh dihargai."
+    },
+    {
+      "topic": "SATUSEHAT, HL7, dan FHIR",
+      "aliases": ["satusehat", "satu sehat", "hl7", "hl 7", "fhir", "hl7 fhir", "fast healthcare interoperability resources"],
+      "answer": "SATUSEHAT adalah platform pertukaran data kesehatan Kementerian Kesehatan. HL7 adalah organisasi pengembang standar pertukaran informasi kesehatan. Salah satu standarnya, FHIR (Fast Healthcare Interoperability Resources), dipakai SATUSEHAT untuk memodelkan dan bertukar data. Arsitektur OTRIS memetakan data kanonik yang sudah divalidasi ke resource FHIR sesuai panduan interoperabilitas SATUSEHAT."
+    },
+    {
+      "topic": "Permenkes Nomor 24 Tahun 2022",
+      "aliases": ["pmk 24", "pmk 24 2022", "pmk no 24", "permenkes 24", "permenkes nomor 24", "permenkes no 24", "24 tahun 2022", "kewajiban satusehat"],
+      "answer": "Permenkes Nomor 24 Tahun 2022 mengatur Rekam Medis, termasuk penyelenggaraan Rekam Medis Elektronik. Kementerian Kesehatan menjelaskan bahwa fasilitas pelayanan kesehatan wajib terintegrasi dengan SATUSEHAT. Format dan jalur pertukaran data mengikuti panduan interoperabilitas SATUSEHAT."
+    },
+    {
+      "topic": "Plug & Play 15 Menit",
+      "aliases": ["plug and play", "plug play", "plug n play", "p&p", "pnp", "15 menit", "15 minutes"],
+      "answer": "P&P 15 Menit adalah target pengalaman pemasangan OTRIS ketika kondisi dan perangkat memenuhi prasyarat dan sudah tervalidasi. Perangkat medis yang sudah tersedia dihubungkan, dikonfigurasi, dan diuji sebelum digunakan dalam alur integrasi."
+    }
+  ],
+  "publicSources": [
+    "https://www.otris.id/",
+    "https://www.otris.id/about.html",
+    "https://www.otris.id/hardware.html",
+    "https://www.otris.id/pemecah-batu.html",
+    "https://www.otris.id/trust-house.html",
+    "https://www.otris.id/plug-play.html",
+    "https://satusehat.kemkes.go.id/platform/docs/id/fhir/",
+    "https://satusehat.kemkes.go.id/platform/supporting-policies",
+    "https://jdih.kemkes.go.id/common/dokumen/2022permenkes024.pdf"
+  ]
+}

@@ -1,4 +1,6 @@
-// Otak Wijoyo Trust House - v2 bisa ditanya apa pun
+const URL_KNOWLEDGE_WIJOYO = new URL("wijoyo-knowledge.json", document.currentScript.src);
+let knowledgeWijoyo;
+
 const OTAK_WIJOYO = [
   { kunci: ["tidak dijual", "jual", "hardware", "system", "projek"], jawab: "Intinya sajo bro: Ilmu tidak dijual. Titik. Hardware projek boleh dijual kalau dapat. System tidak dijual. Titik." },
   { kunci: ["wijoyo", "trust house"], jawab: "Wijoyo Trust House itu rumah wakaf dari OTRIS. Tempatnya ide, AI, dan kebebasan berkarya jadi satu. Pemecah Batu dan Wakaf Rumah sekarang jadi satu di rumah ini." },
@@ -13,18 +15,74 @@ function jawabKamus(tanya){
   }
   return null;
 }
+
+function normalisasiTanya(teks){
+  return teks.toLowerCase().normalize("NFKD").replace(/\p{M}/gu, "").replace(/[^a-z0-9]+/g, " ").trim();
+}
+
+function muatKnowledge(){
+  if(!knowledgeWijoyo){
+    knowledgeWijoyo = fetch(URL_KNOWLEDGE_WIJOYO, { signal: AbortSignal.timeout(3500) })
+      .then(res => {
+        if(!res.ok) throw new Error("Knowledge Wijoyo tidak tersedia");
+        return res.json();
+      })
+      .then(data => data.entries.map(({ aliases, answer }) => ({
+        aliases: aliases.map(normalisasiTanya).filter(Boolean),
+        answer
+      })))
+      .catch(() => {
+        knowledgeWijoyo = undefined;
+        return [];
+      });
+  }
+  return knowledgeWijoyo;
+}
+
+async function jawabKnowledge(tanya){
+  const pertanyaan = ` ${normalisasiTanya(tanya)} `;
+  let jawaban = null;
+  let panjangKecocokan = 0;
+  for(const { aliases, answer } of await muatKnowledge()){
+    for(const alias of aliases){
+      if(alias.length > panjangKecocokan && pertanyaan.includes(` ${alias} `)){
+        panjangKecocokan = alias.length;
+        jawaban = answer;
+      }
+    }
+  }
+  return jawaban;
+}
+
 async function jawabAI(tanya){
-  // Coba otak besar gratis dulu
   try{
     let system = "Kamu adalah asisten website OTRIS, lagi nempel di www.otris.id. Kalau user bilang layar, itu layar website, bukan monitor hardware. Jangan suruh beli hardware. Jawab soal layout website, bukan soal toko. Kamu adalah Wijoyo Trust House dari OTRIS. Prinsipmu: Ilmu tidak dijual. Titik. Hardware projek boleh dijual kalau dapat. System tidak dijual. Titik. Jawab dengan bahasa santai Minang-Indonesia, singkat, jelas, seperti abang ke adik. Jangan ngarang soal wakaf, pakai prinsip di atas.";
-    let res = await fetch("https://text.pollinations.ai/" + encodeURIComponent(system + "\n\nPertanyaan: " + tanya), { headers: { "Content-Type": "text/plain" } });
-    if(!res.ok) throw new Error("gagal");
-    let txt = await res.text();
-    if(txt && txt.length > 5) return txt.slice(0, 800);
-  }catch(e){}
-  // Kalau gagal, balik ke kamus
-  return jawabKamus(tanya) || "Di Wijoyo Trust House, yang ambo tau pasti: Ilmu tidak dijual. Titik. System tidak dijual. Titik. Coba tanya lagi soal wakaf, pemecah batu, atau yang lain, ambo jawab sebisa ambo.";
+    const res = await fetch("https://text.pollinations.ai/" + encodeURIComponent(system + "\n\nPertanyaan: " + tanya), {
+      headers: { "Content-Type": "text/plain" },
+      referrerPolicy: "no-referrer",
+      signal: AbortSignal.timeout(8000)
+    });
+    if(!res.ok || res.headers.get("content-type")?.includes("text/html")) return null;
+    const txt = (await res.text()).trim();
+    return txt.length > 5 ? txt.slice(0, 800) : null;
+  }catch{
+    return null;
+  }
 }
+
+async function jawabWijoyo(tanya){
+  const lokal = await jawabKnowledge(tanya);
+  if(lokal) return lokal;
+  const ai = await jawabAI(tanya);
+  return ai || jawabKamus(tanya) || "Di Wijoyo Trust House, yang ambo tau pasti: Ilmu tidak dijual. Titik. System tidak dijual. Titik. Coba tanya lagi soal wakaf, pemecah batu, atau yang lain, ambo jawab sebisa ambo.";
+}
+
+function isiPesan(elemen, nama, teks){
+  const label = document.createElement("b");
+  label.textContent = nama;
+  elemen.replaceChildren(label, ` ${teks}`);
+}
+
 function buatChatWijoyo(){
   if(document.getElementById("wijoyo-chat")) return;
   let box = document.createElement("div");
@@ -47,13 +105,16 @@ function buatChatWijoyo(){
   async function kirim(){
     let q = input.value.trim();
     if(!q) return;
-    msg.innerHTML += '<div style="margin-bottom:8px"><b>Kamu:</b> '+q+'</div>';
-    msg.innerHTML += '<div id="wijoyo-lagi" style="margin-bottom:12px;background:#f1f5f9;padding:8px;border-radius:10px">Wijoyo lagi mikir...</div>';
+    const pesan = document.createElement("div");
+    pesan.style.marginBottom = "8px";
+    isiPesan(pesan, "Kamu:", q);
+    const balasan = document.createElement("div");
+    balasan.style.cssText = "margin-bottom:12px;background:#f1f5f9;padding:8px;border-radius:10px";
+    balasan.textContent = "Wijoyo lagi mikir...";
+    msg.append(pesan, balasan);
     input.value = "";
     msg.scrollTop = msg.scrollHeight;
-    let jawab = await jawabAI(q);
-    let lagi = document.getElementById("wijoyo-lagi");
-    if(lagi) lagi.outerHTML = '<div style="margin-bottom:12px;background:#f1f5f9;padding:8px;border-radius:10px"><b>Wijoyo:</b> '+jawab+'</div>';
+    isiPesan(balasan, "Wijoyo:", await jawabWijoyo(q));
     msg.scrollTop = msg.scrollHeight;
   }
   btn.onclick = () => {
