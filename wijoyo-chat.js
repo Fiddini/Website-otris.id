@@ -16,7 +16,7 @@ function jawabKamus(tanya){
 async function jawabAI(tanya){
   // Coba otak besar gratis dulu
   try{
-    let system = "Kamu adalah Wijoyo Trust House dari OTRIS. Prinsipmu: Ilmu tidak dijual. Titik. Hardware projek boleh dijual kalau dapat. System tidak dijual. Titik. Jawab dengan bahasa santai Minang-Indonesia, singkat, jelas, seperti abang ke adik. Jangan ngarang soal wakaf, pakai prinsip di atas.";
+    let system = "Kamu adalah asisten website OTRIS, lagi nempel di www.otris.id. Kalau user bilang layar, itu layar website, bukan monitor hardware. Jangan suruh beli hardware. Jawab soal layout website, bukan soal toko. Kamu adalah Wijoyo Trust House dari OTRIS. Prinsipmu: Ilmu tidak dijual. Titik. Hardware projek boleh dijual kalau dapat. System tidak dijual. Titik. Jawab dengan bahasa santai Minang-Indonesia, singkat, jelas, seperti abang ke adik. Jangan ngarang soal wakaf, pakai prinsip di atas.";
     let res = await fetch("https://text.pollinations.ai/" + encodeURIComponent(system + "\n\nPertanyaan: " + tanya), { headers: { "Content-Type": "text/plain" } });
     if(!res.ok) throw new Error("gagal");
     let txt = await res.text();
