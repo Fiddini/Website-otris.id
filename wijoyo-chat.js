@@ -1,5 +1,7 @@
 // Otak Wijoyo Trust House - versi hemat, offline, tanpa API
 const OTAK_WIJOYO = [
+  { kunci: ["jual", "jual apa", "boleh jual", "hardware", "system", "projek"], jawab: "Pesan ambo: Ilmu tidak dijual, ilmu itu wakaf. Hardware projek boleh dijual kalau dapat, itu hasil tenaga kalian. System tidak boleh dijual, system itu wakaf punya bersama." },
+
   { kunci: ["wijoyo", "trust house", "apa itu"], jawab: "Wijoyo Trust House itu rumah wakaf dari OTRIS. Tempatnya ide, AI, dan kebebasan berkarya jadi satu. Pemecah Batu dan Wakaf Rumah sekarang jadi satu di rumah ini." },
   { kunci: ["wakaf", "rumah"], jawab: "Rumah ini diwakafkan. Ilmu tidak dijual, yang dijual tenaga dan jasa. Penghasilan dari jasa untuk anak-anak. Siapapun boleh terima dan pakai wakaf ini." },
   { kunci: ["pemecah batu", "pemecah", "batu"], jawab: "Pemecah Batu itu cara mecah ide besar jadi kecil-kecil sampai bisa divalidasi. Ada level L0 NOT VERIFIED sampai L4 PRODUCTION VALIDATED. Bukunya ada 2: THE CANDIDATES yang wakaf, dan THE STONE BREAKER yang versi Inggris teknikal." },
