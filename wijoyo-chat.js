@@ -1,80 +1,75 @@
-const URL_KNOWLEDGE_WIJOYO = new URL("wijoyo-knowledge.json", document.currentScript.src);
-let knowledgeWijoyo;
-
-const OTAK_WIJOYO = [
-  { kunci: ["tidak dijual", "jual", "hardware", "system", "projek"], jawab: "Intinya sajo bro: Ilmu tidak dijual. Titik. Hardware projek boleh dijual kalau dapat. System tidak dijual. Titik." },
-  { kunci: ["wijoyo", "trust house"], jawab: "Wijoyo Trust House itu rumah wakaf dari OTRIS. Tempatnya ide, AI, dan kebebasan berkarya jadi satu. Pemecah Batu dan Wakaf Rumah sekarang jadi satu di rumah ini." },
-  { kunci: ["wakaf", "rumah"], jawab: "Rumah ini diwakafkan. Ilmu tidak dijual, yang dijual tenaga dan jasa. Penghasilan dari jasa untuk anak-anak. Siapapun boleh terima dan pakai wakaf ini." },
-  { kunci: ["pemecah batu", "pemecah", "batu"], jawab: "Pemecah Batu itu cara mecah ide besar jadi kecil-kecil sampai bisa divalidasi. Ada level L0 NOT VERIFIED sampai L4 PRODUCTION VALIDATED." },
-  { kunci: ["pengelola", "siapa", "hadi", "hanif"], jawab: "Atas Nama: Hadi Wijoyo Kusumo. Pengelola: Hanif Ahdi Fiddini, Founder OTRIS." }
+const RUJUK_TRUST_HOUSE = "Itu detail arsitektur khusus kita buat jualan kamera / buat OTRIS. Untuk detailnya, silakan Minta di Trust House.";
+const MINTA_DETAIL = [
+  /\b(?:detail\w*|rinci\w*|teknis|technical|mendalam|lebih lanjut|lebih dalam|in depth|lengkap|semua|seluruh|keseluruhan|daftar|tiap topik|19 topik|all topics|all 19|full|entire)\b/,
+  /\b(?:step by step|langkah\w*|tahapan|cara|how to|how does|implementasi|implementation|spesifikasi|specifications?|parameter|konfigurasi|configuration)\b/,
+  /\b(?:kode|code|pseudocode|api|algoritm[ae]|algorithm|arsitektur internal|diagram|skema|pipeline|raw bytes|profile yaml|l[0-4])\b/,
+  /\b(?:knowledge|json|dump|bocor\w*|salin\w*)\b/
 ];
-function jawabKamus(tanya){
-  tanya = tanya.toLowerCase();
-  for(let item of OTAK_WIJOYO){
-    if(item.kunci.some(k => tanya.includes(k))) return item.jawab;
+
+const JAWABAN_PUBLIK = [
+  {
+    topik: /\bwater ?gate\b/,
+    jawaban: "Water Gate itu teknik kita buat ngatur aliran video kamera biar stabil, nggak macet. Arsitektur khusus kita buat jualan kamera. Untuk detailnya, Minta di Trust House ya."
+  },
+  {
+    topik: /\b(?:wakaf|dijual|jual (?:ilmu|system|sistem|hardware)|hardware (?:projek|proyek|project))\b/,
+    jawaban: "Ilmu tidak dijual. System tidak dijual. Hardware projek boleh dijual."
+  },
+  {
+    topik: /\b(?:pengelola|hadi wijoyo kusumo|hanif ahdi fiddini)\b/,
+    jawaban: "Wakaf ini atas nama Hadi Wijoyo Kusumo. Pengelolanya Hanif Ahdi Fiddini."
+  },
+  {
+    topik: /\b(?:trust house|wijoyo kusumo|wijoyo)\b/,
+    jawaban: "Wijoyo Trust House adalah rumah wakaf dari OTRIS. Di sana ada Wakaf Rumah dan Pemecah Batu."
+  },
+  {
+    topik: /\b(?:pemecah batu|stone breaker)\b/,
+    jawaban: "Pemecah Batu membantu memecah pekerjaan besar menjadi bagian yang bisa diperiksa. Kalau buktinya belum cukup, hasilnya tetap belum diketahui."
+  },
+  {
+    topik: /\b(?:satusehat|satu sehat|hl7|hl 7|fhir|pmk 24|permenkes(?: nomor)? 24)\b/,
+    jawaban: "SATUSEHAT adalah platform pertukaran data kesehatan dari Kementerian Kesehatan. Platform ini memakai standar HL7 FHIR agar sistem bisa bertukar data dengan format yang seragam."
+  },
+  {
+    topik: /\b(?:plug (?:and )?play|p p|pnp|15 menit)\b/,
+    jawaban: "P&P 15 Menit adalah target pemasangan OTRIS untuk perangkat yang sudah siap. Waktunya bergantung pada kondisi dan kesiapan perangkat."
+  },
+  {
+    topik: /\b(?:local first|lokal dulu|tanpa cloud)\b/,
+    jawaban: "Local First berarti fungsi inti OTRIS tetap bisa berjalan di tempat saat cloud tidak tersedia."
+  },
+  {
+    topik: /\b(?:prinsip|konstitusi|constitution|integration over replacement|vendor agnostic|canonical first|gateway first|event driven|audit first)\b/,
+    jawaban: "OTRIS mengutamakan integrasi perangkat yang sudah ada. Sistem dirancang supaya bisa bekerja lintas merek dan hasilnya bisa diperiksa."
+  },
+  {
+    topik: /\bclinical wall\b/,
+    jawaban: "Clinical Wall adalah tampilan OTRIS yang membantu tenaga klinis melihat informasi di satu tempat."
+  },
+  {
+    topik: /\b(?:core|inti otris)\b/,
+    jawaban: "OTRIS Core adalah bagian inti yang mengolah informasi untuk komponen OTRIS lainnya."
+  },
+  {
+    topik: /\bgateway\b/,
+    jawaban: "Gateway membantu perangkat medis terhubung dan berbagi informasi dengan OTRIS."
+  },
+  {
+    topik: /\bedge\b/,
+    jawaban: "OTRIS Edge bekerja dekat perangkat, di lokasi tempat informasi berasal."
+  },
+  {
+    topik: /\botris\b/,
+    jawaban: "OTRIS menghubungkan perangkat medis yang sudah ada, informasi, dan tenaga ahli. ICU adalah pintu masuk. Manusia adalah tujuannya."
   }
-  return null;
-}
+];
 
-function normalisasiTanya(teks){
-  return teks.toLowerCase().normalize("NFKD").replace(/\p{M}/gu, "").replace(/[^a-z0-9]+/g, " ").trim();
-}
-
-function muatKnowledge(){
-  if(!knowledgeWijoyo){
-    knowledgeWijoyo = fetch(URL_KNOWLEDGE_WIJOYO, { signal: AbortSignal.timeout(3500) })
-      .then(res => {
-        if(!res.ok) throw new Error("Knowledge Wijoyo tidak tersedia");
-        return res.json();
-      })
-      .then(data => data.entries.map(({ aliases, answer }) => ({
-        aliases: aliases.map(normalisasiTanya).filter(Boolean),
-        answer
-      })))
-      .catch(() => {
-        knowledgeWijoyo = undefined;
-        return [];
-      });
-  }
-  return knowledgeWijoyo;
-}
-
-async function jawabKnowledge(tanya){
-  const pertanyaan = ` ${normalisasiTanya(tanya)} `;
-  let jawaban = null;
-  let panjangKecocokan = 0;
-  for(const { aliases, answer } of await muatKnowledge()){
-    for(const alias of aliases){
-      if(alias.length > panjangKecocokan && pertanyaan.includes(` ${alias} `)){
-        panjangKecocokan = alias.length;
-        jawaban = answer;
-      }
-    }
-  }
-  return jawaban;
-}
-
-async function jawabAI(tanya){
-  try{
-    let system = "Kamu adalah asisten website OTRIS, lagi nempel di www.otris.id. Kalau user bilang layar, itu layar website, bukan monitor hardware. Jangan suruh beli hardware. Jawab soal layout website, bukan soal toko. Kamu adalah Wijoyo Trust House dari OTRIS. Prinsipmu: Ilmu tidak dijual. Titik. Hardware projek boleh dijual kalau dapat. System tidak dijual. Titik. Jawab dengan bahasa santai Minang-Indonesia, singkat, jelas, seperti abang ke adik. Jangan ngarang soal wakaf, pakai prinsip di atas.";
-    const res = await fetch("https://text.pollinations.ai/" + encodeURIComponent(system + "\n\nPertanyaan: " + tanya), {
-      headers: { "Content-Type": "text/plain" },
-      referrerPolicy: "no-referrer",
-      signal: AbortSignal.timeout(8000)
-    });
-    if(!res.ok || res.headers.get("content-type")?.includes("text/html")) return null;
-    const txt = (await res.text()).trim();
-    return txt.length > 5 ? txt.slice(0, 800) : null;
-  }catch{
-    return null;
-  }
-}
-
-async function jawabWijoyo(tanya){
-  const lokal = await jawabKnowledge(tanya);
-  if(lokal) return lokal;
-  const ai = await jawabAI(tanya);
-  return ai || jawabKamus(tanya) || "Di Wijoyo Trust House, yang ambo tau pasti: Ilmu tidak dijual. Titik. System tidak dijual. Titik. Coba tanya lagi soal wakaf, pemecah batu, atau yang lain, ambo jawab sebisa ambo.";
+function jawabWijoyo(tanya){
+  const pertanyaan = tanya.toLowerCase().normalize("NFKD").replace(/\p{M}/gu, "").replace(/[^a-z0-9]+/g, " ").trim();
+  if(MINTA_DETAIL.some(pola => pola.test(pertanyaan))) return RUJUK_TRUST_HOUSE;
+  return JAWABAN_PUBLIK.find(({ topik }) => topik.test(pertanyaan))?.jawaban
+    ?? "Ambo bisa kasih gambaran singkat tentang OTRIS dan Wakaf Wijoyo. Untuk bahasan lain, silakan Minta di Trust House.";
 }
 
 function isiPesan(elemen, nama, teks){
@@ -93,7 +88,7 @@ function buatChatWijoyo(){
       <div style="background:#0f172a;color:#fff;padding:12px;font-weight:700">WIJOYO TRUST HOUSE - Tanya Ambo</div>
       <div id="wijoyo-msg"></div>
       <div style="display:flex;border-top:1px solid #eee">
-        <input id="wijoyo-input" placeholder="Tanya apa pun..." style="flex:1;padding:10px;border:0;outline:none;color:#0f172a"/>
+        <input id="wijoyo-input" placeholder="Tanya soal OTRIS atau Wakaf..." style="flex:1;padding:10px;border:0;outline:none;color:#0f172a"/>
         <button id="wijoyo-kirim" style="background:#e6c98a;border:0;padding:10px 14px;font-weight:700;cursor:pointer">Kirim</button>
       </div>
     </div>`;
@@ -102,19 +97,17 @@ function buatChatWijoyo(){
   let panel = document.getElementById("wijoyo-box");
   let msg = document.getElementById("wijoyo-msg");
   let input = document.getElementById("wijoyo-input");
-  async function kirim(){
-    let q = input.value.trim();
+  function kirim(){
+    const q = input.value.trim();
     if(!q) return;
     const pesan = document.createElement("div");
     pesan.style.marginBottom = "8px";
     isiPesan(pesan, "Kamu:", q);
     const balasan = document.createElement("div");
     balasan.style.cssText = "margin-bottom:12px;background:#f1f5f9;padding:8px;border-radius:10px";
-    balasan.textContent = "Wijoyo lagi mikir...";
+    isiPesan(balasan, "Wijoyo:", jawabWijoyo(q));
     msg.append(pesan, balasan);
     input.value = "";
-    msg.scrollTop = msg.scrollHeight;
-    isiPesan(balasan, "Wijoyo:", await jawabWijoyo(q));
     msg.scrollTop = msg.scrollHeight;
   }
   btn.onclick = () => {
@@ -123,6 +116,6 @@ function buatChatWijoyo(){
   };
   document.getElementById("wijoyo-kirim").onclick = kirim;
   input.addEventListener("keydown", e => { if(e.key === "Enter") kirim(); });
-  msg.innerHTML = '<div style="background:#f1f5f9;padding:8px;border-radius:10px">Halo bro, ambo otak Wijoyo. Sekarang bisa ditanya apa pun. Tanya aja.</div>';
+  msg.innerHTML = '<div style="background:#f1f5f9;padding:8px;border-radius:10px">Halo bro, ambo Wijoyo. Ambo bisa kasih gambaran singkat tentang OTRIS.</div>';
 }
 document.addEventListener("DOMContentLoaded", buatChatWijoyo);
