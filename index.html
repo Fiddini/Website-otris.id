@@ -65,10 +65,11 @@ const kamusBahasa = {
 function gantiBahasa(kode){
   const d = kamusBahasa[kode];
   if(!d) return;
-  // Cari hero dan ganti
-  document.body.innerHTML = document.body.innerHTML; // biar aman
-  const h = document.querySelector("section:first-of-type h1, section:first-of-type h2");
-  if(h) h.textContent = d.hero;
+  const judul = document.querySelector("#home h1");
+  const akhirKalimat = d.hero.indexOf(". ") + 1;
+  judul.firstChild.textContent = d.hero.slice(0, akhirKalimat);
+  judul.querySelector("span").textContent = d.hero.slice(akhirKalimat + 1);
+  judul.lang = kode;
   localStorage.setItem("bahasa-otris", kode);
   alert(kode === 'id' ? 'Bahasa Indonesia aktif' : kode === 'en' ? 'English active' : 'Français activé');
 }
