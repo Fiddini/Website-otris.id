@@ -1,128 +1,36 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OTRIS — Jembatan Teknologi untuk Nyawa</title>
-<meta name="description" content="OTRIS — ICU adalah pintu masuk. Manusia adalah tujuannya. Integration Over Replacement. Local First. UNKNOWN jangan ditebak."/>
-<link rel="stylesheet" href="css/style.css"/>
-<!-- fix-seo-otris -->
-<meta name="description" content="OTRIS - Jembatan Teknologi untuk Nyawa. Murah bukan murahan. Integrasi perangkat medis tanpa ganti alat. Dari OTRIS untuk Wakaf - Ilmu tidak dijual, System tidak dijual.">
-<meta name="keywords" content="OTRIS, otris.id, Pemecah Batu, Wijoyo Trust House, Wakaf Rumah, integrasi rumah sakit, SATUSEHAT, FHIR, Plug Play 15 menit">
-<meta property="og:title" content="OTRIS - Jembatan Teknologi untuk Nyawa">
-<meta property="og:description" content="ICU adalah pintu masuk. Manusia adalah tujuannya. Murah bukan murahan.">
-<meta property="og:url" content="https://www.otris.id">
-<meta property="og:type" content="website">
-<link rel="canonical" href="https://www.otris.id/"/>
-</head>
-<body>
-<header>
-  <div class="container nav">
-    <a class="logo" href="index.html">
-      <img src="assets/logo.png" alt="Logo resmi OTRIS"/ style="width:92px !important;height:92px !important;min-width:92px;min-height:92px;object-fit:contain;border-radius:50%;">
-      <span>OTRIS<small>OTRIS.ID • OFFICIAL</small></span>
-    </a>
-    <nav class="main" aria-label="Navigasi utama">
-      <a href="index.html" class="active" aria-current="page">HOME</a>
-      <a href="about.html" data-legacy-fragment="about">ABOUT</a>
-      <a href="hardware.html" data-legacy-fragment="hardware">HARDWARE</a>
-      <a href="healthcare.html" data-legacy-fragment="healthcare">HEALTHCARE</a>
-      <a href="ai-gateway.html" data-legacy-fragment="ai">AI GATEWAY</a>
-      <a href="wijoyo-kusumo.html" data-legacy-fragment="wijoyo">WIJOYO KUSUMO</a>
-      <a href="plug-play.html" data-legacy-fragment="plug">PLUG &amp; PLAY</a>
-      <a href="hl7.html" data-legacy-fragment="hl7">HL7</a>
-      <a href="wakaf.html" data-legacy-fragment="wakaf">WAKAF</a>
-      <a href="trust-house.html" class="gold" data-legacy-fragment="trust-house">TRUST HOUSE →</a>
-      <a href="pemecah-batu.html" class="gold" data-legacy-fragment="pemecah-batu">PEMECAH BATU →</a>
-      <a href="contact.html" data-legacy-fragment="contact">CONTACT US</a>
-      <a href="otris-core.html" data-legacy-fragment="otris-core">OTRIS CORE</a>
-    </nav>
-  </div>
-</header>
-<div id="bahasa-pilih" style="text-align:center;padding:10px 0;gap:8px;display:flex;justify-content:center">
-  <button onclick="gantiBahasa('id')" style="padding:8px 14px;border-radius:20px;border:1px solid #000;cursor:pointer">🇮🇩 Indonesia</button>
-  <button onclick="gantiBahasa('en')" style="padding:8px 14px;border-radius:20px;border:1px solid #000;cursor:pointer">🇬🇧 English</button>
-  <button onclick="gantiBahasa('fr')" style="padding:8px 14px;border-radius:20px;border:1px solid #000;cursor:pointer">🇫🇷 Français</button>
-</div>
-<script>/* fix-bahasa-3 */
-const kamusBahasa = {
-  id: {
-    hero: "ICU ADALAH PINTU MASUK. MANUSIA ADALAH TUJUANNYA.",
-    sub: "Kami membangun jembatan teknologi kesehatan agar perangkat yang sudah ada, data, dan tenaga ahli dapat terhubung lebih dekat kepada pasien — tanpa menunggu semuanya diganti atau sempurna terlebih dahulu.",
-    murah: "MURAH, BUKAN MURAHAN. • KAMI SEDANG MEMBANGUN JEMBATAN UNTUK NYAWA."
-  },
-  en: {
-    hero: "ICU IS THE ENTRANCE. HUMANS ARE THE PURPOSE.",
-    sub: "We build a health technology bridge so existing devices, data, and experts can get closer to patients — without waiting for everything to be replaced or perfect first.",
-    murah: "AFFORDABLE, NOT CHEAP. • WE ARE BUILDING A BRIDGE FOR LIVES."
-  },
-  fr: {
-    hero: "LES SOINS INTENSIFS SONT L'ENTRÉE. L'HUMAIN EST LE BUT.",
-    sub: "Nous construisons un pont technologique de santé pour que les appareils existants, les données et les experts se rapprochent des patients — sans attendre que tout soit remplacé ou parfait.",
-    murah: "ABORDABLE, PAS AU RABAIS. • NOUS CONSTRUISONS UN PONT POUR LA VIE."
-  }
-};
-function gantiBahasa(kode){
-  const d = kamusBahasa[kode];
-  if(!d) return;
-  const judul = document.querySelector("#home h1");
-  const akhirKalimat = d.hero.indexOf(". ") + 1;
-  judul.firstChild.textContent = d.hero.slice(0, akhirKalimat);
-  judul.querySelector("span").textContent = d.hero.slice(akhirKalimat + 1);
-  judul.lang = kode;
-  localStorage.setItem("bahasa-otris", kode);
-  alert(kode === 'id' ? 'Bahasa Indonesia aktif' : kode === 'en' ? 'English active' : 'Français activé');
-}
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OTRIS.ID — OFFICIAL | ICU Adalah Pintu Masuk. Manusia Adalah Tujuannya.</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,system-ui,sans-serif;color:#16211c;background:#fff;line-height:1.6}a{color:inherit;text-decoration:none}
+.top{position:sticky;top:0;background:#fff;border-bottom:1px solid #e5e7eb}.top-in{max-width:1280px;margin:auto;padding:10px 18px;display:flex;gap:18px}
+.brand b{font-size:19px;letter-spacing:.08em}.brand small{display:block;font-size:11px;letter-spacing:.14em;color:#6b7280;font-weight:700}
+.nav{display:flex;gap:4px;flex-wrap:wrap}.nav a{padding:10px 12px;border-radius:999px;font-size:13px;font-weight:800;color:#1f2937}.nav a.active{background:#0a1f44;color:#fff}.nav a.gold{background:#d9b64a;color:#16211c}
+.hero-wrap{max-width:1280px;margin:auto;padding:18px}.hero{background:#0a1f44;color:#fff;border-radius:28px;padding:56px 52px}.hero h1{font-size:clamp(48px,7vw,84px);line-height:.95;margin:18px 0}.hero h1 span{color:#a8c8e8;display:block}.hero p{max-width:640px;color:#dbe6f5}.btn{padding:14px 20px;border-radius:999px;font-weight:800;display:inline-block}.btn-white{background:#fff;color:#0a4fa0}
+.section{max-width:1120px;margin:auto;padding:28px 20px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{border:1px solid #e2d9c3;border-radius:20px;padding:22px}.pillar{background:#0a1f44;color:#fff;border-radius:20px;padding:22px}.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}.box{border-radius:20px;padding:24px}.box-dark{background:#0a1f44;color:#fff}.box-light{border:2px solid #0a1f44}.link-more{font-weight:800;color:#0a4fa0}.dark-band{background:#0a1f44;color:#fff;border-radius:24px;padding:28px}
+#wijoyoFab{position:fixed;right:18px;bottom:18px;z-index:100;background:#0a1f44;color:#f7c948;border:2px solid #d9b64a;border-radius:999px;padding:12px 18px;font-weight:800;cursor:pointer}
+#wijoyoWidget{position:fixed;right:18px;bottom:72px;z-index:100;width:360px;max-width:calc(100vw - 36px);background:#fff;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.3);display:flex;flex-direction:column;border:1px solid #e5e7eb}
+#wijoyoWidget.hidden{display:none}.widget-head{background:#0a1f44;color:#fff;padding:14px 16px;display:flex;justify-content:space-between}
+#chat{padding:14px;height:280px;overflow:auto}.msg{margin:8px 0;padding:10px 12px;border-radius:12px;font-size:14px}.msg.user{background:#0a1f44;color:#fff;margin-left:32px;text-align:right}.msg.bot{background:#eef2f7;margin-right:12px}
+.widget-input{display:flex;border-top:1px solid #eee}#q{flex:1;padding:12px;border:none;outline:none}#send{background:#e8c87a;border:none;padding:12px 16px;font-weight:800;cursor:pointer}
+footer{max-width:1120px;margin:auto;padding:20px;border-top:1px solid #e5e7eb;display:flex;justify-content:space-between;flex-wrap:wrap;font-size:13px;color:#7a7a6e}
+@media(max-width:900px){.grid3,.two{grid-template-columns:1fr}.hero{padding:36px 22px}.nav{display:none}}
+</style></head><body>
+<div class="top"><div class="top-in"><div class="brand"><b>OTRIS</b><small>OTRIS.ID • OFFICIAL</small></div><nav class="nav"><a class="active" href="index.html">HOME</a><a href="about.html">ABOUT</a><a href="hardware.html">HARDWARE</a><a href="healthcare.html">HEALTHCARE</a><a href="ai-gateway.html">AI GATEWAY</a><a href="trust-house.html">WIJOYO KUSUMO</a><a href="plug-play.html">PLUG & PLAY</a><a href="hl7.html">HL7</a><a href="wakaf.html">WAKAF</a><a class="gold" href="trust-house.html">TRUST HOUSE →</a><a class="gold" href="pemecah-batu.html">PEMECAH BATU →</a></nav></div></div>
+<div class="hero-wrap"><div class="hero"><div style="color:#e8c87a;font-size:13px;letter-spacing:.28em;font-weight:800">OTRIS • MEDICAL SOVEREIGNTY • 2026</div><h1>ICU ADALAH<br>PINTU MASUK.<span>MANUSIA ADALAH<br>TUJUANNYA.</span></h1><p>Kami membangun jembatan teknologi kesehatan agar perangkat yang sudah ada, data, dan tenaga ahli dapat terhubung lebih dekat kepada pasien — tanpa menunggu semuanya diganti.</p><a class="btn btn-white" href="about.html">LIHAT JEMBATANNYA →</a><div style="margin-top:26px;font-size:12px;letter-spacing:.18em;color:#e8c87a;font-weight:700">MURAH, BUKAN MURAHAN. • KAMI SEDANG MEMBANGUN JEMBATAN UNTUK NYAWA.</div></div></div>
+<section class="section"><h2>Jembatan, Bukan Pengganti</h2><p>OTRIS tidak mengganti alat yang sudah ada. OTRIS menjembatani alat, data, dan manusia. Core harus bodoh — tidak menebak data klinis.</p><div class="card"><p><b>THE JEMBATAN Final v2</b> — 262 hal, ISBN 978-634-243-979-1. <b>Konstitusi OTRIS</b> — Perubahan substansi hanya via Proses 90 hari.</p><a class="link-more" href="about.html">Lihat selengkapnya di ABOUT →</a></div></section>
+<section class="section"><h2>Homepage Saja — Yang Lain Tetap</h2><div class="grid3"><div class="card"><h3>HARDWARE</h3><p>ESP32, Black Box, Shelter 40 kaki.</p><a class="link-more" href="hardware.html">HARDWARE →</a></div><div class="card"><h3>HEALTHCARE</h3><p>ICU, MDT, Emergency.</p><a class="link-more" href="healthcare.html">HEALTHCARE →</a></div><div class="card"><h3>AI GATEWAY</h3><p>AI membantu, bukan mengambil alih.</p><a class="link-more" href="ai-gateway.html">AI GATEWAY →</a></div></div></section>
+<section class="section"><h2>WIJOYO TRUST HOUSE — Ringkas Saja</h2><p>LOCAL FIRST · AI POWERED · HUMAN OWNED.</p><div class="grid3"><div class="pillar"><h3>The Home of Ideas</h3><p>Semua orang boleh punya gagasan.</p></div><div class="pillar"><h3>The Power of AI</h3><p>AI membantu mewujudkan gagasan, bukan mengambil alih.</p></div><div class="pillar"><h3>The Freedom to Create</h3><p>Orang bebas membuat, mencoba, dan membagikan.</p></div></div><div class="two" style="margin-top:16px"><div class="box box-light"><p>“Rumah ini diwakafkan. Ilmu tidak dijual, yang dijual tenaga dan jasa.”</p><p><b>Wakaf Rumah — TERBIT.</b> Atas nama Hadi Wijoyo Kusumo. Pengelola Hanif Ahdi Fiddini. 20 Nov 2026. Trace: RUMAH-20261120-WAKAF-001.</p><a class="link-more" href="wakaf.html">Detail Wakaf →</a> <a class="link-more" href="trust-house.html">Detail Trust House →</a></div><div class="box box-dark"><h3 style="margin-top:0">PEMECAH BATU — Ringkas</h3><p>Satu Rumah, Dua Isi. STOP — REPORT — DO NOT AUTO-REPAIR — DO NOT FABRICATE.</p><a class="link-more" style="color:#e8c87a" href="pemecah-batu.html">Detail Pemecah Batu →</a></div></div><div class="card" style="margin-top:16px"><p><b>Ikrar Wijoyo:</b> “Saya mewakafkan pengetahuan OTRIS ini sebagai Wakaf Pengetahuan.” Detail lengkap di <a href="wakaf.html"><b>wakaf.html</b></a> dan <a href="trust-house.html"><b>trust-house.html</b></a>.</p><p><b>Status:</b> Website ini pengumuman wakaf, <b>bukan pengganti akta sah</b>.</p></div></section>
+<section class="section"><div class="dark-band"><h2 style="margin-top:0">Cara Terima Wakaf — Dari Homepage</h2><p>1 Download RUMAH-INSTALL.zip · 2 Unzip · 3 Jalanin sh INSTALL.sh · 4 Jalan di http://127.0.0.1:8080</p><p>Detail di <a href="wakaf.html" style="color:#e8c87a;font-weight:800">wakaf.html →</a></p><button class="btn" style="background:#d9b64a;border:none;cursor:pointer" id="terimaBtn" type="button">Saya Terima Wakaf Ini</button><p id="terimaMsg" style="display:none;margin-top:12px;background:#fff;color:#16211c;border-radius:12px;padding:12px;font-weight:700">Terima kasih — ambo sudah terima Wakaf Rumah ini. Trace: RUMAH-20261120-WAKAF-001 • 20 November 2026 • Atas nama Hadi Wijoyo Kusumo.</p></div></section>
+<footer><span>WIJOYO TRUST HOUSE — WAKAF RUMAH • Trace: RUMAH-20261120-WAKAF-001</span><span><a href="contact.html">CONTACT US →</a></span></footer>
+<button id="wijoyoFab" type="button">Tanya Wijoyo</button>
+<div id="wijoyoWidget"><div class="widget-head"><b>WIJOYO TRUST HOUSE - Tanya Ambo</b><button id="wijoyoClose" type="button" style="background:transparent;border:none;color:#fff;font-size:18px;cursor:pointer">×</button></div><div id="chat"></div><div class="widget-input"><input id="q" placeholder="Tanya apa pun..." autocomplete="off"><button id="send">Kirim</button></div></div>
+<script>
+var fab=document.getElementById('wijoyoFab');var w=document.getElementById('wijoyoWidget');var c=document.getElementById('wijoyoClose');var tb=document.getElementById('terimaBtn');var tm=document.getElementById('terimaMsg');var chat=document.getElementById('chat');var q=document.getElementById('q');var send=document.getElementById('send');
+fab.addEventListener('click',function(){w.classList.toggle('hidden');});c.addEventListener('click',function(){w.classList.add('hidden');});tb.addEventListener('click',function(){tm.style.display='block';tb.textContent='Sudah Diterima — Terima Kasih';});
+function addMsg(t,who){var d=document.createElement('div');d.className='msg '+who;d.textContent=t;chat.appendChild(d);chat.scrollTop=chat.scrollHeight;}
+function jawab(t){t=t.toLowerCase();if(t.indexOf('otris')>-1)return 'OTRIS itu jembatan teknologi kesehatan. ICU adalah pintu masuk, manusia adalah tujuannya. Integration Over Replacement.';if(t.indexOf('wakaf')>-1)return 'Wakaf Rumah — TERBIT. Atas nama Hadi Wijoyo Kusumo. Pengelola Hanif Ahdi Fiddini. 20 Nov 2026. Trace: RUMAH-20261120-WAKAF-001. Ilmu tidak dijual, yang dijual tenaga dan jasa.';if(t.indexOf('shelter')>-1||t.indexOf('40 kaki')>-1)return 'Shelter 40 kaki itu rumah peralatan OTRIS yang mudah dipasang, Plug & Play 30-60 menit.';if(t.indexOf('pemecah')>-1||t.indexOf('batu')>-1)return 'Pemecah Batu itu alatnya. Satu Rumah, Dua Isi. STOP — REPORT — DO NOT AUTO-REPAIR — DO NOT FABRICATE.';if(t.indexOf('ikrar')>-1)return 'Ikrar Wijoyo: Saya mewakafkan pengetahuan OTRIS ini sebagai Wakaf Pengetahuan. Detail lengkap di wakaf.html dan trust-house.html.';return 'Itu detail arsitektur khusus kita buat jualan kamera / buat OTRIS. Untuk detailnya, silakan minta detail lewat halaman trust-house.html. Homepage ini ringkas saja.';}
+addMsg('Halo, saya Tanya Ambo. Tanya apa pun tentang OTRIS, Wakaf, atau Trust House.','bot');
+function kirim(){var v=q.value.trim();if(!v)return;addMsg(v,'user');addMsg(jawab(v),'bot');q.value='';}send.addEventListener('click',kirim);q.addEventListener('keydown',function(e){if(e.key==='Enter')kirim();});
 </script>
-
-
-<main class="container">
-  <!-- HOME / HERO -->
-  <section id="home" class="hero">
-    <div class="hero-inner">
-      <div>
-        <p class="kicker">OTRIS • MEDICAL SOVEREIGNTY • 2026</p>
-        <h1>ICU ADALAH PINTU MASUK.<span>MANUSIA ADALAH TUJUANNYA.</span></h1>
-        <p class="lead">Kami membangun jembatan teknologi kesehatan agar perangkat yang sudah ada, data, dan tenaga ahli dapat terhubung lebih dekat kepada pasien — tanpa menunggu semuanya diganti atau sempurna terlebih dahulu.</p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:20px">
-          <a class="btn btn-white" href="healthcare.html">LIHAT JEMBATANNYA →</a>
-          <a class="btn btn-outline" href="about.html">MENGAPA OTRIS</a>
-        </div>
-        <p style="margin-top:20px;font-family:ui-monospace,monospace;font-size:11px;letter-spacing:.08em;color:#e6c98a">MURAH, BUKAN MURAHAN. • KAMI SEDANG MEMBANGUN JEMBATAN UNTUK NYAWA.</p>
-      </div>
-      <div class="hero-img">
-        <img src="assets/logo.png" alt="Logo resmi OTRIS dengan mercusuar"/ style="width:92px !important;height:92px !important;min-width:92px;min-height:92px;object-fit:contain;border-radius:50%;">
-        <div class="badge-pnp"><img src="assets/P&P-15-MENIT.png" alt="Logo P&P 15 Menit"/ style="width:92px !important;height:92px !important;min-width:92px;min-height:92px;object-fit:contain;border-radius:50%;"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PINTU DARI WEBSITE INTI KE TRUST HOUSE & PEMECAH BATU -->
-  <section class="pintu" id="pintu">
-    <p class="kicker">PINTU DARI OTRIS.ID →</p>
-    <h2>WIJOYO TRUST HOUSE</h2>
-    <p>Satu pintu. Di dalamnya ada dua: Wakaf Rumah + Pemecah Batu. Pemecah Batu ada di dalam RUMAH-INSTALL.</p>
-    <p>“Rumah ini diwakafkan. Ilmu tidak dijual, yang dijual tenaga dan jasa. Penghasilan dari jasa untuk anak-anak.”</p>
-    <div style="display:flex;gap:12px;flex-wrap:wrap">
-    <a class="btn btn-gold" href="pemecah-batu.html">MASUK KE PEMECAH BATU →</a>
-    <a class="btn btn-outline" href="#home">← KEMBALI KE HOME</a>
-  </div>
-  </section>
-
-  <!-- FILOSOFI -->
-  <section class="section">
-    <p class="kicker" style="color:#0b4fa7">FILOSOFI NILAI</p>
-    <h2 style="font-size:clamp(2rem,5vw,3.5rem);line-height:1.05;margin:8px 0">MURAH, BUKAN MURAHAN.</h2>
-    <p style="max-width:75ch;color:#475569">OTRIS menekan biaya dengan mengintegrasikan teknologi yang sudah dimiliki fasilitas kesehatan. Nilai tidak dikurangi; pemborosan yang dikurangi. Integration Over Replacement adalah cara kami menjaga investasi rumah sakit tetap berguna.</p>
-    <div class="grid2" style="margin-top:20px">
-      <article class="card" style="background:#071b36;color:#fff"><h3>MASTER BRAND — OTRIS</h3><p>Platform integrasi yang menyatukan perangkat medis, data, antarmuka klinis, dan konektivitas jarak jauh dalam arsitektur yang terkelola.</p><a href="about.html">Pelajari OTRIS →</a></article>
-      <article class="card"><h3>DEPLOYMENT IDENTITY — P&amp;P 15 MENIT</h3><p>Identitas Plug &amp; Play OTRIS: instalasi dibuat sesederhana mungkin bagi pengguna lapangan. Prinsip 15 menit adalah target UX pada kondisi dan perangkat yang telah memenuhi prasyarat dan tervalidasi.</p><a href="plug-play.html">Lihat Plug &amp; Play →</a></article>
-    </div>
-  </section>
-</main>
-
-<footer><div class="container">OTRIS — Jembatan Teknologi untuk Nyawa • ICU ADALAH PINTU MASUK. MANUSIA ADALAH TUJUANNYA. • © 2026 OTRIS / Hanif Ahdi Fiddini</div></footer>
-<script src="js/script.js"></script>
-<script src="wijoyo-chat.js"></script>
-</body>
-</html>
+</body></html>
