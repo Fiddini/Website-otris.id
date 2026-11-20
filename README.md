@@ -4,9 +4,13 @@ Website ini dibuat ulang dari file lama (hasil ChatGPT, 19 MB, 1 baris) menjadi 
 ## Struktur
 ```
 website-otris-profesional-vscode/
-  index.html        -> Halaman utama, semua link <a> beneran, bisa dipencet
+  index.html        -> HOME
+  about.html, hardware.html, healthcare.html, ai-gateway.html
+  wijoyo-kusumo.html, plug-play.html, hl7.html, wakaf.html
+  trust-house.html, pemecah-batu.html, contact.html, otris-core.html
   css/style.css     -> Semua styling, tidak lagi inline 1 baris
-  js/script.js      -> Navigasi + smooth scroll, tanpa framework
+  js/script.js      -> Posisi header dan pengalihan tautan lama
+  wijoyo-chat.js    -> Tanya Wijoyo di semua halaman
   assets/           -> TARUH GAMBAR DI SINI
     logo.png
     P&P-15-MENIT.png
@@ -23,7 +27,7 @@ website-otris-profesional-vscode/
 2. Copy semua PNG/JPG dari repo lama ke folder `assets/` — nama file harus SAMA persis seperti di index.html (case-sensitive)
 3. Di VS Code: File > Open Folder > Website-otris.id
 4. Jalankan: `python3 -m http.server 8000` lalu buka http://127.0.0.1:8000
-5. Klik menu TRUST HOUSE -> harus masuk ke #trust-house. Klik semua link, semua harus bisa dipencet.
+5. Klik semua menu atas. Setiap menu membuka file HTML yang sesuai.
 
 ## Kenapa versi lama tidak bisa dipencet?
 - Versi lama pakai <div> + JS data-view, bukan <a>. Versi baru pakai <a href="#..."> beneran.
@@ -42,6 +46,6 @@ Copy prompt ini ke Codex / Claude Code di VS Code:
 > Laporkan file apa yang kamu ubah dan cara test-nya.
 
 ## Pintu
-- Menu: TRUST HOUSE -> #trust-house
-- Home: kotak PINTU DARI OTRIS.ID -> #trust-house
-- Di #trust-house: Wakaf Rumah + Pemecah Batu, Satu Download Dapat Dua.
+- Menu TRUST HOUSE membuka `trust-house.html`.
+- Tombol Pemecah Batu di HOME dan TRUST HOUSE membuka `pemecah-batu.html`.
+- Petunjuk Satu Download Dapat Dua tersedia di kedua halaman.
