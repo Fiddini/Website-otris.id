@@ -12,6 +12,14 @@
   header { position: sticky; top: 0; z-index: 999; }
   a { pointer-events: auto !important; }
 </style>
+<style>/* fix-koplak-otris */
+html, body { overflow-x:hidden !important; max-width:100vw !important; }
+* { box-sizing:border-box !important; }
+img, video { max-width:100% !important; height:auto !important; }
+section, div { max-width:100vw !important; }
+#wijoyo-chat, #wijoyo-box { max-width:calc(100vw - 40px) !important; }
+section:has([class*="trust-white"]) { overflow:hidden !important; }
+</style>
 </head>
 <body>
 <header>
