@@ -125,3 +125,8 @@ header .logo b {
 .hero [class*="card"] {
   transform: translate(18px, 22px) !important;
 }
+
+/* FIX-LOGO-KANAN-92 */
+header img { width: 92px !important; height: 92px !important; min-width: 92px !important; min-height: 92px !important; object-fit: contain !important; border-radius: 50% !important; }
+header { min-height: 110px !important; align-items: center !important; }
+header .logo, header .brand { gap: 14px !important; align-items: center !important; }
