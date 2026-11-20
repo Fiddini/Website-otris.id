@@ -6,31 +6,6 @@
 <title>OTRIS — Jembatan Teknologi untuk Nyawa</title>
 <meta name="description" content="OTRIS — ICU adalah pintu masuk. Manusia adalah tujuannya. Integration Over Replacement. Local First. UNKNOWN jangan ditebak."/>
 <link rel="stylesheet" href="css/style.css"/>
-<style>
-  html { scroll-behavior: smooth; }
-  section[id], div[id] { scroll-margin-top: 90px; }
-  header { position: sticky; top: 0; z-index: 999; }
-  a { pointer-events: auto !important; }
-</style>
-<style>/* fix-koplak-otris */
-html, body { overflow-x:hidden !important; max-width:100vw !important; }
-* { box-sizing:border-box !important; }
-img, video { max-width:100% !important; height:auto !important; }
-section, div { max-width:100vw !important; }
-#wijoyo-chat, #wijoyo-box { max-width:calc(100vw - 40px) !important; }
-section:has([class*="trust-white"]) { overflow:hidden !important; }
-</style>
-<style>/* fix-naik-otris */
-header { margin-bottom: 0 !important; }
-section:first-of-type { margin-top: 12px !important; padding-top: 70px !important; }
-#wijoyo-box { bottom: 100px !important; }
-#wijoyo-msg { height: 320px !important; }
-</style>
-<style>/* fix-turun-dikit */
-header nav { display:flex !important; flex-wrap:wrap !important; justify-content:center !important; gap:6px !important; }
-header nav a { white-space:nowrap !important; padding:8px 10px !important; font-size:13px !important; }
-section:first-of-type { margin-top: 12px !important; padding-top: 70px !important; }
-</style>
 </head>
 <body>
 <header>
@@ -40,7 +15,7 @@ section:first-of-type { margin-top: 12px !important; padding-top: 70px !importan
       <span>OTRIS<small>OTRIS.ID • OFFICIAL</small></span>
     </a>
     <nav class="main" aria-label="Navigasi utama">
-      <a href="#home" class="active">HOME</a>
+      <a href="#home" class="active" aria-current="location">HOME</a>
       <a href="#about">ABOUT</a>
       <a href="#hardware">HARDWARE</a>
       <a href="#healthcare">HEALTHCARE</a>
@@ -52,6 +27,7 @@ section:first-of-type { margin-top: 12px !important; padding-top: 70px !importan
       <a href="#trust-house" class="gold">TRUST HOUSE →</a>
       <a href="#pemecah-batu" class="gold">PEMECAH BATU →</a>
       <a href="#contact">CONTACT US</a>
+      <a href="#otris-core">OTRIS CORE</a>
     </nav>
   </div>
 </header>
@@ -109,6 +85,11 @@ section:first-of-type { margin-top: 12px !important; padding-top: 70px !importan
       <span><b>PERANGKAT MEDIS</b><br/>Yang sudah ada</span> → <span><b>P&amp;P 15 MENIT</b><br/>Deploy &amp; connect</span> → <span><b>EDGE / GATEWAY</b><br/>Translate &amp; normalize</span> → <span><b>OTRIS CORE</b><br/>Canonical data</span> → <span><b>CLINICAL WALL</b><br/>Manusia melihat &amp; bertindak</span>
     </div>
     <p style="font-size:13px;margin-top:16px">Gambar: <a href="#hardware">Lihat diagram hardware →</a> • File gambar ada di folder <code>assets/</code>, bukan background, jadi bisa diklik dan dibuka.</p>
+  </section>
+
+  <section class="section" id="otris-core">
+    <h2>OTRIS CORE</h2>
+    <a class="btn btn-dark" href="https://github.com/Fiddini/otris-core" target="_blank" rel="noopener">BUKA REPOSITORI DI GITHUB</a>
   </section>
 
   <!-- CONSTITUTION -->
