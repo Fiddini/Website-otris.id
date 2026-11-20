@@ -6,6 +6,12 @@
 <title>OTRIS — Jembatan Teknologi untuk Nyawa</title>
 <meta name="description" content="OTRIS — ICU adalah pintu masuk. Manusia adalah tujuannya. Integration Over Replacement. Local First. UNKNOWN jangan ditebak."/>
 <link rel="stylesheet" href="css/style.css"/>
+<style>
+  html { scroll-behavior: smooth; }
+  section[id], div[id] { scroll-margin-top: 90px; }
+  header { position: sticky; top: 0; z-index: 999; }
+  a { pointer-events: auto !important; }
+</style>
 </head>
 <body>
 <header>
@@ -25,6 +31,7 @@
       <a href="#hl7">HL7</a>
       <a href="#wakaf">WAKAF</a>
       <a href="#trust-house" class="gold">TRUST HOUSE →</a>
+      <a href="#pemecah-batu" class="gold">PEMECAH BATU →</a>
       <a href="#contact">CONTACT US</a>
     </nav>
   </div>
@@ -57,7 +64,10 @@
     <h2>WIJOYO TRUST HOUSE</h2>
     <p>Satu pintu. Di dalamnya ada dua: Wakaf Rumah + Pemecah Batu. Pemecah Batu ada di dalam RUMAH-INSTALL.</p>
     <p style="color:#e6c98a">“Rumah ini diwakafkan. Ilmu tidak dijual, yang dijual tenaga dan jasa. Penghasilan dari jasa untuk anak-anak.”</p>
-    <a class="btn btn-gold" href="#trust-house">MASUK KE TRUST HOUSE + PEMECAH BATU →</a>
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+    <a class="btn btn-gold" href="#pemecah-batu">MASUK KE PEMECAH BATU →</a>
+    <a class="btn btn-outline" href="#home">← KEMBALI KE HOME</a>
+  </div>
   </section>
 
   <!-- FILOSOFI -->
@@ -215,8 +225,9 @@
           <p style="font-size:13px"><b>Atas Nama:</b> Hadi Wijoyo Kusumo<br/><b>Pengelola:</b> Hanif Ahdi Fiddini</p>
           <a href="#wakaf">Kembali ke Wakaf →</a>
         </div>
-        <div class="trust-navy">
+        <div class="trust-navy" id="pemecah-batu">
           <p style="font-family:ui-monospace,monospace;font-size:11px;letter-spacing:.14em;color:#e6c98a">PEMECAH BATU — DI DALAM RUMAH INI</p>
+          <img src="assets/the-candidates.png" alt="The Candidates - Pemecah Batu" style="width:100%;border-radius:14px;margin:12px 0;border:1px solid rgba(255,255,255,.2);"/>
           <h3>Satu Download, Dapat Dua</h3>
           <p>Pemecah Batu ada di dalam RUMAH-INSTALL. Satu download, dapat Rumah + Pemecah Batu sekaligus.</p>
           <p style="font-family:ui-monospace,monospace;font-size:11px;color:#e6c98a">STOP — REPORT — DO NOT AUTO-REPAIR — DO NOT FABRICATE.</p>
@@ -229,7 +240,7 @@
         <p>1. Download RUMAH-INSTALL.zip<br/>2. Unzip — dapat folder RUMAH-INSTALL, ada Rumah + Pemecah Batu<br/>3. Masuk folder, jalanin <b>sh INSTALL.sh</b><br/>4. Rumah jalan di http://127.0.0.1:8080. Pemecah Batu ada di dalamnya.</p>
       </div>
       <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px">
-        <a class="btn btn-gold" href="https://github.com/Fiddini/Website-otris.id">DOWNLOAD RUMAH-INSTALL</a>
+        <a class="btn btn-gold" href="https://github.com/Fiddini/Website-otris.id/archive/refs/heads/main.zip">DOWNLOAD RUMAH-INSTALL</a>
         <a class="btn btn-outline" href="#home">← KEMBALI KE HOME</a>
       </div>
       <p style="font-size:12px;color:#94a3b8;margin-top:14px">WIJOYO KUSUMO — AMANAH — OTRIS — otris.id • WIJOYO TRUST HOUSE — Dari OTRIS</p>
