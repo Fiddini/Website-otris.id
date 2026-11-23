@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HARDWARE — OTRIS</title>
+<title data-i18n="hardware-otris">PERANGKAT KERAS — OTRIS</title>
 <link rel="stylesheet" href="css/style.css"/>
 <!-- fix-seo-otris -->
-<meta name="description" content="OTRIS - Jembatan Teknologi untuk Nyawa. Murah bukan murahan. Integrasi perangkat medis tanpa ganti alat. Dari OTRIS untuk Wakaf - Ilmu tidak dijual, System tidak dijual.">
+<meta name="description" content="OTRIS - Jembatan Teknologi untuk Nyawa. Murah bukan murahan. Integrasi perangkat medis tanpa ganti alat. Dari OTRIS untuk Wakaf - Ilmu tidak dijual, System tidak dijual." data-i18n-content="otris-jembatan-teknologi-untuk-nyawa">
 <meta name="keywords" content="OTRIS, otris.id, Pemecah Batu, Wijoyo Trust House, Wakaf Rumah, integrasi rumah sakit, SATUSEHAT, FHIR, Plug Play 15 menit">
 <meta property="og:title" content="HARDWARE — OTRIS">
 <meta property="og:description" content="ICU adalah pintu masuk. Manusia adalah tujuannya. Murah bukan murahan.">
@@ -19,58 +19,64 @@
   <div class="container nav">
     <a class="logo" href="index.html">
       <img src="assets/logo.png" alt="" width="64" height="64">
-      <span>OTRIS<small>OTRIS.ID • OFFICIAL</small></span>
+      <span><span data-i18n="otris">OTRIS</span><small data-i18n="otris-id-official">OTRIS.ID • RESMI</small></span>
     </a>
     <button class="nav-toggle" type="button" aria-controls="navigasi-utama" aria-expanded="false" hidden>
       <span class="nav-toggle-icon" aria-hidden="true"></span>
-      Menu
+      <span data-i18n="nav.menu">Menu</span>
     </button>
-    <nav id="navigasi-utama" class="main" aria-label="Navigasi utama">
-      <a href="index.html">BERANDA</a>
-      <a href="about.html">TENTANG</a>
-      <a href="hardware.html" aria-current="page">HARDWARE</a>
+    <nav id="navigasi-utama" class="main" aria-label="Navigasi utama" data-i18n-aria-label="nav.main">
+      <a href="index.html" data-i18n="beranda">BERANDA</a>
+      <a href="about.html" data-i18n="tentang">TENTANG</a>
+      <a href="hardware.html" aria-current="page" data-i18n="hardware">PERANGKAT KERAS</a>
       <details class="nav-group" name="navigasi">
-        <summary>TEKNOLOGI</summary>
+        <summary data-i18n="teknologi">TEKNOLOGI</summary>
         <div class="nav-dropdown">
-          <a href="healthcare.html">LAYANAN KESEHATAN</a>
-          <a href="ai-gateway.html">AI GATEWAY</a>
-          <a href="plug-play.html">PLUG &amp; PLAY</a>
-          <a href="hl7.html">HL7</a>
-          <a href="otris-core.html">OTRIS CORE</a>
+          <a href="healthcare.html" data-i18n="layanan-kesehatan">LAYANAN KESEHATAN</a>
+          <a href="ai-gateway.html" data-i18n="ai-gateway">AI GATEWAY</a>
+          <a href="plug-play.html" data-i18n="plug-play">PLUG &amp; PLAY</a>
+          <a href="hl7.html" data-i18n="nav.hl7">HL7</a>
+          <a href="otris-core.html" data-i18n="otris-core">OTRIS CORE</a>
         </div>
       </details>
       <details class="nav-group" name="navigasi">
-        <summary>WIJOYO</summary>
+        <summary data-i18n="wijoyo">WIJOYO</summary>
         <div class="nav-dropdown">
-          <a href="wijoyo-kusumo.html">WIJOYO KUSUMO</a>
-          <a href="wakaf.html">WAKAF</a>
-          <a href="trust-house.html">TRUST HOUSE</a>
-          <a href="pemecah-batu.html">PEMECAH BATU</a>
+          <a href="wijoyo-kusumo.html" data-i18n="wijoyo-kusumo">WIJOYO KUSUMO</a>
+          <a href="wakaf.html" data-i18n="wakaf">WAKAF</a>
+          <a href="trust-house.html" data-i18n="trust-house">TRUST HOUSE</a>
+          <a href="pemecah-batu.html" data-i18n="pemecah-batu">PEMECAH BATU</a>
         </div>
       </details>
-      <a href="contact.html">KONTAK</a>
+      <a href="contact.html" data-i18n="kontak">KONTAK</a>
     </nav>
+      <div class="language-switch" role="group" aria-label="Bahasa situs" data-i18n-aria-label="site.language">
+        <button type="button" data-language="en" data-i18n="site.codeEn" aria-pressed="false">EN</button>
+        <button type="button" data-language="id" data-i18n="site.codeId" aria-pressed="true">ID</button>
+        <button type="button" data-language="fr" data-i18n="site.codeFr" aria-pressed="false">FR</button>
+      </div>
   </div>
 </header>
 
 <main class="container">
   <!-- ARSITEKTUR -->
   <section class="section dark" id="hardware">
-    <p class="kicker">ARSITEKTUR YANG MENJAGA JEMBATAN</p>
-    <h1 style="font-size:clamp(2rem,5vw,3.5rem);line-height:1.05">Yang beragam di luar. Satu bahasa di dalam OTRIS.</h1>
-    <p>Perangkat medis tetap melakukan tugasnya. Gateway mengenali dunia vendor, menormalkan data ke Canonical OTRIS, lalu Core dan Clinical Wall bekerja dengan bahasa yang konsisten. Local berdiri sendiri; cloud memperluas, bukan menggantikan.</p>
-    <ol class="flow" aria-label="Alur hardware" role="list">
-      <li><b>PERANGKAT MEDIS</b><span>Yang sudah ada</span></li>
-      <li><b>P&amp;P 15 MENIT</b><span>Deploy &amp; connect</span></li>
-      <li><b>EDGE / GATEWAY</b><span>Translate &amp; normalize</span></li>
-      <li><b>OTRIS CORE</b><span>Canonical data</span></li>
-      <li><b>CLINICAL WALL</b><span>Manusia melihat &amp; bertindak</span></li>
+    <p class="kicker" data-i18n="arsitektur-yang-menjaga-jembatan">ARSITEKTUR YANG MENJAGA JEMBATAN</p>
+    <h1 style="font-size:clamp(2rem,5vw,3.5rem);line-height:1.05" data-i18n="yang-beragam-di-luar-satu">Yang beragam di luar. Satu bahasa di dalam OTRIS.</h1>
+    <p data-i18n="perangkat-medis-tetap-melakukan-tugasnya">Perangkat medis tetap melakukan tugasnya. Gateway mengenali dunia vendor, menormalkan data ke Canonical OTRIS, lalu Core dan Clinical Wall bekerja dengan bahasa yang konsisten. Local berdiri sendiri; cloud memperluas, bukan menggantikan.</p>
+    <ol class="flow" aria-label="Alur perangkat keras" role="list" data-i18n-aria-label="alur-hardware">
+      <li><b data-i18n="perangkat-medis">PERANGKAT MEDIS</b><span data-i18n="yang-sudah-ada">Yang sudah ada</span></li>
+      <li><b data-i18n="p-p-15-menit">P&amp;P 15 MENIT</b><span data-i18n="deploy-connect">Pasang dan hubungkan</span></li>
+      <li><b data-i18n="edge-gateway">EDGE / GATEWAY</b><span data-i18n="translate-normalize">Terjemahkan dan normalkan</span></li>
+      <li><b data-i18n="otris-core">OTRIS CORE</b><span data-i18n="canonical-data">Data kanonik</span></li>
+      <li><b data-i18n="clinical-wall">CLINICAL WALL</b><span data-i18n="manusia-melihat-bertindak">Manusia melihat &amp; bertindak</span></li>
     </ol>
-    <p class="hardware-diagram"><a href="assets/hardware-topology.png" target="_blank" rel="noopener">Lihat diagram hardware</a></p>
+    <p class="hardware-diagram"><a href="assets/hardware-topology.png" target="_blank" rel="noopener" data-i18n="lihat-diagram-hardware">Lihat diagram perangkat keras</a></p>
   </section>
 </main>
 
-<footer><div class="container">OTRIS — Jembatan Teknologi untuk Nyawa • ICU ADALAH PINTU MASUK. MANUSIA ADALAH TUJUANNYA. • © 2026 OTRIS / Hanif Ahdi Fiddini</div></footer>
+<footer><div class="container" data-i18n="site.footer">OTRIS — Jembatan Teknologi untuk Nyawa • ICU ADALAH PINTU MASUK. MANUSIA ADALAH TUJUANNYA. • © 2026 OTRIS / Hanif Ahdi Fiddini</div></footer>
+<script src="js/i18n.js" defer></script>
 <script src="js/script.js"></script>
 <script src="wijoyo-chat.js"></script>
 </body>

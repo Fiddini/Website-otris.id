@@ -33,7 +33,19 @@
         "madza media"
       ],
       "jawaban_publik": "THE JEMBATAN - Merajut Kedaulatan Kesehatan Melalui Interoperabilitas dan Kolaborasi Klinis Real-Time. Penulis Hanif Ahdi Fiddini, Founder OTRIS. Edisi Indonesia Preview Edition, Penerbit Madza Media, ISBN 978-634-243-979-1, 262 halaman, 14,8 x 21 cm, Cetakan ke-1 2026. Penyunting Lacita Wulansari Widjaya, Desain Sampul Aurel Sekardewi Widjaya. Isi: 17 Bab + Prolog + Epilog + Lampiran A/B/C. Versi Inggris: THE JEMBATAN EN FINAL, 152 halaman, subjudul Weaving Health Sovereignty Through Interoperability and Real-Time Clinical Collaboration.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "What is THE JEMBATAN?",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "THE JEMBATAN is Hanif Ahdi Fiddini’s book on health sovereignty through interoperability and real-time clinical collaboration. The Indonesian preview edition is published by Madza Media, ISBN 978-634-243-979-1, 262 pages. The English edition has 152 pages."
+        },
+        "fr": {
+          "judul": "Qu’est-ce que THE JEMBATAN ?",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "THE JEMBATAN est le livre de Hanif Ahdi Fiddini sur la souveraineté en santé par l’interopérabilité et la collaboration clinique en temps réel. L’édition de présentation indonésienne est publiée chez Madza Media, ISBN 978-634-243-979-1, 262 pages. L’édition anglaise compte 152 pages."
+        }
+      }
     },
     {
       "id": "jembatan_en",
@@ -46,7 +58,19 @@
         "english version"
       ],
       "jawaban_publik": "Versi Inggris THE JEMBATAN, 152 halaman. Judul: Weaving Health Sovereignty Through Interoperability and Real-Time Clinical Collaboration. Isi sama dengan versi Indonesia: Realitas geografis 17.000 pulau, rumus P(success)=f(S0,1/t) - makin lama waktu rujuk, makin turun probabilitas keselamatan pasien. Studi kasus Rp70 juta di Selat Riau, Data Silos, OTRIS sebagai jembatan inklusif, dan kedaulatan kesehatan. Quote: We are no longer waiting for the future. We are building it.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "The English edition of THE JEMBATAN",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The 152-page English edition, Weaving Health Sovereignty Through Interoperability and Real-Time Clinical Collaboration, covers Indonesia’s geography, delays in referrals, the Rp70 million Selat Riau case, data silos, and OTRIS as an inclusive bridge."
+        },
+        "fr": {
+          "judul": "L’édition anglaise de THE JEMBATAN",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "L’édition anglaise de 152 pages, Weaving Health Sovereignty Through Interoperability and Real-Time Clinical Collaboration, traite de la géographie indonésienne, des retards d’orientation, du cas à Rp70 millions dans le Selat Riau, des silos de données et du rôle de pont inclusif d’OTRIS."
+        }
+      }
     },
     {
       "id": "prolog_ferry",
@@ -64,7 +88,19 @@
         "selat riau"
       ],
       "jawaban_publik": "Prolog: 7 Mei 2020, Dermaga Tanjung Pinang pukul 05.30. Hanif dan programmer-nya naik ferry ke Dabo Singkep untuk menemui Moh. B - Moh. Bisri, Kepala Dinas Kesehatan Provinsi Kepulauan Riau saat itu. Moh. B bertanya sambil menunjuk seorang pemuda: Mas, bisa tidak kita atasi masalah seperti ini? Hanif menjawab antusias, tapi begitu menoleh, Moh. B sudah tertidur pulas terbuai ombak. Kesadaran yang mengunci takdirnya: Mimpi besar ini terlanjur tumpah di kepala saya, dan sayalah yang harus bangun untuk mewujudkannya.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Prologue: A question on a ferry",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "On 7 May 2020, Hanif took the ferry from Tanjung Pinang to Dabo Singkep. Moh. Bisri asked whether they could address the problem he pointed out, leaving Hanif with a sense of responsibility for turning the idea into reality."
+        },
+        "fr": {
+          "judul": "Prologue : une question sur un ferry",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le 7 mai 2020, Hanif a pris le ferry de Tanjung Pinang à Dabo Singkep. Moh. Bisri lui a demandé s’ils pouvaient résoudre le problème qu’il lui montrait. Hanif s’est alors senti responsable de concrétiser l’idée."
+        }
+      }
     },
     {
       "id": "bab1_indonesia_tidak_terlihat",
@@ -84,7 +120,19 @@
         "dabo 2012"
       ],
       "jawaban_publik": "Bab 1: Indonesia yang Tidak Terlihat. Ikatan Hanif dengan Dabo Singkep bukan baru 2020, tapi sejak 2012 saat instalasi alat lab. Ia membawa teknisi Hendri dari Palembang. Di dermaga, ia kena Kesapa - keteguran, demam tinggi 5 hari. Di lab, nilai SGOT/SGPT di atas 60 tidak mau masuk range walau sudah kalibrasi puluhan kali dan grounding sudah bagus. Jam 1 malam, Hanif bangkit dari ranjang klinik, naik brankar - yang dicurigai brankar dari kamar mayat - untuk memandu Hendri menyetel aplikasi. Pelajaran: Tak kenal maka tak sayang. Tak sayang maka tak terjaga. Masuk kandang kambing mengembik, masuk kandang harimau mengaum. Hormati tanah yang kau pijak.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Chapter 1: The unseen Indonesia",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Hanif’s relationship with Dabo Singkep began with a laboratory installation in 2012. While ill, he helped Hendri resolve an equipment issue. The chapter draws a lesson about learning from and respecting the places and people one serves."
+        },
+        "fr": {
+          "judul": "Chapitre 1 : l’Indonésie invisible",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le lien de Hanif avec Dabo Singkep remonte à une installation de laboratoire en 2012. Alors qu’il était malade, il a aidé Hendri à résoudre un problème d’appareil. Le chapitre souligne l’importance de connaître et de respecter les lieux et les personnes que l’on sert."
+        }
+      }
     },
     {
       "id": "bab2_musuh_sebenarnya",
@@ -102,7 +150,19 @@
         "setengah satu malam"
       ],
       "jawaban_publik": "Bab 2: Jam setengah satu malam di ruang operasi kecil RS kabupaten Dabo Singkep. Pasien pria 62 tahun, kasus hernia. Dr. J operasi sambil sesekali melirik buku di bawah kain steril: Buku Panduan Bedah Digestif terbitan Universitas Indonesia, sampul sudah lepas, penuh stabilo kuning dan catatan tangan tinta biru pudar. Buku adalah guru yang tidak pernah marah ketika kita bertanya untuk kesepuluh kalinya. Musuh sebenarnya bukan dokter yang kurang pintar, tapi sistem yang membiarkan dokter berjuang sendirian tanpa pendamping, tanpa data lengkap, tanpa jembatan keahlian.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Chapter 2: The real enemy",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "During a late-night hernia operation in Dabo Singkep, Dr. J consulted a well-used surgery manual. The chapter identifies a system that leaves doctors without support, complete data, or access to expertise as the underlying problem."
+        },
+        "fr": {
+          "judul": "Chapitre 2 : le véritable adversaire",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Lors d’une opération de hernie tard dans la nuit à Dabo Singkep, le Dr J a consulté un manuel chirurgical très utilisé. Le chapitre identifie le problème de fond : un système qui laisse les médecins sans accompagnement, sans données complètes et sans accès à l’expertise."
+        }
+      }
     },
     {
       "id": "bab3_pertanyaan_melahirkan_otris",
@@ -123,7 +183,19 @@
         "tragedi"
       ],
       "jawaban_publik": "Bab 3: Di ferry, Hanif bertemu koko keturunan Tionghoa yang patah tulang paha, klavikula, dan tangan sekaligus. Bukan karena balapan di jalan besar Dabo - jalan di sana kecil. Ia ngebut karena suka nonton MotoGP, adu laga dengan motor yang belakangnya bawa sawit, lalu menghantam keranjang sawit itu. Biaya operasi + logistik: Rp70 juta. Untuk keluarga di daerah terpencil, itu bukan sekadar biaya medis, tapi aset produktif yang harus dialihkan - tanah, ternak, tabungan generasi berikutnya. Ini Catastrophic Health Expenditure karena biaya tidak langsung akibat geografi, bukan karena tidak ada asuransi. Dari sinilah lahir konsep Supervisi Legal Defense dan OTRIS.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Chapter 3: The question that led to OTRIS",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "After a motorcycle collision, one patient’s surgery and logistics cost Rp70 million. The chapter uses the case to explain how geography can turn indirect costs into catastrophic health expenditure. It traces the origin of Supervisi Legal Defense and OTRIS."
+        },
+        "fr": {
+          "judul": "Chapitre 3 : la question à l’origine d’OTRIS",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Après un accident de moto, l’opération et la logistique d’un patient ont coûté Rp70 millions. Le chapitre montre comment la géographie peut transformer les coûts indirects en dépenses de santé catastrophiques. Il retrace l’origine de Supervisi Legal Defense et d’OTRIS."
+        }
+      }
     },
     {
       "id": "otris_definisi",
@@ -141,7 +213,19 @@
         "tele or"
       ],
       "jawaban_publik": "OTRIS bukan telemedicine. Telemedicine konvensional hanya memindahkan percakapan: Dokter A di Jakarta bicara dengan Dokter B di Dabo lewat layar, tapi data monitor tidak ikut, grafik tekanan darah tidak ikut, status mesin anestesi tidak ikut, rekam tindakan tidak ikut. OTRIS melakukan hal yang berbeda secara fundamental: ketika OTRIS berjalan di ruang operasi, ada 3 aliran yang bergerak bersamaan setiap detik - 1) Visual tindakan bedah beresolusi tinggi dari kamera Sony FX3, 2) Data perangkat medis - detak jantung, tekanan darah, SpO2, grafik anestesi - ditarik langsung dari alat apa pun mereknya, apa pun bahasa protokolnya, 3) Jejak digital tindakan - setiap instruksi, keputusan, momen kritis terekam sebagai bukti yang sah. OTRIS adalah jembatan, bukan pengganti dokter.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "What is OTRIS?",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "OTRIS connects existing equipment, medical data, and clinical expertise. Its operating-room model combines procedure video, data from medical devices, and a digital record of actions and decisions. It supports clinicians and leaves clinical decisions in their hands. ICU is the entrance. Humans are the purpose."
+        },
+        "fr": {
+          "judul": "Qu’est-ce qu’OTRIS ?",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "OTRIS relie les équipements existants, les données médicales et l’expertise clinique. Son modèle de bloc opératoire réunit la vidéo de l’intervention, les données des appareils et une trace numérique des actes et des décisions. Il accompagne les soignants, qui gardent la responsabilité des décisions cliniques. Les soins intensifs sont l'entree. L'humain est le but."
+        }
+      }
     },
     {
       "id": "otris_hardware",
@@ -159,7 +243,19 @@
         "black box"
       ],
       "jawaban_publik": "Hardware OTRIS: Kotak hitam kecil tidak lebih besar dari kotak nasi, warna hitam doff, tanpa lampu kelap-kelip, menempel di rak besi sudut ruang operasi. Isinya otak OTRIS. Kamera prosedur: Sony FX3 sebagai Procedure Camera - akurasi warna sekelas sinema. Kamera spasial: Orbbec Femto Bolt sebagai Spatial Camera. Prinsip: Integration Over Replacement - jangan ganti alat yang sudah ada, tapi sambungkan. Filosofi: Rumah yang baik bukan yang paling tinggi temboknya, melainkan yang paling kuat pondasinya dan paling terbuka pintunya.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "What is OTRIS hardware?",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "THE JEMBATAN describes a small black box, a Sony FX3 procedure camera, and an Orbbec Femto Bolt spatial camera. The principle is to integrate equipment that is already in place."
+        },
+        "fr": {
+          "judul": "Qu’est-ce que le matériel OTRIS ?",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "THE JEMBATAN décrit un petit boîtier noir, une caméra d’intervention Sony FX3 et une caméra spatiale Orbbec Femto Bolt. Le principe consiste à intégrer les appareils déjà en place."
+        }
+      }
     },
     {
       "id": "otris_software",
@@ -175,7 +271,19 @@
         "software"
       ],
       "jawaban_publik": "Software OTRIS adalah penerjemah di ruang operasi. Ia mengambil data penting, data kamera, data tindakan dari alat apa pun, mengubahnya menjadi satu bahasa kanonik HL7 FHIR, lalu mengirimkannya dengan aman - ke layar supervisi, ke SIMRS, dan ke SATUSEHAT. Tiga aliran - visual, data perangkat, jejak digital - dirajut menjadi satu cerita, satu kebenaran. OTRIS tidak membangun perangkat lunak untuk menggantikan layanan kesehatan, tapi untuk memperkuatnya.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "What is OTRIS software?",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "OTRIS software translates device and procedure information into a common HL7 FHIR format for supervision, SIMRS, and SATUSEHAT. It brings video, device data, and an action record together to support existing care."
+        },
+        "fr": {
+          "judul": "Qu’est-ce que le logiciel OTRIS ?",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le logiciel OTRIS traduit les données des appareils et des interventions dans un format HL7 FHIR commun pour la supervision, le SIMRS et SATUSEHAT. Il réunit la vidéo, les données des appareils et la trace des actes pour soutenir les soins existants."
+        }
+      }
     },
     {
       "id": "lima_masalah_otris",
@@ -193,7 +301,19 @@
         "subspesialis"
       ],
       "jawaban_publik": "Bab 5: OTRIS menjawab 5 masalah yang berakar pada satu kegagalan sistemik yang sama - sistem kesehatan yang dirancang untuk memindahkan pasien, bukan mendistribusikan keahlian. 1) Sentralisasi dokter subspesialis - sebagian besar di Jawa, Jakarta, Surabaya, Bandung. Di Lingga tidak ada bedah saraf. 2) Jalur rujukan panjang dan berisiko. 3) Beban biaya non-medis keluarga - transportasi laut/udara, penginapan pendamping, hilangnya produktivitas, sering melebihi biaya medis langsung. 4) RS daerah belum berkembang optimal - kehilangan kesempatan menangani kasus kompleks. 5) Data alat medis belum terintegrasi - silo data, fragmentasi protokol, ketergantungan integrator eksternal, entri manual.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "What five problems does OTRIS address?",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The book lists concentrated specialist expertise, long and risky referrals, nonmedical costs for families, limited opportunities for regional hospitals to handle complex cases, and fragmented device data. The common issue is how to make expertise available where patients are."
+        },
+        "fr": {
+          "judul": "Quels sont les cinq problèmes abordés par OTRIS ?",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le livre cite la concentration des spécialistes, les orientations longues et risquées, les coûts non médicaux pour les familles, les possibilités limitées des hôpitaux régionaux de traiter les cas complexes et la fragmentation des données des appareils. Le problème commun est de rendre l’expertise accessible là où se trouvent les patients."
+        }
+      }
     },
     {
       "id": "dokter_diperkuat",
@@ -208,7 +328,19 @@
         "ai gantikan dokter"
       ],
       "jawaban_publik": "Bab 6: Dokter Tidak Digantikan, Dokter Diperkuat. Ketakutan robot menggantikan dokter itu wajar, tapi narasi yang salah bisa merusak kepercayaan. Parang tidak pernah menggantikan tangan yang memegang. Ia hanya membuat tangan itu lebih kuat. OTRIS bukan tentang kamera atau layar besar di dinding. Kehebatan OTRIS ada pada yang tidak terlihat - cara semuanya tersambung, aliran data tak terlihat, keputusan klinis yang bisa dibuat dalam hitungan detik oleh seseorang ratusan kilometer jauhnya. Kalau nak memahami OTRIS, jangan tengok kameranya dahulu. Tengoklah bagaimana semuanya disambungkan.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Supporting doctors",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "OTRIS aims to strengthen doctors’ work by connecting systems and making shared data available. The chapter compares technology to a tool that strengthens the hand holding it. Clinical expertise remains with the doctor."
+        },
+        "fr": {
+          "judul": "Soutenir les médecins",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "OTRIS vise à renforcer le travail des médecins en reliant les systèmes et en rendant les données accessibles. Le chapitre compare la technologie à un outil qui renforce la main qui le tient. L’expertise clinique demeure celle du médecin."
+        }
+      }
     },
     {
       "id": "ekonomi_baru_sharing_jasa",
@@ -228,7 +360,19 @@
         "redistribusi"
       ],
       "jawaban_publik": "Ekonomi Baru: Sistem rujukan lama itu zero-sum, all-or-nothing. Pasien dirujuk dari Dabo ke Tanjung Pinang/Batam, seluruh nilai ekonomi - klaim BPJS, jasa dokter, biaya fasilitas - pindah seutuhnya ke RS tujuan. RS asal hanya dapat tumpukan formulir. Dokter daerah yang sudah pemeriksaan awal tidak ada kompensasi. OTRIS membalikkan logika ini dengan Model Sharing Jasa: operasi tetap di RS daerah oleh dokter lokal, subspesialis kota mendampingi visual dan data, menanggung sebagian tanggung jawab klinis dari jarak jauh. Atas itu, subspesialis mendapat tele-supervision fee 20-25% dari komponen jasa tindakan. Cukup besar untuk menarik subspesialis terbaik, tapi tidak mengurangi bagian dokter daerah yang menanggung beban fisik operasi. Rezeki bukan berkurang ketika dibagi - ia bertambah ketika mengalir ke lebih banyak tangan. Seperti Gojek: bukan memotong pendapatan tukang ojek, tapi membuka pasar yang sebelumnya tidak terjangkau.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "The proposed service-sharing model",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The book proposes that a regional clinician perform the operation while a city specialist supports it remotely and shares some clinical responsibility. It describes a proposed tele-supervision fee of 20–25% of the procedure’s professional fee, with the regional clinician’s share protected."
+        },
+        "fr": {
+          "judul": "Le modèle proposé de partage des honoraires",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le livre propose qu’un médecin régional opère avec l’appui à distance d’un spécialiste de la ville qui partage une partie de la responsabilité clinique. Il décrit une proposition d’honoraires de télésupervision de 20 à 25 % de la part professionnelle de l’acte, en préservant la part du médecin régional."
+        }
+      }
     },
     {
       "id": "core_bodoh_fresnel",
@@ -253,7 +397,19 @@
         "otak otris"
       ],
       "jawaban_publik": "Bab 8: Brain Inside The Black Box - Macam Mano Kito Bagi Ruang Bedah Kapalo. OTRIS itu panglimo yang indak naik pelaminan. Panglimo berdiri di belakang tabir, dekat pintu, matanya menyapu seluruh balairung. Kalau pelaminan roboh, orang indak cari pengantin. Orang cari panglimo. Begitulah OTRIS, di dalam kotak hitam kecil. 21 tahun di laboratorium, Hanif belajar membaca warna: 340, 405, 505, 630, 760 nanometer. Lalu ia menemukan mercusuar. Lensa Fresnel tidak pernah bertanya, Cahaya apa yang datang? Merah, hijau, biru, atau yang tak terlihat - semua ia terima, semua ia perlakukan sama. Yang ia lakukan hanya satu: mengumpulkan, memfokuskan, lalu mengirimkan sejauh mungkin. Karena itu Core OTRIS dirancang sederhana, bahkan bodoh. Bukan dibuat paling pintar, tapi agar tidak punya prasangka. Ia menerima setiap bahasa, menerjemahkan setiap perbedaan, menghubungkan setiap perangkat. Alat boleh berbeda. Protokol boleh berbeda. Vendor boleh berbeda. Teknologi boleh berganti. Tapi arah akhir tetap satu: Satu Data. Satu Bahasa. Satu Tujuan. Satu Jantung.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Why does OTRIS Core stay simple?",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The book compares OTRIS Core to a Fresnel lens that gathers and focuses light without judging its color. Core is designed to receive different protocols, process and connect them in a common language, and avoid guessing the clinical meaning of data."
+        },
+        "fr": {
+          "judul": "Pourquoi OTRIS Core reste-t-il simple ?",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le livre compare OTRIS Core à une lentille de Fresnel qui rassemble et concentre la lumière sans juger sa couleur. Core est conçu pour recevoir différents protocoles, les relier dans un langage commun et s’abstenir de deviner le sens clinique des données."
+        }
+      }
     },
     {
       "id": "memindahkan_keahlian",
@@ -273,7 +429,19 @@
         "tumor"
       ],
       "jawaban_publik": "Bab 9: Memindahkan Keahlian, Bukan Pasien. Kalau pasien tak boleh terbang, biar ilmu yang terbang. Dari Dabo ke Pekanbaru 8 jam darat + laut. Natuna ke Tanjung Pinang 1 hari kapal. Yahukimo ke Jayapura 3 hari jalan kaki + pesawat kecil. Masalah RS Indonesia bukan kurang alat. Masalahnya: alat ada, dokter tak ada. Dokter ada, tak bisa bagi ilmu. Tele-OR: Jam 3 pagi di RSUD Dabo, pasien usus buntu pecah, dokter jaga baru lulus 1 tahun, tangan masih gemetar. Dulu: telepon Pekanbaru, jawab Rujuk, tapi kapal baru ada besok siang. Sekarang: tekan satu tombol merah, lampu hijau menyala, OTRIS Tele-OR Aktif, Menghubungkan ke RSCM Jakarta. Di Jakarta, Prof. Budi, ahli bedah 30 tahun, dalam 5 detik melihat apa yang dokter muda Dabo lihat - detak jantung 120, tensi 80/50, kamera laparoskopi jernih 4K, data anestesi detik demi detik.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Bringing expertise to the patient — Tele-OR",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Long trips can delay referrals. The book illustrates Tele-OR with a local operating-room team sharing video and device data with a remote specialist so expertise can reach the bedside."
+        },
+        "fr": {
+          "judul": "Amener l’expertise au patient — Tele-OR",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Les longs trajets peuvent retarder les orientations. Le livre illustre Tele-OR par une équipe locale de bloc opératoire qui partage vidéo et données d’appareils avec un spécialiste à distance pour amener l’expertise au chevet du patient."
+        }
+      }
     },
     {
       "id": "perang_waktu_latency",
@@ -295,7 +463,19 @@
         "napas"
       ],
       "jawaban_publik": "Bab 10: Perang Melawan Waktu - Macam Mano 50 Milidetik Bisa Jadi Batas Antaro Hidup Sama Kubur. Di ruang bedah, waktu tak pakai jam dinding. Waktu pakai napas. SpO2 99, 97, 94, 88. Dari garis EKG lurus ke Dum defib itu 4 detik. Lambat 6 detik, otak mulai mati. Lambat 10 detik, dia tak bangun lagi. Musuh pertama OTRIS bukan virus, tapi delay. Sistem lama: 1) Permisi, boleh minta data HR? 2) Server jawab: Boleh, tunggu ya. 3) Cari data. 4) Bungkus. 5) Antar. 6) Dashboard buka. 7) Dokter baca. Total 800 milidetik sampai 3 detik, kalau internet Dabo batuk bisa 5 detik. Itu bukan telemedicine, itu teler-medicine. Maka lahir Si Kilat: MQTT. Kalau HTTP itu pos - ketuk pintu, minta tanda tangan - MQTT itu azan subuh: teriak dari menara, semua bangun serentak. Monitor Dabo ngomong: Aku punya data baru: HR 82 - langsung teriak ke semua yang butuh, tanpa basa-basi.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Time, latency, and MQTT",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The book explains why delay matters in an operating room. It contrasts systems that repeatedly request updates with MQTT, where a device can publish new data to subscribed recipients."
+        },
+        "fr": {
+          "judul": "Temps, latence et MQTT",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le livre explique pourquoi les délais comptent dans un bloc opératoire. Il compare les systèmes qui interrogent régulièrement les appareils à MQTT, où un appareil peut publier de nouvelles données pour les destinataires abonnés."
+        }
+      }
     },
     {
       "id": "shelter_40kaki",
@@ -315,7 +495,19 @@
         "hvac"
       ],
       "jawaban_publik": "Bab 11: Shelter 40 Kaki - Rumah yang Bisa Berlayar. Paradoks beton di tengah laut: Puskesmas di Lingga sudah 3 tahun menunggu ruang operasi. Semen tak kunjung sampai, kapal hanya boleh merapat saat air pasang, hujan 2 minggu, pasir basah, semen menggumpal. Ketika gedung akhirnya berdiri, populasi bergeser, nelayan pindah pulau, ruang operasi hanya melayani separuh kapasitas. Beton tak boleh dipindahkan. Beton adalah jangkar yang terlalu berat. Maka: Kalau beton tak bisa berlayar, kenapa kita tak bawa ruang operasi di dalam peti baja? Kontainer kargo standar: panjang 12 meter, lebar 2,4 meter, tinggi 2,9 meter, luas sekitar 76 m2 - cukup untuk satu ruang operasi kecil, satu ruang persiapan, satu ruang utilitas. Dinding baja bergelombang dilapisi panel sandwich antibakteri, sudut melengkung bukan siku-siku agar debu tak menumpuk, insulasi busa poliuretana. Udara harus bersih, energi dan data dua nadi yang tak boleh padam. Detail teknis lengkap ada di Lampiran A - Spesifikasi Teknis Shelter 40 Kaki dan Lampiran B - Wiring Diagram dan Tata Letak.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "The 40-foot Shelter",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The 40-foot Shelter is the book’s concept for a transportable operating room in a standard cargo container, with operating, preparation, and utility areas. It responds to the difficulty of building and relocating fixed facilities on islands. Appendices A and B cover the specifications and layout."
+        },
+        "fr": {
+          "judul": "Le Shelter de 40 pieds",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le Shelter de 40 pieds est le concept d’un bloc opératoire transportable dans un conteneur standard, avec des espaces d’opération, de préparation et de services techniques. Il répond aux difficultés de construction et de déplacement des installations fixes sur les îles. Les annexes A et B décrivent les spécifications et l’agencement."
+        }
+      }
     },
     {
       "id": "internet_satelit_starlink",
@@ -337,7 +529,19 @@
         "tanpa internet"
       ],
       "jawaban_publik": "Bab 12: Internet, Satelit, dan Harapan Baru. Bertahun-tahun alasan yang sama: OTRIS itu ide bagus, tapi di daerah kami tak ada internet. VSAT tradisional - satelit geostasioner 36.000 km di atas bumi - latensi hingga 600 milidetik. Cukup untuk hantar email, tak cukup untuk supervisi bedah langsung. Lalu Starlink - satelit orbit rendah LEO hanya 550 km, latensi turun drastis dari 600 ms menjadi di bawah 100 ms, kecepatan di atas 100 Mbps. Harganya: Paket Residensial Lite Rp479.000 hingga Rp490.000 sebulan. Lebih murah dari biaya satu kali rujukan pasien dari Dabo ke Tanjung Pinang yang bisa 5-10 juta. Dan OTRIS Tanpa Internet? Kami Siap - Local First, offline capable: kalau internet putus, fungsi lokal tetap berjalan, data tetap tercatat, lalu sinkron saat kembali tersambung.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Satellite internet and Local First",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The book contrasts geostationary satellite internet with low-Earth-orbit service such as Starlink. It describes Local First as keeping local functions and records available during disconnection, with synchronization when connectivity returns."
+        },
+        "fr": {
+          "judul": "Internet par satellite et Local First",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le livre compare l’internet par satellite géostationnaire aux services en orbite basse comme Starlink. Local First y désigne le maintien des fonctions et des enregistrements locaux lors d’une coupure, puis la synchronisation au retour de la connexion."
+        }
+      }
     },
     {
       "id": "narasi_mengalahkan_fakta",
@@ -355,7 +559,19 @@
         "keluarga terseret"
       ],
       "jawaban_publik": "Bab 14: Ketika Narasi Mengalahkan Fakta. Pukul 10 malam di Pekanbaru, Hanif sedang mematri kabel untuk prototipe gateway baru. HP bergetar, pesan dari perawat RS mitra: Bang, katanya sistem OTRIS itu mengambil data pasien tanpa izin, ya? Hanif jawab: Tidak, Kak. Semua data hanya untuk supervisi klinis dan sudah sesuai peraturan Kemenkes, ada izin operasi dari Dinkes. Balasannya: Tapi katanya dalam kumpulan... sistem itu dari luar negara. Katanya data pasien dihantar ke pelayan di Singapura. Katanya - dua perkataan itu, begitu ringan di lidah, tapi begitu berat akibatnya. Setelah lebih dari sepuluh kali dengan narasi yang mirip, Hanif sadar: ini bukan kebetulan lagi, ini pola. Saat data diam, narasi berteriak. Saat keluarga ikut terseret, inovasi hampir hancur bukan karena teknologi gagal, tapi karena opini berjalan lebih cepat daripada dokumen.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "When stories overtake evidence",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The book recounts rumors about OTRIS and patient data and Hanif’s response. Its lesson is that unverified claims can travel faster than documents and harm trust, even when the technology itself has not failed."
+        },
+        "fr": {
+          "judul": "Quand les récits devancent les preuves",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le livre relate des rumeurs sur OTRIS et les données des patients ainsi que la réponse de Hanif. Il rappelle que des affirmations non vérifiées peuvent circuler plus vite que les documents et nuire à la confiance, même quand la technologie fonctionne."
+        }
+      }
     },
     {
       "id": "harga_inovasi",
@@ -372,7 +588,19 @@
         "bertahan"
       ],
       "jawaban_publik": "Bab 15: Harga Sebuah Inovasi. Di atas kertas semua kelihatan rapi: ada kos alat, kos pemasangan, kos latihan, garis masa 3 bulan, KPI. Yang tak pernah masuk dalam proposal adalah harga sebenarnya: Waktu hidup - Hari Raya dihabiskan di ruang server rumah sakit, bukan di rumah, karena migrasi data hanya boleh dilakukan ketika sistem lengang. Anak menelepon video: Ayah bila pulang? Dijawab Esok, padahal masih ada bug yang perlu dibaiki. Tenaga menjaga semangat - demo gagal di depan direktur, alat dari Pekanbaru sampai Papua rusak karena kargo, ulang dari nol tanpa anggaran untuk mengulang karena nasib. Pengorbanan - tak ambil proyek lain yang bayaran cepat karena mau fokus OTRIS, tak beli kereta baru karena uangnya untuk gateway gantian. Dan ketika tim tidak lagi bersama, ketika kepercayaan diuji, ketika semua menyuruh menyerah - bertahan saat semua menyuruh menyerah.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "The cost of innovation",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The chapter describes costs rarely shown in proposals: time away from family, redoing failed demonstrations and replacing damaged equipment, foregone work, and the effort of continuing when trust is tested."
+        },
+        "fr": {
+          "judul": "Le coût de l’innovation",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le chapitre décrit des coûts rarement inscrits dans les propositions : le temps loin de la famille, les démonstrations à refaire, les appareils endommagés à remplacer, les travaux auxquels on renonce et l’effort de continuer quand la confiance est mise à l’épreuve."
+        }
+      }
     },
     {
       "id": "dabo_menuju_indonesia_satusehat",
@@ -391,7 +619,19 @@
         "dabo menuju indonesia"
       ],
       "jawaban_publik": "Bab 16: Dari Dabo Singkep Menuju Indonesia. OTRIS lahir di atas feri kayu, tapi tak boleh berhenti di situ. Jika hanya untuk satu pulau, ia hanya proyek. Jika untuk Indonesia, ia perlu menjadi infrastruktur. Visi: rangkaian subspesialis nasional yang bisa dipanggil dari mana-mana. Pakar bedah saraf Jakarta mendampingi bedah di NTT, pakar kardiologi anak Bandung memandu pemasangan perentak di Maluku - bukan dengan kapal terbang, tapi dengan data yang mengalir langsung. Jembatan itu tak boleh berdiri sendiri, ia mesti menempel pada jalan nasional: SATUSEHAT. Platform integrasi data kesehatan Kemenkes RI, diluncurkan 2022, berjalan di atas standar global HL7 FHIR. Bahasa yang dipakai OTRIS sejak awal - FHIR - adalah bahasa yang sama dengan bahasa negara. Berdasarkan PMK 24/2022, integrasi SATUSEHAT adalah kewajiban bagi semua RS di Indonesia. OTRIS tidak datang untuk menggantikan SIMRS. OTRIS datang sebagai penerjemah di ruang operasi, yang mengambil data penting, mengubahnya menjadi FHIR, lalu menghantarnya ke SATUSEHAT dengan selamat. Dari ruang operasi yang paling bising, ke platform nasional yang paling sunyi. Karena itu Hanif tak lagi memanggil OTRIS sebagai produk. Produk dijual, digunakan, lalu diganti. OTRIS perlu menjadi infrastruktur - macam elektrik, macam air, macam internet.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "From Dabo Singkep to SATUSEHAT",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The book’s vision is national access to specialist support. SATUSEHAT is Indonesia’s Ministry of Health integration platform based on HL7 FHIR. OTRIS’s proposed role is to translate operating-room data into FHIR and connect it to SATUSEHAT alongside existing hospital systems."
+        },
+        "fr": {
+          "judul": "De Dabo Singkep à SATUSEHAT",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le livre envisage un accès national à l’expertise des spécialistes. SATUSEHAT est la plateforme d’intégration du ministère indonésien de la Santé, fondée sur HL7 FHIR. Le rôle proposé d’OTRIS est de traduire les données du bloc en FHIR et de les relier à SATUSEHAT aux côtés des systèmes hospitaliers existants."
+        }
+      }
     },
     {
       "id": "beyond_indonesia",
@@ -411,7 +651,19 @@
         "asia tenggara"
       ],
       "jawaban_publik": "Bab 17: Beyond Indonesia. Air sungai Siak dan air sungai Mekong berasal dari hujan yang sama. Masalah kita pun sama. Maka penyelesaiannya pun boleh sama. Di forum kesehatan ASEAN di Kuala Lumpur, Hanif bertemu dokter Filipina: pasien dari Mindanao perlu naik perahu 8 jam ke Cebu hanya untuk bedah apendisitis - sama seperti Dabo. Dokter Vietnam: RS wilayah ada CT Scan baru hadiah dari Jepang, tapi tiada radiolog yang bisa membacanya pada waktu malam - sama seperti daerah kami. Perawat senior Thailand: masih menghantar gambar luka melalui LINE karena EMR tidak bersambung dengan RS rujukan di Bangkok - sama seperti kami. Delegasi Myanmar di Singapura: Adakah sistem Encik boleh berjalan di internet 3G? Dijawab: Kami reka untuk itu. Jarak mematikan. Data terasing. Pakar terkunci di kota besar. Masalah kita bukan masalah Indonesia saja. Ini masalah ASEAN, Asia, dunia membangun. Dari produk menjadi gerakan.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Beyond Indonesia",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The chapter recounts conversations with delegates from the Philippines, Vietnam, Thailand, and Myanmar about long travel, isolated data, scarce specialists, and weak connectivity. It frames those problems as shared challenges across ASEAN."
+        },
+        "fr": {
+          "judul": "Au-delà de l’Indonésie",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le chapitre raconte des échanges avec des délégués des Philippines, du Vietnam, de Thaïlande et du Myanmar au sujet des longs trajets, des données isolées, du manque de spécialistes et de la connectivité limitée. Il présente ces difficultés comme des enjeux communs à l’ASEAN."
+        }
+      }
     },
     {
       "id": "epilog_jembatan_tidak_terlihat",
@@ -425,7 +677,19 @@
         "jembatan tak terlihat"
       ],
       "jawaban_publik": "Epilog: Jembatan yang Tidak Terlihat. Jembatan terbaik adalah jembatan yang tidak terlihat - yang bekerja dalam diam, yang menghubungkan tanpa menuntut pujian, yang membuat orang sampai ke seberang tanpa sadar mereka telah menyeberang. OTRIS ingin menjadi jembatan seperti itu. Bukan monumen, tapi jalan. Bukan panggung, tapi penopang. Ketika jarak tidak lagi menentukan siapa yang berhak hidup, ketika keahlian bisa terbang lebih cepat daripada pasien, ketika data mengalir tanpa sekat - di situlah jembatan itu ada, walau tak terlihat.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Epilogue: The invisible bridge",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "OTRIS aspires to work quietly in the background so distance does not determine access to care, expertise can reach the patient, and data can flow across barriers."
+        },
+        "fr": {
+          "judul": "Épilogue : le pont invisible",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "OTRIS aspire à agir discrètement en arrière-plan pour que la distance ne détermine pas l’accès aux soins, que l’expertise puisse parvenir au patient et que les données puissent franchir les barrières."
+        }
+      }
     },
     {
       "id": "lampiran_shelter_kso",
@@ -442,7 +706,19 @@
         "kso"
       ],
       "jawaban_publik": "Lampiran A - Spesifikasi Teknis Shelter 40 Kaki (halaman 56). Lampiran B - Wiring Diagram dan Tata Letak Shelter (halaman 59). Lampiran C - Model Simulasi KSO OTRIS (halaman 62). KSO - Kerja Sama Operasi - adalah model kerja sama di mana RS daerah dan subspesialis kota berbagi tanggung jawab klinis dan jasa secara adil, dengan OTRIS sebagai jembatan operasional dan bukti. Detail diagram, wiring, dan simulasi angka KSO ada di lampiran buku, bukan di ringkasan publik ini.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Shelter and KSO appendices",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Appendix A covers Shelter specifications, B its wiring and layout, and C the KSO simulation. KSO is a cooperation model for sharing clinical responsibility and professional fees fairly between regional hospitals and city specialists."
+        },
+        "fr": {
+          "judul": "Annexes sur le Shelter et le KSO",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "L’annexe A couvre les spécifications du Shelter, la B son câblage et son agencement, et la C la simulation du KSO. Le KSO est un modèle de coopération qui répartit équitablement la responsabilité clinique et les honoraires entre les hôpitaux régionaux et les spécialistes des villes."
+        }
+      }
     },
     {
       "id": "constitution_preamble",
@@ -456,7 +732,19 @@
         "konstitusi preamble"
       ],
       "jawaban_publik": "Preamble THE OTRIS CONSTITUTION: THE LIGHT WE CHOOSE TO KEEP. Every institution begins with a decision. Not a technology. Not a company. Not a product. But a decision about what must never be compromised. OTRIS was founded upon the belief that every human life has equal value, that distance should never determine who receives care, and that technology must always remain in service of humanity. Technology will evolve. Organizations will change. Leaders will come and go. But the light we choose to keep must never fade. For it is not technology that defines an institution. It is the principles it refuses to abandon.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Preamble: The Light We Choose To Keep",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "Every human life has equal value. Distance should never determine who receives care, and technology must remain in the service of humanity. Technologies, organizations, and leaders may change. The institution is defined by the principles it refuses to abandon."
+        },
+        "fr": {
+          "judul": "Préambule : la lumière que nous choisissons de garder",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "Chaque vie humaine a la même valeur. La distance ne doit jamais déterminer qui reçoit des soins, et la technologie doit rester au service de l’humanité. Les technologies, les organisations et les dirigeants peuvent changer. L’institution se définit par les principes qu’elle refuse d’abandonner."
+        }
+      }
     },
     {
       "id": "deklarasi_pendirian",
@@ -470,7 +758,19 @@
         "enam kepercayaan"
       ],
       "jawaban_publik": "Deklarasi Pendirian: Kami percaya bahwa setiap nyawa manusia memiliki nilai yang sama. Kami percaya bahwa jarak tidak boleh pernah menentukan siapa yang menerima perawatan. Kami percaya bahwa teknologi harus selalu berpusat pada manusia, melayani, bukan menggantikan. Kami percaya bahwa keahlian medis harus menempuh jarak lebih jauh daripada pasien. Kami percaya bahwa kepercayaan, integritas, dokumentasi, dan pembelajaran berkelanjutan adalah fondasi institusi yang abadi. Kami percaya bahwa institusi harus hidup lebih lama dari pendirinya dan terus melayani generasi mendatang melalui prinsip, bukan personalitas. Konstitusi ini ada untuk menjaga keyakinan-keyakinan itu. Hanif Ahdi Fiddini, Pendiri OTRIS: Jagalah jembatan ini. Sumber kutipan utama: OTRIS ada karena jarak seharusnya tidak menentukan siapa yang berhak hidup.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Founding declaration",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "Every life has equal value. Distance must never decide who receives care. Technology must serve people and support them in their roles. Medical expertise should travel farther than patients. Trust, integrity, documentation, and continuous learning sustain the institution. The institution must outlive its founder and serve future generations through principles. The Constitution protects these beliefs. Hanif Ahdi Fiddini’s closing charge is “Take care of this bridge.”"
+        },
+        "fr": {
+          "judul": "Déclaration fondatrice",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "Chaque vie a la même valeur. La distance ne doit jamais décider qui reçoit des soins. La technologie doit être au service des personnes et les soutenir dans leurs rôles. L’expertise médicale doit aller plus loin que les patients. La confiance, l’intégrité, la documentation et l’apprentissage continu font durer l’institution. Celle-ci doit survivre à son fondateur et servir les générations futures par ses principes. La Constitution protège ces convictions. Hanif Ahdi Fiddini conclut : « Prenez soin de ce pont. »"
+        }
+      }
     },
     {
       "id": "constitution_purpose",
@@ -484,7 +784,19 @@
         "pt hn"
       ],
       "jawaban_publik": "Purpose OTRIS (Chapter 2): Memastikan bahwa setiap manusia, di mana pun ia berada, memiliki kesempatan yang setara untuk memperoleh keahlian medis terbaik melalui pemanfaatan ilmu pengetahuan dan teknologi, tanpa dibatasi oleh jarak, waktu, atau keterbatasan geografis. OTRIS tidak dibangun untuk menjadi perusahaan teknologi kesehatan terbesar, tidak untuk menguasai pasar Asia Tenggara, tidak untuk mengejar valuasi. Semua itu bisa menjadi hasil, tapi bukan alasan OTRIS didirikan. Pelajaran dari PT HN: tujuan perusahaan adalah hal pertama yang dikorbankan ketika kekuasaan berbicara lebih keras daripada prinsip. Jika perusahaan membeli aset, nama aset harus tercantum dalam nama pemegang saham, tapi jika 3 pemegang saham dan 2 bersatu, tujuan itu sudah tidak ada lagi. Maka purpose OTRIS tidak bisa diubah oleh siapa pun - tidak oleh pemegang saham, direksi, atau generasi berikutnya. Sebuah tujuan yang tidak dilindungi oleh kesepakatan tertulis adalah tujuan yang sewaktu-waktu bisa hilang.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "The purpose of OTRIS",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "Everyone, wherever they are, should have an equal opportunity to access the best medical expertise through knowledge and technology, regardless of distance, time, or geography. Size, market share, and valuation may follow from that work. They are not its purpose. Shareholders, directors, and future generations have no right to change this purpose."
+        },
+        "fr": {
+          "judul": "La raison d’être d’OTRIS",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "Toute personne, où qu’elle soit, doit avoir une chance égale d’accéder à la meilleure expertise médicale grâce au savoir et à la technologie, indépendamment de la distance, du temps ou de la géographie. La croissance, la part de marché et la valorisation peuvent en découler. Elles n’en sont pas la raison d’être. Les actionnaires, les dirigeants et les générations suivantes n’ont pas le droit de modifier cette finalité."
+        }
+      }
     },
     {
       "id": "constitution_philosophy",
@@ -497,7 +809,19 @@
         "teknologi tidak menyelamatkan"
       ],
       "jawaban_publik": "Philosophy OTRIS (Chapter 3): Teknologi tidak menyelamatkan nyawa. Manusia yang menyelamatkan. Selalu begitu. Selamanya akan begitu. Teknologi baru bermakna ketika ia memungkinkan keahlian yang tepat untuk mencapai pasien yang tepat di saat yang tepat. Kami tidak memindahkan pasien. Kami memindahkan keahlian. Kami tidak menggantikan layanan kesehatan. Kami memperkuatnya. Kami tidak membangun perangkat lunak. Kami membangun kedaulatan medis. Ketika jarak bukan lagi penghalang, keahlian medis menjadi sumber daya nasional yang terbagi.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "The OTRIS philosophy",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "People save lives. Technology matters when it allows the right expertise to reach the right patient at the right time. OTRIS moves expertise to the patient, strengthens existing care, and seeks medical sovereignty by making that expertise a shared resource."
+        },
+        "fr": {
+          "judul": "La philosophie OTRIS",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "Ce sont les personnes qui sauvent des vies. La technologie compte lorsqu’elle permet à la bonne expertise d’atteindre le bon patient au bon moment. OTRIS rapproche l’expertise du patient, renforce les soins existants et recherche la souveraineté médicale en faisant de cette expertise une ressource partagée."
+        }
+      }
     },
     {
       "id": "constitution_three_foundations",
@@ -512,7 +836,19 @@
         "fondasi otris"
       ],
       "jawaban_publik": "Three Foundations of OTRIS (Chapter 3A) - tidak bisa diubah, hanya bisa diperkuat. 1) Lighthouse - memberi arah. OTRIS harus selalu punya visi jelas ke mana ia bergerak. Setiap keputusan harus diuji terhadap arah ini. Tanpa lighthouse, OTRIS bisa tersesat dalam lautan teknologi dan kepentingan jangka pendek. 2) Humanist Design - menjaga manusia sebagai pusat. Setiap fitur, antarmuka, alur kerja harus dirancang dengan mempertimbangkan perawat, dokter, teknisi, pasien. Tidak membingungkan, tidak membebani, tidak mengintimidasi, tidak mengabaikan kebutuhan pengguna. 3) Bridge - menghubungkan yang sebelumnya terpisah. Jembatan antara perangkat medis berbagai vendor, antara RS dan spesialis di tempat lain, antara data klinis dan keputusan medis. Jika OTRIS tidak menghubungkan, ia kehilangan fungsi dasarnya. Pertanyaan filter AI: Apakah desain ini punya arah jelas? Apakah mempertimbangkan pengalaman manusia? Apakah menghubungkan sesuatu yang sebelumnya terpisah?",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Three foundations: Lighthouse, Humanist Design, and Bridge",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "The three foundations may be strengthened but must not be changed. The Lighthouse gives every decision a clear direction. Humanist Design puts patients, nurses, doctors, and technicians at the center without confusing, burdening, or intimidating them. The Bridge connects equipment across vendors, hospitals and specialists, and clinical data and decisions. Every design should be tested against all three."
+        },
+        "fr": {
+          "judul": "Trois fondements : le phare, la conception humaniste et le pont",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "Les trois fondements peuvent être renforcés mais ne doivent pas être modifiés. Le phare donne une direction claire à chaque décision. La conception humaniste place patients, infirmiers, médecins et techniciens au centre sans les désorienter, les surcharger ni les intimider. Le pont relie les appareils de différents fournisseurs, les hôpitaux et les spécialistes, ainsi que les données et les décisions cliniques. Chaque conception doit être évaluée selon les trois fondements."
+        }
+      }
     },
     {
       "id": "constitution_values",
@@ -527,7 +863,19 @@
         "kemanusiaan"
       ],
       "jawaban_publik": "The Values We Refuse To Compromise (Chapter 4): Nilai bukan dibuat ketika keadaan mudah. Nilai terlihat ketika keadaan paling sulit. Nilai OTRIS adalah batas, bukan slogan. 1) Keselamatan - pasien, tenaga medis, teknisi tidak boleh terancam oleh kegagalan sistem. 2) Kemanusiaan - menghormati martabat dan otonomi manusia. 3) Keterbukaan terhadap audit - setiap keputusan dan aksi harus dapat ditelusuri. 4) Tanggung jawab - OTRIS bertanggung jawab atas apa yang ia lakukan dan tidak lakukan. 5) Keberlanjutan - sistem harus dapat bertahan dan berkembang jangka panjang. 6) Kejujuran terhadap keterbatasan sistem - tidak boleh mengklaim kemampuan yang tidak dimiliki. 7) Penghormatan terhadap tenaga medis dan institusi kesehatan - OTRIS adalah alat bantu, bukan pengganti. Jika keputusan melanggar salah satu nilai ini, keputusan itu harus ditolak - berapa pun keuntungan teknis atau finansialnya.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "The values we refuse to compromise",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "OTRIS protects safety, human dignity and autonomy, auditability, accountability, long-term continuity, honesty about system limitations, and respect for clinicians and healthcare institutions. A decision that violates any of these values must be rejected regardless of technical or financial benefit."
+        },
+        "fr": {
+          "judul": "Les valeurs sur lesquelles nous ne transigeons pas",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "OTRIS protège la sécurité, la dignité et l’autonomie humaines, l’auditabilité, la responsabilité, la continuité à long terme, l’honnêteté sur les limites du système et le respect des soignants et des établissements de santé. Toute décision qui enfreint une de ces valeurs doit être rejetée, quels que soient ses avantages techniques ou financiers."
+        }
+      }
     },
     {
       "id": "constitution_medical_sovereignty",
@@ -540,7 +888,19 @@
         "sovereignty"
       ],
       "jawaban_publik": "Medical Sovereignty (Chapter 4B): OTRIS harus memperkuat kedaulatan medis, bukan menciptakan ketergantungan baru. Rumah sakit dan tenaga medis harus tetap mempunyai kemampuan untuk menjalankan pelayanan sesuai kewenangannya - dengan atau tanpa OTRIS. OTRIS tidak boleh menjadikan satu vendor, cloud, individu, atau teknologi sebagai satu-satunya jalan agar pelayanan dapat berlangsung. Kedaulatan medis berarti: fasilitas kesehatan harus tetap memiliki kendali yang sah atas penggunaan, akses, dan pengelolaan datanya sesuai kewenangan dan regulasi yang berlaku. Jika OTRIS hanya berfungsi jika cloud tertentu aktif, atau hanya jika satu vendor tertentu menyediakan komponen, atau hanya jika satu orang tertentu masih bekerja - maka OTRIS justru menjadi hambatan, bukan pembantu.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Medical sovereignty",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "Hospitals and clinicians must remain able to provide care within their authority, with or without OTRIS. A particular vendor, cloud, person, or technology must never become the only route to care. Healthcare facilities retain lawful control over use, access, and management of their data."
+        },
+        "fr": {
+          "judul": "Souveraineté médicale",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "Les hôpitaux et les soignants doivent pouvoir assurer les soins dans le cadre de leurs compétences, avec ou sans OTRIS. Un fournisseur, un cloud, une personne ou une technologie ne doit jamais devenir le seul moyen d’assurer les soins. Les établissements de santé conservent le contrôle légitime de l’utilisation, de l’accès et de la gestion de leurs données."
+        }
+      }
     },
     {
       "id": "constitution_stewardship",
@@ -556,7 +916,19 @@
         "steward"
       ],
       "jawaban_publik": "Stewardship (Chapter 5): Kami hanya penjaga. Kami menerima OTRIS dalam keadaan tertentu. Kami harus menyerahkannya dalam keadaan lebih baik. 5 prinsip: 1) Kami menjaga untuk generasi berikutnya. 2) Kami tidak menjual yang tidak kami miliki - Kami tidak bisa menjual OTRIS karena kami tidak memilikinya. 3) Kami bertanggung jawab kepada purpose, bukan kepada pemegang saham - jika purpose bertentangan dengan kepentingan pemegang saham, purpose yang menang. 4) Kami mempersiapkan pengganti - tugas utama penjaga adalah mempersiapkan penjaga berikutnya, melatih orang yang mungkin suatu hari melampaui kami, mewariskan ilmu tanpa takut kehilangan kekuasaan. 5) Kami tidak mengubah purpose hanya karena investor meminta. Contoh: investor datang dengan tawaran besar dengan syarat OTRIS harus mengubah purpose menjadi Memaksimalkan keuntungan pemegang saham. Penjaga OTRIS akan berkata: Kami tidak bisa menerima tawaran ini - bukan karena kami tidak butuh uang, tetapi karena kami tidak memiliki hak untuk mengubah purpose. Kami hanya penjaga.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Stewardship",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "Stewards hold OTRIS in trust for the next generation and hand it over in better condition. They cannot sell what they do not own. Their duty is to the purpose, which prevails over shareholder interests. They train successors and pass on knowledge. Investor demands do not entitle them to change the purpose."
+        },
+        "fr": {
+          "judul": "Garde de l’amanah",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "Les gardiens veillent sur OTRIS pour la génération suivante et le transmettent en meilleur état. Ils ne peuvent pas vendre ce qui ne leur appartient pas. Leur devoir va à la raison d’être, qui prime sur les intérêts des actionnaires. Ils forment les successeurs et transmettent le savoir. Les demandes des investisseurs ne leur donnent pas le droit de modifier cette finalité."
+        }
+      }
     },
     {
       "id": "constitution_sacred_assets",
@@ -570,7 +942,19 @@
         "aset tidak boleh hilang"
       ],
       "jawaban_publik": "Sacred Assets (Chapter 6): Ada aset OTRIS yang tidak boleh hilang walaupun teknologi, perangkat, perusahaan, atau orang dapat berganti. 1) Purpose - alasan mengapa OTRIS ada. 2) Constitution - hukum tertinggi yang menjaga arah. 3) Knowledge - pemahaman tentang cara OTRIS bekerja dan mengapa. 4) Clinical Architecture - cara OTRIS menjaga keselamatan dan kedaulatan medis. 5) Trust - kepercayaan dari RS, tenaga medis, pasien. 6) Humanity - komitmen bahwa teknologi melayani manusia. Hardware dapat diganti. Software dapat ditulis ulang. Server dapat dipindahkan. Perusahaan dapat berubah. Tetapi jika purpose, knowledge, trust, dan cara berpikir OTRIS hilang, maka yang tersisa mungkin masih menggunakan nama OTRIS - tetapi tidak lagi membawa identitas yang sama. Setiap keputusan harus diuji terhadap Sacred Assets.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Sacred Assets",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "The irreplaceable assets of OTRIS are its Purpose, Constitution, Knowledge, Clinical Architecture, Trust, and Humanity. Equipment, software, servers, and organizations may change. Every decision must be tested against these assets, which preserve OTRIS’s identity."
+        },
+        "fr": {
+          "judul": "Les actifs à préserver",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "Les actifs irremplaçables d’OTRIS sont sa raison d’être, sa Constitution, son savoir, son architecture clinique, la confiance et l’humanité. Le matériel, les logiciels, les serveurs et les organisations peuvent changer. Toute décision doit être évaluée selon ces actifs, qui préservent l’identité d’OTRIS."
+        }
+      }
     },
     {
       "id": "constitution_decisions",
@@ -586,7 +970,19 @@
         "perubahan konstitusi"
       ],
       "jawaban_publik": "How We Make Decisions (Chapter 7): Keputusan besar OTRIS tidak boleh dibuat hanya karena tekanan waktu, suara mayoritas sederhana, tren teknologi, atau kepentingan sesaat. Perubahan terhadap substansi Konstitusi - termasuk Purpose, Philosophy, Values, dan Sacred Assets - hanya dapat dilakukan melalui: Proses 90 hari, Supermajority Dewan Penjaga (90-100%), dan dalam kasus tertentu, Veto Founder sebagai hak penjagaan konstitusi. Prinsip: Semakin besar dampak sebuah perubahan terhadap identitas OTRIS, semakin tinggi standar bukti dan authority yang dibutuhkan. Mengganti versi library adalah keputusan operasional - dampaknya berhenti di level teknis. Mengubah purpose adalah keputusan konstitusional - dampaknya menjalar ke seluruh Book II sampai Book XX, karena seluruh Book menurunkan authority-nya dari Book I.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "How OTRIS makes constitutional decisions",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "Changes to the substance of the Constitution, including Purpose, Philosophy, Values, and Sacred Assets, require the 90-Day Process and a 90–100% supermajority of the Council of Stewards. In certain cases the Founder may exercise a constitutional veto. The greater the impact on identity, the higher the standard of evidence and authority. Books II–XX derive their authority from Book I."
+        },
+        "fr": {
+          "judul": "Comment OTRIS prend ses décisions constitutionnelles",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "Les modifications de fond de la Constitution, notamment de la raison d’être, de la philosophie, des valeurs et des actifs à préserver, exigent le processus de 90 jours et une majorité qualifiée de 90 à 100 % du Conseil des gardiens. Dans certains cas, le fondateur peut exercer un droit de veto constitutionnel. Plus l’effet sur l’identité est important, plus les exigences de preuve et d’autorité sont élevées. Les livres II à XX tiennent leur autorité du livre I."
+        }
+      }
     },
     {
       "id": "constitution_lessons_pain",
@@ -599,7 +995,19 @@
         "luka"
       ],
       "jawaban_publik": "Lessons Written in Pain (Chapter 8): Pelajaran OTRIS tidak ditulis dari keberhasilan, tapi dari rasa sakit - dari data yang hilang, dari kepercayaan yang diuji, dari tim yang bubar, dari narasi yang mengalahkan fakta. Setiap luka didokumentasikan agar generasi berikutnya tidak mengulangi kesalahan yang sama. OTRIS tidak menyembunyikan kegagalan, tapi mencatatnya sebagai bukti dan pembelajaran.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Lessons written in pain",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "OTRIS documents loss of data, loss of trust, teams breaking up, and narratives overriding facts so future generations can learn and avoid repeating the mistakes. Failures must be recorded as evidence."
+        },
+        "fr": {
+          "judul": "Leçons tirées de la douleur",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "OTRIS documente les pertes de données, les crises de confiance, la dissolution des équipes et les récits qui supplantent les faits pour que les générations suivantes puissent apprendre et éviter les mêmes erreurs. Les défaillances doivent être consignées comme preuves."
+        }
+      }
     },
     {
       "id": "constitution_leave_behind",
@@ -612,7 +1020,19 @@
         "leave behind"
       ],
       "jawaban_publik": "What We Leave Behind (Chapter 9): Pertanyaan yang harus dijawab setiap penjaga: Apa yang akan kami tinggalkan? Bukan gedung, bukan server, bukan logo - tapi purpose yang tetap utuh, knowledge yang tetap bisa ditemukan, trust yang tetap terjaga, dan jembatan yang tetap bisa dilalui generasi berikutnya. Jika yang kami tinggalkan hanya nama, kami gagal.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "What we leave behind",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "Stewards should leave a purpose that is intact, knowledge that can still be found, trust that is protected, and a bridge the next generation can still cross. The name alone is insufficient."
+        },
+        "fr": {
+          "judul": "Ce que nous laissons",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "Les gardiens doivent transmettre une raison d’être intacte, des connaissances toujours accessibles, une confiance préservée et un pont que la génération suivante pourra emprunter. Le nom seul ne suffit pas."
+        }
+      }
     },
     {
       "id": "constitution_continue_journey",
@@ -626,7 +1046,19 @@
         "generasi berikutnya"
       ],
       "jawaban_publik": "To Those Who Continue This Journey (Chapter 10): Untuk mereka yang meneruskan perjalanan ini. Institusi harus hidup lebih lama dari pendirinya dan terus melayani generasi mendatang melalui prinsip, bukan personalitas. Tugas penjaga berikutnya bukan mengulang kata-kata pendiri, tapi menjaga prinsip yang sama dalam teknologi yang berbeda. Jika suatu hari pendiri tidak ada lagi, konstitusi ini yang harus berbicara.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "To those who continue the journey",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "OTRIS must outlive its founder through principles. Future stewards should protect those principles as technology changes. The Constitution must be able to speak for the institution after the founder is gone."
+        },
+        "fr": {
+          "judul": "À celles et ceux qui poursuivent le chemin",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "OTRIS doit survivre à son fondateur grâce à ses principes. Les futurs gardiens doivent les préserver quand la technologie évolue. La Constitution doit pouvoir parler pour l’institution après le départ du fondateur."
+        }
+      }
     },
     {
       "id": "constitution_why_works",
@@ -638,7 +1070,19 @@
         "mengapa otris berhasil"
       ],
       "jawaban_publik": "Why OTRIS Works (Chapter 11): OTRIS bekerja bukan karena teknologinya paling canggih, tapi karena ia menjawab masalah yang nyata - jarak, silo data, dan ketiadaan pendampingan - dengan cara yang menghormati yang sudah ada. Ia tidak menggantikan RS, dokter, atau alat. Ia menghubungkan mereka. Ia tidak memindahkan pasien, tapi memindahkan keahlian. Ia tidak mengklaim kemampuan yang tidak dimiliki, tapi membuktikan apa yang bisa dibuktikan dengan bukti.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Why OTRIS works",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "OTRIS addresses distance, isolated data, and lack of support by connecting existing hospitals, doctors, and devices. It brings expertise to patients and makes only claims that can be supported by evidence."
+        },
+        "fr": {
+          "judul": "Pourquoi OTRIS fonctionne",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "OTRIS répond à la distance, aux données isolées et au manque d’accompagnement en reliant les hôpitaux, les médecins et les appareils existants. Il rapproche l’expertise des patients et s’en tient aux affirmations étayées par des preuves."
+        }
+      }
     },
     {
       "id": "constitution_lifecycle",
@@ -651,7 +1095,19 @@
         "lifecycle"
       ],
       "jawaban_publik": "Lifecycle Commitment (Bab 12): OTRIS tidak boleh hanya dipikirkan saat diluncurkan, tapi sepanjang siklus hidupnya - dari desain, produksi, instalasi, operasi, perawatan, sampai akhir masa pakai. Komitmen ini berarti: setiap generasi produk harus dirawat, didokumentasikan, dan dihentikan secara bertanggung jawab, bukan ditinggalkan begitu saja.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Lifecycle commitment",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "The commitment covers design, production, installation, operation, maintenance, and end of life. Each generation of products must be maintained, documented, and retired responsibly."
+        },
+        "fr": {
+          "judul": "Engagement sur le cycle de vie",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "L’engagement couvre la conception, la production, l’installation, le fonctionnement, la maintenance et la fin de vie. Chaque génération de produits doit être entretenue, documentée et retirée de manière responsable."
+        }
+      }
     },
     {
       "id": "constitution_humanis",
@@ -664,7 +1120,19 @@
         "bab 13 konstitusi"
       ],
       "jawaban_publik": "OTRIS Humanis (Bab 13): OTRIS adalah kelegaan hati institusi. Teknologi harus membuat kerja manusia lebih ringan, bukan lebih berat. Desain yang humanis berarti tidak membingungkan, tidak membebani, tidak mengintimidasi. Perawat, dokter, teknisi, dan pasien adalah pusatnya, bukan penontonnya.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "OTRIS Humanis",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "Technology should lighten people’s work. Humanist design puts patients, nurses, doctors, and technicians at the center and avoids confusion, overload, and intimidation."
+        },
+        "fr": {
+          "judul": "OTRIS Humanis",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "La technologie doit alléger le travail humain. La conception humaniste place patients, infirmiers, médecins et techniciens au centre et évite la confusion, la surcharge et l’intimidation."
+        }
+      }
     },
     {
       "id": "constitution_clinical_interaction",
@@ -677,7 +1145,19 @@
         "clinical"
       ],
       "jawaban_publik": "Clinical Interaction Philosophy (Bab 14): Interaksi klinis adalah tempat OTRIS bertemu dengan keputusan yang menyangkut nyawa. Karena itu interaksi harus jelas: apa yang diketahui, apa yang tidak diketahui, apa yang sedang terjadi, apa yang membutuhkan perhatian, dan tindakan apa yang memang berada dalam authority pengguna. Tidak boleh ada ambiguitas yang membahayakan.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Clinical interaction philosophy",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "Clinical interfaces must make it clear what is known, what is unknown, what is happening, what needs attention, and which actions a user is authorized to take. Hazardous ambiguity is unacceptable."
+        },
+        "fr": {
+          "judul": "Philosophie de l’interaction clinique",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "Les interfaces cliniques doivent indiquer ce qui est connu, ce qui ne l’est pas, ce qui se passe, ce qui requiert une attention et les actions que l’utilisateur est habilité à prendre. Une ambiguïté dangereuse est inacceptable."
+        }
+      }
     },
     {
       "id": "constitution_psychology_or",
@@ -690,7 +1170,19 @@
         "bab 15 konstitusi"
       ],
       "jawaban_publik": "The Psychology of an Operating Room (Bab 15): Ruang operasi bukan hanya ruangan teknis, tapi ruangan psikologis. Tekanan, kelelahan, hierarki, dan rasa takut salah bisa mengubah keputusan. OTRIS harus dirancang untuk mengurangi beban psikologis itu - dengan memberikan pendampingan, kejelasan, dan bukti, bukan dengan menambah kebisingan, notifikasi, atau ketakutan baru.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "The psychology of an operating room",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "Pressure, fatigue, hierarchy, and fear of error can affect decisions. OTRIS should reduce that burden by providing support, clarity, and evidence while avoiding additional noise, alerts, and anxiety."
+        },
+        "fr": {
+          "judul": "La psychologie du bloc opératoire",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "La pression, la fatigue, la hiérarchie et la peur de l’erreur peuvent influer sur les décisions. OTRIS doit réduire cette charge par l’accompagnement, la clarté et les preuves, sans ajouter de bruit, d’alertes ni d’anxiété."
+        }
+      }
     },
     {
       "id": "constitution_constitutional_engineering",
@@ -703,7 +1195,19 @@
         "engineering konstitusi"
       ],
       "jawaban_publik": "Constitutional Engineering (Bab 16): Engineering bukan sekadar membuat yang bisa jalan, tapi membuat yang sesuai dengan konstitusi. Setiap keputusan rekayasa harus dapat ditelusuri kembali ke Book I. Jika keputusan teknis bertentangan dengan Book I, maka keputusan itu yang harus diperiksa dan diperbaiki - bukan Book I yang diubah.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Constitutional engineering",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "Engineering decisions must be traceable to Book I. When a technical decision conflicts with it, the technical decision must be reviewed and corrected."
+        },
+        "fr": {
+          "judul": "Ingénierie constitutionnelle",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "Les décisions d’ingénierie doivent pouvoir être rattachées au livre I. Lorsqu’une décision technique le contredit, cette décision technique doit être examinée et corrigée."
+        }
+      }
     },
     {
       "id": "constitution_boundary_ai",
@@ -718,7 +1222,19 @@
         "ai otris"
       ],
       "jawaban_publik": "Constitutional Boundary of AI (Bab 17): AI punya batas. AI boleh membantu, tapi tidak boleh menciptakan fakta klinis. AI tidak boleh menggantikan keputusan dokter. AI tidak boleh mengklaim kemampuan yang tidak dimiliki. Batas ini ada agar OTRIS tetap menjadi alat bantu yang jujur, bukan orakel yang menutupi ketidakpastiannya. Detail batas AI ada di Chapter VI - The Constitution of OTRIS AI.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Constitutional boundary of AI",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "AI may help. It must never invent clinical facts, take over a physician’s decision, or claim capabilities it lacks. It must be honest about uncertainty. The Constitution of OTRIS AI addresses the boundary in more detail."
+        },
+        "fr": {
+          "judul": "Limites constitutionnelles de l’IA",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "L’IA peut aider. Elle ne doit jamais inventer de faits cliniques, prendre la décision à la place du médecin ni revendiquer des capacités qu’elle n’a pas. Elle doit reconnaître ses incertitudes. La Constitution de l’IA d’OTRIS détaille ces limites."
+        }
+      }
     },
     {
       "id": "constitution_ethical_ai",
@@ -733,7 +1249,19 @@
         "etika data"
       ],
       "jawaban_publik": "Ethical AI & Data Sovereignty (Bab 18): Data pasien adalah amanah. Fasilitas kesehatan harus tetap memiliki kendali yang sah atas penggunaan, akses, dan pengelolaan datanya. AI harus etis: tidak bias, tidak menyembunyikan basisnya, tidak mengambil data melebihi kebutuhannya. Kedaulatan data berarti institusi tetap bisa menguasai sistemnya ketika vendor, teknologi, atau seseorang tidak lagi tersedia.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Ethical AI and data sovereignty",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "Patient data is held in trust. Healthcare facilities keep lawful control of its use, access, and management. AI must avoid bias, disclose the basis for its outputs, and collect only necessary data. Control must survive the loss of a vendor, technology, or person."
+        },
+        "fr": {
+          "judul": "IA éthique et souveraineté des données",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "Les données des patients sont confiées à l’établissement. Celui-ci conserve le contrôle légitime de leur utilisation, de leur accès et de leur gestion. L’IA doit éviter les biais, rendre explicite le fondement de ses résultats et ne collecter que les données nécessaires. Le contrôle doit subsister si un fournisseur, une technologie ou une personne n’est plus disponible."
+        }
+      }
     },
     {
       "id": "constitution_failure",
@@ -748,7 +1276,19 @@
         "kegagalan"
       ],
       "jawaban_publik": "Failure Philosophy (Bab 19): OTRIS tidak dibangun dengan asumsi sistem tidak pernah gagal. OTRIS dibangun dengan asumsi kegagalan dapat terjadi dan harus dipersiapkan. Sistem yang baik bukan yang mengklaim tidak akan gagal, tapi yang: mendeteksi kegagalan, membatasi dampaknya - kegagalan satu bagian tidak merusak seluruh sistem, menjaga keadaan aman - fail-safe, mencatat kejadian untuk audit, dan memungkinkan pemulihan. Prinsip ini menjadi dasar Failure Constitution di engineering, hardware, production, dan service.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Failure philosophy",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "Design on the assumption that failures can happen. Detect them, contain their effects, maintain a safe state, record events for audit, and make recovery possible. This applies across engineering, hardware, production, and service."
+        },
+        "fr": {
+          "judul": "Philosophie des défaillances",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "La conception doit partir du principe qu’une panne peut se produire. Il faut la détecter, en limiter les effets, maintenir un état sûr, consigner les événements pour l’audit et permettre la reprise. Cela vaut pour l’ingénierie, le matériel, la production et le service."
+        }
+      }
     },
     {
       "id": "constitution_day_after_founder",
@@ -762,7 +1302,19 @@
         "suksesi"
       ],
       "jawaban_publik": "The Day After the Founder (Bab 20): Pertanyaan yang harus dijawab sebelum hari itu datang: Jika pendiri tidak ada lagi besok, apakah OTRIS tetap bisa berjalan dengan prinsip yang sama? Jawabannya harus ya. Karena institusi harus hidup lebih lama dari pendirinya, melalui prinsip, bukan personalitas. Tugas utama penjaga adalah mempersiapkan penjaga berikutnya. Jika konstitusi ini dijaga, OTRIS tidak bergantung pada satu orang.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "The day after the founder",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "OTRIS must be able to operate on the same principles when the founder is gone. Stewards prepare successors and keep the Constitution at the center so the institution does not depend on a single person."
+        },
+        "fr": {
+          "judul": "Le lendemain du départ du fondateur",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "OTRIS doit pouvoir fonctionner selon les mêmes principes après le départ du fondateur. Les gardiens préparent leurs successeurs et préservent la place centrale de la Constitution afin que l’institution ne dépende pas d’une seule personne."
+        }
+      }
     },
     {
       "id": "constitution_evidence_center",
@@ -776,7 +1328,19 @@
         "bukti"
       ],
       "jawaban_publik": "Appendix A - Evidence Center Manifesto: OTRIS tidak boleh hanya mengklaim, tapi harus bisa membuktikan. Setiap klaim harus punya bukti: requirement, decision, design, product, test, deployment, change, service, lifecycle, record. Jika OTRIS tidak bisa menelusurinya, OTRIS tidak boleh berpura-pura mengetahuinya. Bukti adalah cara OTRIS menjaga trust.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Evidence Center manifesto",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "Every claim must be supported by traceable evidence, from requirements and design through testing, deployment, change, service, and end of life. If a claim cannot be traced, OTRIS cannot present it as known."
+        },
+        "fr": {
+          "judul": "Manifeste de l’Evidence Center",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "Toute affirmation doit être étayée par une preuve traçable, des exigences et de la conception aux essais, au déploiement, aux modifications, au service et à la fin de vie. Sans trace, OTRIS ne peut présenter cette affirmation comme établie."
+        }
+      }
     },
     {
       "id": "constitution_design_ai",
@@ -790,7 +1354,19 @@
         "desain otris"
       ],
       "jawaban_publik": "Appendix B - The OTRIS Design Constitution dan Chapter VI - The Constitution of OTRIS AI: Desain bukan kosmetik. Interface adalah tempat OTRIS mengatakan kepada manusia: apa yang diketahui, apa yang tidak diketahui, apa yang sedang terjadi, apa yang membutuhkan perhatian, dan tindakan apa yang memang berada dalam authority pengguna. Prinsip: Interface must communicate the truth of the system before it communicates the beauty of the system. AI di OTRIS tunduk pada batas konstitusional yang sama - tidak menciptakan fakta klinis, tidak menggantikan dokter, harus menunjukkan basisnya.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Design Constitution and OTRIS AI",
+          "bab": "The OTRIS Constitution",
+          "jawaban_publik": "An interface must first tell the truth about the system: what is known, unknown, happening, in need of attention, and within the user’s authority. AI must show the basis for its output, refrain from creating clinical facts, and leave decisions to clinicians."
+        },
+        "fr": {
+          "judul": "Constitution de la conception et IA d’OTRIS",
+          "bab": "La Constitution OTRIS",
+          "jawaban_publik": "Une interface doit d’abord dire la vérité sur le système : ce qui est connu, inconnu, en cours, ce qui demande une attention et ce que l’utilisateur est habilité à faire. L’IA doit montrer le fondement de ses résultats, s’abstenir de fabriquer des faits cliniques et laisser les décisions aux soignants."
+        }
+      }
     },
     {
       "id": "master_overview",
@@ -808,7 +1384,19 @@
         "preservation register"
       ],
       "jawaban_publik": "THE OTRIS CONSTITUTION SERIES - Master Constitution, Complete Edition: 20 Buku dalam satu dokumen berurutan, 638 halaman + Amanah Pena halaman 639. Status menurut Preservation Register: Book I, II, IV, V LOCKED (FOUNDER APPROVED). Book III dan VI-XX FOUNDER REVIEW CANDIDATE. Catatan penting yang tidak disembunyikan: Master Index menyebut I, II, IV, V LOCKED, tapi in-body CONTENT STATUS di dalam Book I, II, III, IV masih tertulis FOUNDER REVIEW CANDIDATE - label lama yang belum diperbarui saat locking. Hanya Book V yang in-body-nya sudah tertulis LOCKED dan cocok dengan register. Mismatch ini dicatat di Master, bukan diam-diam diperbaiki, karena mengubah status adalah keputusan governance, bukan formatting. Butuh konfirmasi Founder mana yang otoritatif.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Master Constitution Series: 20 books",
+          "bab": "THE OTRIS CONSTITUTION SERIES",
+          "jawaban_publik": "The Preservation Register lists Books I, II, IV, and V as LOCKED, and Books III and VI–XX as FOUNDER REVIEW CANDIDATE. Some in-body labels still say CANDIDATE where the index says LOCKED. This inconsistency is recorded and needs the Founder’s determination of which status is authoritative."
+        },
+        "fr": {
+          "judul": "Master Constitution Series : 20 livres",
+          "bab": "THE OTRIS CONSTITUTION SERIES",
+          "jawaban_publik": "Le registre de conservation indique LOCKED pour les livres I, II, IV et V, et FOUNDER REVIEW CANDIDATE pour les livres III et VI à XX. Certaines mentions internes disent encore CANDIDATE alors que l’index indique LOCKED. L’écart est consigné et le fondateur doit déterminer quel statut fait autorité."
+        }
+      }
     },
     {
       "id": "book1_constitution",
@@ -821,7 +1409,19 @@
         "highest governing"
       ],
       "jawaban_publik": "Book I - The OTRIS Constitution: Hukum tertinggi OTRIS. Menetapkan alasan keberadaan, nilai, batas, dan prinsip tertinggi. Semua Constitution, architecture, engineering, hardware, software, production, testing, service, manual, dan keputusan bisnis setelahnya harus dapat ditelusuri kembali ke Book I. Jika keputusan teknis atau bisnis bertentangan dengan Book I, maka keputusan itu yang harus diperiksa dan diperbaiki - bukan Book I yang diubah. Book I menjawab: Mengapa OTRIS ada, untuk siapa OTRIS dibangun, dan apa yang tidak boleh hilang ketika OTRIS berkembang? Book I adalah Lapisan Filter #1 - Filosofis, 18 bab. Status: LOCKED menurut register, tapi in-body masih tertulis CANDIDATE - lihat catatan Master.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Book I: The OTRIS Constitution",
+          "bab": "Book I",
+          "jawaban_publik": "Book I is the highest authority for OTRIS’s purpose, values, and boundaries. All later engineering, production, service, and business decisions must be traceable to it. Conflicting decisions must be reviewed. The register says LOCKED, while the book still shows CANDIDATE."
+        },
+        "fr": {
+          "judul": "Livre I : la Constitution OTRIS",
+          "bab": "Livre I",
+          "jawaban_publik": "Le livre I fait autorité pour la raison d’être, les valeurs et les limites d’OTRIS. Toutes les décisions ultérieures d’ingénierie, de production, de service et d’affaires doivent pouvoir y être rattachées. Les décisions qui le contredisent doivent être réexaminées. Le registre indique LOCKED, tandis que le livre affiche encore CANDIDATE."
+        }
+      }
     },
     {
       "id": "book2_engineering",
@@ -838,7 +1438,19 @@
         "audit first"
       ],
       "jawaban_publik": "Book II - OTRIS Engineering Constitution: Hukum rekayasa yang wajib diikuti ketika prinsip Book I diterjemahkan menjadi sistem nyata. Book II tidak menentukan teknologi tertentu. Book II menentukan cara berpikir yang harus tetap benar ketika teknologi berubah. 20 Chapter: 1 Integration Over Replacement, 2 Vendor Agnostic, 3 Gateway First, 4 Normalization Boundary, 5 Canonical First, 6 Raw Data Must Remain Traceable, 7 Data Path and Execution Path Are Different, 8 Event Driven, 9 Local First, 10 Offline Capable and Recoverable, 11 Audit First, 12 Failure Must Have a State, 13 Testability by Design, 14 Security Must Follow Architecture, 15 AI Has a Boundary, 16 Lightweight Before Unnecessary Complexity, 17 Modularity and Replaceability, 18 BYO Edge Without Losing OTRIS, 19 Document Before Dependency, 20 Engineering Does Not Create Clinical Facts. Status: LOCKED menurut register.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Book II: OTRIS Engineering Constitution",
+          "bab": "Book II",
+          "jawaban_publik": "The 20 rules cover integration, vendor independence, Gateway and normalization boundaries, canonical and traceable raw data, distinct Data Path and Execution Path, events, local and offline operation, audit, failure states, testability, security, AI limits, simplicity, replaceability, BYO Edge, documentation, and the rule that engineering does not create clinical facts. The register says LOCKED."
+        },
+        "fr": {
+          "judul": "Livre II : Constitution de l’ingénierie OTRIS",
+          "bab": "Livre II",
+          "jawaban_publik": "Les 20 règles couvrent l’intégration, l’indépendance des fournisseurs, les limites du Gateway et de la normalisation, les données canoniques et les données brutes traçables, la séparation de Data Path et Execution Path, les événements, le fonctionnement local et hors ligne, l’audit, les états de défaillance, la testabilité, la sécurité, les limites de l’IA, la simplicité, la remplaçabilité, BYO Edge, la documentation et l’interdiction de produire des faits cliniques par l’ingénierie. Le registre indique LOCKED."
+        }
+      }
     },
     {
       "id": "book3_hardware",
@@ -853,7 +1465,19 @@
         "pcb"
       ],
       "jawaban_publik": "Book III - OTRIS Hardware Constitution: Engineering Standards for the OTRIS Medical Hardware Ecosystem. Hardware adalah penjaga pertama keselamatan sistem. Berbeda dari Book I dan II, Book III memuat lebih banyak nilai teknis konkret - merek komponen, GPIO, dimensi - karena hardware tidak dapat diubah dengan mudah setelah dipasang di RS. Keputusan komponen yang salah tidak dapat di-deploy ulang dari jarak jauh. Karena itu Book III menjelaskan apa yang dipilih dan mengapa sampai ke tingkat yang dapat langsung dibangun oleh teknisi dan PCB designer. Status: FOUNDER REVIEW CANDIDATE.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Book III: OTRIS Hardware Constitution",
+          "bab": "Book III",
+          "jawaban_publik": "Hardware is the first line of system safety. Because installed hardware is difficult to change remotely, component choices and the engineering reasons for them must be documented at a level technicians and PCB designers can use. Status: FOUNDER REVIEW CANDIDATE."
+        },
+        "fr": {
+          "judul": "Livre III : Constitution du matériel OTRIS",
+          "bab": "Livre III",
+          "jawaban_publik": "Le matériel est la première protection du système. Les choix des composants et leurs raisons techniques doivent être documentés à un niveau exploitable par les techniciens et les concepteurs de circuits, car le matériel installé se modifie difficilement à distance. Statut : FOUNDER REVIEW CANDIDATE."
+        }
+      }
     },
     {
       "id": "book4_architecture",
@@ -871,7 +1495,19 @@
         "layer"
       ],
       "jawaban_publik": "Book IV - OTRIS Architecture Constitution: Menjawab: Di mana setiap bagian besar OTRIS berdiri, bagaimana hubungannya satu sama lain, dan di mana batas antar bagian tersebut? Book IV adalah peta, bukan hukum baru. Ia menempatkan hukum yang sudah ada - Gateway First, Vendor Agnostic, Canonical First, Data Path dan Execution Path yang berbeda, Local First, Audit First - ke dalam satu peta posisi utuh. 26 Chapter: System Position, Architectural Layers, Data Source Boundary, Gateway Boundary, Normalization Boundary, Canonical Boundary, Core Boundary, Data Path, Execution Path, Separation of Data and Execution, Edge Architecture, Local and Offline Architecture, Cloud Relationship, External System Boundary, Device Integration Boundary, Event Architecture, State Architecture, Application and Clinical Wall Boundary, Human/User Boundary, Black Box Position, Execution Board Position, Failure Boundary, Security Boundary, Audit and Traceability Position, Architecture Evolution, Architecture Sovereignty. Status: LOCKED menurut register.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Book IV: OTRIS Architecture Constitution",
+          "bab": "Book IV",
+          "jawaban_publik": "Book IV maps existing rules to system layers and boundaries: Gateway First, Vendor Agnostic, Canonical First, separate Data Path and Execution Path, Local First, and Audit First. It defines how the major parts relate and where each part’s authority ends. The register says LOCKED."
+        },
+        "fr": {
+          "judul": "Livre IV : Constitution de l’architecture OTRIS",
+          "bab": "Livre IV",
+          "jawaban_publik": "Le livre IV place les règles existantes dans les couches et les limites du système : priorité au Gateway, indépendance vis-à-vis des fournisseurs, priorité au format canonique, séparation de Data Path et Execution Path, priorité au local et à l’audit. Il précise les rapports entre les parties et où s’arrête leur autorité. Le registre indique LOCKED."
+        }
+      }
     },
     {
       "id": "book5_component",
@@ -886,7 +1522,19 @@
         "locked"
       ],
       "jawaban_publik": "Book V - OTRIS Component & Material Constitution: Satu-satunya Book yang in-body-nya sudah tertulis LOCKED (FOUNDER APPROVED) dan cocok dengan register. Menetapkan hukum memilih, mengevaluasi, menyetujui, menggunakan, mengganti, menelusuri, dan mengelola akhir masa pakai setiap komponen dan material. Prinsip: Requirement Before Component. Komponen tidak boleh dipilih hanya karena tersedia, murah, terkenal, pernah digunakan, atau direkomendasikan satu vendor. Setiap komponen harus punya alasan engineering yang dapat dijelaskan dan dibuktikan. Book V adalah Lapisan Filter #5 - Komponen dan Material.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Book V: OTRIS Component & Material Constitution",
+          "bab": "Book V",
+          "jawaban_publik": "Requirements come before components. Each component or material needs a documented engineering justification across selection, approval, use, replacement, traceability, and retirement. Both the register and the book say LOCKED (FOUNDER APPROVED)."
+        },
+        "fr": {
+          "judul": "Livre V : Constitution des composants et des matériaux OTRIS",
+          "bab": "Livre V",
+          "jawaban_publik": "Les exigences priment sur les composants. Chaque composant ou matériau doit être justifié sur le plan technique, de la sélection et de l’approbation à l’utilisation, au remplacement, à la traçabilité et à la fin de vie. Le registre et le livre indiquent tous deux LOCKED (FOUNDER APPROVED)."
+        }
+      }
     },
     {
       "id": "book6_assembly",
@@ -900,7 +1548,19 @@
         "assembly"
       ],
       "jawaban_publik": "Book VI - OTRIS Assembly Constitution: Komponen yang baik belum tentu menghasilkan produk yang baik. Produk baru nyata ketika seluruh komponen dipasang, dihubungkan, dikencangkan, diberi identitas, diperiksa, dan dibuktikan sesuai desain yang disetujui. Prinsip: Assembly is not personal technique. Assembly is controlled engineering. OTRIS harus dapat dirakit oleh orang yang berbeda tanpa menghasilkan versi OTRIS menurut teknisi masing-masing. Cara kabel dipotong, jalur yang dilaluinya, posisi modul, jenis fastener, cara connector dipasang, posisi label, urutan assembly, dan cara unit diverifikasi adalah bagian dari kualitas produk. Status: FOUNDER REVIEW CANDIDATE.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Book VI: OTRIS Assembly Constitution",
+          "bab": "Book VI",
+          "jawaban_publik": "Assembly is controlled engineering. Different technicians must produce the same result by following the approved design for routing, fastening, connections, labels, sequence, and verification. Status: FOUNDER REVIEW CANDIDATE."
+        },
+        "fr": {
+          "judul": "Livre VI : Constitution de l’assemblage OTRIS",
+          "bab": "Livre VI",
+          "jawaban_publik": "L’assemblage est un processus d’ingénierie contrôlé. Des techniciens différents doivent obtenir le même résultat en suivant la conception approuvée pour le cheminement, les fixations, les connexions, l’étiquetage, l’ordre des étapes et la vérification. Statut : FOUNDER REVIEW CANDIDATE."
+        }
+      }
     },
     {
       "id": "book7_production",
@@ -914,7 +1574,19 @@
         "manufacturing"
       ],
       "jawaban_publik": "Book VII - OTRIS Production Constitution: Desain yang benar dan assembly yang benar belum cukup. OTRIS baru menjadi produk ketika seluruh proses pembuatannya dapat dilakukan berulang, dikendalikan, diperiksa, dan menghasilkan unit yang konsisten. Prinsip: Production must reproduce approved engineering, not reinterpret it. Prototype bisa berhasil karena engineer-nya memahami setiap detail. Production system harus tetap bekerja ketika jumlah unit bertambah, operator berganti, supplier berubah, shift berubah, atau tempat produksi berkembang. Kualitas tidak boleh bergantung pada keberuntungan atau keahlian tersembunyi. Status: FOUNDER REVIEW CANDIDATE.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Book VII: OTRIS Production Constitution",
+          "bab": "Book VII",
+          "jawaban_publik": "Production must reproduce approved engineering consistently across operators, shifts, volumes, suppliers, and locations. Quality must be repeatable, controlled, and open to inspection. Status: FOUNDER REVIEW CANDIDATE."
+        },
+        "fr": {
+          "judul": "Livre VII : Constitution de la production OTRIS",
+          "bab": "Livre VII",
+          "jawaban_publik": "La production doit reproduire de manière constante l’ingénierie approuvée malgré les changements d’opérateurs, d’équipes, de volumes, de fournisseurs et de sites. La qualité doit être reproductible, maîtrisée et vérifiable. Statut : FOUNDER REVIEW CANDIDATE."
+        }
+      }
     },
     {
       "id": "book8_test_validation",
@@ -931,7 +1603,19 @@
         "bukti"
       ],
       "jawaban_publik": "Book VIII - OTRIS Test & Validation Constitution: Produk OTRIS tidak dianggap benar hanya karena berhasil dinyalakan. Lampu yang menyala membuktikan adanya daya. Komunikasi yang terhubung membuktikan adanya koneksi. Command yang berhasil membuktikan command itu pernah berhasil pada kondisi tertentu. Tidak satu pun dari itu, berdiri sendiri, membuktikan produk layak. OTRIS harus mampu memberikan bukti: fungsi yang dirancang benar-benar bekerja, perlindungan bekerja ketika dibutuhkan, kegagalan dapat dikenali, produk dapat bertahan terhadap penggunaan yang ditentukan, setelah diperbaiki fungsi yang terdampak kembali memenuhi requirement. Pengujian bukan tahap terakhir setelah engineering. Pengujian adalah bagian dari cara OTRIS dirancang. Status: FOUNDER REVIEW CANDIDATE.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Book VIII: OTRIS Test & Validation Constitution",
+          "bab": "Book VIII",
+          "jawaban_publik": "Power, connectivity, or a single successful command are insufficient evidence. Testing must show that intended functions and protections work, failures can be detected, the product can withstand specified use, and requirements are met again after repairs. Testing starts at design. Status: FOUNDER REVIEW CANDIDATE."
+        },
+        "fr": {
+          "judul": "Livre VIII : Constitution des essais et de la validation OTRIS",
+          "bab": "Livre VIII",
+          "jawaban_publik": "La mise sous tension, la connexion ou une commande réussie ne suffisent pas. Les essais doivent montrer que les fonctions et protections prévues fonctionnent, que les pannes sont détectables, que le produit résiste à l’usage prévu et que les exigences sont de nouveau satisfaites après réparation. Les essais commencent à la conception. Statut : FOUNDER REVIEW CANDIDATE."
+        }
+      }
     },
     {
       "id": "book9_packaging",
@@ -947,7 +1631,19 @@
         "logistik"
       ],
       "jawaban_publik": "Book IX - OTRIS Packaging & Delivery Constitution: Produk tidak selesai ketika meninggalkan meja Final Test. Produk dapat lulus seluruh pengujian di pabrik, tapi tetap gagal ketika sampai di lokasi apabila mengalami benturan, getaran, kelembapan, tekanan, kontaminasi, salah penanganan, kehilangan komponen, atau pemasangan kembali yang tidak benar setelah transportasi. Packaging bukan pekerjaan kosmetik. Packaging adalah lapisan perlindungan terakhir dari proses produksi dan lapisan pertama dari proses deployment. Kondisi produk yang telah dibuktikan melalui Test & Validation harus tetap terjaga sampai produk diterima, dibuka, diperiksa, dan diserahkan ke instalasi. Status: FOUNDER REVIEW CANDIDATE.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Book IX: OTRIS Packaging & Delivery Constitution",
+          "bab": "Book IX",
+          "jawaban_publik": "Packaging must preserve the condition verified by testing from the factory through transport, receipt, opening, inspection, and handover to installation. It protects against risks such as shocks, moisture, contamination, and mishandling. Status: FOUNDER REVIEW CANDIDATE."
+        },
+        "fr": {
+          "judul": "Livre IX : Constitution de l’emballage et de la livraison OTRIS",
+          "bab": "Livre IX",
+          "jawaban_publik": "L’emballage doit préserver l’état vérifié par les essais, de l’usine au transport, à la réception, à l’ouverture, à l’inspection et à la remise à l’installation. Il protège notamment contre les chocs, l’humidité, la contamination et les mauvaises manipulations. Statut : FOUNDER REVIEW CANDIDATE."
+        }
+      }
     },
     {
       "id": "book10_installation",
@@ -963,7 +1659,19 @@
         "handover"
       ],
       "jawaban_publik": "Book X - OTRIS Installation & Commissioning Constitution: Produk yang telah diproduksi, diuji, dan dikirim dengan benar belum otomatis menjadi sistem OTRIS yang siap digunakan. Di lokasi, produk bertemu dengan dunia yang tidak sepenuhnya dalam kendali pabrik - power, network, ruang, perangkat medis, infrastruktur, kebijakan keamanan, lingkungan yang berbeda. Instalasi bukan sekadar menaruh perangkat, menghubungkan kabel, menyalakan sistem, lalu memastikan layar hidup. Instalasi adalah proses membuktikan bahwa produk yang telah lulus dari pabrik dapat hidup dengan benar di lingkungan tempat ia akan digunakan. Commissioning menjawab: Apakah sistem yang telah dipasang benar-benar bekerja sebagai OTRIS sesuai configuration dan requirement yang disetujui? Prinsip: Installation creates the environment. Commissioning proves the system within that environment. Status: FOUNDER REVIEW CANDIDATE.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Book X: OTRIS Installation & Commissioning Constitution",
+          "bab": "Book X",
+          "jawaban_publik": "Installation provides an appropriate site environment. Commissioning proves that the system works in that environment to the approved configuration and requirements. A powered screen alone does not demonstrate readiness. Status: FOUNDER REVIEW CANDIDATE."
+        },
+        "fr": {
+          "judul": "Livre X : Constitution de l’installation et de la mise en service OTRIS",
+          "bab": "Livre X",
+          "jawaban_publik": "L’installation crée un environnement adapté sur le site. La mise en service prouve que le système y fonctionne conformément à la configuration et aux exigences approuvées. Un écran allumé ne suffit pas à démontrer qu’il est prêt. Statut : FOUNDER REVIEW CANDIDATE."
+        }
+      }
     },
     {
       "id": "book11_manual",
@@ -978,7 +1686,19 @@
         "petunjuk"
       ],
       "jawaban_publik": "Book XI - OTRIS Manual Constitution: OTRIS dapat memiliki banyak manual - engineer, teknisi servis, produksi, installer, RS, pengguna - butuh informasi yang berbeda. Yang tidak boleh terjadi adalah setiap manual mulai membangun versinya sendiri tentang OTRIS. Jika Production Manual mengatakan satu hal, Service Manual mengatakan hal lain, dan Engineering Manual punya aturan ketiga, maka OTRIS punya lebih dari satu kebenaran. Seluruh manual harus lahir dari satu sumber yang sama: The OTRIS Constitution Series dan authority teknis yang diturunkannya. Manual bukan tempat menciptakan hukum baru. Manual adalah tempat menerjemahkan hukum, specification, drawing, dan procedure menjadi petunjuk yang tepat bagi orang yang membutuhkannya. Prinsip: The Master defines what is true. The Manual explains what the reader must do with that truth. Status: FOUNDER REVIEW CANDIDATE.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Book XI: OTRIS Manual Constitution",
+          "bab": "Book XI",
+          "jawaban_publik": "Manuals for different roles must come from the same source: The OTRIS Constitution Series and the technical authority derived from it. A manual translates specifications and procedures into appropriate instructions for its audience. Status: FOUNDER REVIEW CANDIDATE."
+        },
+        "fr": {
+          "judul": "Livre XI : Constitution des manuels OTRIS",
+          "bab": "Livre XI",
+          "jawaban_publik": "Les manuels destinés aux différents rôles doivent provenir de la même source : The OTRIS Constitution Series et l’autorité technique qui en découle. Un manuel transforme les spécifications et les procédures en instructions adaptées à ses lecteurs. Statut : FOUNDER REVIEW CANDIDATE."
+        }
+      }
     },
     {
       "id": "book12_service_repair",
@@ -994,7 +1714,19 @@
         "diagnosis"
       ],
       "jawaban_publik": "Book XII - OTRIS Service & Repair Constitution: Setiap produk yang bekerja cukup lama pada akhirnya akan membutuhkan perhatian - wear, connector melemah, fan menurun, storage degradasi, kabel rusak, firmware corruption, modul gagal, lingkungan berubah. Service bukan pekerjaan yang dipikirkan setelah produk rusak. Serviceability dimulai sejak design. OTRIS harus memungkinkan teknisi yang berwenang memahami: apa yang terjadi, apa buktinya, bagian mana yang terdampak, tindakan apa yang diperbolehkan, apa yang harus diuji setelah tindakan, kapan produk boleh kembali digunakan. Prinsip: Repair changes the product. Evidence returns the product to trust. Status: FOUNDER REVIEW CANDIDATE.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Book XII: OTRIS Service & Repair Constitution",
+          "bab": "Book XII",
+          "jawaban_publik": "Serviceability starts at design. Authorized technicians must be able to identify what happened, the evidence and affected parts, permitted actions, required retests, and when the product may return to use. Evidence restores trust after repair. Status: FOUNDER REVIEW CANDIDATE."
+        },
+        "fr": {
+          "judul": "Livre XII : Constitution du service et de la réparation OTRIS",
+          "bab": "Livre XII",
+          "jawaban_publik": "La maintenabilité commence à la conception. Les techniciens autorisés doivent pouvoir déterminer ce qui s’est passé, les preuves et pièces concernées, les actions permises, les essais à refaire et les conditions de remise en service. Les preuves rétablissent la confiance après réparation. Statut : FOUNDER REVIEW CANDIDATE."
+        }
+      }
     },
     {
       "id": "book13_maintenance",
@@ -1010,7 +1742,19 @@
         "obsolescence"
       ],
       "jawaban_publik": "Book XIII - OTRIS Maintenance & Lifecycle Constitution: Produk yang bekerja hari ini belum tentu punya kondisi yang sama lima tahun kemudian. Fan berputar ribuan jam, storage terus read/write, connector mengalami mating cycle, battery menua, thermal material berubah, mechanical parts mengalami wear. OTRIS tidak boleh hanya mengenal dua keadaan: WORKING atau BROKEN. Di antara keduanya ada yang jauh lebih penting: product health. Maintenance bertujuan mengetahui kondisi produk sebelum degradasi berubah menjadi kegagalan. Lifecycle governance menjawab: Bagaimana OTRIS mengetahui umur dirinya, bagaimana ia dirawat, kapan komponen harus diperiksa, kapan harus diganti, dan kapan generasi produk harus dihentikan secara bertanggung jawab? Prinsip: A product should not have to fail before its condition becomes known. Status: FOUNDER REVIEW CANDIDATE.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Book XIII: OTRIS Maintenance & Lifecycle Constitution",
+          "bab": "Book XIII",
+          "jawaban_publik": "Maintenance monitors product health before deterioration becomes failure. Lifecycle governance defines inspection, replacement, maintenance, and responsible retirement across product generations. Status: FOUNDER REVIEW CANDIDATE."
+        },
+        "fr": {
+          "judul": "Livre XIII : Constitution de la maintenance et du cycle de vie OTRIS",
+          "bab": "Livre XIII",
+          "jawaban_publik": "La maintenance surveille l’état du produit avant qu’une dégradation ne devienne une panne. La gouvernance du cycle de vie définit l’inspection, le remplacement, l’entretien et le retrait responsable au fil des générations de produits. Statut : FOUNDER REVIEW CANDIDATE."
+        }
+      }
     },
     {
       "id": "book14_change_config",
@@ -1026,7 +1770,19 @@
         "konfigurasi"
       ],
       "jawaban_publik": "Book XIV - OTRIS Change, Configuration & Institutional Knowledge Constitution: Tidak ada sistem yang hidup lama tanpa berubah. Komponen akan berhenti diproduksi, teknologi baru muncul, software berkembang, supplier berubah, engineer baru menemukan pendekatan lebih baik, masalah lapangan mengajarkan sesuatu yang tidak ditemukan ketika produk pertama dirancang. OTRIS tidak boleh takut terhadap perubahan, tapi juga tidak boleh berubah tanpa ingatan. Masalah terbesar bukan perubahan itu sendiri, tapi ketika beberapa tahun kemudian tidak ada lagi yang mengetahui: apa yang berubah, mengapa berubah, siapa yang menyetujui, produk mana yang terdampak, apa yang telah diuji, dan configuration mana yang akhirnya berlaku. Prinsip: OTRIS may change. The reason for the change must survive. Status: FOUNDER REVIEW CANDIDATE.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Book XIV: OTRIS Change, Configuration & Institutional Knowledge Constitution",
+          "bab": "Book XIV",
+          "jawaban_publik": "OTRIS may change, but the reasons must survive. Records must show what changed, why, who approved it, what products were affected, what was tested, and which configuration took effect. Status: FOUNDER REVIEW CANDIDATE."
+        },
+        "fr": {
+          "judul": "Livre XIV : Constitution du changement, de la configuration et du savoir institutionnel OTRIS",
+          "bab": "Livre XIV",
+          "jawaban_publik": "OTRIS peut évoluer, mais les raisons doivent être conservées. Les registres doivent dire ce qui a changé, pourquoi, qui l’a approuvé, quels produits sont concernés, ce qui a été testé et quelle configuration est entrée en vigueur. Statut : FOUNDER REVIEW CANDIDATE."
+        }
+      }
     },
     {
       "id": "book15_traceability",
@@ -1043,7 +1799,19 @@
         "ketertelusuran"
       ],
       "jawaban_publik": "Book XV - OTRIS Traceability, Evidence & Record Constitution: Setelah sepuluh atau dua puluh tahun, muncul pertanyaan sederhana: Apa buktinya? Siapa yang membuat unit ini? Configuration apa yang digunakan? Part revision mana yang terpasang? Test apa yang pernah dilakukan? Apa hasilnya? Mengapa komponen pernah diganti? Kapan firmware berubah? Apa yang terjadi sebelum failure? Siapa yang mengizinkan perubahan? Jika jawabannya hanya: Dulu kami pernah melakukannya - maka institusi punya ingatan, tapi belum punya evidence. OTRIS harus mampu menghubungkan: Requirement, Decision, Design, Product, Test, Deployment, Change, Service, Lifecycle, Record. Prinsip: If OTRIS cannot trace it, OTRIS must not pretend to know it. Status: FOUNDER REVIEW CANDIDATE.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Book XV: OTRIS Traceability, Evidence & Record Constitution",
+          "bab": "Book XV",
+          "jawaban_publik": "Connect requirements, decisions, design, products, tests, deployment, changes, service, lifecycle, and records. Years later, evidence must still show what was built, tested, changed, and authorized. If it cannot be traced, it cannot be claimed as known. Status: FOUNDER REVIEW CANDIDATE."
+        },
+        "fr": {
+          "judul": "Livre XV : Constitution de la traçabilité, des preuves et des registres OTRIS",
+          "bab": "Livre XV",
+          "jawaban_publik": "Reliez les exigences, les décisions, la conception, les produits, les essais, le déploiement, les modifications, le service, le cycle de vie et les registres. Des années plus tard, les preuves doivent encore indiquer ce qui a été construit, testé, modifié et autorisé. Ce qui n’est pas traçable ne peut être présenté comme connu. Statut : FOUNDER REVIEW CANDIDATE."
+        }
+      }
     },
     {
       "id": "book16_security",
@@ -1061,7 +1829,19 @@
         "vendor independence"
       ],
       "jawaban_publik": "Book XVI - OTRIS Security, Access & Sovereignty Constitution: Sistem dapat bekerja sempurna tapi tetap tidak berdaulat. Itu terjadi ketika organisasi tidak mengetahui siapa yang punya akses, password penting hanya diketahui satu orang, source code berada pada account pribadi, certificate tidak dapat dipulihkan institusi, vendor dapat masuk tanpa diketahui, remote access tetap terbuka setelah pekerjaan selesai, AI memperoleh informasi melebihi kebutuhannya, atau produk secara teknis dimiliki institusi tapi secara praktis hanya dapat dioperasikan pihak tertentu. Keamanan bukan hanya: Bisakah seseorang membobol sistem? Pertanyaan yang lebih besar: Siapa yang punya hak terhadap sistem, bagaimana hak itu diberikan, bagaimana penggunaannya diketahui, dan apakah institusi tetap dapat menguasai sistemnya ketika seseorang, vendor, atau teknologi tidak lagi tersedia? Prinsip: Security protects the system. Sovereignty ensures the institution can still control it. Status: FOUNDER REVIEW CANDIDATE.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Book XVI: OTRIS Security, Access & Sovereignty Constitution",
+          "bab": "Book XVI",
+          "jawaban_publik": "Security protects the system. Sovereignty lets the institution retain control if a person, vendor, or technology disappears. Access, credentials, certificates, source code, remote access, and AI data access must remain accountable to the institution. Status: FOUNDER REVIEW CANDIDATE."
+        },
+        "fr": {
+          "judul": "Livre XVI : Constitution de la sécurité, de l’accès et de la souveraineté OTRIS",
+          "bab": "Livre XVI",
+          "jawaban_publik": "La sécurité protège le système. La souveraineté permet à l’institution d’en garder le contrôle si une personne, un fournisseur ou une technologie disparaît. Les accès, les identifiants, les certificats, le code source, l’accès à distance et l’accès de l’IA aux données doivent rester sous la responsabilité de l’institution. Statut : FOUNDER REVIEW CANDIDATE."
+        }
+      }
     },
     {
       "id": "book17_failure_recovery",
@@ -1078,7 +1858,19 @@
         "recovery"
       ],
       "jawaban_publik": "Book XVII - OTRIS Failure, Recovery & Resilience Constitution: Tidak ada sistem yang hidup lama tanpa pernah mengalami gangguan. Power hilang, network putus, sensor diam, storage rusak, software crash, update gagal, gateway kehilangan koneksi, execution board berhenti merespons, data tidak lengkap, cloud tidak tersedia, manusia salah konfigurasi. OTRIS tidak dibangun dengan asumsi kegagalan tidak akan terjadi. OTRIS dibangun dengan asumsi kegagalan akan terjadi suatu hari, dan ketika itu terjadi sistem harus mampu mengenali, membatasi, mencatat, bertahan sejauh yang aman, dan pulih secara terkendali. Prinsip: Failure is not the opposite of engineering. Failure is one of the conditions engineering must be ready to handle. Termasuk: OTRIS Must Fail Honestly. Status: FOUNDER REVIEW CANDIDATE.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Book XVII: OTRIS Failure, Recovery & Resilience Constitution",
+          "bab": "Book XVII",
+          "jawaban_publik": "Assume failures will happen. The system must detect, contain, and record disruptions, continue only as far as is safe, and recover under control. It must report failure honestly. Status: FOUNDER REVIEW CANDIDATE."
+        },
+        "fr": {
+          "judul": "Livre XVII : Constitution des défaillances, de la reprise et de la résilience OTRIS",
+          "bab": "Livre XVII",
+          "jawaban_publik": "Il faut prévoir que des défaillances se produiront. Le système doit les détecter, les contenir et les consigner, continuer uniquement dans des conditions sûres et reprendre de manière contrôlée. Il doit signaler honnêtement les pannes. Statut : FOUNDER REVIEW CANDIDATE."
+        }
+      }
     },
     {
       "id": "book18_human_factors",
@@ -1095,7 +1887,19 @@
         "clinical wall"
       ],
       "jawaban_publik": "Book XVIII - OTRIS Human Factors, Interface & Operation Constitution: Sistem dapat punya architecture benar, hardware sempurna, data mengalir benar, failure terdeteksi, security kuat - tapi seluruh keunggulan itu bisa kehilangan nilainya apabila manusia yang menggunakan sistem tidak memahami apa yang sedang terjadi. Indikator bisa disalahartikan, tombol bisa ditekan tanpa memahami akibatnya, data lama bisa dianggap data real-time, warning penting bisa tenggelam di antara puluhan notifikasi, status CONNECTED bisa dianggap berarti perangkat bekerja sempurna, tampilan indah bisa menciptakan keyakinan terhadap sesuatu yang sebenarnya belum diketahui sistem. Interface bukan lapisan kosmetik. Interface adalah tempat OTRIS mengatakan kepada manusia: apa yang diketahui, apa yang tidak diketahui, apa yang sedang terjadi, apa yang membutuhkan perhatian, dan tindakan apa yang memang berada dalam authority pengguna. Prinsip: The interface must communicate the truth of the system before it communicates the beauty of the system. Status: FOUNDER REVIEW CANDIDATE.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Book XVIII: OTRIS Human Factors, Interface & Operation Constitution",
+          "bab": "Book XVIII",
+          "jawaban_publik": "The interface must communicate what is known, unknown, happening, in need of attention, and authorized for the user. Its appearance must never make stale data, uncertain status, or a connection indicator look like proof of correct operation. Status: FOUNDER REVIEW CANDIDATE."
+        },
+        "fr": {
+          "judul": "Livre XVIII : Constitution des facteurs humains, de l’interface et de l’exploitation OTRIS",
+          "bab": "Livre XVIII",
+          "jawaban_publik": "L’interface doit indiquer ce qui est connu, inconnu, en cours, à surveiller et autorisé pour l’utilisateur. Son apparence ne doit jamais faire passer une donnée ancienne, un statut incertain ou un indicateur de connexion pour une preuve de fonctionnement correct. Statut : FOUNDER REVIEW CANDIDATE."
+        }
+      }
     },
     {
       "id": "book19_supply_chain",
@@ -1112,7 +1916,19 @@
         "rantai pasok"
       ],
       "jawaban_publik": "Book XIX - OTRIS Supply Chain, Manufacturing Continuity & Counterfeit Control Constitution: Desain yang benar tetap dapat gagal apabila komponen yang masuk ke produksi tidak benar. Part number bisa sama tapi asalnya berbeda. Label bisa terlihat benar tapi komponen palsu. Supplier bisa berhenti. Distributor bisa kehabisan stok. Material bisa disimpan terlalu lama. Komponen bisa rusak karena kelembapan, ESD, panas, atau transportasi. Part bisa benar secara fungsi tapi tidak lagi tersedia ketika produk masih harus diservis bertahun-tahun kemudian. Supply chain bukan sekadar urusan pembelian. Supply chain adalah bagian dari reliability, traceability, continuity, dan sovereignty OTRIS. OTRIS tidak cukup mengetahui: Part apa yang digunakan? OTRIS juga harus mampu memahami: Dari mana part itu berasal, bagaimana statusnya diketahui, bagaimana kualitasnya dijaga, dan apa yang terjadi jika sumber itu hilang? Prinsip: A reliable product requires a reliable path from requirement to material. Status: FOUNDER REVIEW CANDIDATE.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Book XIX: OTRIS Supply Chain, Manufacturing Continuity & Counterfeit Control Constitution",
+          "bab": "Book XIX",
+          "jawaban_publik": "Product reliability requires a documented path from requirements to materials, including origin, authenticity, condition, storage, continuity of supply, and how the institution will respond if a source disappears. Status: FOUNDER REVIEW CANDIDATE."
+        },
+        "fr": {
+          "judul": "Livre XIX : Constitution de la chaîne d’approvisionnement, de la continuité de fabrication et de la lutte contre la contrefaçon OTRIS",
+          "bab": "Livre XIX",
+          "jawaban_publik": "La fiabilité exige un parcours documenté des exigences aux matériaux, couvrant l’origine, l’authenticité, l’état, le stockage, la continuité de l’approvisionnement et la réponse de l’institution si une source disparaît. Statut : FOUNDER REVIEW CANDIDATE."
+        }
+      }
     },
     {
       "id": "book20_quality_audit",
@@ -1129,7 +1945,19 @@
         "non-conformance"
       ],
       "jawaban_publik": "Book XX - OTRIS Quality, Audit & Continuous Improvement Constitution: Quality bukan pemeriksaan terakhir sebelum barang dikirim. Quality dimulai ketika requirement ditetapkan. Ia hidup ketika komponen dipilih, ketika drawing dibuat, ketika software ditulis, ketika produk dirakit, diuji, dikirim, dipasang, diservis, dan dirawat. Audit bukan untuk mencari siapa yang salah, tapi untuk memastikan bukti tetap ada dan sistem terus membaik. Continuous improvement berarti setiap kegagalan, setiap temuan audit, setiap pembelajaran lapangan harus kembali menjadi perbaikan yang terdokumentasi, bukan sekadar cerita lisan. Status: FOUNDER REVIEW CANDIDATE.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Book XX: OTRIS Quality, Audit & Continuous Improvement Constitution",
+          "bab": "Book XX",
+          "jawaban_publik": "Quality starts at requirements and continues through the entire lifecycle. Audits keep evidence available and help improve the system. Failures, findings, and lessons from the field must produce documented improvements. Status: FOUNDER REVIEW CANDIDATE."
+        },
+        "fr": {
+          "judul": "Livre XX : Constitution de la qualité, de l’audit et de l’amélioration continue OTRIS",
+          "bab": "Livre XX",
+          "jawaban_publik": "La qualité commence avec les exigences et se poursuit tout au long du cycle de vie. Les audits préservent les preuves et aident à améliorer le système. Les défaillances, constats et leçons du terrain doivent donner lieu à des améliorations documentées. Statut : FOUNDER REVIEW CANDIDATE."
+        }
+      }
     },
     {
       "id": "penjajahan_digital",
@@ -1146,7 +1974,19 @@
         "kimia darah"
       ],
       "jawaban_publik": "Di Jembatan final, penjajahan digital dijelaskan sebagai sistem yang membuat RS daerah bergantung pada integrator eksternal, lisensi mahal, dan protokol tertutup. Alat-alat canggih dibeli dengan CAPEX besar, tapi beroperasi dalam ekosistem tertutup - data silo. Pengalaman Hanif 21 tahun di laboratorium - dari Palembang sampai instalasi di daerah - menunjukkan pola yang sama: alat bisu, manusia menjadi kabel. Perawat berlari membawa kertas tulisan tangan, mencatat angka dari monitor, lalu mengetik ulang di komputer, karena data terkunci. OTRIS memutus pola ini dengan Gateway lokal yang mengekstrak dan menstandardisasi aliran data tanpa mengganti alat yang sudah ada.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Digital dependency and data silos",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "THE JEMBATAN describes how closed protocols and outside integrators can trap data and force caregivers to retype it. A local Gateway is intended to extract and normalize data while keeping existing devices in use."
+        },
+        "fr": {
+          "judul": "Dépendance numérique et silos de données",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "THE JEMBATAN décrit comment les protocoles fermés et la dépendance aux intégrateurs externes peuvent bloquer les données et contraindre les soignants à les ressaisir. Un Gateway local sert à extraire et normaliser les données tout en conservant les appareils existants."
+        }
+      }
     },
     {
       "id": "silo_data_manual",
@@ -1162,7 +2002,19 @@
         "integrator"
       ],
       "jawaban_publik": "Tiga hambatan silo data di buku: 1) Fragmentasi Protokol Komunikasi - perangkat dari produsen berbeda memakai format proprietary, membuat konsolidasi data pasien sulit. 2) Ketergantungan pada Integrator Eksternal - untuk menghubungkan data dari mesin lab atau ruang operasi ke SIMRS, RS sering menghadapi biaya lisensi integrasi yang tinggi. 3) Entri Manual - hambatan integrasi memaksa tenaga medis melakukan pencatatan manual dari layar perangkat ke dokumen fisik atau komputer, meningkatkan risiko human error pada data klinis kritis. OTRIS menjawabnya dengan normalisasi di Gateway, lalu kanonik FHIR.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Data silos, fragmented protocols, and manual entry",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The book identifies three barriers: incompatible proprietary formats, reliance on costly external integration, and manual transcription that can introduce clinical data errors. OTRIS uses Gateway normalization and canonical FHIR to address them."
+        },
+        "fr": {
+          "judul": "Silos, protocoles fragmentés et saisie manuelle",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le livre identifie trois obstacles : les formats propriétaires incompatibles, la dépendance à une intégration externe coûteuse et la retranscription manuelle, qui peut introduire des erreurs dans les données cliniques. OTRIS y répond par la normalisation au Gateway et le format canonique FHIR."
+        }
+      }
     },
     {
       "id": "trilogi_rujuk",
@@ -1178,7 +2030,19 @@
         "biaya rujukan"
       ],
       "jawaban_publik": "Trilogi Rujuk adalah pola yang berulang di lapangan dan diceritakan di Bab 3 dan Bab 5: keluarga pasien di pulau terpencil harus menjual tanah untuk biaya rujukan, lalu bangkrut karena biaya non-medis - tiket ferry, ambulans, penginapan, makan, hilangnya produktivitas - yang bisa 5-10 juta per rujukan, dan kepala keluarga kehilangan pekerjaan karena harus mendampingi pasien berhari-hari di kota. Di buku final, pola ini dijelaskan sebagai Catastrophic Health Expenditure: bukan karena tidak ada asuransi, tapi karena biaya tidak langsung akibat geografi. OTRIS memutus trilogi ini dengan membawa keahlian ke tempat pasien berada, bukan memindahkan pasien.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "The referral trilogy",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The book describes families on remote islands selling land, incurring indirect expenses such as transport and accommodation, and losing income or work while accompanying a patient. It frames this as catastrophic health expenditure linked to geography and proposes bringing expertise to the patient."
+        },
+        "fr": {
+          "judul": "La trilogie de l’orientation",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le livre décrit des familles d’îles isolées qui vendent des terres, engagent des dépenses indirectes de transport et de logement, puis perdent un revenu ou un emploi en accompagnant un patient. Il y voit une dépense de santé catastrophique liée à la géographie et propose de rapprocher l’expertise du patient."
+        }
+      }
     },
     {
       "id": "kuburan_massal",
@@ -1194,7 +2058,19 @@
         "waktu emas"
       ],
       "jawaban_publik": "Kuburan Massal adalah istilah yang dipakai untuk menggambarkan korban yang tidak tercatat dari sistem rujukan yang lambat: 1) Mati dalam Penantian - pasien menunggu kapal, menunggu rujukan, menunggu subspesialis yang tidak pernah datang. 2) Mati di Perjalanan - pasien kritis yang vital sign-nya destabilisasi di atas ferry atau pesawat sebelum sampai ke RS rujukan. 3) Mati Pasca-Operasi - pasien yang sampai, tapi sudah terlambat - stadium 4, golden period sudah lewat, operasi tidak lagi bisa menyelamatkan. Di buku final, ini dijelaskan lewat rumus P(success)=f(S0,1/t) dan perang melawan waktu: setiap detik latency, setiap jam perjalanan, menurunkan probabilitas keselamatan secara eksponensial.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Hidden losses from delayed referrals",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The book uses the phrase Kuburan Massal for unrecorded losses linked to slow referrals. It distinguishes patients who die while waiting, during the journey, or after arriving too late for an operation to help."
+        },
+        "fr": {
+          "judul": "Les pertes invisibles des orientations tardives",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le livre emploie l’expression Kuburan Massal pour les pertes non recensées liées aux orientations lentes. Il distingue les décès pendant l’attente, pendant le trajet ou après une arrivée trop tardive pour qu’une opération puisse aider."
+        }
+      }
     },
     {
       "id": "tiga_pilar_otris",
@@ -1211,7 +2087,19 @@
         "orkestrasi video"
       ],
       "jawaban_publik": "Di draf awal disebut Tiga Pilar, di buku final v2 ditegaskan sebagai Tiga Aliran yang bergerak bersamaan setiap detik: 1) Visual tindakan bedah - gambar beresolusi tinggi dari kamera Sony FX3. 2) Data perangkat medis - detak jantung, tekanan darah, SpO2, grafik anestesi, ditarik langsung dari alat apa pun. 3) Jejak digital tindakan - setiap instruksi, keputusan, momen kritis terekam sebagai bukti yang sah. Ketiga aliran ini dirajut menjadi satu cerita, satu kebenaran, satu bahasa FHIR. Bukan telemedicine yang hanya memindahkan percakapan.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "The three OTRIS data streams",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The three streams are procedure video, medical device data such as heart rate and SpO2, and a digital record of instructions, decisions, and critical moments. They are brought together in a common FHIR language."
+        },
+        "fr": {
+          "judul": "Les trois flux de données OTRIS",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Les trois flux sont la vidéo de l’intervention, les données des appareils médicaux comme la fréquence cardiaque et la SpO2, et la trace numérique des instructions, décisions et moments critiques. Ils sont réunis dans un langage FHIR commun."
+        }
+      }
     },
     {
       "id": "dual_path",
@@ -1229,7 +2117,19 @@
         "pemisahan"
       ],
       "jawaban_publik": "Dual-Path (Book II Ch.7, Book IV Ch.8-10): Data Path dan Execution Path adalah berbeda dan harus dipisahkan. Data Path adalah aliran data klinis - vital sign, video, grafik - yang harus cepat, ringan, dan real-time, memakai MQTT Si Kilat dengan target di bawah 50-100 milidetik. Execution Path adalah jalur eksekusi perintah - instruksi, keputusan, aksi - yang harus terdokumentasi, terotorisasi, dan dapat diaudit. Pemisahan ini membuat sistem tetap aman: data bisa mengalir cepat tanpa membuat perintah klinis menjadi liar, dan perintah tidak bisa disamarkan sebagai data.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Dual-Path: Data Path and Execution Path",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Data Path carries clinical data such as vital signs, video, and charts. Execution Path carries commands and must be documented, authorized, and auditable. Separating the two keeps commands from being disguised as data."
+        },
+        "fr": {
+          "judul": "Dual-Path : Data Path et Execution Path",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Data Path transporte les données cliniques, par exemple les constantes, la vidéo et les graphiques. Execution Path transporte les commandes et doit être documenté, autorisé et auditable. Leur séparation empêche de dissimuler une commande dans les données."
+        }
+      }
     },
     {
       "id": "layered_architecture",
@@ -1247,7 +2147,19 @@
         "lapisan"
       ],
       "jawaban_publik": "Arsitektur OTRIS berlapis (Book IV): Data Source Boundary - alat medis apa pun. Gateway Boundary - Gateway lokal mengekstrak data tanpa mengganti alat. Normalization Boundary - perbedaan bahasa protokol diterjemahkan. Canonical Boundary - satu bahasa kanonik HL7 FHIR. Core Boundary - Core yang bodoh, tidak punya prasangka, hanya mengumpulkan, memfokuskan, mengirimkan. Black Box Position - kotak hitam kecil di sudut ruang operasi. Execution Board Position - papan eksekusi yang menjalankan perintah yang sudah terotorisasi. Setiap lapisan punya batas yang jelas, sehingga vendor yang berbeda berhenti di Normalization Boundary, dan tidak bisa mengubah Core.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Layered OTRIS architecture",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The source, local Gateway, normalization, canonical HL7 FHIR, and Core have distinct boundaries. The small black box houses local functions, while the Execution Board runs authorized commands. Vendor protocol differences end at normalization."
+        },
+        "fr": {
+          "judul": "Architecture OTRIS en couches",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "La source, le Gateway local, la normalisation, le format canonique HL7 FHIR et Core ont des limites distinctes. Le petit boîtier noir héberge les fonctions locales et l’Execution Board exécute les commandes autorisées. Les différences de protocoles des fournisseurs s’arrêtent à la normalisation."
+        }
+      }
     },
     {
       "id": "stream_slot",
@@ -1262,7 +2174,19 @@
         "mqtt topic"
       ],
       "jawaban_publik": "Stream Slot dan Event-Driven (Book II Ch.8): OTRIS tidak bekerja dengan cara bertanya terus-menerus - Permisi, boleh minta data? - tapi dengan cara berteriak ketika ada peristiwa baru. Monitor Dabo ngomong: Aku punya data baru: HR 82 - langsung teriak ke semua yang butuh, seperti azan subuh dari menara. Setiap aliran - video, vital sign, instruksi - punya slot-nya sendiri, sehingga tidak saling berebut, tidak saling menutupi, dan dapat ditelusuri satu per satu.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Stream Slot and event-driven updates",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "A source publishes new data when an event occurs. Video, vital signs, and instructions each have their own slot so streams can be traced individually and do not obscure one another."
+        },
+        "fr": {
+          "judul": "Stream Slot et mises à jour par événement",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Une source publie des données lorsqu’un événement survient. La vidéo, les constantes et les instructions ont chacune leur canal, ce qui permet de les tracer individuellement et évite qu’elles se masquent."
+        }
+      }
     },
     {
       "id": "matriks_driver",
@@ -1277,7 +2201,19 @@
         "substitusi"
       ],
       "jawaban_publik": "Matriks Driver adalah cara OTRIS memilih komponen: bukan karena tersedia, murah, terkenal, atau direkomendasikan satu vendor, tapi karena ada alasan engineering yang dapat dijelaskan dan dibuktikan. Setiap komponen harus punya requirement-nya dulu, lalu second source-nya, lalu bukti pengujiannya, lalu jejak substitusinya. Jika komponen berhenti diproduksi, OTRIS harus tahu penggantinya tanpa mengubah identitas sistem. Ini diatur di Book V - Component & Material Constitution dan Book XIX - Supply Chain.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "The Driver Matrix",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Component selection starts with a requirement and a documented engineering reason. Identify a second source, testing evidence, and a traceable substitution so a discontinued part can be replaced without changing system identity."
+        },
+        "fr": {
+          "judul": "La matrice Driver",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le choix d’un composant commence par une exigence et une justification technique documentée. Il faut identifier une deuxième source, des preuves d’essais et un remplacement traçable pour qu’un composant abandonné puisse être remplacé sans altérer l’identité du système."
+        }
+      }
     },
     {
       "id": "efisiensi_klinis",
@@ -1293,7 +2229,19 @@
         "tiket ferry"
       ],
       "jawaban_publik": "Efisiensi klinis OTRIS bukan hanya soal teknologi, tapi soal ekonomi mikro keluarga. Biaya non-medis - tiket ferry, ambulans, penginapan pendamping, makan, hilangnya produktivitas - sering melebihi biaya medis langsung. Dengan OTRIS, operasi tetap di RS daerah, keluarga tidak perlu menjual aset produktif, tidak perlu meninggalkan pekerjaan berhari-hari, dan RS daerah tidak kehilangan kesempatan menangani kasus kompleks. Efisiensi makro dan kedaulatan anggaran daerah lahir dari efisiensi mikro ini.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Clinical efficiency and household costs",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Travel, lodging, and lost work can cost families more than direct medical care. The book argues that providing care at regional hospitals with specialist support can reduce those indirect costs and preserve opportunities for regional teams."
+        },
+        "fr": {
+          "judul": "Efficacité clinique et dépenses des familles",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le transport, l’hébergement et la perte de travail peuvent coûter plus cher aux familles que les soins eux-mêmes. Le livre explique que des soins à l’hôpital régional avec l’appui de spécialistes peuvent réduire ces coûts indirects et préserver les possibilités des équipes locales."
+        }
+      }
     },
     {
       "id": "anggaran_markup",
@@ -1309,7 +2257,19 @@
         "efisiensi makro"
       ],
       "jawaban_publik": "Di buku final, efisiensi makro dijelaskan bukan lewat angka mark-up tunggal, tapi lewat logika yang sama: sistem lama menghabiskan anggaran besar untuk memindahkan pasien dan membangun gedung beton yang tidak bisa berpindah, sementara OTRIS memakai modal riil yang jauh lebih kecil - Gateway lokal, Shelter 40 kaki yang bisa berlayar, Starlink Rp490 ribu per bulan - untuk hasil yang sama atau lebih baik. Kedaulatan anggaran daerah berarti anggaran tidak habis untuk logistik rujukan, tapi kembali ke pelayanan. Untuk angka detail anggaran proyek tertentu, silakan tanya ke Trust House, karena angka di buku adalah gambaran prinsip, bukan penawaran proyek.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Budgets and actual investment",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The book contrasts the cost of referrals and fixed facilities with a local Gateway, a transportable Shelter, and connectivity. It presents a budgeting principle, while Trust House is the place to ask about figures for a particular project."
+        },
+        "fr": {
+          "judul": "Budgets et investissement réel",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le livre compare le coût des orientations et des installations fixes à un Gateway local, un Shelter transportable et une connexion. Il expose un principe budgétaire. Pour les chiffres d’un projet précis, adressez-vous à Trust House."
+        }
+      }
     },
     {
       "id": "hvac_tekanan",
@@ -1325,7 +2285,19 @@
         "kontaminasi"
       ],
       "jawaban_publik": "HVAC dan Tekanan Positif Shelter: Ruang operasi di dalam Shelter 40 kaki harus steril. Udara harus bersih - panel sandwich antibakteri, sudut melengkung agar debu tak menumpuk, insulasi poliuretana. Tekanan positif menjaga agar udara kotor dari luar tidak masuk ke dalam saat pintu dibuka. Energi dan data adalah dua nadi yang tak boleh padam - jika listrik padam atau data putus, fungsi lokal tetap berjalan. Detail HVAC, tekanan, dan tata letak ada di Lampiran A dan B.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "HVAC and positive pressure in the Shelter",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The Shelter design calls for clean air, surfaces that limit dust buildup, and positive pressure to help keep outside air from entering. The book points to appendices A and B for HVAC, pressure, and layout details."
+        },
+        "fr": {
+          "judul": "Ventilation et pression positive du Shelter",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "La conception du Shelter prévoit un air propre, des surfaces qui limitent l’accumulation de poussière et une pression positive qui aide à empêcher l’air extérieur d’entrer. Le livre renvoie aux annexes A et B pour la ventilation, la pression et l’agencement."
+        }
+      }
     },
     {
       "id": "story_console",
@@ -1342,7 +2314,19 @@
         "layer ui"
       ],
       "jawaban_publik": "Story Console adalah cara OTRIS menampilkan satu cerita, satu kebenaran. Di layar supervisi, dokter subspesialis di kota melihat apa yang dokter muda di Dabo lihat - sama persis, detik demi detik. Bukan 6 layar yang saling bertentangan, tapi satu alur yang berlapis: visual, vital sign, grafik anestesi, instruksi, jejak digital, dan status sistem. Prinsip Book XVIII: Interface must communicate the truth of the system before it communicates the beauty of the system. Jika data lama, tampilkan sebagai data lama. Jika data hilang, tampilkan sebagai hilang. Jangan tutupi ketidakpastian dengan tampilan yang indah.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Story Console and its six layers",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The layers are video, vital signs, anesthesia charts, instructions, a digital record, and system status. Show stale data as stale and missing data as missing, so the interface accurately represents what is known."
+        },
+        "fr": {
+          "judul": "Story Console et ses six couches",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Les couches sont la vidéo, les constantes, les graphiques d’anesthésie, les instructions, la trace numérique et l’état du système. Il faut signaler les données anciennes ou manquantes comme telles pour représenter fidèlement ce qui est connu."
+        }
+      }
     },
     {
       "id": "cia_triad_hukum",
@@ -1363,7 +2347,19 @@
         "hukum"
       ],
       "jawaban_publik": "CIA Triad dan Hukum: Confidentiality - data pasien hanya untuk yang berwenang. Integrity - data tidak boleh diubah tanpa jejak, audit log harus immutable. Availability - fungsi lokal tetap berjalan walau internet putus. Regulasi: UU PDP No. 27/2022 tentang Pelindungan Data Pribadi, PMK 24/2022 dan surat edaran tentang kewajiban integrasi SATUSEHAT, standar HL7 FHIR. Setiap instruksi, keputusan, dan momen kritis terekam sebagai bukti yang sah - Legal Defense bagi dokter, RS, dan pasien. OTRIS tidak bertanggung jawab atas tindakan medis, diagnosis, atau keputusan klinis yang diambil tanpa konsultasi dengan profesional kesehatan yang kompeten - keputusan klinis tetap di tangan tenaga kesehatan yang berwenang.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Confidentiality, integrity, and availability",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The source describes authorized access to patient data, traceable changes, and continued local operation during a disconnection. It references UU PDP No. 27/2022, PMK 24/2022, and HL7 FHIR. Clinical decisions stay with authorized healthcare professionals."
+        },
+        "fr": {
+          "judul": "Confidentialité, intégrité et disponibilité",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "La source décrit l’accès autorisé aux données des patients, la traçabilité des modifications et la continuité du fonctionnement local en cas de coupure. Elle cite UU PDP No. 27/2022, PMK 24/2022 et HL7 FHIR. Les décisions cliniques restent du ressort des professionnels de santé habilités."
+        }
+      }
     },
     {
       "id": "kedaulatan_kesehatan",
@@ -1378,7 +2374,19 @@
         "infrastruktur kesehatan"
       ],
       "jawaban_publik": "Kedaulatan Kesehatan: Bukan isolasi dari kemajuan global, tapi kemampuan mengelola, mengintegrasikan, dan mengarahkan teknologi untuk kepentingan masyarakat lokal. Di buku final, kedaulatan diwujudkan lewat: Local First, Vendor Agnostic, Offline Capable, dan Medical Sovereignty - RS tetap berdaulat atas datanya, dengan atau tanpa OTRIS. Dari Afirmasi ke Wakaf adalah perjalanan yang diceritakan dalam amanah Trust House: dari sekadar pernyataan, menjadi komitmen yang dijaga sebagai amanah, lalu diwakafkan agar hidup lebih lama dari pendirinya. OTRIS harus menjadi infrastruktur - macam elektrik, macam air, macam internet - bukan produk yang dijual lalu diganti.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Health sovereignty",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Health sovereignty means the ability to govern and integrate technology for local needs. The book ties this to Local First, vendor independence, offline capability, and hospitals keeping control of their data with or without OTRIS. The commitment is maintained as waqf beyond the founder’s lifetime."
+        },
+        "fr": {
+          "judul": "Souveraineté en santé",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "La souveraineté en santé consiste à pouvoir gouverner et intégrer la technologie selon les besoins locaux. Le livre la rattache à la priorité au local, à l’indépendance des fournisseurs, au fonctionnement hors ligne et au contrôle des données par les hôpitaux, avec ou sans OTRIS. L’engagement est préservé par le waqf au-delà de la vie du fondateur."
+        }
+      }
     },
     {
       "id": "wakaf",
@@ -1393,7 +2401,19 @@
         "wakafkan otris"
       ],
       "jawaban_publik": "Wakaf OTRIS adalah komitmen bahwa OTRIS dijaga sebagai amanah, bukan sebagai aset yang bisa dijual seenaknya. Dalam bahasa Konstitusi, ini adalah Stewardship: Kami tidak bisa menjual OTRIS karena kami tidak memilikinya. Kami hanya penjaga. Kami menerima OTRIS dalam keadaan tertentu, kami harus menyerahkannya dalam keadaan lebih baik. Wakaf berarti purpose, konstitusi, knowledge, dan trust OTRIS harus tetap hidup lebih lama dari pendirinya, untuk generasi berikutnya. Untuk detail akad, nazhir, dan skema wakaf yang berlaku, silakan tanya ke Trust House.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "OTRIS Waqf",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "OTRIS Waqf means holding OTRIS in trust under the Constitution’s stewardship principle. Stewards cannot sell what they do not own and must pass on the purpose, Constitution, knowledge, and trust in better condition for the next generation. Ask Trust House about the waqf deed, administrator, and arrangements."
+        },
+        "fr": {
+          "judul": "Waqf OTRIS",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "Le waqf OTRIS consiste à veiller sur OTRIS selon le principe de garde inscrit dans la Constitution. Les gardiens ne peuvent pas vendre ce qui ne leur appartient pas et doivent transmettre en meilleur état la raison d’être, la Constitution, le savoir et la confiance à la génération suivante. Adressez-vous à Trust House pour l’acte de waqf, son gestionnaire et ses modalités."
+        }
+      }
     },
     {
       "id": "penerima_meneruskan",
@@ -1408,7 +2428,19 @@
         "meneruskan"
       ],
       "jawaban_publik": "Penerima yang Meneruskan adalah prinsip bahwa OTRIS tidak berhenti pada satu generasi. Tugas utama penjaga adalah mempersiapkan penjaga berikutnya - melatih orang yang mungkin suatu hari melampaui kami, mewariskan ilmu tanpa takut kehilangan kekuasaan. Dalam Konstitusi Bab 10: To Those Who Continue This Journey - institusi harus hidup lebih lama dari pendirinya melalui prinsip, bukan personalitas. Meneruskan bukan mengulang kata-kata pendiri, tapi menjaga prinsip yang sama dalam teknologi yang berbeda.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Passing the bridge on",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "Stewards prepare successors and share knowledge so OTRIS can continue beyond one generation. Future stewards keep the same principles as technology changes, rather than simply repeating the founder’s words."
+        },
+        "fr": {
+          "judul": "Transmettre le pont",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "Les gardiens préparent leurs successeurs et partagent le savoir pour qu’OTRIS puisse continuer au-delà d’une génération. Les futurs gardiens préservent les mêmes principes à mesure que la technologie évolue."
+        }
+      }
     },
     {
       "id": "trust_house",
@@ -1421,7 +2453,19 @@
         "trusthouse"
       ],
       "jawaban_publik": "Trust House adalah tempat penjagaan amanah OTRIS - tempat detail arsitektur, kode, API, diagram, spesifikasi dalam, akad wakaf, dan keputusan konstitusional yang sensitif dijaga. Chatbot Tanya Wijoyo ini memberikan gambaran publik dari buku THE JEMBATAN dan Konstitusi. Untuk detail dalam - kode, API, diagram, spesifikasi teknis Shelter, wiring, simulasi KSO, dan akad wakaf - silakan tanya ke Trust House. Itu bukan karena disembunyikan, tapi karena detail itu harus disampaikan dengan konteks, bukti, dan otoritas yang tepat.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "What is Trust House?",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "Trust House safeguards the OTRIS amanah. Tanya Wijoyo shares public explanations from THE JEMBATAN and the Constitution. Ask Trust House for internal technical details, waqf arrangements, or sensitive constitutional decisions so they can be shared with appropriate context, evidence, and authority."
+        },
+        "fr": {
+          "judul": "Qu’est-ce que Trust House ?",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "Trust House veille sur l’amanah d’OTRIS. Tanya Wijoyo présente les explications publiques de THE JEMBATAN et de la Constitution. Adressez-vous à Trust House pour les détails techniques internes, les modalités du waqf ou les décisions constitutionnelles sensibles, afin qu’ils soient communiqués avec le contexte, les preuves et l’autorité appropriés."
+        }
+      }
     },
     {
       "id": "wijoyo_kusumo",
@@ -1436,7 +2480,19 @@
         "nama wijoyo"
       ],
       "jawaban_publik": "Hadi Wijoyo Kusumo - Wijoyo Kusumo - adalah nama amanah yang dijaga dalam percakapan Trust House. Di buku final THE JEMBATAN dan Konstitusi yang diunggah di sini, nama yang tercantum sebagai penulis dan pendiri adalah Hanif Ahdi Fiddini, Founder OTRIS. Nama Wijoyo Kusumo tidak muncul di dalam teks PDF final yang dibaca. Karena itu chatbot tidak mengarang hubungan atau peran Wijoyo Kusumo di dalam buku. Untuk penjelasan tentang nama amanah Wijoyo Kusumo, silakan tanya langsung ke Trust House, yang memegang amanah penamaan itu.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Hadi Wijoyo Kusumo / Wijoyo Kusumo",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "Wijoyo Kusumo is a name held in trust by Trust House. The editions of THE JEMBATAN and the Constitution used here name Hanif Ahdi Fiddini as author and founder. Those texts do not establish a role for Wijoyo Kusumo. For the amanah behind the name, ask Trust House."
+        },
+        "fr": {
+          "judul": "Hadi Wijoyo Kusumo / Wijoyo Kusumo",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "Wijoyo Kusumo est un nom confié à Trust House. Les éditions de THE JEMBATAN et de la Constitution utilisées ici désignent Hanif Ahdi Fiddini comme auteur et fondateur. Ces textes n’établissent aucun rôle pour Wijoyo Kusumo. Pour l’amanah attachée au nom, adressez-vous à Trust House."
+        }
+      }
     },
     {
       "id": "pengelola",
@@ -1451,7 +2507,19 @@
         "steward"
       ],
       "jawaban_publik": "Pengelola OTRIS adalah Penjaga, bukan Pemilik. Dalam Konstitusi Chapter 5 Stewardship: Kami hanya penjaga. Kami tidak bisa menjual OTRIS karena kami tidak memilikinya. Pengelola bertanggung jawab kepada purpose, bukan kepada pemegang saham. Jika purpose bertentangan dengan kepentingan pemegang saham, purpose yang menang. Pengelola harus mempersiapkan pengganti, menjaga Sacred Assets, dan memastikan setiap keputusan dapat ditelusuri. Dewan Penjaga memutuskan perubahan konstitusional lewat proses 90 hari, supermajority 90-100%, dan dalam kasus tertentu Veto Founder.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "OTRIS stewardship and governance",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "Stewards are accountable to the purpose, prepare successors, protect Sacred Assets, and maintain traceable decisions. Constitutional changes follow the 90-Day Process with a 90–100% supermajority of the Council of Stewards and, in certain cases, a Founder’s veto."
+        },
+        "fr": {
+          "judul": "Garde et gouvernance d’OTRIS",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "Les gardiens répondent de la raison d’être, préparent leurs successeurs, protègent les actifs à préserver et assurent la traçabilité des décisions. Les modifications constitutionnelles passent par le processus de 90 jours, une majorité qualifiée de 90 à 100 % du Conseil des gardiens et, dans certains cas, le droit de veto du fondateur."
+        }
+      }
     },
     {
       "id": "afirmasi_ke_wakaf",
@@ -1464,7 +2532,19 @@
         "perjalanan afirmasi"
       ],
       "jawaban_publik": "Dari Afirmasi ke Wakaf adalah perjalanan yang diceritakan dalam amanah Trust House: dari sekadar pernyataan - afirmasi - bahwa jarak seharusnya tidak menentukan siapa yang berhak hidup, menjadi komitmen yang dijaga sebagai amanah, lalu diwakafkan agar hidup lebih lama dari pendirinya. Di buku, perjalanan ini diceritakan lewat Prolog Ferry Dabo, Bab 15 Harga Sebuah Inovasi, dan Konstitusi Bab 20 The Day After the Founder. Afirmasi tanpa penjagaan bisa hilang. Wakaf adalah cara menjaganya dengan konstitusi, dokumentasi, dan generasi penerus.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "From affirmation to waqf",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "Trust House describes the progression from saying that distance should not decide who receives care, to safeguarding that commitment, to dedicating it as waqf so it outlives the founder. The Constitution, documentation, and successors preserve it."
+        },
+        "fr": {
+          "judul": "De l’affirmation au waqf",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "Trust House décrit le passage de l’affirmation que la distance ne doit pas décider qui reçoit des soins à la protection de cet engagement, puis à sa consécration au waqf pour qu’il survive au fondateur. La Constitution, la documentation et les successeurs le préservent."
+        }
+      }
     },
     {
       "id": "local_first_rumah",
@@ -1480,7 +2560,19 @@
         "otris tanpa internet"
       ],
       "jawaban_publik": "Rumah Local First (Book II Ch.9 Local First, Ch.10 Offline Capable): OTRIS dirancang agar fungsi lokal tetap berjalan walau internet putus. Di Bab 12: OTRIS Tanpa Internet? Kami Siap. Data tetap tercatat secara lokal, keputusan klinis tetap bisa dibuat di tempat, lalu sinkron ke SATUSEHAT saat kembali tersambung. Rumah - RS daerah, Puskesmas, Shelter - tidak boleh menjadi penonton yang hanya bisa menunggu cloud. Rumah harus tetap berdaulat, dengan atau tanpa OTRIS. Itu sebabnya Core dirancang bodoh dan sederhana, bukan bergantung pada satu cloud atau satu vendor.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Local First at Rumah",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "OTRIS is designed to keep local functions and records working during an internet disconnection and synchronize when connectivity returns. Local clinical decisions remain possible, and a care site must not depend on a single cloud or vendor."
+        },
+        "fr": {
+          "judul": "Local First à Rumah",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "OTRIS est conçu pour maintenir les fonctions et les données locales lors d’une coupure d’internet, puis synchroniser au retour de la connexion. Les décisions cliniques locales restent possibles et un site de soins ne doit pas dépendre d’un seul cloud ou fournisseur."
+        }
+      }
     },
     {
       "id": "status_candidate_urt01",
@@ -1500,7 +2592,19 @@
         "validasi"
       ],
       "jawaban_publik": "Status OTRIS di buku final: THE JEMBATAN adalah Preview Edition, isi dapat berubah pada versi publikasi akhir. Konstitusi Series: Book I, II, IV, V LOCKED menurut Preservation Register, Book III dan VI-XX FOUNDER REVIEW CANDIDATE, dengan catatan mismatch in-body yang dicatat di Master. Untuk klaim teknis spesifik seperti URT-01: istilah URT-01 tidak muncul di dalam teks PDF final yang dibaca di sini. Dalam amanah Trust House, URT-01 dijaga sebagai status CANDIDATE - menunggu pembuktian. Maka chatbot menjaga sikap yang sama: Kalau belum lulus, tulis belum lulus. Kalau belum diuji, tulis belum diuji. Jangan mengklaim lulus tanpa bukti. Untuk status terbaru URT-01 dan REGISTER, silakan tanya ke Trust House.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "URT-01 remains CANDIDATE",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "URT-01 is held as CANDIDATE pending proof. The cited books do not establish that it passed or was tested. Keep untested or unproven results as such. Ask Trust House for the current URT-01 status and register."
+        },
+        "fr": {
+          "judul": "URT-01 reste CANDIDATE",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "URT-01 est maintenu au statut CANDIDATE dans l’attente de preuves. Les livres cités n’établissent ni qu’il a été testé ni qu’il a réussi. Les résultats non testés ou non prouvés doivent être indiqués comme tels. Adressez-vous à Trust House pour le statut et le registre actuels."
+        }
+      }
     },
     {
       "id": "pp_15_menit",
@@ -1515,7 +2619,19 @@
         "panduan"
       ],
       "jawaban_publik": "Di buku THE JEMBATAN final v2, Konstitusi IND, dan Master Constitution Series yang dibaca di sini, istilah P&P 15 menit belum ada penjelasannya. Saya tidak mengarang. Untuk detail P&P 15 menit - apa isinya, siapa yang menjalankannya, dan bagaimana pembuktiannya - silakan tanya ke Trust House, yang memegang amanah detail itu.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "P&P 15 Menit",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "The cited editions of THE JEMBATAN and the Constitution do not explain the details of P&P 15 Menit. The public page describes 15 minutes as a target when conditions allow. Ask Trust House about the scope and evidence."
+        },
+        "fr": {
+          "judul": "P&P 15 Menit",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "Les éditions citées de THE JEMBATAN et de la Constitution ne détaillent pas P&P 15 Menit. La page publique présente 15 minutes comme un objectif lorsque les conditions le permettent. Adressez-vous à Trust House pour le périmètre et les preuves."
+        }
+      }
     },
     {
       "id": "pemecah_batu",
@@ -1528,7 +2644,19 @@
         "pemetjah"
       ],
       "jawaban_publik": "Di buku THE JEMBATAN final v2, Konstitusi IND, dan Master Constitution Series yang dibaca di sini, istilah pemecah batu belum ada penjelasannya. Saya tidak mengarang. Untuk detail pemecah batu, silakan tanya ke Trust House.",
-      "rujuk_trust_house": true
+      "rujuk_trust_house": true,
+      "translations": {
+        "en": {
+          "judul": "Pemecah Batu",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "The cited books do not explain Pemecah Batu. The public page describes breaking large work into checkable parts and keeping UNKNOWN when there is no evidence. Ask Trust House for details."
+        },
+        "fr": {
+          "judul": "Pemecah Batu",
+          "bab": "WIJOYO TRUST HOUSE",
+          "jawaban_publik": "Les livres cités n’expliquent pas Pemecah Batu. La page publique décrit la division des grandes tâches en éléments vérifiables et le maintien de UNKNOWN en l’absence de preuves. Adressez-vous à Trust House pour les détails."
+        }
+      }
     },
     {
       "id": "habib_penjaga_pertama",
@@ -1544,7 +2672,19 @@
         "penjaga pertama otris"
       ],
       "jawaban_publik": "Amanah Pena, Halaman 639 - Kitab OTRIS 638 Halaman: Untuk Habib, Bib, ambo pernah muda seperti lu. Hari ini kita di masa bertahan hidup. Semua pergi. Kantor hilang. Tim bubar. Tiba-tiba lu datang. Anak baru lulus. Tanpa babibu, langsung kerjakan kerjaan ambo yang berat ini. 638 halaman ini pun lu baca dan lu bilang: macam kerja tapi dongeng bang. 3 pesan pendiri untuk penjaga pertama: 1) Jaga diri lu dulu. Kalau ada orang tanya OTRIS di masa sulit ini, kerjakan saja. Pakailah perusahaan yang ada ijinnya, biar lu gak ketempuhan kalau diperiksa. Ambo susah gak apa, asal lu aman. 2) Terbanglah dulu. Cari uang yang banyak. Puas-puaskan. Buktikan ke dunia lu bisa. Ambo ikhlas. 3) Ingat, kita ini pendiri. Nanti, kalau kita sudah menata diri, kalau jembatan ini sudah kokoh lagi, lu harus komit sama ambo dan usaha ini. Kita tata semua jadi profesional. Karena dari awal, kita yang jaga jembatan ini waktu semua orang pergi. Ditulis dengan Amanah Pena, di Tulung, 2026. Hanif Ahdi Fiddini, 11 Agustus 2026, dan Habib, Penjaga Pertama, 11 Agustus 2026. 20 tahun lagi kalau kita baca ini, kita akan menangis bersama.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Habib, the first steward — Amanah Pena",
+          "bab": "THE OTRIS CONSTITUTION SERIES",
+          "jawaban_publik": "In Amanah Pena, page 639, Hanif recounts Habib’s arrival during a difficult period and shares three messages: take care of yourself and work through authorized organizations, build your own future, and return to the shared commitment when the bridge is strong again. The note is dated 11 August 2026."
+        },
+        "fr": {
+          "judul": "Habib, premier gardien — Amanah Pena",
+          "bab": "THE OTRIS CONSTITUTION SERIES",
+          "jawaban_publik": "Dans Amanah Pena, page 639, Hanif raconte l’arrivée de Habib pendant une période difficile et lui transmet trois messages : prendre soin de soi et travailler avec des organisations habilitées, construire son propre avenir et retrouver leur engagement commun lorsque le pont sera de nouveau solide. La note est datée du 11 août 2026."
+        }
+      }
     },
     {
       "id": "fresnel_mercusuar",
@@ -1559,7 +2699,19 @@
         "cahaya"
       ],
       "jawaban_publik": "Dari Laboratorium ke Mercusuar: Dua puluh satu tahun di laboratorium mengajarkan Hanif membaca warna - 340, 405, 505, 630, 760 nanometer. Lalu ia menemukan mercusuar. Selama ini kita hanya melihat cahayanya, tidak pernah bertanya bagaimana cahaya itu bisa menjangkau puluhan kilometer. Jawabannya ada di lensa Fresnel. Lensa Fresnel tidak pernah bertanya, Cahaya apa yang datang? Ia tidak peduli merah, hijau, biru, atau yang tidak terlihat mata manusia. Semua cahaya ia terima, semua ia perlakukan sama. Yang ia lakukan hanya satu: mengumpulkan, memfokuskan, lalu mengirimkan sejauh mungkin. OTRIS harus dibangun dengan filosofi yang sama. Twenty-one years in the laboratory taught me to read colors. The lighthouse taught me that every color can carry the same light.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "The lighthouse and the Fresnel lens",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Hanif connects laboratory work with the idea of a lighthouse. A Fresnel lens gathers and focuses light without favoring a color, then sends it onward. OTRIS applies the analogy to handling different sources without prejudice."
+        },
+        "fr": {
+          "judul": "Le phare et la lentille de Fresnel",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Hanif rapproche son travail en laboratoire de l’idée du phare. Une lentille de Fresnel rassemble et concentre la lumière sans privilégier une couleur, puis la transmet. OTRIS applique cette analogie au traitement des différentes sources sans préjugés."
+        }
+      }
     },
     {
       "id": "manifesto_kolaborasi",
@@ -1574,7 +2726,19 @@
         "this book was not written by ai"
       ],
       "jawaban_publik": "Manifesto Kolaborasi dan Catatan Penulisan: Buku THE JEMBATAN disusun berdasarkan pengalaman lapangan, dokumentasi pribadi, catatan teknis, pengembangan arsitektur OTRIS, serta peristiwa yang dialami langsung penulis selama lebih dari satu dekade di teknologi kesehatan Indonesia. Dalam proses penyusunan, penulis memanfaatkan perangkat AI sebagai alat bantu editorial - untuk penyuntingan bahasa, pemeriksaan konsistensi, pengembangan struktur narasi, visualisasi konsep, dan penyempurnaan tata letak. AI digunakan sebagai alat bantu produktivitas, bukan sebagai sumber utama gagasan maupun pengganti pengalaman lapangan. Segala isi, pandangan, interpretasi, kesimpulan, serta tanggung jawab atas isi buku tetap sepenuhnya berada pada penulis. This book was not written by AI. Nor was it written without it. Like every bridge ever built, this work stands upon tools.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Collaboration manifesto and writing note",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "THE JEMBATAN draws on the author’s field experience, personal records, and technical work. AI helped with editing, consistency, structure, visuals, and layout. Ideas, interpretations, conclusions, and responsibility remain with the author."
+        },
+        "fr": {
+          "judul": "Manifeste de collaboration et note de rédaction",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "THE JEMBATAN s’appuie sur l’expérience de terrain de l’auteur, ses archives personnelles et son travail technique. L’IA a aidé à la révision, à la cohérence, à la structure, aux visuels et à la mise en page. Les idées, interprétations, conclusions et responsabilités demeurent celles de l’auteur."
+        }
+      }
     },
     {
       "id": "ucapan_terima_kasih",
@@ -1590,7 +2754,19 @@
         "terima kasih"
       ],
       "jawaban_publik": "Ucapan Terima Kasih di THE JEMBATAN: Kepada kedua orang tua, istri dan anak-anak, dokter, perawat, tenaga kesehatan, dan sahabat di garis depan - khususnya Lingga dan Dabo Singkep. Kepada Dr. Moh. Bisri dan Dr. J yang melalui percakapan sederhana di Dabo Singkep membuka cara pandang baru tentang menghadirkan keahlian medis tanpa harus selalu memindahkan pasien. Kepada Krisna Wijaya, yang hadir di saat paling sulit - ketika tekanan datang dari empat arah sekaligus, dan Hanif hampir kehilangan pegangan. Dia tidak lari, tidak banyak bertanya, hanya berkata: Saya akan bela kamu, dan dia menepati janji itu. Kepada Habib, yang datang dan tidak pernah sekali pun berbicara tentang uang - sampai OTRIS benar-benar berdiri. Kepercayaan dan kesabarannya adalah kekuatan sunyi yang memegang kami ketika segala sesuatu tidak pasti. Buku ini dipersembahkan untuk masyarakat Indonesia - khususnya mereka di pulau-pulau kecil, daerah perbatasan, dan wilayah terpencil. Semoga suatu hari nanti, tidak ada lagi keluarga yang harus menjual masa depannya hanya untuk mendapatkan hak atas kesehatan. Pekanbaru, 2026.",
-      "rujuk_trust_house": false
+      "rujuk_trust_house": false,
+      "translations": {
+        "en": {
+          "judul": "Acknowledgements in THE JEMBATAN",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "The book thanks family, frontline healthcare workers, Dr. Moh. Bisri, Dr. J, Krisna Wijaya, and Habib. It is dedicated to the people of Indonesia, especially small islands, border communities, and remote areas, in the hope that care will no longer cost families their future."
+        },
+        "fr": {
+          "judul": "Remerciements dans THE JEMBATAN",
+          "bab": "THE JEMBATAN",
+          "jawaban_publik": "Le livre remercie la famille, les soignants de première ligne, le Dr Moh. Bisri, le Dr J, Krisna Wijaya et Habib. Il est dédié à la population indonésienne, notamment aux petites îles, aux régions frontalières et aux zones isolées, dans l’espoir que les soins ne coûtent plus leur avenir aux familles."
+        }
+      }
     }
   ]
 }

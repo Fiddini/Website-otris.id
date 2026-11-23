@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     toggle.hidden = false;
     toggle.addEventListener('click', () => setMenuOpen(toggle.getAttribute('aria-expanded') === 'false'));
-    window.matchMedia('(max-width: 820px)').addEventListener('change', () => setMenuOpen(false));
+    window.matchMedia('(max-width: 1100px)').addEventListener('change', () => setMenuOpen(false));
 
     document.addEventListener('click', event => {
       if (!header.contains(event.target)) {

@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ABOUT — OTRIS</title>
+<title data-i18n="about-otris">TENTANG — OTRIS</title>
 <link rel="stylesheet" href="css/style.css"/>
 <!-- fix-seo-otris -->
-<meta name="description" content="OTRIS - Jembatan Teknologi untuk Nyawa. Murah bukan murahan. Integrasi perangkat medis tanpa ganti alat. Dari OTRIS untuk Wakaf - Ilmu tidak dijual, System tidak dijual.">
+<meta name="description" content="OTRIS - Jembatan Teknologi untuk Nyawa. Murah bukan murahan. Integrasi perangkat medis tanpa ganti alat. Dari OTRIS untuk Wakaf - Ilmu tidak dijual, System tidak dijual." data-i18n-content="otris-jembatan-teknologi-untuk-nyawa">
 <meta name="keywords" content="OTRIS, otris.id, Pemecah Batu, Wijoyo Trust House, Wakaf Rumah, integrasi rumah sakit, SATUSEHAT, FHIR, Plug Play 15 menit">
 <meta property="og:title" content="ABOUT — OTRIS">
 <meta property="og:description" content="ICU adalah pintu masuk. Manusia adalah tujuannya. Murah bukan murahan.">
@@ -19,74 +19,80 @@
   <div class="container nav">
     <a class="logo" href="index.html">
       <img src="assets/logo.png" alt="" width="64" height="64">
-      <span>OTRIS<small>OTRIS.ID • OFFICIAL</small></span>
+      <span><span data-i18n="otris">OTRIS</span><small data-i18n="otris-id-official">OTRIS.ID • RESMI</small></span>
     </a>
     <button class="nav-toggle" type="button" aria-controls="navigasi-utama" aria-expanded="false" hidden>
       <span class="nav-toggle-icon" aria-hidden="true"></span>
-      Menu
+      <span data-i18n="nav.menu">Menu</span>
     </button>
-    <nav id="navigasi-utama" class="main" aria-label="Navigasi utama">
-      <a href="index.html">BERANDA</a>
-      <a href="about.html" aria-current="page">TENTANG</a>
-      <a href="hardware.html">HARDWARE</a>
+    <nav id="navigasi-utama" class="main" aria-label="Navigasi utama" data-i18n-aria-label="nav.main">
+      <a href="index.html" data-i18n="beranda">BERANDA</a>
+      <a href="about.html" aria-current="page" data-i18n="tentang">TENTANG</a>
+      <a href="hardware.html" data-i18n="hardware">PERANGKAT KERAS</a>
       <details class="nav-group" name="navigasi">
-        <summary>TEKNOLOGI</summary>
+        <summary data-i18n="teknologi">TEKNOLOGI</summary>
         <div class="nav-dropdown">
-          <a href="healthcare.html">LAYANAN KESEHATAN</a>
-          <a href="ai-gateway.html">AI GATEWAY</a>
-          <a href="plug-play.html">PLUG &amp; PLAY</a>
-          <a href="hl7.html">HL7</a>
-          <a href="otris-core.html">OTRIS CORE</a>
+          <a href="healthcare.html" data-i18n="layanan-kesehatan">LAYANAN KESEHATAN</a>
+          <a href="ai-gateway.html" data-i18n="ai-gateway">AI GATEWAY</a>
+          <a href="plug-play.html" data-i18n="plug-play">PLUG &amp; PLAY</a>
+          <a href="hl7.html" data-i18n="nav.hl7">HL7</a>
+          <a href="otris-core.html" data-i18n="otris-core">OTRIS CORE</a>
         </div>
       </details>
       <details class="nav-group" name="navigasi">
-        <summary>WIJOYO</summary>
+        <summary data-i18n="wijoyo">WIJOYO</summary>
         <div class="nav-dropdown">
-          <a href="wijoyo-kusumo.html">WIJOYO KUSUMO</a>
-          <a href="wakaf.html">WAKAF</a>
-          <a href="trust-house.html">TRUST HOUSE</a>
-          <a href="pemecah-batu.html">PEMECAH BATU</a>
+          <a href="wijoyo-kusumo.html" data-i18n="wijoyo-kusumo">WIJOYO KUSUMO</a>
+          <a href="wakaf.html" data-i18n="wakaf">WAKAF</a>
+          <a href="trust-house.html" data-i18n="trust-house">TRUST HOUSE</a>
+          <a href="pemecah-batu.html" data-i18n="pemecah-batu">PEMECAH BATU</a>
         </div>
       </details>
-      <a href="contact.html">KONTAK</a>
+      <a href="contact.html" data-i18n="kontak">KONTAK</a>
     </nav>
+      <div class="language-switch" role="group" aria-label="Bahasa situs" data-i18n-aria-label="site.language">
+        <button type="button" data-language="en" data-i18n="site.codeEn" aria-pressed="false">EN</button>
+        <button type="button" data-language="id" data-i18n="site.codeId" aria-pressed="true">ID</button>
+        <button type="button" data-language="fr" data-i18n="site.codeFr" aria-pressed="false">FR</button>
+      </div>
   </div>
 </header>
 
 <main class="container">
   <!-- ABOUT -->
   <section class="section" id="about">
-    <p class="kicker" style="color:#0b4fa7">ABOUT OTRIS • OTRIS HUMANIS</p>
-    <h1>ABOUT OTRIS</h1>
-    <p style="max-width:75ch"><b>Kami tidak memulai dari keinginan membuat perangkat baru. Kami memulai dari sebuah pertanyaan: mengapa jarak, keterbatasan infrastruktur, dan perbedaan teknologi harus menentukan siapa yang dapat memperoleh akses terhadap keahlian medis?</b></p>
-    <p style="max-width:75ch;color:#475569">OTRIS — Operating Theatre Real-Time Integration Systems — dibangun sebagai jembatan. Antara perangkat yang sudah dimiliki rumah sakit dengan sistem digital. Antara data dengan manusia yang membutuhkannya. Antara rumah sakit dengan tenaga ahli.</p>
-    <p><b>Murah, bukan murahan.</b> Keterjangkauan tidak boleh diperoleh dengan mengurangi prinsip, menghilangkan pembuktian, atau menurunkan tanggung jawab.</p>
-    <p><b>Teknologi yang dimulai dari manusia.</b> ICU, operating theatre, patient monitor, Edge Agent, protokol, data, dashboard — semuanya alat. <b>Manusia adalah tujuannya.</b></p>
-    <p style="max-width:75ch;color:#475569">Kami mempertahankan <b>UNKNOWN</b> ketika evidence belum cukup. Kami tidak ingin sistem mengatakan sesuatu hanya karena sebuah kode memungkinkan sistem mengatakannya. Pertanyaan kami: <b>“Tunjukkan kepada saya mengapa sistem berhak mengatakan itu.”</b></p>
-    <p><b>Hanif Ahdi Fiddini</b><br/>Founder — OTRIS &amp; P&amp;P</p>
+    <p class="kicker" style="color:#0b4fa7" data-i18n="about-otris-otris-humanis">TENTANG OTRIS • OTRIS HUMANIS</p>
+    <h1 data-i18n="about-otris-2">TENTANG OTRIS</h1>
+    <p style="max-width:75ch"><b data-i18n="kami-tidak-memulai-dari-keinginan">Kami tidak memulai dari keinginan membuat perangkat baru. Kami memulai dari sebuah pertanyaan: mengapa jarak, keterbatasan infrastruktur, dan perbedaan teknologi harus menentukan siapa yang dapat memperoleh akses terhadap keahlian medis?</b></p>
+    <p style="max-width:75ch;color:#475569" data-i18n="otris-operating-theatre-real-time">OTRIS — Operating Theatre Real-Time Integration Systems — dibangun sebagai jembatan. Antara perangkat yang sudah dimiliki rumah sakit dengan sistem digital. Antara data dengan manusia yang membutuhkannya. Antara rumah sakit dengan tenaga ahli.</p>
+    <p><b data-i18n="murah-bukan-murahan">Murah, bukan murahan.</b> <span data-i18n="keterjangkauan-tidak-boleh-diperoleh-dengan">Keterjangkauan tidak boleh diperoleh dengan mengurangi prinsip, menghilangkan pembuktian, atau menurunkan tanggung jawab.</span></p>
+    <p><b data-i18n="teknologi-yang-dimulai-dari-manusia">Teknologi yang dimulai dari manusia.</b> <span data-i18n="icu-operating-theatre-patient-monitor">ICU, operating theatre, patient monitor, Edge Agent, protokol, data, dashboard — semuanya alat.</span> <b data-i18n="home.headlinePurpose">Manusia adalah tujuannya.</b></p>
+    <p style="max-width:75ch;color:#475569"><span data-i18n="kami-mempertahankan">Kami mempertahankan</span> <b data-i18n="unknown">UNKNOWN</b> <span data-i18n="ketika-evidence-belum-cukup-kami">ketika evidence belum cukup. Kami tidak ingin sistem mengatakan sesuatu hanya karena sebuah kode memungkinkan sistem mengatakannya. Pertanyaan kami:</span> <b data-i18n="tunjukkan-kepada-saya-mengapa-sistem">“Tunjukkan kepada saya mengapa sistem berhak mengatakan itu.”</b></p>
+    <p><b data-i18n="hanif-ahdi-fiddini">Hanif Ahdi Fiddini</b><br/><span data-i18n="founder-otris-p-p">Pendiri — OTRIS &amp; P&amp;P</span></p>
   </section>
 
   <!-- CONSTITUTION -->
   <section class="section">
-    <p class="kicker" style="color:#0b4fa7">THE OTRIS CONSTITUTION</p>
-    <h2>TEKNOLOGI BOLEH BERUBAH.<br/>ARAHNYA TIDAK BOLEH HILANG.</h2>
-    <p style="font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.08em">INTEGRATION OVER REPLACEMENT • VENDOR AGNOSTIC • CANONICAL FIRST • GATEWAY FIRST • EVENT DRIVEN • LOCAL FIRST • AUDIT FIRST</p>
-    <p style="max-width:75ch;color:#475569"><b>Constitution menjaga identitas OTRIS ketika teknologi berubah.</b> Arsitektur tidak boleh menjadi tawanan satu vendor. Gateway menerjemahkan, Core memproses. Data Path dan Execution Path dipisahkan. Fungsi lokal tidak boleh mati hanya karena cloud tidak tersedia.</p>
-    <a class="btn btn-dark" href="#about">BACA THE OTRIS CONSTITUTION →</a>
-    <p style="margin-top:12px">“Jagalah jembatan ini.”</p>
+    <p class="kicker" style="color:#0b4fa7" data-i18n="the-otris-constitution">KONSTITUSI OTRIS</p>
+    <h2><span data-i18n="teknologi-boleh-berubah">TEKNOLOGI BOLEH BERUBAH.</span><br/><span data-i18n="arahnya-tidak-boleh-hilang">ARAHNYA TIDAK BOLEH HILANG.</span></h2>
+    <p style="font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.08em" data-i18n="integration-over-replacement-vendor-agnostic">UTAMAKAN INTEGRASI • BEBAS VENDOR • UTAMAKAN FORMAT KANONIK • UTAMAKAN GATEWAY • BERBASIS PERISTIWA • UTAMAKAN LOKAL • UTAMAKAN AUDIT</p>
+    <p style="max-width:75ch;color:#475569"><b data-i18n="constitution-menjaga-identitas-otris-ketika">Konstitusi menjaga identitas OTRIS ketika teknologi berubah.</b> <span data-i18n="arsitektur-tidak-boleh-menjadi-tawanan">Arsitektur tidak boleh menjadi tawanan satu vendor. Gateway menerjemahkan, Core memproses. Data Path dan Execution Path dipisahkan. Fungsi lokal tidak boleh mati hanya karena cloud tidak tersedia.</span></p>
+    <a class="btn btn-dark" href="#about" data-i18n="baca-the-otris-constitution">BACA KONSTITUSI OTRIS →</a>
+    <p style="margin-top:12px" data-i18n="jagalah-jembatan-ini">“Jagalah jembatan ini.”</p>
   </section>
 
   <!-- QC -->
   <section class="section dark">
-    <p class="kicker">QC RECORD • REFERENCE • VERIFICATION</p>
-    <h2>WE DON'T ASK FOR TRUST. WE SHOW THE RECORD.</h2>
-    <p>Constitution menetapkan prinsip. Engineering membangun mekanisme. QC meminta pembuktian. Governance menentukan authority. Edge menjalankannya. Continuous Integrity memeriksa apakah alasan untuk mempercayainya masih berlaku.</p>
-    <p><b>Reference, Verification &amp; Continuous Integrity.</b> Kepercayaan adalah sesuatu yang harus dapat diperiksa, diuji, dikoreksi, dan diperoleh kembali — bukan sekadar dinyatakan.</p>
-    <a class="btn btn-gold" href="#about">BUKA QC RECORD →</a>
+    <p class="kicker" data-i18n="qc-record-reference-verification">CATATAN QC • RUJUKAN • VERIFIKASI</p>
+    <h2 data-i18n="we-don-t-ask-for">KAMI TIDAK MEMINTA KEPERCAYAAN. KAMI MENUNJUKKAN CATATAN.</h2>
+    <p data-i18n="constitution-menetapkan-prinsip-engineering-membangun">Konstitusi menetapkan prinsip. Rekayasa membangun mekanisme. QC meminta pembuktian. Tata kelola menentukan wewenang. Edge menjalankannya. Integritas Berkelanjutan memeriksa apakah dasar kepercayaannya masih berlaku.</p>
+    <p><b data-i18n="reference-verification-continuous-integrity">Rujukan, Verifikasi, dan Integritas Berkelanjutan.</b> <span data-i18n="kepercayaan-adalah-sesuatu-yang-harus">Kepercayaan adalah sesuatu yang harus dapat diperiksa, diuji, dikoreksi, dan diperoleh kembali — bukan sekadar dinyatakan.</span></p>
+    <a class="btn btn-gold" href="#about" data-i18n="buka-qc-record">BUKA CATATAN QC →</a>
   </section>
 </main>
 
-<footer><div class="container">OTRIS — Jembatan Teknologi untuk Nyawa • ICU ADALAH PINTU MASUK. MANUSIA ADALAH TUJUANNYA. • © 2026 OTRIS / Hanif Ahdi Fiddini</div></footer>
+<footer><div class="container" data-i18n="site.footer">OTRIS — Jembatan Teknologi untuk Nyawa • ICU ADALAH PINTU MASUK. MANUSIA ADALAH TUJUANNYA. • © 2026 OTRIS / Hanif Ahdi Fiddini</div></footer>
+<script src="js/i18n.js" defer></script>
 <script src="js/script.js"></script>
 <script src="wijoyo-chat.js"></script>
 </body>

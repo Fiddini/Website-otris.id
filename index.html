@@ -1,73 +1,620 @@
 <!doctype html>
 <html lang="id">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>OTRIS.ID — OFFICIAL | ICU Adalah Pintu Masuk. Manusia Adalah Tujuannya.</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="OTRIS menjembatani alat medis yang sudah ada, data, dan manusia agar perawatan tetap terhubung dari ICU hingga rumah dan Posyandu." data-i18n-content="home.description">
+  <title data-i18n="home.title">OTRIS.ID — ICU adalah pintu masuk. Manusia adalah tujuannya.</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    :root {
+      color-scheme: light;
+      --cream: #fbf4e8;
+      --paper: #fffdf7;
+      --sand: #f0e4cf;
+      --ink: #172b3d;
+      --navy: #0a1f44;
+      --gold: #d9b64a;
+      --gold-soft: #f1dfa9;
+      --rust: #93432a;
+      --line: #d9cdb7;
+      --muted: #505d67;
+      --serif: Georgia, 'Times New Roman', serif;
+      --sans: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    html { scroll-padding-top: calc(var(--header-height, 70px) + 1rem); }
+    body { margin: 0; background: var(--cream); color: var(--ink); font: 1rem/1.65 var(--sans); }
+    img { max-width: 100%; }
+    a { color: inherit; }
+    button { font: inherit; }
+    :focus-visible { outline: 3px solid #1d6dac; outline-offset: 4px; }
+    ::selection { background: var(--gold-soft); color: var(--navy); }
+    h1, h2, h3, p, figure, blockquote { margin: 0; }
+    h1, h2, h3, blockquote { font-family: var(--serif); }
+    h2, h3 { color: var(--navy); }
+    h2 { font-size: clamp(2.25rem, 4.35vw, 4.15rem); line-height: 1.04; letter-spacing: -.042em; }
+    h3 { font-size: clamp(1.38rem, 2.4vw, 2rem); line-height: 1.15; letter-spacing: -.025em; }
+
+    .wrap { width: min(100% - 3.5rem, 77rem); margin-inline: auto; }
+    .section { padding-block: clamp(3.75rem, 7vw, 7rem); }
+    .paper { background: var(--paper); border-block: 1px solid var(--line); }
+    .label {
+      margin-bottom: .8rem;
+      color: var(--rust);
+      font-size: .875rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+    .copy { max-width: 62ch; }
+    .copy > p + p, .copy > :is(h2, h3) + p { margin-top: 1rem; }
+    .copy > p.label { margin-top: 0; }
+    .muted { color: var(--muted); }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin-top: 1.65rem; }
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: .65rem 1.15rem;
+      border: 1px solid var(--navy);
+      border-radius: .55rem;
+      background: var(--navy);
+      color: white;
+      font-weight: 750;
+      line-height: 1.35;
+      text-align: center;
+      text-decoration: none;
+    }
+    .button:hover { background: #234368; border-color: #234368; }
+    .button-light { background: transparent; color: var(--navy); }
+    .button-light:hover { background: var(--sand); border-color: var(--navy); }
+    .button-gold { background: var(--gold-soft); border-color: var(--gold-soft); color: var(--navy); }
+    .button-gold:hover { background: var(--gold); border-color: var(--gold); }
+    .text-link { font-weight: 750; text-underline-offset: .2em; }
+    .text-link:hover { text-decoration-thickness: 2px; }
+
+    .skip-link { position: absolute; left: 1rem; top: 0; transform: translateY(-160%); z-index: 70; }
+    .skip-link:focus { transform: translateY(.5rem); }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+    }
+    .header-inner { display: flex; min-height: 4.6rem; justify-content: space-between; align-items: center; gap: 1rem; }
+    .brand { display: inline-flex; min-height: 44px; gap: .65rem; align-items: center; color: var(--navy); text-decoration: none; }
+    .brand-mark {
+      display: grid;
+      width: 2.42rem;
+      height: 2.42rem;
+      place-items: center;
+      flex-shrink: 0;
+      background: var(--navy);
+      border-radius: 50%;
+      color: var(--gold-soft);
+      font: 700 1.45rem/1 var(--serif);
+    }
+    .brand-name { font: 700 1.75rem/1 var(--serif); letter-spacing: -.03em; }
+    .nav-toggle { display: none; }
+    .main { display: flex; align-items: center; gap: .2rem; }
+    .main :is(a, summary) {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      padding: .45rem .7rem;
+      border-radius: .4rem;
+      color: var(--navy);
+      font-size: .875rem;
+      font-weight: 750;
+      line-height: 1.3;
+      list-style: none;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .main summary { gap: .5rem; cursor: pointer; }
+    .main summary::-webkit-details-marker { display: none; }
+    .main summary::after {
+      content: "";
+      width: .45rem;
+      height: .45rem;
+      margin-top: -.2rem;
+      border: solid currentColor;
+      border-width: 0 1.5px 1.5px 0;
+      transform: rotate(45deg);
+    }
+    .main details[open] > summary::after { margin-top: .2rem; transform: rotate(225deg); }
+    .main :is(a, summary):hover { background: var(--sand); }
+    .main a[aria-current="page"] { background: var(--navy); color: white; }
+    .nav-group { position: relative; }
+    .nav-dropdown {
+      position: absolute;
+      top: calc(100% + .4rem);
+      right: 0;
+      min-width: 13rem;
+      padding: .4rem;
+      border: 1px solid var(--line);
+      border-radius: .65rem;
+      background: var(--paper);
+      box-shadow: 0 12px 30px #0a1f4422;
+    }
+
+    .hero { padding-block: clamp(2.5rem, 5.5vw, 5rem) 2rem; }
+    .hero-layout, .story-layout {
+      display: grid;
+      grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr);
+      align-items: center;
+      gap: clamp(1.75rem, 4.4vw, 4.5rem);
+    }
+    .hero h1 {
+      color: var(--navy);
+      font-size: clamp(3rem, 4.6vw, 4.75rem);
+      font-weight: 700;
+      letter-spacing: -.055em;
+      line-height: .99;
+      text-wrap: balance;
+    }
+    .hero h1 .hero-emphasis { display: block; margin-top: .12em; color: var(--rust); }
+    .hero-lead { max-width: 42ch; margin-top: 1.35rem; color: var(--muted); font-size: clamp(1.06rem, 1.45vw, 1.24rem); }
+    .hero .button { padding-inline: .9rem; }
+    .photo { overflow: hidden; border: 1px solid var(--line); border-radius: 1.05rem; background: var(--paper); }
+    .photo img { display: block; width: 100%; height: auto; }
+    .photo figcaption { padding: .75rem 1rem; color: var(--muted); font-size: .875rem; line-height: 1.45; }
+    .journey {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin: clamp(1.75rem, 3.4vw, 3rem) 0 0;
+      padding: 0;
+      border-block: 1px solid var(--line);
+      list-style: none;
+    }
+    .journey li + li { border-left: 1px solid var(--line); }
+    .journey a {
+      display: flex;
+      min-height: 3.4rem;
+      align-items: center;
+      justify-content: center;
+      padding: .5rem;
+      color: var(--navy);
+      font-size: .875rem;
+      font-weight: 750;
+      line-height: 1.4;
+      text-align: center;
+      text-decoration-color: #a27841;
+      text-underline-offset: .22em;
+    }
+
+    .intro-layout, .join-layout, .wakaf-layout {
+      display: grid;
+      grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+      align-items: start;
+      gap: clamp(1.5rem, 4vw, 4rem);
+    }
+    .intro-layout p + p, .trust-copy p + p { margin-top: .9rem; }
+    .story-grid { display: grid; gap: clamp(3rem, 6vw, 6rem); }
+    .story-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .edge-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      align-items: center;
+      gap: 1.5rem 3rem;
+      margin-top: clamp(3rem, 6vw, 5rem);
+      padding: clamp(1.5rem, 4vw, 3rem);
+      border: 1px solid var(--line);
+      border-radius: 1.05rem;
+      background: var(--paper);
+    }
+    .edge-panel h2 { font-size: clamp(1.9rem, 3.3vw, 2.8rem); }
+    .edge-panel .text-link { display: inline-block; margin-top: .85rem; }
+
+    .role-list { margin: 0; padding: 0; list-style: none; }
+    .role-list li { padding-block: 1rem; border-bottom: 1px solid var(--line); }
+    .role-list li:first-child { padding-top: 0; }
+    .role-list strong { color: var(--navy); }
+    .role-list p { color: var(--muted); }
+    .rules { background: var(--navy); color: var(--paper); }
+    .rules :is(h2, h3), .trust-panel :is(h2, h3) { color: inherit; }
+    .rules .label, .trust-panel .label { color: var(--gold-soft); }
+    .rules .copy h2 { max-width: 34ch; font-size: clamp(1.95rem, 3.8vw, 3.4rem); }
+    .rule-list { display: grid; max-width: 55rem; gap: .7rem; margin-top: 2rem; }
+    .rule-list details, .footer-menu { border: 1px solid #ffffff60; border-radius: .55rem; }
+    .rule-list summary, .footer-menu summary { min-height: 44px; padding: .7rem 1rem; font-weight: 750; cursor: pointer; }
+    .rule-list ul { margin: 0; padding: 0 1.2rem 1rem 2.2rem; }
+    .rule-list li + li { margin-top: .45rem; }
+
+    .trust-panel {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+      align-items: start;
+      gap: 1.75rem 3.5rem;
+      margin-top: 1.75rem;
+      padding: clamp(1.5rem, 4vw, 3.5rem);
+      background: var(--navy);
+      color: var(--paper);
+      border-radius: 1.05rem;
+    }
+    .trust-panel blockquote { color: var(--gold-soft); font-size: clamp(1.6rem, 3.4vw, 2.65rem); line-height: 1.16; }
+    .trust-panel blockquote + p { margin-top: 1rem; }
+    .trust-panel h3 { margin-bottom: .65rem; }
+    .trust-values { color: var(--muted); margin-top: 1rem; max-width: 65ch; }
+    .wakaf-layout > div:last-child p + p { margin-top: .85rem; }
+    .wakaf-layout ol { padding-left: 1.3rem; }
+    .wakaf-layout li + li { margin-top: .35rem; }
+    #terimaBtn { cursor: pointer; }
+    #terimaBtn:disabled { background: var(--sand); border-color: var(--line); color: var(--navy); cursor: default; }
+    #terimaMsg { margin-top: .75rem; color: var(--muted); }
+    .site-footer { padding-block: 2rem 5rem; background: var(--navy); color: var(--paper); }
+    .footer-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1rem 3rem; }
+    .footer-menu ul { display: flex; flex-wrap: wrap; gap: .45rem 1rem; margin: 0; padding: 0 1rem 1rem; list-style: none; }
+
+    #wijoyo-btn, #wijoyo-box { position: fixed; z-index: 45; right: max(1rem, env(safe-area-inset-right)); }
+    #wijoyo-btn {
+      bottom: max(1rem, env(safe-area-inset-bottom));
+      min-height: 44px;
+      padding: .55rem 1rem;
+      border: 1px solid var(--gold);
+      border-radius: 2rem;
+      background: var(--navy);
+      color: var(--gold-soft);
+      font-weight: 750;
+      cursor: pointer;
+      box-shadow: 0 6px 22px #0a1f4433;
+    }
+    #wijoyo-box {
+      bottom: calc(max(1rem, env(safe-area-inset-bottom)) + 3.45rem);
+      display: flex;
+      overflow: hidden;
+      flex-direction: column;
+      width: min(24rem, calc(100vw - 2rem));
+      height: 23rem;
+      max-height: calc(100dvh - var(--header-height, 70px) - max(1rem, env(safe-area-inset-bottom)) - 4rem);
+      border: 1px solid var(--line);
+      border-radius: .8rem;
+      background: var(--paper);
+      box-shadow: 0 12px 36px #0a1f4440;
+    }
+    .wijoyo-header { display: flex; align-items: center; justify-content: space-between; padding-inline: .85rem .4rem; background: var(--navy); }
+    .wijoyo-header h2 { color: white; font: 750 .9rem/1.35 var(--sans); letter-spacing: normal; }
+    #wijoyo-close { min-width: 44px; min-height: 44px; border: 0; background: transparent; color: white; font-size: 1.5rem; cursor: pointer; }
+    #wijoyo-msg { flex: 1; overflow: auto; padding: .7rem; font-size: .9rem; overflow-wrap: anywhere; }
+    .wijoyo-message { margin: 0 0 .5rem; padding: .6rem; border-radius: .45rem; background: var(--cream); }
+    .wijoyo-message.user { margin-left: 1.3rem; background: var(--navy); color: white; }
+    .wijoyo-message p { margin: .3rem 0; }
+    .wijoyo-message .ans-title { font-weight: 750; }
+    .wijoyo-message .ans-bab { color: var(--muted); }
+    .wijoyo-message .related { margin-top: .45rem; }
+    .wijoyo-message .chip { margin: .125rem; padding: .3rem .4rem; border: 1px solid var(--line); border-radius: .35rem; background: var(--paper); cursor: pointer; }
+    .wijoyo-form { display: flex; border-top: 1px solid var(--line); }
+    #wijoyo-input { flex: 1; min-width: 0; padding: .55rem .65rem; border: 0; color: var(--ink); background: white; }
+    #wijoyo-kirim { min-height: 44px; padding-inline: .9rem; border: 0; background: var(--gold-soft); color: var(--navy); font-weight: 750; cursor: pointer; }
+    #wijoyo-input:focus-visible, #wijoyo-kirim:focus-visible, #wijoyo-close:focus-visible { outline-offset: -3px; }
+
+    @media (max-width: 1100px) {
+      .nav-toggle:not([hidden]) { display: inline-flex; margin: 0; cursor: pointer; }
+      .nav-toggle[aria-expanded="false"]:not([hidden]) + .main { display: none; }
+      .main { flex-direction: column; align-items: stretch; }
+      .nav-toggle:not([hidden]) + .main {
+        position: absolute;
+        top: 100%;
+        inset-inline: 0;
+        max-height: calc(100dvh - var(--header-height, 70px) - 1rem);
+        overflow: auto;
+        padding: .7rem 1.25rem;
+        background: var(--paper);
+        border-bottom: 1px solid var(--line);
+        box-shadow: 0 10px 20px #0a1f4420;
+      }
+      .nav-dropdown { position: static; margin-left: .85rem; border: 0; background: var(--cream); box-shadow: none; }
+    }
+    @media (max-width: 960px) {
+      .hero-layout, .story-layout, .intro-layout, .join-layout, .edge-panel, .wakaf-layout, .trust-panel, .footer-layout { grid-template-columns: 1fr; }
+      .hero h1 { max-width: 15ch; text-wrap: initial; }
+      .hero-lead { max-width: 58ch; }
+      .story-layout figure { grid-row: 2; }
+    }
+    @media (max-width: 520px) {
+      .wrap { width: calc(100% - 2rem); }
+      .header-inner { min-height: 4rem; }
+      .hero h1 { font-size: clamp(2.3rem, 9.5vw, 3.1rem); }
+      .journey a { padding-inline: .25rem; }
+    }
+
+    .language-switch {
+      display: inline-flex;
+      align-items: center;
+      flex: 0 0 auto;
+      gap: 2px;
+      padding: 2px;
+      border: 1px solid var(--line, #e2e8f0);
+      border-radius: .55rem;
+      background: var(--paper);
+    }
+    .language-switch button {
+      min-width: 2rem;
+      min-height: 40px;
+      padding: 0 .25rem;
+      border: 0;
+      border-radius: .35rem;
+      background: transparent;
+      color: var(--navy);
+      font: 750 .8rem/1 system-ui, sans-serif;
+      cursor: pointer;
+    }
+    .language-switch button:hover { background: #f0e4cf; }
+    .language-switch button[aria-pressed="true"] { background: var(--navy); color: white; }
+    .language-switch button:focus-visible { outline: 2px solid #0b4fa7; outline-offset: 2px; }
+    @media (min-width: 1101px) {
+      .nav > .main { margin-inline-start: auto; }
+      .nav > .main :is(a, summary) { padding-inline: .58rem; }
+    }
+    @media (max-width: 1100px) {
+      .nav > .language-switch { margin-inline-start: auto; order: 1; }
+      .nav > .nav-toggle { order: 2; }
+      .nav > .main { order: 3; }
+    }
+    @media (max-width: 480px) {
+      .nav:has(.language-switch) { gap: .4rem; }
+      .nav:has(.language-switch) .nav-toggle:not([hidden]) { min-height: 44px; padding: .4rem .5rem; font-size: .875rem; }
+      .nav:has(.language-switch) .nav-toggle-icon { display: none; }
+      .nav:has(.language-switch) .logo { gap: .35rem; }
+      .nav:has(.language-switch) .logo small { display: none; }
+    }
+  </style>
 </head>
-<body class="home">
-<header>
-  <div class="container nav">
-    <a class="logo" href="index.html">
-      <img src="assets/logo.png" alt="" width="64" height="64">
-      <span>OTRIS<small>OTRIS.ID • OFFICIAL</small></span>
-    </a>
-    <button class="nav-toggle" type="button" aria-controls="navigasi-utama" aria-expanded="false" hidden>
-      <span class="nav-toggle-icon" aria-hidden="true"></span>
-      Menu
-    </button>
-    <nav id="navigasi-utama" class="main" aria-label="Navigasi utama">
-      <a href="index.html" aria-current="page">BERANDA</a>
-      <a href="about.html">TENTANG</a>
-      <a href="hardware.html">HARDWARE</a>
-      <details class="nav-group" name="navigasi">
-        <summary>TEKNOLOGI</summary>
-        <div class="nav-dropdown">
-          <a href="healthcare.html">LAYANAN KESEHATAN</a>
-          <a href="ai-gateway.html">AI GATEWAY</a>
-          <a href="plug-play.html">PLUG &amp; PLAY</a>
-          <a href="hl7.html">HL7</a>
-          <a href="otris-core.html">OTRIS CORE</a>
+<body>
+  <a class="skip-link button" href="#konten" data-i18n="ke-isi-utama">Ke isi utama</a>
+  <header class="site-header">
+    <div class="wrap header-inner nav">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true" data-i18n="o">O</span>
+        <span class="brand-name" data-i18n="otris">OTRIS</span>
+      </a>
+      <button class="nav-toggle button button-light" type="button" aria-controls="navigasi-utama" aria-expanded="false" hidden data-i18n="nav.menu">Menu</button>
+      <nav id="navigasi-utama" class="main" aria-label="Navigasi utama" data-i18n-aria-label="nav.main">
+        <a href="index.html" aria-current="page" data-i18n="nav.home">Beranda</a>
+        <a href="about.html" data-i18n="nav.about">Tentang</a>
+        <a href="hardware.html" data-i18n="nav.hardware">Perangkat Keras</a>
+        <details class="nav-group" name="navigasi">
+          <summary data-i18n="nav.technology">Teknologi</summary>
+          <div class="nav-dropdown">
+            <a href="healthcare.html" data-i18n="nav.healthcare">Layanan Kesehatan</a>
+            <a href="ai-gateway.html" data-i18n="nav.aiGateway">AI Gateway</a>
+            <a href="plug-play.html" data-i18n="nav.plugPlay">Plug &amp; Play</a>
+            <a href="hl7.html" data-i18n="nav.hl7">HL7</a>
+            <a href="otris-core.html" data-i18n="nav.core">OTRIS Core</a>
+          </div>
+        </details>
+        <details class="nav-group" name="navigasi">
+          <summary data-i18n="nav.wijoyo">Wijoyo</summary>
+          <div class="nav-dropdown">
+            <a href="wijoyo-kusumo.html" data-i18n="nav.wijoyoKusumo">Wijoyo Kusumo</a>
+            <a href="wakaf.html" data-i18n="nav.waqf">Wakaf</a>
+            <a href="trust-house.html" data-i18n="nav.trustHouse">Trust House</a>
+            <a href="pemecah-batu.html" data-i18n="nav.pemecahBatu">Pemecah Batu</a>
+          </div>
+        </details>
+        <a href="contact.html" data-i18n="nav.contact">Kontak</a>
+      </nav>
+      <div class="language-switch" role="group" aria-label="Bahasa situs" data-i18n-aria-label="site.language">
+        <button type="button" data-language="en" data-i18n="site.codeEn" aria-pressed="false">EN</button>
+        <button type="button" data-language="id" data-i18n="site.codeId" aria-pressed="true">ID</button>
+        <button type="button" data-language="fr" data-i18n="site.codeFr" aria-pressed="false">FR</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="konten">
+    <section id="home" class="hero wrap" aria-labelledby="judul-beranda">
+      <div class="hero-layout">
+        <div>
+          <p class="label" data-i18n="jembatan-teknologi-untuk-nyawa">Jembatan teknologi untuk nyawa</p>
+          <h1 id="judul-beranda"><span data-i18n="home.headlineEntrance">ICU adalah pintu masuk.</span> <span class="hero-emphasis" data-i18n="home.headlinePurpose">Manusia adalah tujuannya.</span></h1>
+          <p class="hero-lead" data-i18n="otris-menjembatani-alat-medis-yang">OTRIS menjembatani alat medis yang sudah ada, data, dan manusia agar pasien, keluarga, dan dokter tetap terhubung setelah pasien pulang dari ICU.</p>
+          <div class="actions">
+            <a class="button" href="#jembatan" data-i18n="lihat-jembatannya">Lihat jembatannya</a>
+            <a class="button button-light" href="#ikut-membangun" data-i18n="ikut-membangun">Ikut membangun</a>
+          </div>
         </div>
-      </details>
-      <details class="nav-group" name="navigasi">
-        <summary>WIJOYO</summary>
-        <div class="nav-dropdown">
-          <a href="wijoyo-kusumo.html">WIJOYO KUSUMO</a>
-          <a href="wakaf.html">WAKAF</a>
-          <a href="trust-house.html">TRUST HOUSE</a>
-          <a href="pemecah-batu.html">PEMECAH BATU</a>
-        </div>
-      </details>
-      <a href="contact.html">KONTAK</a>
-    </nav>
-  </div>
-</header>
-<main>
-  <div class="home-hero-wrap">
-    <section class="hero home-hero">
-      <p class="home-hero-kicker">OTRIS • MEDICAL SOVEREIGNTY • 2026</p>
-      <h1>ICU ADALAH<br> PINTU MASUK. <span>MANUSIA ADALAH<br> TUJUANNYA.</span></h1>
-      <p class="lead">Kami membangun jembatan teknologi kesehatan agar perangkat yang sudah ada, data, dan tenaga ahli dapat terhubung lebih dekat kepada pasien — tanpa menunggu semuanya diganti.</p>
-      <a class="btn btn-white" href="about.html">LIHAT JEMBATANNYA →</a>
-      <p class="home-hero-tagline">MURAH, BUKAN MURAHAN. • KAMI SEDANG MEMBANGUN JEMBATAN UNTUK NYAWA.</p>
+        <figure class="photo">
+          <img src="assets/otris-beranda-ruang-rawat.webp" width="1920" height="1280" fetchpriority="high" alt="Pasien lanjut usia didampingi keluarga dan perawat di ruang rawat. Seorang dokter terlihat di layar dan kotak hitam kecil berlampu hijau ada di meja samping." data-i18n-alt="pasien-lanjut-usia-didampingi-keluarga">
+          <figcaption data-i18n="ilustrasi-ruang-rawat-di-magetan">Ilustrasi ruang rawat di Magetan dengan dokter yang hadir dari Darmstadt melalui panggilan video.</figcaption>
+        </figure>
+      </div>
+      <ul class="journey" aria-label="Perjalanan perawatan" data-i18n-aria-label="perjalanan-perawatan">
+        <li><a href="#home" data-i18n="icu-pintu-masuk">ICU · Pintu masuk</a></li>
+        <li><a href="#pemulihan" data-i18n="rumah-pemulihan">Rumah · Pemulihan</a></li>
+        <li><a href="#healthcare" data-i18n="posyandu-kontrol">Posyandu · Kontrol</a></li>
+      </ul>
     </section>
-  </div>
-<section class="section"><h2>Jembatan, Bukan Pengganti</h2><p>OTRIS tidak mengganti alat yang sudah ada. OTRIS menjembatani alat, data, dan manusia. Core harus bodoh — tidak menebak data klinis.</p><div class="card"><p><b>THE JEMBATAN Final v2</b> — 262 hal, ISBN 978-634-243-979-1. <b>Konstitusi OTRIS</b> — Perubahan substansi hanya via Proses 90 hari.</p><a class="link-more" href="about.html">Lihat selengkapnya di ABOUT →</a></div></section>
-<section class="section"><h2>Teknologi OTRIS</h2><div class="grid3"><div class="card"><h3>HARDWARE</h3><p>ESP32, Black Box, Shelter 40 kaki.</p><a class="link-more" href="hardware.html">HARDWARE →</a></div><div class="card"><h3>HEALTHCARE</h3><p>ICU, MDT, Emergency.</p><a class="link-more" href="healthcare.html">HEALTHCARE →</a></div><div class="card"><h3>AI GATEWAY</h3><p>AI membantu, bukan mengambil alih.</p><a class="link-more" href="ai-gateway.html">AI GATEWAY →</a></div></div></section>
-<section class="section"><h2>WIJOYO TRUST HOUSE — Ringkas Saja</h2><p>LOCAL FIRST · AI POWERED · HUMAN OWNED.</p><div class="grid3"><div class="pillar"><h3>The Home of Ideas</h3><p>Semua orang boleh punya gagasan.</p></div><div class="pillar"><h3>The Power of AI</h3><p>AI membantu mewujudkan gagasan, bukan mengambil alih.</p></div><div class="pillar"><h3>The Freedom to Create</h3><p>Orang bebas membuat, mencoba, dan membagikan.</p></div></div><div class="two" style="margin-top:16px"><div class="box box-light"><p>“Rumah ini diwakafkan. Ilmu tidak dijual, yang dijual tenaga dan jasa.”</p><p><b>Wakaf Rumah — TERBIT.</b> Atas nama Hadi Wijoyo Kusumo. Pengelola Hanif Ahdi Fiddini. 20 Nov 2026. Trace: RUMAH-20261120-WAKAF-001.</p><a class="link-more" href="wakaf.html">Detail Wakaf →</a> <a class="link-more" href="trust-house.html">Detail Trust House →</a></div><div class="box box-dark"><h3 style="margin-top:0">PEMECAH BATU — Ringkas</h3><p>Satu Rumah, Dua Isi. STOP — REPORT — DO NOT AUTO-REPAIR — DO NOT FABRICATE.</p><a class="link-more" style="color:#e8c87a" href="pemecah-batu.html">Detail Pemecah Batu →</a></div></div><div class="card" style="margin-top:16px"><p><b>Ikrar Wijoyo:</b> “Saya mewakafkan pengetahuan OTRIS ini sebagai Wakaf Pengetahuan.” Detail lengkap di <a href="wakaf.html"><b>wakaf.html</b></a> dan <a href="trust-house.html"><b>trust-house.html</b></a>.</p><p><b>Status:</b> Website ini pengumuman wakaf, <b>bukan pengganti akta sah</b>.</p></div></section>
-<section class="section"><div class="dark-band"><h2 style="margin-top:0">Cara Terima Wakaf — Dari Homepage</h2><p>1 Download RUMAH-INSTALL.zip · 2 Unzip · 3 Jalanin sh INSTALL.sh · 4 Jalan di http://127.0.0.1:8080</p><p>Detail di <a href="wakaf.html" style="color:#e8c87a;font-weight:800">wakaf.html →</a></p><button class="btn" style="background:#d9b64a;border:none;cursor:pointer" id="terimaBtn" type="button">Saya Terima Wakaf Ini</button><p id="terimaMsg" style="display:none;margin-top:12px;background:#fff;color:#16211c;border-radius:12px;padding:12px;font-weight:700">Terima kasih — ambo sudah terima Wakaf Rumah ini. Trace: RUMAH-20261120-WAKAF-001 • 20 November 2026 • Atas nama Hadi Wijoyo Kusumo.</p></div></section>
-</main>
-<footer><div class="container">OTRIS — Jembatan Teknologi untuk Nyawa • ICU ADALAH PINTU MASUK. MANUSIA ADALAH TUJUANNYA. • © 2026 OTRIS / Hanif Ahdi Fiddini</div></footer>
-<script src="js/script.js"></script>
-<script src="wijoyo-chat.js"></script>
-<script>
-const terimaWakaf = document.getElementById('terimaBtn');
-terimaWakaf.addEventListener('click', () => {
-  document.getElementById('terimaMsg').style.display = 'block';
-  terimaWakaf.textContent = 'Sudah Diterima — Terima Kasih';
-});
-</script>
+
+    <section id="jembatan" class="section paper">
+      <div class="wrap intro-layout">
+        <div>
+          <p class="label" data-i18n="the-jembatan">The Jembatan</p>
+          <h2 data-i18n="alat-yang-ada-tetap-dipakai">Alat yang ada tetap dipakai.</h2>
+        </div>
+        <div class="copy">
+          <p data-i18n="monitor-dan-alat-medis-di">Monitor dan alat medis di ICU maupun di rumah tetap digunakan. Jalur datanya yang disambungkan agar informasi pasien sampai ke dokter dan keluarga yang mendampingi.</p>
+          <p><strong data-i18n="the-jembatan-final-v2">THE JEMBATAN Final v2</strong> <span data-i18n="262-halaman-isbn-978-634">· 262 halaman · ISBN 978-634-243-979-1</span><br><strong data-i18n="konstitusi-otris">Konstitusi OTRIS</strong> <span data-i18n="perubahan-substansi-melalui-proses-90">· Perubahan substansi melalui Proses 90 Hari.</span></p>
+          <a class="text-link" href="about.html" data-i18n="tentang-otris-dan-konstitusi">Tentang OTRIS dan Konstitusi</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" aria-label="Perawatan di rumah dan Posyandu" data-i18n-aria-label="perawatan-di-rumah-dan-posyandu">
+      <div class="story-grid">
+        <article id="pemulihan" class="story-layout">
+          <div class="copy">
+            <p class="label" data-i18n="perawatan-di-rumah">Perawatan di rumah</p>
+            <h2 data-i18n="tenang-itu-juga-teknologi">Tenang itu juga teknologi.</h2>
+            <p data-i18n="perawat-memeriksa-pasien-keluarga-menemani">Perawat memeriksa pasien. Keluarga menemani. Alat medis yang sudah dikenal tetap dipakai selama pemulihan di rumah.</p>
+          </div>
+          <figure class="photo">
+            <img src="assets/otris-beranda-perawatan-rumah.webp" width="1920" height="1280" loading="lazy" alt="Perawat memeriksa pasien lanjut usia di rumah, ditemani keluarga. Kotak hitam kecil berlampu hijau berada di rak di pojok ruangan." data-i18n-alt="perawat-memeriksa-pasien-lanjut-usia">
+            <figcaption data-i18n="ilustrasi-perawatan-di-rumah-keluarga">Ilustrasi perawatan di rumah. Keluarga memegang tangan pasien saat perawat memeriksanya.</figcaption>
+          </figure>
+        </article>
+        <article id="healthcare" class="story-layout">
+          <figure class="photo">
+            <img src="assets/otris-beranda-posyandu.webp" width="1920" height="1280" loading="lazy" alt="Dokter memeriksa pasien lanjut usia dengan stetoskop di Posyandu. Kotak hitam kecil berlampu hijau terlihat di meja di pojok ruangan." data-i18n-alt="dokter-memeriksa-pasien-lanjut-usia">
+            <figcaption data-i18n="ilustrasi-kontrol-di-posyandu-setelah">Ilustrasi kontrol di Posyandu setelah pasien pulang dari rumah sakit.</figcaption>
+          </figure>
+          <div class="copy">
+            <p class="label" data-i18n="kontrol-di-posyandu">Kontrol di Posyandu</p>
+            <h2 data-i18n="dokter-tidak-lagi-sendiri">Dokter tidak lagi sendiri.</h2>
+            <p data-i18n="dokter-memeriksa-pasien-dan-membuat">Dokter memeriksa pasien dan membuat keputusan klinis. OTRIS dirancang untuk menjaga jalur informasi agar dokter bisa berkoordinasi dengan orang yang ikut menangani pasien.</p>
+          </div>
+        </article>
+      </div>
+
+      <aside id="edge-agent" class="edge-panel" aria-labelledby="judul-edge">
+        <div>
+          <p class="label" data-i18n="otris-edge-agent">OTRIS Edge Agent</p>
+          <h2 id="judul-edge" data-i18n="kotak-hitam-kecil-di-pojok">Kotak hitam kecil di pojok.</h2>
+        </div>
+        <div id="hardware">
+          <p><span data-i18n="kotak-hitam-dengan-lampu-hijau">Kotak hitam dengan lampu hijau menggambarkan peran OTRIS di latar, menghubungkan alat medis yang sudah ada. Keputusan klinis tetap di tangan tenaga kesehatan.</span> <strong data-i18n="site.unknown">UNKNOWN tetap UNKNOWN.</strong></p>
+          <a class="text-link" href="hardware.html" data-i18n="lihat-gambaran-hardware">Lihat gambaran hardware</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="ikut-membangun" class="section paper">
+      <div class="wrap join-layout">
+        <div class="copy">
+          <h2 data-i18n="home.join">Mari Ikut Membangun Jembatan Ini.</h2>
+          <p data-i18n="dokter-perawat-teknisi-kepala-desa">Dokter, perawat, teknisi, kepala desa, dan keluarga pasien bisa ikut. Tujuannya agar jarak tidak menghalangi orang mendapat perawatan.</p>
+          <div class="actions"><a class="button" href="contact.html" data-i18n="saya-mau-ikut-membangun">Saya mau ikut membangun</a></div>
+        </div>
+        <ul class="role-list">
+          <li><strong data-i18n="dokter-dan-perawat">Dokter dan perawat</strong><p data-i18n="dampingi-pasien-yang-tinggal-jauh">Dampingi pasien yang tinggal jauh dan bantu jaga kesinambungan perawatannya.</p></li>
+          <li><strong data-i18n="desa-dan-rumah-sakit">Desa dan rumah sakit</strong><p data-i18n="sediakan-ruang-dan-bantu-pasien">Sediakan ruang dan bantu pasien, keluarga, dan tenaga kesehatan menggunakan jembatan ini.</p></li>
+          <li><strong data-i18n="keluarga-teknisi-dan-relawan">Keluarga, teknisi, dan relawan</strong><p data-i18n="bantu-dengan-tenaga-dan-jasa">Bantu dengan tenaga dan jasa. Ceritakan pengalamanmu agar jembatan ini bisa diperbaiki bersama.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="aturan-otris" class="section rules">
+      <div class="wrap">
+        <div class="copy">
+          <p class="label" data-i18n="aturan-tim-otris">Aturan tim OTRIS</p>
+          <h2 data-i18n="home.ruleFull">Jika tidak bisa membantu, tolong jangan merusak, kami memulai dari diri kami sendiri, dari apa yang kami bisa.</h2>
+          <p data-i18n="home.ruleContext">Kami mulai dengan satu pasien yang dibantu dan satu desa yang dijaga. Sebelum membantu, pastikan langkah kita menjaga apa yang sudah berjalan.</p>
+        </div>
+        <div class="rule-list">
+          <details>
+            <summary data-i18n="aturan-tim">Aturan tim</summary>
+            <ul>
+              <li data-i18n="utamakan-manusia-buat-teknologi-mudah">Utamakan manusia. Buat teknologi mudah dipakai dan jaga data pasien di tempat.</li>
+              <li data-i18n="core-tidak-menebak-data-klinis">Core tidak menebak data klinis. Jika ada masalah, STOP — REPORT — DO NOT AUTO-REPAIR — DO NOT FABRICATE.</li>
+              <li data-i18n="perubahan-substansi-konstitusi-melalui-proses">Perubahan substansi Konstitusi melalui Proses 90 Hari. Laporkan masalah dengan jujur.</li>
+            </ul>
+          </details>
+          <details>
+            <summary data-i18n="aturan-relasi-bisnis">Aturan relasi bisnis</summary>
+            <ul>
+              <li data-i18n="pertahankan-alat-yang-masih-dipakai">Pertahankan alat yang masih dipakai. Pasien bebas pindah dan data tetap milik pasien.</li>
+              <li data-i18n="jelaskan-biaya-di-awal-jaga">Jelaskan biaya di awal, jaga privasi pasien, dan hormati pengetahuan yang diwakafkan.</li>
+            </ul>
+          </details>
+          <details>
+            <summary data-i18n="aturan-pemakai-wakaf">Aturan pemakai wakaf</summary>
+            <ul>
+              <li data-i18n="gunakan-wakaf-untuk-menjaga-manusia">Gunakan wakaf untuk menjaga manusia. Jaga perangkat, data, dan privasi orang lain.</li>
+              <li data-i18n="jika-ada-kerusakan-hentikan-penggunaan">Jika ada kerusakan, hentikan penggunaan dan laporkan. Kembalikan perangkat jika sudah tidak digunakan.</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="trust-house" class="section wrap">
+      <h2 data-i18n="wijoyo-trust-house">Wijoyo Trust House</h2>
+      <p class="trust-values" data-i18n="local-first-ai-powered-human">Local First · AI Powered · Human Owned. Rumah bagi gagasan dan karya yang tetap berada di tangan manusia.</p>
+      <div class="trust-panel">
+        <div class="trust-copy">
+          <blockquote data-i18n="rumah-ini-diwakafkan-ilmu-tidak">“Rumah ini diwakafkan. Ilmu tidak dijual, yang dijual tenaga dan jasa.”</blockquote>
+          <p data-i18n="ikrar-wijoyo-saya-mewakafkan-pengetahuan">Ikrar Wijoyo: “Saya mewakafkan pengetahuan OTRIS ini sebagai Wakaf Pengetahuan.”</p>
+        </div>
+        <div class="trust-copy">
+          <h3 data-i18n="home.amanah">WIJOYO KUSUMO - PEMECAH BATU TANPA JETSON</h3>
+          <p data-i18n="wijoyo-kusumo-adalah-nama-dan">Wijoyo Kusumo adalah nama dan amanah di balik Pemecah Batu. Satu Rumah, Dua Isi. STOP — REPORT — DO NOT AUTO-REPAIR — DO NOT FABRICATE.</p>
+          <div class="actions">
+            <a class="button button-gold" href="pemecah-batu.html" data-i18n="baca-tentang-pemecah-batu">Baca tentang Pemecah Batu</a>
+            <a class="text-link" href="trust-house.html" data-i18n="buka-trust-house">Buka Trust House</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="wakaf" class="section paper">
+      <div class="wrap wakaf-layout">
+        <div>
+          <p class="label" data-i18n="wakaf-otris">Wakaf OTRIS</p>
+          <h2 data-i18n="cara-terima-wakaf-rumah">Cara terima Wakaf Rumah</h2>
+        </div>
+        <div>
+          <p><strong data-i18n="wakaf-rumah-terbit">Wakaf Rumah — TERBIT.</strong> <span data-i18n="atas-nama-hadi-wijoyo-kusumo">Atas nama Hadi Wijoyo Kusumo, dikelola Hanif Ahdi Fiddini. 20 November 2026. Trace</span> <code data-i18n="rumah-20261120-wakaf-001">RUMAH-20261120-WAKAF-001</code><span data-i18n="symbol">.</span></p>
+          <ol>
+            <li><span data-i18n="unduh">Unduh</span> <code data-i18n="rumah-install-zip">RUMAH-INSTALL.zip</code> <span data-i18n="melalui-trust-house">melalui Trust House.</span></li>
+            <li data-i18n="ekstrak-arsip-dan-ikuti-petunjuk">Ekstrak arsip dan ikuti petunjuk pemasangan di Trust House.</li>
+          </ol>
+          <div class="actions">
+            <button id="terimaBtn" class="button" type="button" hidden data-i18n="saya-terima-wakaf-ini">Saya terima Wakaf ini</button>
+            <a class="button button-light" href="wakaf.html" data-i18n="buka-halaman-wakaf">Buka halaman Wakaf</a>
+            <a class="text-link" href="trust-house.html" data-i18n="unduhan-di-trust-house">Unduhan di Trust House</a>
+          </div>
+          <p id="terimaMsg" role="status"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="wrap footer-layout">
+      <div>
+        <p><strong data-i18n="otris-id">OTRIS.ID</strong> <span data-i18n="wijoyo-trust-house-2">· Wijoyo Trust House</span></p>
+        <p data-i18n="site.motto">ICU adalah pintu masuk. Manusia adalah tujuannya.</p>
+        <a class="text-link" href="contact.html" data-i18n="hubungi-tim-otris">Hubungi tim OTRIS</a>
+      </div>
+      <details class="footer-menu">
+        <summary data-i18n="lihat-semua-halaman-otris">Lihat semua halaman OTRIS</summary>
+        <ul>
+          <li><a href="about.html" data-i18n="nav.about">Tentang</a></li>
+          <li><a href="hardware.html" data-i18n="nav.hardware">Perangkat Keras</a></li>
+          <li><a href="healthcare.html" data-i18n="nav.healthcare">Layanan Kesehatan</a></li>
+          <li><a href="ai-gateway.html" data-i18n="nav.aiGateway">AI Gateway</a></li>
+          <li><a href="wijoyo-kusumo.html" data-i18n="nav.wijoyoKusumo">Wijoyo Kusumo</a></li>
+          <li><a href="plug-play.html" data-i18n="nav.plugPlay">Plug &amp; Play</a></li>
+          <li><a href="hl7.html" data-i18n="nav.hl7">HL7</a></li>
+          <li><a href="wakaf.html" data-i18n="nav.waqf">Wakaf</a></li>
+          <li><a href="trust-house.html" data-i18n="nav.trustHouse">Trust House</a></li>
+          <li><a href="pemecah-batu.html" data-i18n="nav.pemecahBatu">Pemecah Batu</a></li>
+          <li><a href="otris-core.html" data-i18n="nav.core">OTRIS Core</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Kontak</a></li>
+        </ul>
+      </details>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="wijoyo-chat.js" defer></script>
+  <script>
+    const terimaWakaf = document.getElementById('terimaBtn');
+    const pesanWakaf = document.getElementById('terimaMsg');
+    terimaWakaf.hidden = false;
+    terimaWakaf.addEventListener('click', () => {
+      terimaWakaf.disabled = true;
+      pesanWakaf.dataset.i18n = 'home.waqfConfirmation';
+      pesanWakaf.textContent = window.otrisI18n?.translate('home.waqfConfirmation')
+        ?? 'Terima kasih. Konfirmasi ini hanya berlaku selama halaman ini terbuka.';
+    });
+  </script>
 </body>
 </html>
