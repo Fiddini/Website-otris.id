@@ -18,23 +18,37 @@
 <header>
   <div class="container nav">
     <a class="logo" href="index.html">
-      <img src="assets/logo.png" alt="Logo resmi OTRIS"/ style="width:92px !important;height:92px !important;min-width:92px;min-height:92px;object-fit:contain;border-radius:50%;">
+      <img src="assets/logo.png" alt="" width="64" height="64">
       <span>OTRIS<small>OTRIS.ID • OFFICIAL</small></span>
     </a>
-    <nav class="main" aria-label="Navigasi utama">
-      <a href="index.html">HOME</a>
-      <a href="about.html">ABOUT</a>
+    <button class="nav-toggle" type="button" aria-controls="navigasi-utama" aria-expanded="false" hidden>
+      <span class="nav-toggle-icon" aria-hidden="true"></span>
+      Menu
+    </button>
+    <nav id="navigasi-utama" class="main" aria-label="Navigasi utama">
+      <a href="index.html">BERANDA</a>
+      <a href="about.html">TENTANG</a>
       <a href="hardware.html">HARDWARE</a>
-      <a href="healthcare.html">HEALTHCARE</a>
-      <a href="ai-gateway.html">AI GATEWAY</a>
-      <a href="wijoyo-kusumo.html">WIJOYO KUSUMO</a>
-      <a href="plug-play.html" class="active" aria-current="page">PLUG &amp; PLAY</a>
-      <a href="hl7.html">HL7</a>
-      <a href="wakaf.html">WAKAF</a>
-      <a href="trust-house.html" class="gold">TRUST HOUSE →</a>
-      <a href="pemecah-batu.html" class="gold">PEMECAH BATU →</a>
-      <a href="contact.html">CONTACT US</a>
-      <a href="otris-core.html">OTRIS CORE</a>
+      <details class="nav-group" name="navigasi">
+        <summary>TEKNOLOGI</summary>
+        <div class="nav-dropdown">
+          <a href="healthcare.html">LAYANAN KESEHATAN</a>
+          <a href="ai-gateway.html">AI GATEWAY</a>
+          <a href="plug-play.html" aria-current="page">PLUG &amp; PLAY</a>
+          <a href="hl7.html">HL7</a>
+          <a href="otris-core.html">OTRIS CORE</a>
+        </div>
+      </details>
+      <details class="nav-group" name="navigasi">
+        <summary>WIJOYO</summary>
+        <div class="nav-dropdown">
+          <a href="wijoyo-kusumo.html">WIJOYO KUSUMO</a>
+          <a href="wakaf.html">WAKAF</a>
+          <a href="trust-house.html">TRUST HOUSE</a>
+          <a href="pemecah-batu.html">PEMECAH BATU</a>
+        </div>
+      </details>
+      <a href="contact.html">KONTAK</a>
     </nav>
   </div>
 </header>
@@ -71,7 +85,7 @@
           <a href="hardware.html" style="background:#0b2445; border:1px solid rgba(255,255,255,.2); border-radius:12px; padding:12px 6px; text-decoration:none;">📷<br/>Surgical Camera</a>
           <a href="hardware.html" style="background:#0b2445; border:1px solid rgba(255,255,255,.2); border-radius:12px; padding:12px 6px; text-decoration:none;">➕<br/>Dan lainnya</a>
         </div>
-        <p style="font-size:12px; color:#cbd5e1; margin-top:12px;">Gambar Edge Agent di versi lama sekarang jadi: <img src="assets/hardware-topology.png" alt="OTRIS Edge Agent" style="width:100%; border-radius:12px; margin-top:6px;"/></p>
+        <img class="responsive" src="assets/hardware-topology.png" alt="OTRIS Edge Agent" style="margin-top:12px;"/>
       </div>
     </div>
     <div style="margin-top:20px;">

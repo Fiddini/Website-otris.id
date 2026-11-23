@@ -18,23 +18,37 @@
 <header>
   <div class="container nav">
     <a class="logo" href="index.html">
-      <img src="assets/logo.png" alt="Logo resmi OTRIS"/ style="width:92px !important;height:92px !important;min-width:92px;min-height:92px;object-fit:contain;border-radius:50%;">
+      <img src="assets/logo.png" alt="" width="64" height="64">
       <span>OTRIS<small>OTRIS.ID • OFFICIAL</small></span>
     </a>
-    <nav class="main" aria-label="Navigasi utama">
-      <a href="index.html">HOME</a>
-      <a href="about.html">ABOUT</a>
+    <button class="nav-toggle" type="button" aria-controls="navigasi-utama" aria-expanded="false" hidden>
+      <span class="nav-toggle-icon" aria-hidden="true"></span>
+      Menu
+    </button>
+    <nav id="navigasi-utama" class="main" aria-label="Navigasi utama">
+      <a href="index.html">BERANDA</a>
+      <a href="about.html">TENTANG</a>
       <a href="hardware.html">HARDWARE</a>
-      <a href="healthcare.html">HEALTHCARE</a>
-      <a href="ai-gateway.html">AI GATEWAY</a>
-      <a href="wijoyo-kusumo.html">WIJOYO KUSUMO</a>
-      <a href="plug-play.html">PLUG &amp; PLAY</a>
-      <a href="hl7.html">HL7</a>
-      <a href="wakaf.html">WAKAF</a>
-      <a href="trust-house.html" class="gold">TRUST HOUSE →</a>
-      <a href="pemecah-batu.html" class="gold">PEMECAH BATU →</a>
-      <a href="contact.html" class="active" aria-current="page">CONTACT US</a>
-      <a href="otris-core.html">OTRIS CORE</a>
+      <details class="nav-group" name="navigasi">
+        <summary>TEKNOLOGI</summary>
+        <div class="nav-dropdown">
+          <a href="healthcare.html">LAYANAN KESEHATAN</a>
+          <a href="ai-gateway.html">AI GATEWAY</a>
+          <a href="plug-play.html">PLUG &amp; PLAY</a>
+          <a href="hl7.html">HL7</a>
+          <a href="otris-core.html">OTRIS CORE</a>
+        </div>
+      </details>
+      <details class="nav-group" name="navigasi">
+        <summary>WIJOYO</summary>
+        <div class="nav-dropdown">
+          <a href="wijoyo-kusumo.html">WIJOYO KUSUMO</a>
+          <a href="wakaf.html">WAKAF</a>
+          <a href="trust-house.html">TRUST HOUSE</a>
+          <a href="pemecah-batu.html">PEMECAH BATU</a>
+        </div>
+      </details>
+      <a href="contact.html" aria-current="page">KONTAK</a>
     </nav>
   </div>
 </header>
